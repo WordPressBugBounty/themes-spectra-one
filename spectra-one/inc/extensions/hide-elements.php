@@ -26,7 +26,7 @@ add_filter( 'render_block', SWT_NS . 'hide_elements', 10, 2 );
  * @return string
  */
 function hide_elements( string $block_content, array $block ): string {
-	$post_id = absint( get_the_ID() );
+	$post_id = swt_get_the_ID();
 
 	if ( get_post_meta( $post_id, '_swt_meta_header_display', true ) ) {
 

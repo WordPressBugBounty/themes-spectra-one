@@ -137,7 +137,7 @@ function backward_compatibility_update_callbacks() {
  * Handle backward compatibility for v1.1.1
  *
  * @return void
- * @since x.x.x
+ * @since 1.1.1
  */
 function backward_compatibility_1_1_1() {
 	$swt_theme_options = get_option( 'swt_theme_options', array() );

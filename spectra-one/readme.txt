@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.6
-Stable tag: 1.1.5
+Tested up to: 6.7
+Stable tag: 1.1.6
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,12 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.1.6 =
+* Fix: Compatibility with sticky column block of Kadnece Blocks plugin.
+* Fix: Transparent & Sticky header options not working on blog home page.
+* Fix: Resolved editor width conflicts when using the Spectra Container block with the full-width setting.
+* Fix: Compatibility with WordPress 6.7.
 
 = 1.1.5 =
 * Fix: Fixed default spacing for mobile devices.

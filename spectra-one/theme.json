@@ -550,8 +550,7 @@
             "left": "0",
             "right": "0"
           }
-        },
-        "css": "overflow: hidden;"
+        }
       },
       "core/group": {
         "spacing": {

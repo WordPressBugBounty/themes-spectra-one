@@ -401,9 +401,31 @@ function wp_version_compare( $version, $compare ) {
  * Whether or not enable the default paddings which was before v1.1.1
  *
  * @return bool
- * @since x.x.x
+ * @since 1.1.1
  */
 function enable_default_spacing_paddings() {
 	$swt_theme_options = get_option( 'swt_theme_options', array() );
 	return apply_filters( 'swt_enable_default_spacing_paddings', isset( $swt_theme_options['enable_default_spacing_paddings'] ) );
+}
+
+/**
+ * Get the current post ID.
+ *
+ * This function retrieves the ID of the current post in various contexts:
+ * - For singular pages, it returns the ID of the current post.
+ * - For the blog index page (when it's not the front page), it returns the ID of the page set as the "Posts page" in WordPress settings.
+ * - For other cases, it returns 0.
+ *
+ * @since 1.1.6
+ * @return int The ID of the current post or page, or 0 if not applicable.
+ */
+function swt_get_the_ID() {
+	$post_id = 0;
+	if ( is_singular() ) {
+		$post_id = get_the_ID();
+	} elseif ( is_home() && ! is_front_page() && get_option( 'show_on_front' ) === 'page' ) {
+		$post_id = get_option( 'page_for_posts' );
+	}
+
+	return absint( $post_id );
 }
