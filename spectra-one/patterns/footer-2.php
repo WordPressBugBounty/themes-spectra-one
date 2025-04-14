@@ -9,7 +9,7 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/logo.svg",
+    $get_url . 'assets/image/logo.svg',
 ];
 
 ?>
@@ -36,7 +36,7 @@ $images = [
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"x-small"} -->
-<p class="has-text-align-center has-x-small-font-size"><?php echo sprintf( __( '© %d ·', 'spectra-one' ), date_i18n("Y")); ?></p>
+<p class="has-text-align-center has-x-small-font-size"><?php echo sprintf( __( '© %d ·', 'spectra-one' ), date_i18n( 'Y' ) ); ?></p>
 <!-- /wp:paragraph -->
 <!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-small"} /--></div>
 <!-- /wp:group -->

@@ -65,4 +65,3 @@ register_block_style(
 		',
 	)
 );
-

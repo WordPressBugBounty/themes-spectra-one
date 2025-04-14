@@ -45,14 +45,13 @@ function hide_elements( string $block_content, array $block ): string {
 	return $block_content;
 }
 
-
 /**
  * Get disable section fields.
  *
  * @return array $swt_page_meta_elements All toggle based page elements.
  */
-function get_disable_section_fields():array {
-	$swt_page_meta_elements = array(
+function get_disable_section_fields(): array {
+	return array(
 		array(
 			'key'   => '_swt_meta_header_display',
 			'label' => __( 'Disable Header', 'spectra-one' ),
@@ -62,6 +61,4 @@ function get_disable_section_fields():array {
 			'label' => __( 'Disable Footer', 'spectra-one' ),
 		),
 	);
-
-	return $swt_page_meta_elements;
 }

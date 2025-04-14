@@ -35,7 +35,6 @@ function render_featured_image_block( string $html, array $block ): string {
 	return $html;
 }
 
-
 /**
  * Load Inline Css.
  *

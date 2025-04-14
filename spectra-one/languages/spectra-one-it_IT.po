@@ -1,0 +1,2307 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: gpt-po v1.2.1\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-15T15:40:45+00:00\n"
+"PO-Revision-Date: 2025-01-15T15:40:45+00:00\n"
+"Language: \n"
+
+#: patterns/text-2.php:44
+#: patterns/text-3.php:44
+msgid "12"
+msgstr "12"
+
+#: patterns/text-2.php:14
+#: patterns/text-3.php:14
+#: patterns/text-4.php:14
+#: patterns/text.php:14
+msgid "32"
+msgstr "32"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Spectra One"
+msgstr "Spectra One"
+
+#. Description of the theme
+#: style.css
+msgid "Spectra One is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra One comes with a sleek and professional design that will make your website stand out from the crowd."
+msgstr "Spectra One è un tema WordPress bello e moderno costruito con la funzionalità di Full Site Editing (FSE). È un tema versatile che può essere utilizzato per blog, portfolio, aziende e altro ancora. Spectra One viene fornito con un design elegante e professionale che farà risaltare il tuo sito web dalla massa."
+
+#. Author of the theme
+#: style.css
+msgid "Brainstorm Force"
+msgstr "Brainstorm Force"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://brainstormforce.com/"
+msgstr "https://brainstormforce.com/"
+
+#: inc/admin/welcome-notice.php:68
+msgid "Close this notice.."
+msgstr "Chiudi questo avviso.."
+
+#: inc/admin/welcome-notice.php:73
+msgid "Thanks for installing the Spectra One theme &#x1F389;"
+msgstr "Grazie per aver installato il tema Spectra One &#x1F389;"
+
+#: inc/admin/welcome-notice.php:76
+msgid "Please install the Spectra Builder"
+msgstr "Si prega di installare il Spectra Builder"
+
+#: inc/admin/welcome-notice.php:79
+msgid "Once you have installed the Spectra Builder plugin, you will be ready to build amazing, fast-loading websites."
+msgstr "Una volta installato il plugin Spectra Builder, sarai pronto per costruire siti web straordinari e veloci."
+
+#: inc/admin/welcome-notice.php:85
+msgid "Activate Spectra Builder"
+msgstr "Attiva Spectra Builder"
+
+#: inc/admin/welcome-notice.php:85
+msgid "Install Spectra Builder"
+msgstr "Installa Spectra Builder"
+
+#: inc/admin/welcome-notice.php:90
+#: patterns/alternate-image-text.php:45
+#: patterns/alternate-image-text.php:63
+#: patterns/alternate-image-text.php:91
+#: patterns/call-to-action-10.php:33
+#: patterns/footer-4.php:86
+#: patterns/footer-5.php:103
+#: patterns/hero-banner-2.php:32
+#: patterns/hero-banner-3.php:32
+#: patterns/hero-banner-4.php:31
+#: patterns/hero-banner-5.php:31
+#: patterns/hero-banner-6.php:37
+#: patterns/hero-banner.php:29
+#: patterns/split-image-right.php:29
+msgid "Learn More"
+msgstr "Scopri di più"
+
+#: inc/admin/welcome-notice.php:223
+msgid "Activating"
+msgstr "Attivazione in corso"
+
+#: inc/admin/welcome-notice.php:224
+msgid "Installing"
+msgstr "Installazione in corso"
+
+#: inc/admin/welcome-notice.php:225
+msgid "Done"
+msgstr "Fatto"
+
+#: inc/block-styles/archives.php:24
+#: inc/block-styles/categories.php:24
+#: inc/block-styles/search.php:24
+msgid "Minimal"
+msgstr "Minimale"
+
+#: inc/block-styles/button.php:22
+msgid "Secondary"
+msgstr "Secondario"
+
+#: inc/block-styles/button.php:41
+msgid "Inverse"
+msgstr "Inverso"
+
+#: inc/block-styles/latest-comments.php:24
+#: inc/block-styles/latest-posts.php:24
+#: inc/block-styles/post-author.php:24
+msgid "Simple"
+msgstr "Semplice"
+
+#: inc/block-styles/post-terms.php:22
+#: inc/block-styles/tag-cloud.php:22
+msgid "Pill"
+msgstr "Pillola"
+
+#: inc/block-styles/separator.php:22
+msgid "Wide Thin Line"
+msgstr "Linea sottile larga"
+
+#: inc/extensions/admin-bar.php:61
+#: inc/extensions/admin-bar.php:64
+msgid "Edit template"
+msgstr "Modifica modello"
+
+#: inc/extensions/hide-elements.php:57
+msgid "Disable Header"
+msgstr "Disabilita intestazione"
+
+#: inc/extensions/hide-elements.php:61
+msgid "Disable Footer"
+msgstr "Disabilita piè di pagina"
+
+#: inc/scripts.php:302
+msgid "Pages"
+msgstr "Pagine"
+
+#: inc/scripts.php:307
+#: patterns/footer-2.php:27
+#: patterns/footer-3.php:26
+#: patterns/footer-5.php:27
+#: patterns/header-2.php:27
+#: patterns/header-3.php:29
+#: patterns/header-4.php:31
+#: patterns/header-5.php:29
+#: patterns/header-6.php:30
+#: patterns/header.php:28
+msgid "Contact"
+msgstr "Contatto"
+
+#: inc/scripts.php:312
+#: patterns/pricing-2.php:20
+#: patterns/pricing-3.php:22
+#: patterns/pricing-4.php:20
+#: patterns/pricing-5.php:20
+#: patterns/pricing-6.php:23
+#: patterns/pricing.php:20
+msgid "Pricing"
+msgstr "Prezzi"
+
+#: inc/utilities/helpers.php:264
+msgid " Icon"
+msgstr "Icona"
+
+#: patterns/alternate-image-text.php:21
+msgid "Discover a new way to build website"
+msgstr "Scopri un nuovo modo di costruire siti web"
+
+#: patterns/alternate-image-text.php:24
+#: patterns/feature-4.php:33
+#: patterns/feature-5.php:33
+#: patterns/feature-6.php:21
+#: patterns/feature.php:36
+msgid "Get online quickly with easy-to-use Full Site Editor builder"
+msgstr "Vai online rapidamente con il builder Full Site Editor facile da usare"
+
+#: patterns/alternate-image-text.php:36
+#: patterns/feature-6.php:30
+msgid "01"
+msgstr "01"
+
+#: patterns/alternate-image-text.php:39
+msgid "Visual editing experience"
+msgstr "Esperienza di editing visivo"
+
+#: patterns/alternate-image-text.php:42
+#: patterns/feature-8.php:32
+#: patterns/text-5.php:23
+msgid "Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types."
+msgstr "Personalizza l'intero layout del sito web, inclusi intestazione, piè di pagina e tutte le altre parti del modello. Con FSE, possiamo creare e modificare modelli per l'intero sito web, inclusi post singoli, pagine di archivio e tipi di post personalizzati."
+
+#: patterns/alternate-image-text.php:54
+#: patterns/feature-6.php:50
+msgid "02"
+msgstr "02"
+
+#: patterns/alternate-image-text.php:57
+msgid "Innovative block patterns"
+msgstr "Modelli di blocchi innovativi"
+
+#: patterns/alternate-image-text.php:60
+msgid "Block patterns are pre-designed block layouts that we can easily insert into their content. These patterns can help to save time and create visually appealing designs. Allows us to create custom themes using the block-based template."
+msgstr "I modelli di blocchi sono layout di blocchi pre-progettati che possiamo facilmente inserire nei loro contenuti. Questi modelli possono aiutare a risparmiare tempo e creare design visivamente accattivanti. Ci permettono di creare temi personalizzati utilizzando il modello basato su blocchi."
+
+#: patterns/alternate-image-text.php:82
+#: patterns/feature-6.php:70
+msgid "03"
+msgstr "03"
+
+#: patterns/alternate-image-text.php:85
+msgid "Beautiful global styles"
+msgstr "Stili globali belli"
+
+#: patterns/alternate-image-text.php:88
+msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
+msgstr "Gli stili globali ci consentono di creare e applicare elementi di design coerenti in tutto il sito web, inclusi tipografia, colori e spaziatura. Offrendoci maggiore controllo sull'aspetto e la sensazione del nostro sito web."
+
+#: patterns/announcement-bar-2.php:14
+msgid "Announcement message can be here.."
+msgstr "Il messaggio di annuncio può essere qui.."
+
+#: patterns/announcement-bar.php:13
+msgid "Announcement message can be here.. "
+msgstr "Il messaggio di annuncio può essere qui.."
+
+#: patterns/announcement-bar.php:13
+msgid "click here"
+msgstr "clicca qui"
+
+#: patterns/blog-2.php:13
+#: patterns/blog-3.php:13
+#: patterns/blog-4.php:13
+#: patterns/blog.php:13
+msgid "Latest Posts"
+msgstr "Ultimi post"
+
+#: patterns/blog-3.php:33
+msgid "Read More"
+msgstr "Leggi di più"
+
+#: patterns/call-to-action-2.php:14
+#: patterns/call-to-action-3.php:14
+#: patterns/call-to-action-8.php:12
+#: patterns/call-to-action-9.php:12
+#: patterns/call-to-action.php:14
+#: patterns/wide-banner-with-button.php:12
+msgid "Build your own website"
+msgstr "Costruisci il tuo sito web"
+
+#: patterns/call-to-action-2.php:18
+#: patterns/call-to-action-3.php:18
+#: patterns/call-to-action-8.php:16
+#: patterns/call-to-action-9.php:16
+#: patterns/call-to-action.php:18
+#: patterns/wide-banner-with-button.php:15
+msgid "Take your website to the next level!"
+msgstr "Porta il tuo sito web al livello successivo!"
+
+#: patterns/call-to-action-2.php:25
+#: patterns/call-to-action-3.php:25
+#: patterns/call-to-action-4.php:30
+#: patterns/call-to-action-5.php:36
+#: patterns/call-to-action-8.php:21
+#: patterns/call-to-action-9.php:21
+#: patterns/call-to-action-10.php:29
+#: patterns/call-to-action.php:25
+#: patterns/header-2.php:31
+#: patterns/header-3.php:39
+#: patterns/header-4.php:36
+#: patterns/header-5.php:34
+#: patterns/header-6.php:40
+#: patterns/header.php:32
+#: patterns/hero-banner-2.php:28
+#: patterns/hero-banner-3.php:28
+#: patterns/hero-banner-4.php:28
+#: patterns/hero-banner-5.php:28
+#: patterns/hero-banner-6.php:33
+#: patterns/hero-banner.php:26
+#: patterns/pricing-2.php:50
+#: patterns/pricing-2.php:110
+#: patterns/pricing-3.php:99
+#: patterns/pricing-3.php:184
+#: patterns/pricing-4.php:57
+#: patterns/pricing-4.php:129
+#: patterns/pricing-4.php:197
+#: patterns/pricing-5.php:57
+#: patterns/pricing-5.php:130
+#: patterns/pricing-5.php:207
+#: patterns/pricing-6.php:204
+#: patterns/pricing-6.php:286
+#: patterns/pricing.php:50
+#: patterns/pricing.php:110
+#: patterns/wide-banner-with-button.php:19
+msgid "Get Started"
+msgstr "Inizia"
+
+#: patterns/call-to-action-4.php:21
+#: patterns/call-to-action-5.php:27
+#: patterns/call-to-action-6.php:31
+#: patterns/call-to-action-7.php:31
+#: patterns/call-to-action-10.php:20
+#: patterns/split-image-right.php:21
+msgid "Everything you need to create amazing websites"
+msgstr "Tutto ciò di cui hai bisogno per creare siti web straordinari"
+
+#: patterns/call-to-action-4.php:25
+#: patterns/call-to-action-5.php:31
+#: patterns/call-to-action-6.php:35
+#: patterns/call-to-action-7.php:35
+#: patterns/call-to-action-10.php:24
+#: patterns/split-image-right.php:24
+#: patterns/text-5.php:43
+msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
+msgstr "Strumenti di design interattivi e le sue molte opzioni di personalizzazione per personalizzare qualsiasi cosa e tutto ciò che serve per costruire il sito web completamente funzionale dei tuoi sogni."
+
+#: patterns/call-to-action-6.php:27
+#: patterns/call-to-action-7.php:27
+#: patterns/feature-4.php:25
+#: patterns/feature-5.php:25
+#: patterns/feature-6.php:13
+#: patterns/feature-8.php:23
+#: patterns/feature.php:29
+#: patterns/hero-banner-6.php:20
+#: patterns/text-5.php:14
+msgid "Full Site Editing"
+msgstr "Full Site Editing"
+
+#: patterns/call-to-action-6.php:40
+#: patterns/call-to-action-7.php:40
+msgid "Install Spectra Theme"
+msgstr "Installa il tema Spectra"
+
+#: patterns/contact-2.php:27
+#: patterns/contact-3.php:26
+#: patterns/contact-4.php:27
+#: patterns/contact-5.php:70
+#: patterns/contact-6.php:75
+#: patterns/contact-7.php:90
+#: patterns/contact-8.php:91
+msgid "Esther Howard"
+msgstr "Esther Howard"
+
+#: patterns/contact-2.php:31
+#: patterns/contact-3.php:30
+#: patterns/contact-4.php:31
+msgid "Senior Product Designer at Spectra"
+msgstr "Senior Product Designer presso Spectra"
+
+#: patterns/contact-2.php:47
+#: patterns/contact-3.php:44
+#: patterns/contact-4.php:45
+msgid "Behance"
+msgstr "Behance"
+
+#: patterns/contact-2.php:51
+#: patterns/contact-3.php:48
+#: patterns/contact-4.php:49
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: patterns/contact-2.php:55
+#: patterns/contact-3.php:52
+#: patterns/contact-4.php:53
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: patterns/contact-2.php:59
+#: patterns/contact-3.php:56
+#: patterns/contact-4.php:57
+msgid "Github"
+msgstr "Github"
+
+#: patterns/contact-5.php:22
+#: patterns/contact-6.php:23
+#: patterns/contact-7.php:22
+#: patterns/contact-8.php:23
+msgid "Meet the team"
+msgstr "Incontra il team"
+
+#: patterns/contact-5.php:25
+#: patterns/contact-6.php:26
+#: patterns/contact-7.php:26
+#: patterns/contact-8.php:27
+msgid "The talent driving our success"
+msgstr "Il talento che guida il nostro successo"
+
+#: patterns/contact-5.php:28
+#: patterns/contact-6.php:29
+#: patterns/contact-7.php:30
+#: patterns/contact-8.php:31
+msgid "Meet our dedicated team of professionals who are passionate about providing top-notch service and delivering exceptional results."
+msgstr "Incontra il nostro team dedicato di professionisti appassionati nel fornire un servizio di alta qualità e nel raggiungere risultati eccezionali."
+
+#: patterns/contact-5.php:36
+#: patterns/contact-6.php:39
+#: patterns/contact-7.php:42
+#: patterns/contact-8.php:43
+msgid "Wade Warren"
+msgstr "Wade Warren"
+
+#: patterns/contact-5.php:39
+#: patterns/contact-6.php:42
+#: patterns/contact-7.php:46
+#: patterns/contact-8.php:47
+msgid "Creative Director"
+msgstr "Direttore Creativo"
+
+#: patterns/contact-5.php:53
+#: patterns/contact-6.php:57
+#: patterns/contact-7.php:66
+#: patterns/contact-8.php:67
+#: patterns/contact-9.php:31
+#: patterns/testimonials-2.php:194
+#: patterns/testimonials.php:108
+msgid "Leslie Alexander"
+msgstr "Leslie Alexander"
+
+#: patterns/contact-5.php:56
+#: patterns/contact-6.php:60
+#: patterns/contact-7.php:70
+#: patterns/contact-8.php:71
+msgid "Product Manager"
+msgstr "Product Manager"
+
+#: patterns/contact-5.php:73
+#: patterns/contact-6.php:78
+#: patterns/contact-7.php:94
+#: patterns/contact-8.php:95
+msgid "Senior Product Designer"
+msgstr "Senior Product Designer"
+
+#: patterns/contact-6.php:93
+#: patterns/contact-8.php:115
+#: patterns/testimonials-2.php:228
+#: patterns/testimonials-3.php:84
+#: patterns/testimonials.php:60
+msgid "Jacob Jones"
+msgstr "Jacob Jones"
+
+#: patterns/contact-6.php:96
+#: patterns/contact-8.php:119
+msgid "Senior Developer"
+msgstr "Senior Developer"
+
+#: patterns/contact-9.php:27
+msgid "Meet the owner"
+msgstr "Incontra il proprietario"
+
+#: patterns/contact-9.php:35
+msgid "Leslie loves exploring new foods, devouring motivational books, and hanging out with her loved ones. She's a real-life inspiration and proof that hard work and passion pay off!"
+msgstr "Leslie ama esplorare nuovi cibi, divorare libri motivazionali e trascorrere del tempo con i suoi cari. È un'ispirazione reale e la prova che il duro lavoro e la passione ripagano!"
+
+#: patterns/contact.php:15
+#: patterns/footer-5.php:108
+msgid "Get in touch"
+msgstr "Mettiti in contatto"
+
+#: patterns/contact.php:18
+msgid "We look forward to hearing from you"
+msgstr "Non vediamo l'ora di sentirti"
+
+#: patterns/contact.php:21
+msgid "We look forward to hearing from you and providing the assistance you need. Whether you have a general inquiry, require technical support, or want to learn more about our products, our knowledgeable team is ready to assist you."
+msgstr "Non vediamo l'ora di sentirti e di fornirti l'assistenza di cui hai bisogno. Che tu abbia una domanda generale, necessiti di supporto tecnico o voglia saperne di più sui nostri prodotti, il nostro team esperto è pronto ad aiutarti."
+
+#: patterns/contact.php:27
+#: patterns/text-2.php:34
+#: patterns/text-3.php:34
+#: patterns/text-4.php:34
+#: patterns/text.php:34
+msgid "4.8"
+msgstr "4.8"
+
+#: patterns/contact.php:30
+#: patterns/text-2.php:38
+#: patterns/text-3.php:38
+msgid "Average ratings"
+msgstr "Valutazioni medie"
+
+#: patterns/contact.php:35
+#: patterns/text-2.php:24
+#: patterns/text-3.php:24
+#: patterns/text-4.php:24
+#: patterns/text.php:24
+msgid "2000+"
+msgstr "2000+"
+
+#: patterns/contact.php:38
+#: patterns/text-2.php:28
+#: patterns/text-3.php:28
+msgid "Active installs"
+msgstr "Installazioni attive"
+
+#: patterns/contact.php:46
+msgid "Contact info"
+msgstr "Informazioni di contatto"
+
+#: patterns/contact.php:53
+msgid "Address"
+msgstr "Indirizzo"
+
+#: patterns/contact.php:56
+msgid "123 Demo Ave. Manchester,"
+msgstr "123 Demo Ave. Manchester,"
+
+#: patterns/contact.php:56
+msgid "Kentucky, KY 40962"
+msgstr "Kentucky, KY 40962"
+
+#: patterns/contact.php:64
+msgid "Phone"
+msgstr "Telefono"
+
+#: patterns/contact.php:67
+msgid "606-123-4567"
+msgstr "606-123-4567"
+
+#: patterns/contact.php:75
+msgid "Email"
+msgstr "Email"
+
+#: patterns/contact.php:78
+msgid "mail@demosite.com"
+msgstr "mail@demosite.com"
+
+#: patterns/contact.php:86
+msgid "Follow us"
+msgstr "Seguici"
+
+#: patterns/faq-2.php:13
+msgid "Have a question?"
+msgstr "Hai una domanda?"
+
+#: patterns/faq-2.php:17
+#: patterns/faq.php:12
+msgid "Frequently Asked Questions"
+msgstr "Domande Frequenti"
+
+#: patterns/faq-2.php:25
+#: patterns/faq.php:27
+msgid "What are some benefits of using Full Site Editing?"
+msgstr "Quali sono alcuni vantaggi dell'utilizzo del Full Site Editing?"
+
+#: patterns/faq-2.php:29
+#: patterns/faq.php:30
+msgid "Full Site Editing provides a more user-friendly, streamlined approach to website design and customization. It allows users to see changes in real-time, provides more control over design elements, and enables developers to create more custom blocks and templates."
+msgstr "Il Full Site Editing offre un approccio più user-friendly e semplificato alla progettazione e personalizzazione dei siti web. Permette agli utenti di vedere le modifiche in tempo reale, fornisce maggiore controllo sugli elementi di design e consente agli sviluppatori di creare blocchi e modelli più personalizzati."
+
+#: patterns/faq-2.php:37
+#: patterns/faq.php:16
+msgid "What is Full Site Editing?"
+msgstr "Che cos'è il Full Site Editing?"
+
+#: patterns/faq-2.php:41
+#: patterns/faq.php:19
+msgid "Full Site Editing (FSE) is a feature in WordPress that allows users to visually design and customize their entire website, including the header, footer, and other template parts."
+msgstr "Il Full Site Editing (FSE) è una funzionalità di WordPress che consente agli utenti di progettare e personalizzare visivamente l'intero sito web, inclusi intestazione, piè di pagina e altre parti del modello."
+
+#: patterns/faq-2.php:51
+#: patterns/faq.php:49
+msgid "Do I need to know how to code to use Full Site Editing?"
+msgstr "Devo sapere come programmare per utilizzare il Full Site Editing?"
+
+#: patterns/faq-2.php:55
+#: patterns/faq.php:52
+msgid "No, Full Site Editing does not require knowledge of coding or web development. The drag-and-drop interface and pre-designed templates make it easy for users to create a professional-looking website without any coding experience."
+msgstr "No, il Full Site Editing non richiede conoscenze di programmazione o sviluppo web. L'interfaccia drag-and-drop e i modelli pre-progettati rendono facile per gli utenti creare un sito web dall'aspetto professionale senza alcuna esperienza di codifica."
+
+#: patterns/faq-2.php:63
+#: patterns/faq.php:38
+msgid "Can I use Full Site Editing on my existing WordPress website?"
+msgstr "Posso utilizzare il Full Site Editing sul mio sito WordPress esistente?"
+
+#: patterns/faq-2.php:67
+#: patterns/faq.php:41
+msgid "Yes, you can use Full Site Editing on an existing WordPress website by installing a compatible theme that supports the feature."
+msgstr "Sì, puoi utilizzare il Full Site Editing su un sito WordPress esistente installando un tema compatibile che supporta la funzionalità."
+
+#: patterns/feature-2.php:28
+#: patterns/feature-3.php:27
+#: patterns/feature-4.php:44
+#: patterns/feature-5.php:46
+#: patterns/feature-6.php:34
+#: patterns/feature-7.php:35
+#: patterns/feature.php:47
+#: patterns/three-column-featured.php:26
+msgid "Easily Customizable"
+msgstr "Facilmente personalizzabile"
+
+#: patterns/feature-2.php:32
+#: patterns/feature-3.php:31
+#: patterns/feature-4.php:48
+#: patterns/feature-5.php:50
+#: patterns/feature-6.php:38
+#: patterns/feature-7.php:39
+#: patterns/feature.php:50
+#: patterns/three-column-featured.php:29
+msgid "Tailor your website to your liking with endless options to personalize the design and functionality."
+msgstr "Personalizza il tuo sito web a tuo piacimento con infinite opzioni per personalizzare il design e la funzionalità."
+
+#: patterns/feature-2.php:42
+#: patterns/feature-3.php:41
+#: patterns/feature-4.php:58
+#: patterns/feature-5.php:62
+#: patterns/feature-6.php:54
+#: patterns/feature-7.php:49
+#: patterns/feature.php:62
+#: patterns/three-column-featured.php:37
+msgid "Blazing Fast"
+msgstr "Velocità fulminea"
+
+#: patterns/feature-2.php:46
+#: patterns/feature-3.php:45
+#: patterns/feature-4.php:62
+#: patterns/feature-5.php:66
+#: patterns/feature-6.php:58
+#: patterns/feature-7.php:53
+#: patterns/feature.php:65
+#: patterns/three-column-featured.php:40
+msgid "Experience lightning-fast page load speeds for optimal user experience and SEO ranking."
+msgstr "Sperimenta velocità di caricamento delle pagine fulminea per un'esperienza utente ottimale e un ranking SEO migliore."
+
+#: patterns/feature-2.php:56
+#: patterns/feature-4.php:72
+#: patterns/feature-5.php:78
+#: patterns/feature-6.php:74
+#: patterns/feature-7.php:63
+#: patterns/feature.php:77
+#: patterns/three-column-featured.php:48
+msgid "SEO Optimized"
+msgstr "Ottimizzato per SEO"
+
+#: patterns/feature-2.php:60
+#: patterns/feature-4.php:76
+#: patterns/feature-5.php:82
+#: patterns/feature-6.php:78
+#: patterns/feature-7.php:67
+#: patterns/feature.php:80
+#: patterns/three-column-featured.php:51
+msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
+msgstr "Costruito tenendo a mente i motori di ricerca, ottieni posizioni più elevate e più traffico con codice ottimizzato."
+
+#: patterns/feature-4.php:29
+#: patterns/feature-5.php:29
+#: patterns/feature-6.php:17
+#: patterns/feature-8.php:28
+#: patterns/feature.php:33
+#: patterns/text-5.php:19
+msgid "Unleash the power of block editor"
+msgstr "Scatena il potere dell'editor a blocchi"
+
+#: patterns/feature-4.php:88
+#: patterns/feature-5.php:96
+#: patterns/feature-6.php:96
+msgid "Drag and Drop"
+msgstr "Trascina e Rilascia"
+
+#: patterns/feature-4.php:92
+#: patterns/feature-5.php:100
+#: patterns/feature-6.php:100
+msgid "Easily customize your website's layout and design using an intuitive, drag-and-drop interface."
+msgstr "Personalizza facilmente il layout e il design del tuo sito web utilizzando un'interfaccia intuitiva di trascinamento."
+
+#: patterns/feature-4.php:102
+#: patterns/feature-5.php:112
+#: patterns/feature-6.php:116
+msgid "Global Styles"
+msgstr "Stili Globali"
+
+#: patterns/feature-4.php:106
+#: patterns/feature-5.php:116
+#: patterns/feature-6.php:120
+msgid "Define global styling settings for your website, such as typography, colors, and spacing."
+msgstr "Definisci le impostazioni di stile globali per il tuo sito web, come tipografia, colori e spaziatura."
+
+#: patterns/feature-4.php:116
+#: patterns/feature-5.php:128
+#: patterns/feature-6.php:136
+msgid "Design Patterns"
+msgstr "Modelli di Design"
+
+#: patterns/feature-4.php:120
+#: patterns/feature-5.php:132
+#: patterns/feature-6.php:140
+msgid "Spectra offers a wide selection of meticulously crafted patterns to enhance your content."
+msgstr "Spectra offre una vasta selezione di modelli meticolosamente realizzati per migliorare i tuoi contenuti."
+
+#: patterns/feature-6.php:42
+#: patterns/feature-6.php:62
+#: patterns/feature-6.php:82
+#: patterns/feature-6.php:104
+#: patterns/feature-6.php:124
+#: patterns/feature-6.php:144
+#: patterns/feature-8.php:36
+msgid "Learn More →"
+msgstr "Scopri di più →"
+
+#: patterns/feature-6.php:92
+msgid "04"
+msgstr "04"
+
+#: patterns/feature-6.php:112
+msgid "05"
+msgstr "05"
+
+#: patterns/feature-6.php:132
+msgid "06"
+msgstr "06"
+
+#: patterns/feature-8.php:52
+msgid "Tailor your website to your liking with endless options."
+msgstr "Personalizza il tuo sito web a tuo piacimento con infinite opzioni."
+
+#: patterns/feature-8.php:64
+msgid "Experience lightning-fast page load speeds."
+msgstr "Sperimenta velocità di caricamento delle pagine fulminea."
+
+#: patterns/featured-logos.php:24
+msgid "Brought to you by the creators of"
+msgstr "Portato a te dai creatori di"
+
+#: patterns/footer-2.php:24
+#: patterns/footer-3.php:23
+#: patterns/footer-5.php:24
+#: patterns/header-2.php:24
+#: patterns/header-3.php:26
+#: patterns/header-4.php:28
+#: patterns/header-5.php:26
+#: patterns/header-6.php:27
+#: patterns/header.php:25
+msgid "Home"
+msgstr "Home"
+
+#: patterns/footer-2.php:25
+#: patterns/footer-3.php:24
+#: patterns/footer-5.php:25
+#: patterns/header-2.php:25
+#: patterns/header-3.php:27
+#: patterns/header-4.php:29
+#: patterns/header-5.php:27
+#: patterns/header-6.php:28
+#: patterns/header.php:26
+msgid "About"
+msgstr "Chi Siamo"
+
+#: patterns/footer-2.php:26
+#: patterns/footer-3.php:25
+#: patterns/footer-5.php:26
+#: patterns/header-2.php:26
+#: patterns/header-3.php:28
+#: patterns/header-4.php:30
+#: patterns/header-5.php:28
+#: patterns/header-6.php:29
+#: patterns/header.php:27
+msgid "Blog"
+msgstr "Blog"
+
+#: patterns/footer-2.php:39
+#: patterns/footer-3.php:32
+#: patterns/footer-4.php:98
+#: patterns/footer-5.php:123
+#: patterns/footer.php:88
+msgid "© %d ·"
+msgstr "© %d ·"
+
+#: patterns/footer-2.php:45
+msgid "Privacy"
+msgstr "Privacy"
+
+#: patterns/footer-2.php:48
+msgid "."
+msgstr "."
+
+#: patterns/footer-2.php:51
+msgid "Terms"
+msgstr "Termini"
+
+#: patterns/footer-4.php:28
+#: patterns/footer-5.php:45
+#: patterns/footer.php:37
+msgid "Products"
+msgstr "Prodotti"
+
+#: patterns/footer-4.php:31
+#: patterns/footer-5.php:48
+#: patterns/footer.php:40
+msgid "Products List"
+msgstr "Elenco Prodotti"
+
+#: patterns/footer-4.php:32
+#: patterns/footer-5.php:49
+#: patterns/footer.php:41
+msgid "Plans \\u0026amp; Pricing"
+msgstr "Piani &amp; Prezzi"
+
+#: patterns/footer-4.php:33
+#: patterns/footer-5.php:50
+#: patterns/footer.php:42
+msgid "Services"
+msgstr "Servizi"
+
+#: patterns/footer-4.php:34
+#: patterns/footer-5.php:51
+#: patterns/footer.php:43
+msgid "Partners"
+msgstr "Partner"
+
+#: patterns/footer-4.php:43
+#: patterns/footer-5.php:56
+#: patterns/footer.php:48
+msgid "Company"
+msgstr "Azienda"
+
+#: patterns/footer-4.php:46
+#: patterns/footer-5.php:59
+#: patterns/footer.php:51
+msgid "About Us"
+msgstr "Chi Siamo"
+
+#: patterns/footer-4.php:47
+#: patterns/footer-5.php:60
+#: patterns/footer.php:52
+msgid "News"
+msgstr "Notizie"
+
+#: patterns/footer-4.php:48
+#: patterns/footer-5.php:61
+#: patterns/footer.php:53
+msgid "Contact Us"
+msgstr "Contattaci"
+
+#: patterns/footer-4.php:49
+#: patterns/footer-5.php:62
+#: patterns/footer.php:54
+msgid "Meet Our Team"
+msgstr "Incontra il Nostro Team"
+
+#: patterns/footer-4.php:54
+#: patterns/footer-5.php:82
+#: patterns/footer.php:63
+msgid "Resources"
+msgstr "Risorse"
+
+#: patterns/footer-4.php:57
+#: patterns/footer-5.php:74
+#: patterns/footer.php:66
+msgid "Gallery"
+msgstr "Galleria"
+
+#: patterns/footer-4.php:58
+#: patterns/footer-5.php:75
+#: patterns/footer.php:67
+msgid "Blog Articles"
+msgstr "Articoli del Blog"
+
+#: patterns/footer-4.php:59
+#: patterns/footer-5.php:76
+#: patterns/footer.php:68
+msgid "Brand Assets"
+msgstr "Risorse del Marchio"
+
+#: patterns/footer-4.php:60
+#: patterns/footer-5.php:77
+#: patterns/footer.php:69
+msgid "Brand Guidelines"
+msgstr "Linee Guida del Marchio"
+
+#: patterns/footer-4.php:69
+#: patterns/footer-5.php:71
+#: patterns/footer.php:74
+msgid "Support"
+msgstr "Supporto"
+
+#: patterns/footer-4.php:72
+#: patterns/footer-5.php:85
+#: patterns/footer.php:77
+msgid "Knowledge Base"
+msgstr "Base di Conoscenza"
+
+#: patterns/footer-4.php:73
+#: patterns/footer-5.php:86
+#: patterns/footer.php:78
+msgid "Contact Support"
+msgstr "Contatta il Supporto"
+
+#: patterns/footer-4.php:74
+#: patterns/footer-5.php:87
+#: patterns/footer-5.php:132
+#: patterns/footer.php:79
+msgid "Privacy Policy"
+msgstr "Informativa sulla Privacy"
+
+#: patterns/footer-4.php:75
+#: patterns/footer-5.php:88
+#: patterns/footer.php:80
+msgid "TOS"
+msgstr "TOS"
+
+#: patterns/footer-4.php:80
+msgid "Need help?"
+msgstr "Hai bisogno di aiuto?"
+
+#: patterns/footer-4.php:83
+#: patterns/footer-5.php:100
+msgid "What’s New"
+msgstr "Novità"
+
+#: patterns/footer-4.php:84
+#: patterns/footer-5.php:101
+msgid "How to Videos"
+msgstr "Video Tutorial"
+
+#: patterns/footer-4.php:85
+#: patterns/footer-5.php:102
+msgid "Ask the Community"
+msgstr "Chiedi alla Comunità"
+
+#: patterns/footer-4.php:102
+#: patterns/footer-5.php:127
+#: patterns/footer.php:92
+msgid "· All rights reserved"
+msgstr "· Tutti i diritti riservati"
+
+#: patterns/footer-5.php:97
+msgid "Need Help?"
+msgstr "Hai bisogno di aiuto?"
+
+#: patterns/footer-5.php:111
+msgid "Book A Meeting"
+msgstr "Prenota un incontro"
+
+#: patterns/footer-5.php:112
+msgid "Get Quote"
+msgstr "Richiedi un preventivo"
+
+#: patterns/footer-5.php:113
+msgid "Ask Product Details"
+msgstr "Chiedi dettagli sul prodotto"
+
+#: patterns/footer-5.php:114
+msgid "Service Inquiry"
+msgstr "Richiesta di Servizio"
+
+#: patterns/footer-5.php:135
+msgid "·"
+msgstr "·"
+
+#: patterns/footer-5.php:138
+msgid "Terms and Conditions"
+msgstr "Termini e Condizioni"
+
+#: patterns/footer.php:24
+msgid "Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium."
+msgstr "Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium."
+
+#: patterns/hero-banner-2.php:19
+#: patterns/hero-banner-3.php:19
+#: patterns/hero-banner-4.php:21
+#: patterns/hero-banner-5.php:21
+#: patterns/hero-banner-6.php:24
+#: patterns/hero-banner.php:19
+msgid "Launch Your Website Today!"
+msgstr "Lancia il tuo sito web oggi!"
+
+#: patterns/hero-banner-2.php:23
+#: patterns/hero-banner-3.php:23
+#: patterns/hero-banner-4.php:24
+#: patterns/hero-banner-5.php:24
+#: patterns/hero-banner-6.php:28
+#: patterns/hero-banner.php:22
+msgid "Create a functional and visually appealing website"
+msgstr "Crea un sito web funzionale e visivamente accattivante"
+
+#: patterns/post-grid.php:12
+msgid "Latest from the blog"
+msgstr "Ultime dal blog"
+
+#: patterns/pricing-2.php:23
+#: patterns/pricing-3.php:25
+#: patterns/pricing-4.php:24
+#: patterns/pricing-5.php:24
+#: patterns/pricing-6.php:27
+#: patterns/pricing.php:23
+msgid "Pricing tailored to your needs"
+msgstr "Prezzi su misura per le tue esigenze"
+
+#: patterns/pricing-2.php:26
+#: patterns/pricing-3.php:28
+#: patterns/pricing-4.php:28
+#: patterns/pricing-5.php:28
+#: patterns/pricing-6.php:31
+#: patterns/pricing.php:26
+msgid "Select your favorite plan and start your online store today!"
+msgstr "Seleziona il tuo piano preferito e inizia il tuo negozio online oggi!"
+
+#: patterns/pricing-2.php:34
+#: patterns/pricing-3.php:43
+#: patterns/pricing-4.php:37
+#: patterns/pricing-5.php:37
+#: patterns/pricing-6.php:48
+#: patterns/pricing.php:34
+msgid "Starter Plan"
+msgstr "Piano Iniziale"
+
+#: patterns/pricing-2.php:37
+#: patterns/pricing-3.php:46
+#: patterns/pricing-4.php:41
+#: patterns/pricing-4.php:184
+#: patterns/pricing-5.php:41
+#: patterns/pricing-5.php:191
+#: patterns/pricing-6.php:52
+#: patterns/pricing-6.php:226
+#: patterns/pricing.php:37
+msgid "Everything you need to get start building your website."
+msgstr "Tutto ciò di cui hai bisogno per iniziare a costruire il tuo sito web."
+
+#: patterns/pricing-2.php:42
+#: patterns/pricing-3.php:51
+#: patterns/pricing-4.php:47
+#: patterns/pricing-5.php:47
+#: patterns/pricing-6.php:58
+#: patterns/pricing.php:42
+msgid "$9.99"
+msgstr "$9.99"
+
+#: patterns/pricing-2.php:45
+#: patterns/pricing-2.php:105
+#: patterns/pricing-3.php:54
+#: patterns/pricing-3.php:131
+#: patterns/pricing-4.php:51
+#: patterns/pricing-4.php:123
+#: patterns/pricing-4.php:192
+#: patterns/pricing-5.php:51
+#: patterns/pricing-5.php:124
+#: patterns/pricing-5.php:201
+#: patterns/pricing-6.php:62
+#: patterns/pricing-6.php:146
+#: patterns/pricing-6.php:236
+#: patterns/pricing.php:45
+#: patterns/pricing.php:105
+msgid "/ month"
+msgstr "/ mese"
+
+#: patterns/pricing-2.php:60
+#: patterns/pricing-3.php:66
+#: patterns/pricing-4.php:69
+#: patterns/pricing-5.php:69
+#: patterns/pricing-6.php:77
+#: patterns/pricing.php:60
+msgid "Customization options"
+msgstr "Opzioni di personalizzazione"
+
+#: patterns/pricing-2.php:68
+#: patterns/pricing-3.php:74
+#: patterns/pricing-4.php:78
+#: patterns/pricing-5.php:78
+#: patterns/pricing-6.php:85
+#: patterns/pricing.php:68
+msgid "Essential pattern library"
+msgstr "Biblioteca di modelli essenziali"
+
+#: patterns/pricing-2.php:76
+#: patterns/pricing-3.php:82
+#: patterns/pricing-4.php:87
+#: patterns/pricing-5.php:87
+#: patterns/pricing-6.php:93
+#: patterns/pricing.php:76
+msgid "Handcrafted theme styles"
+msgstr "Stili di tema artigianali"
+
+#: patterns/pricing-2.php:84
+#: patterns/pricing-3.php:90
+#: patterns/pricing-4.php:96
+#: patterns/pricing-5.php:96
+#: patterns/pricing-6.php:101
+#: patterns/pricing.php:84
+msgid "Unmatched performance"
+msgstr "Prestazioni senza pari"
+
+#: patterns/pricing-2.php:94
+#: patterns/pricing-3.php:120
+#: patterns/pricing-4.php:109
+#: patterns/pricing-5.php:110
+#: patterns/pricing-6.php:132
+#: patterns/pricing.php:94
+msgid "Pro Plan"
+msgstr "Piano Pro"
+
+#: patterns/pricing-2.php:97
+#: patterns/pricing-3.php:123
+#: patterns/pricing-4.php:113
+#: patterns/pricing-5.php:114
+#: patterns/pricing-6.php:136
+#: patterns/pricing.php:97
+msgid "Unlock the full potential of your website with our Pro plan."
+msgstr "Sblocca il pieno potenziale del tuo sito web con il nostro piano Pro."
+
+#: patterns/pricing-2.php:102
+#: patterns/pricing-3.php:128
+#: patterns/pricing-4.php:119
+#: patterns/pricing-5.php:120
+#: patterns/pricing-6.php:142
+#: patterns/pricing.php:102
+msgid "$19.99"
+msgstr "$19.99"
+
+#: patterns/pricing-2.php:120
+#: patterns/pricing-3.php:143
+#: patterns/pricing-4.php:139
+#: patterns/pricing-5.php:142
+#: patterns/pricing-6.php:161
+#: patterns/pricing.php:120
+msgid "Everything in Starter Plan plus..."
+msgstr "Tutto nel Piano Iniziale più..."
+
+#: patterns/pricing-2.php:128
+#: patterns/pricing-3.php:151
+#: patterns/pricing-4.php:147
+#: patterns/pricing-5.php:150
+#: patterns/pricing-6.php:169
+#: patterns/pricing.php:128
+msgid "Custom typography"
+msgstr "Tipografia personalizzata"
+
+#: patterns/pricing-2.php:136
+#: patterns/pricing-3.php:159
+#: patterns/pricing-4.php:155
+#: patterns/pricing-5.php:158
+#: patterns/pricing-6.php:177
+#: patterns/pricing.php:136
+msgid "Premium pattern library"
+msgstr "Biblioteca di modelli premium"
+
+#: patterns/pricing-2.php:144
+#: patterns/pricing-3.php:167
+#: patterns/pricing-4.php:163
+#: patterns/pricing-5.php:166
+#: patterns/pricing-6.php:185
+#: patterns/pricing.php:144
+msgid "Pro blocks access"
+msgstr "Accesso ai blocchi Pro"
+
+#: patterns/pricing-2.php:152
+#: patterns/pricing-3.php:175
+#: patterns/pricing-4.php:171
+#: patterns/pricing-5.php:174
+#: patterns/pricing-6.php:193
+#: patterns/pricing.php:152
+msgid "Priority customer support"
+msgstr "Supporto clienti prioritario"
+
+#: patterns/pricing-3.php:114
+msgid "Recommended"
+msgstr "Consigliato"
+
+#: patterns/pricing-4.php:181
+#: patterns/pricing-5.php:187
+#: patterns/pricing-6.php:222
+msgid "Growth Plan"
+msgstr "Piano di Crescita"
+
+#: patterns/pricing-4.php:189
+#: patterns/pricing-5.php:197
+#: patterns/pricing-6.php:232
+msgid "$29.99"
+msgstr "$29.99"
+
+#: patterns/pricing-4.php:207
+#: patterns/pricing-5.php:218
+#: patterns/pricing-6.php:251
+msgid "Everything in Pro Plan plus..."
+msgstr "Tutto nel Piano Pro più..."
+
+#: patterns/pricing-4.php:215
+#: patterns/pricing-5.php:226
+#: patterns/pricing-6.php:259
+msgid "5 Team members license"
+msgstr "Licenza per 5 membri del team"
+
+#: patterns/pricing-4.php:223
+#: patterns/pricing-5.php:234
+#: patterns/pricing-6.php:267
+msgid "Premium starter templates"
+msgstr "Modelli iniziali premium"
+
+#: patterns/pricing-4.php:231
+#: patterns/pricing-5.php:242
+#: patterns/pricing-6.php:275
+msgid "Premium support"
+msgstr "Supporto premium"
+
+#: patterns/sidebar.php:11
+msgid "More from the blog"
+msgstr "Di più dal blog"
+
+#: patterns/sidebar.php:21
+msgid "Recommended Topics"
+msgstr "Argomenti Raccomandati"
+
+#: patterns/sidebar.php:31
+msgid "Popular Tags"
+msgstr "Tag Popolari"
+
+#: patterns/template-404.php:13
+msgid "Page Not Found"
+msgstr "Pagina Non Trovata"
+
+#: patterns/template-404.php:17
+msgid "Can't find what you're looking for? Don't worry, we've got your back."
+msgstr "Non riesci a trovare ciò che stai cercando? Non preoccuparti, ci siamo noi."
+
+#: patterns/template-404.php:22
+#: patterns/template-search.php:23
+msgid "Search..."
+msgstr "Cerca..."
+
+#: patterns/template-404.php:22
+#: patterns/template-search.php:23
+msgid "Search"
+msgstr "Cerca"
+
+#: patterns/template-search.php:19
+msgid "Sorry, but nothing matched your search terms. Try another search?"
+msgstr "Spiacente, ma nulla ha corrisposto ai tuoi termini di ricerca. Vuoi provare un'altra ricerca?"
+
+#: patterns/testimonials-2.php:24
+#: patterns/testimonials-3.php:22
+#: patterns/testimonials.php:22
+msgid "Testimonials"
+msgstr "Testimonianze"
+
+#: patterns/testimonials-2.php:28
+#: patterns/testimonials-3.php:26
+#: patterns/testimonials.php:25
+msgid "See what people have to say about us"
+msgstr "Scopri cosa dicono le persone su di noi"
+
+#: patterns/testimonials-2.php:37
+#: patterns/testimonials-2.php:71
+#: patterns/testimonials-2.php:105
+#: patterns/testimonials-2.php:141
+#: patterns/testimonials-2.php:175
+#: patterns/testimonials-2.php:209
+#: patterns/testimonials-3.php:33
+#: patterns/testimonials-3.php:65
+#: patterns/testimonials-3.php:97
+msgid "★★★★★"
+msgstr "★★★★★"
+
+#: patterns/testimonials-2.php:41
+#: patterns/testimonials-3.php:37
+#: patterns/testimonials.php:45
+msgid "Highly recommended!"
+msgstr "Altamente raccomandato!"
+
+#: patterns/testimonials-2.php:45
+msgid "This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable. "
+msgstr "Questo tema ha reso il processo di creazione del mio sito web un gioco da ragazzi. L'interfaccia drag-and-drop era facile da usare e i modelli erano personalizzabili."
+
+#: patterns/testimonials-2.php:56
+#: patterns/testimonials-3.php:52
+#: patterns/testimonials.php:37
+msgid "Darlene Robertson"
+msgstr "Darlene Robertson"
+
+#: patterns/testimonials-2.php:60
+#: patterns/testimonials-3.php:56
+#: patterns/testimonials.php:40
+msgid "Web designer"
+msgstr "Web designer"
+
+#: patterns/testimonials-2.php:75
+#: patterns/testimonials-3.php:69
+#: patterns/testimonials.php:68
+msgid "Endless customization"
+msgstr "Personalizzazione infinita"
+
+#: patterns/testimonials-2.php:79
+#: patterns/testimonials-3.php:73
+#: patterns/testimonials.php:71
+msgid "Endless customization options and responsive design, plus great customer support. Highly recommend!"
+msgstr "Opzioni di personalizzazione infinite e design reattivo, oltre a un ottimo supporto clienti. Altamente raccomandato!"
+
+#: patterns/testimonials-2.php:90
+#: patterns/testimonials-3.php:116
+#: patterns/testimonials.php:85
+msgid "Ralph Edwards"
+msgstr "Ralph Edwards"
+
+#: patterns/testimonials-2.php:94
+#: patterns/testimonials-3.php:120
+#: patterns/testimonials.php:88
+msgid "Marketing Coordinator"
+msgstr "Coordinatore marketing"
+
+#: patterns/testimonials-2.php:109
+msgid "Superb quality!"
+msgstr "Qualità superba!"
+
+#: patterns/testimonials-2.php:113
+msgid "I've tried countless themes, but none have impressed me as much as this! It's incredibly fast, which means my website load in a snap."
+msgstr "Ho provato innumerevoli temi, ma nessuno mi ha impressionato tanto quanto questo! È incredibilmente veloce, il che significa che il mio sito web si carica in un attimo."
+
+#: patterns/testimonials-2.php:124
+msgid "Jenny Wilson"
+msgstr "Jenny Wilson"
+
+#: patterns/testimonials-2.php:128
+msgid "Marketer"
+msgstr "Marketer"
+
+#: patterns/testimonials-2.php:145
+#: patterns/testimonials.php:116
+msgid "Easy to use"
+msgstr "Facile da usare"
+
+#: patterns/testimonials-2.php:149
+#: patterns/testimonials.php:119
+msgid "As a small business owner, I needed a website that was affordable. I was able to create a beautiful website that represented my brand."
+msgstr "Come piccolo imprenditore, avevo bisogno di un sito web che fosse conveniente. Sono riuscito a creare un bellissimo sito web che rappresentava il mio marchio."
+
+#: patterns/testimonials-2.php:160
+msgid "Ronald Richards"
+msgstr "Ronald Richards"
+
+#: patterns/testimonials-2.php:164
+msgid "Developer"
+msgstr "Sviluppatore"
+
+#: patterns/testimonials-2.php:179
+msgid "Really love it!"
+msgstr "Mi piace davvero!"
+
+#: patterns/testimonials-2.php:183
+msgid "This block-based WordPress theme is a game-changer. I've struggled with complex themes in the past, but this one is easy to use."
+msgstr "Questo tema WordPress basato su blocchi è un cambiamento radicale. Ho avuto difficoltà con temi complessi in passato, ma questo è facile da usare."
+
+#: patterns/testimonials-2.php:198
+#: patterns/testimonials.php:111
+msgid "Business owner"
+msgstr "Imprenditore"
+
+#: patterns/testimonials-2.php:213
+#: patterns/testimonials-3.php:101
+#: patterns/testimonials.php:93
+msgid "Great on any device"
+msgstr "Ottimo su qualsiasi dispositivo"
+
+#: patterns/testimonials-2.php:217
+#: patterns/testimonials-3.php:105
+#: patterns/testimonials.php:96
+msgid "I've used a few different website builders over the years, and this one is by far the best. The responsive design ensures that my website looks great on any device."
+msgstr "Ho utilizzato diversi costruttori di siti web nel corso degli anni, e questo è di gran lunga il migliore. Il design reattivo assicura che il mio sito web abbia un ottimo aspetto su qualsiasi dispositivo."
+
+#: patterns/testimonials-2.php:232
+#: patterns/testimonials-3.php:88
+#: patterns/testimonials.php:63
+msgid "Freelancer"
+msgstr "Libero professionista"
+
+#: patterns/testimonials-3.php:41
+#: patterns/testimonials.php:48
+msgid "This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable."
+msgstr "Questo tema ha reso il processo di creazione del mio sito web un gioco da ragazzi. L'interfaccia drag-and-drop era facile da usare e i modelli erano personalizzabili."
+
+#: patterns/text-2.php:18
+#: patterns/text-3.php:18
+msgid "Essentials patterns"
+msgstr "Modelli essenziali"
+
+#: patterns/text-2.php:48
+#: patterns/text-3.php:48
+msgid "Style variations"
+msgstr "Variazioni di stile"
+
+#: patterns/text-4.php:18
+#: patterns/text.php:18
+msgid "Donec viverra arcu euismod eu blandit mauris viverra."
+msgstr "Donec viverra arcu euismod eu blandit mauris viverra."
+
+#: patterns/text-4.php:28
+#: patterns/text.php:28
+msgid "Placerat elit libero nulla faucibus quam turpis habitasse."
+msgstr "Placerat elit libero nulla faucibus quam turpis habitasse."
+
+#: patterns/text-4.php:38
+#: patterns/text.php:38
+msgid "Mi accumsan pharetra auctor egestas morbi facilisis."
+msgstr "Mi accumsan pharetra auctor egestas morbi facilisis."
+
+#: patterns/text-5.php:31
+msgid "Download Spectra Theme"
+msgstr "Scarica il tema Spectra"
+
+#: patterns/text-5.php:35
+msgid "Version 1.0.0"
+msgstr "Versione 1.0.0"
+
+#: patterns/text-5.php:48
+msgid "Download Now"
+msgstr "Scarica ora"
+
+#: assets/js/editor.js:1
+#: build/editor.js:44
+#: build/editor.js:45
+msgid "Enable Sticky Header"
+msgstr "Abilita intestazione fissa"
+
+#: assets/js/editor.js:1
+#: build/editor.js:45
+#: build/editor.js:48
+msgid "Transparent header option will be disabled on enabling this option."
+msgstr "L'opzione intestazione trasparente sarà disabilitata attivando questa opzione."
+
+#: assets/js/editor.js:1
+#: build/editor.js:53
+#: build/editor.js:71
+msgid "Enable Transparent Header"
+msgstr "Abilita intestazione trasparente"
+
+#: assets/js/editor.js:1
+#: build/editor.js:54
+#: build/editor.js:74
+msgid "Sticky header option will be disabled on enabling this option."
+msgstr "L'opzione intestazione fissa sarà disabilitata attivando questa opzione."
+
+#: assets/js/editor.js:1
+#: build/editor.js:494
+#: build/editor.js:507
+msgid "Spectra plugin"
+msgstr "Plugin Spectra"
+
+#: assets/js/editor.js:1
+#: build/editor.js:496
+#: build/editor.js:511
+msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
+msgstr "Potenzia il tuo sito web con blocchi avanzati e potenti che ti aiutano a costruire siti web in pochissimo tempo!"
+
+#: assets/js/editor.js:1
+#: build/editor.js:778
+#: build/editor.js:781
+msgid "Disable Elements"
+msgstr "Disabilita elementi"
+
+#: assets/js/editor.js:1
+#: build/editor.js:782
+#: build/editor.js:790
+msgid "Header Settings"
+msgstr "Impostazioni intestazione"
+
+#: assets/js/editor.js:1
+#: build/editor.js:833
+#: build/editor.js:837
+#: build/editor.js:828
+#: build/editor.js:836
+msgid "Spectra Page Settings"
+msgstr "Impostazioni pagina Spectra"
+
+#: assets/js/editor.js:1
+#: build/editor.js:207
+#: build/editor.js:249
+msgid "Hide Desktop"
+msgstr "Nascondi desktop"
+
+#: assets/js/editor.js:1
+#: build/editor.js:213
+#: build/editor.js:264
+msgid "Hide Tablet"
+msgstr "Nascondi tablet"
+
+#: assets/js/editor.js:1
+#: build/editor.js:219
+#: build/editor.js:275
+msgid "Hide Mobile"
+msgstr "Nascondi mobile"
+
+#: assets/js/settings.js:1
+#: build/settings.js:76
+#: build/settings.js:61
+msgid "Spectra One Settings"
+msgstr "Impostazioni Spectra One"
+
+#: assets/js/settings.js:1
+#: build/settings.js:84
+#: build/settings.js:70
+msgid "Scroll to top updated"
+msgstr "Scorrere in alto aggiornato"
+
+#: assets/js/settings.js:1
+#: build/settings.js:85
+#: build/settings.js:71
+msgid "Scroll To Top"
+msgstr "Scorrere in alto"
+
+#: assets/js/settings.js:1
+#: build/settings.js:357
+#: build/settings.js:205
+msgid "Spectra One Editor Settings"
+msgstr "Impostazioni dell'editor Spectra One"
+
+#: patterns/alternate-image-text.php
+msgctxt "Pattern title"
+msgid "Alternate image text"
+msgstr "Testo alternativo per l'immagine"
+
+#: patterns/announcement-bar-2.php
+msgctxt "Pattern title"
+msgid "Announcement bar with social"
+msgstr "Barra di annuncio con social"
+
+#: patterns/announcement-bar.php
+msgctxt "Pattern title"
+msgid "Announcement bar"
+msgstr "Barra di annuncio"
+
+#: patterns/blog-2.php
+msgctxt "Pattern title"
+msgid "Blog simple"
+msgstr "Blog semplice"
+
+#: patterns/blog-3.php
+msgctxt "Pattern title"
+msgid "Blog classic"
+msgstr "Blog classico"
+
+#: patterns/blog-4.php
+msgctxt "Pattern title"
+msgid "Blog left featured image"
+msgstr "Blog con immagine in evidenza a sinistra"
+
+#: patterns/blog.php
+msgctxt "Pattern title"
+msgid "Blog grid"
+msgstr "Blog a griglia"
+
+#: patterns/call-to-action-2.php
+msgctxt "Pattern title"
+msgid "Wide banner with button blend"
+msgstr "Ampio banner con pulsante blend"
+
+#: patterns/call-to-action-3.php
+msgctxt "Pattern title"
+msgid "Wide banner with button inverse"
+msgstr "Ampio banner con pulsante inverso"
+
+#: patterns/call-to-action-4.php
+msgctxt "Pattern title"
+msgid "Left text with image"
+msgstr "Testo a sinistra con immagine"
+
+#: patterns/call-to-action-5.php
+#: patterns/call-to-action-6.php
+#: patterns/call-to-action-7.php
+msgctxt "Pattern title"
+msgid "Right text with image"
+msgstr "Testo a destra con immagine"
+
+#: patterns/call-to-action-8.php
+msgctxt "Pattern title"
+msgid "Wide banner with button center blend"
+msgstr "Ampio banner con pulsante centrale blend"
+
+#: patterns/call-to-action-9.php
+msgctxt "Pattern title"
+msgid "Wide banner with button center inverse"
+msgstr "Ampio banner con pulsante centrale inverso"
+
+#: patterns/call-to-action-10.php
+msgctxt "Pattern title"
+msgid "Wide Hero banner with background"
+msgstr "Ampio banner Hero con sfondo"
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Wide banner with button"
+msgstr "Ampio banner con pulsante"
+
+#: patterns/contact-2.php
+msgctxt "Pattern title"
+msgid "Contact info card"
+msgstr "Scheda informazioni di contatto"
+
+#: patterns/contact-3.php
+msgctxt "Pattern title"
+msgid "Contact info card with gradient"
+msgstr "Scheda informazioni di contatto con gradiente"
+
+#: patterns/contact-4.php
+msgctxt "Pattern title"
+msgid "Contact info card with background"
+msgstr "Scheda informazioni di contatto con sfondo"
+
+#: patterns/contact-5.php
+msgctxt "Pattern title"
+msgid "Teams three column"
+msgstr "Team tre colonne"
+
+#: patterns/contact-6.php
+msgctxt "Pattern title"
+msgid "Teams four columns circle"
+msgstr "Team quattro colonne cerchio"
+
+#: patterns/contact-7.php
+msgctxt "Pattern title"
+msgid "Teams three columns square"
+msgstr "Team tre colonne quadrato"
+
+#: patterns/contact-8.php
+msgctxt "Pattern title"
+msgid "Teams four columns square"
+msgstr "Team quattro colonne quadrato"
+
+#: patterns/contact-9.php
+msgctxt "Pattern title"
+msgid "Author details"
+msgstr "Dettagli autore"
+
+#: patterns/contact.php
+msgctxt "Pattern title"
+msgid "Text with contact info"
+msgstr "Testo con informazioni di contatto"
+
+#: patterns/faq-2.php
+msgctxt "Pattern title"
+msgid "Two column FAQ"
+msgstr "FAQ a due colonne"
+
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "FAQ"
+msgstr "FAQ"
+
+#: patterns/feature-2.php
+msgctxt "Pattern title"
+msgid "Three column featured center"
+msgstr "Tre colonne in evidenza centrale"
+
+#: patterns/feature-3.php
+msgctxt "Pattern title"
+msgid "Two column featured left"
+msgstr "Due colonne in evidenza a sinistra"
+
+#: patterns/feature-4.php
+msgctxt "Pattern title"
+msgid "Three column featured grid"
+msgstr "Tre colonne in evidenza a griglia"
+
+#: patterns/feature-5.php
+msgctxt "Pattern title"
+msgid "Three column featured grid outline"
+msgstr "Tre colonne in evidenza a griglia outline"
+
+#: patterns/feature-6.php
+msgctxt "Pattern title"
+msgid "Three column featured grid background"
+msgstr "Tre colonne in evidenza a griglia con sfondo"
+
+#: patterns/feature-7.php
+msgctxt "Pattern title"
+msgid "Image with feature list"
+msgstr "Immagine con elenco di funzionalità"
+
+#: patterns/feature-8.php
+msgctxt "Pattern title"
+msgid "Image with feature list column"
+msgstr "Immagine con elenco di funzionalità a colonna"
+
+#: patterns/feature.php
+msgctxt "Pattern title"
+msgid "Image with feature list and heading"
+msgstr "Immagine con elenco di funzionalità e intestazione"
+
+#: patterns/featured-logos.php
+msgctxt "Pattern title"
+msgid "Featured logos"
+msgstr "Loghi in evidenza"
+
+#: patterns/footer-2.php
+msgctxt "Pattern title"
+msgid "Footer minimal menu center"
+msgstr "Footer menu minimale centrale"
+
+#: patterns/footer-3.php
+msgctxt "Pattern title"
+msgid "Footer minimal menu right"
+msgstr "Footer menu minimale a destra"
+
+#: patterns/footer-4.php
+msgctxt "Pattern title"
+msgid "Footer five columns menu inline"
+msgstr "Footer menu a cinque colonne inline"
+
+#: patterns/footer-5.php
+msgctxt "Pattern title"
+msgid "Footer six columns menu separated"
+msgstr "Footer menu a sei colonne separato"
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "Footer"
+
+#: patterns/header-2.php
+msgctxt "Pattern title"
+msgid "Header center menu"
+msgstr "Header menu centrale"
+
+#: patterns/header-3.php
+msgctxt "Pattern title"
+msgid "Header left menu"
+msgstr "Header menu a sinistra"
+
+#: patterns/header-4.php
+msgctxt "Pattern title"
+msgid "Header blend"
+msgstr "Header blend"
+
+#: patterns/header-5.php
+msgctxt "Pattern title"
+msgid "Header center menu blend"
+msgstr "Header menu centrale blend"
+
+#: patterns/header-6.php
+msgctxt "Pattern title"
+msgid "Header left menu blend"
+msgstr "Header menu a sinistra blend"
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr "Header"
+
+#: patterns/hero-banner-2.php
+msgctxt "Pattern title"
+msgid "Hero banner blend"
+msgstr "Hero banner blend"
+
+#: patterns/hero-banner-3.php
+msgctxt "Pattern title"
+msgid "Hero banner inverse"
+msgstr "Hero banner inverso"
+
+#: patterns/hero-banner-4.php
+msgctxt "Pattern title"
+msgid "Hero banner two column blend"
+msgstr "Hero banner a due colonne blend"
+
+#: patterns/hero-banner-5.php
+msgctxt "Pattern title"
+msgid "Hero banner two column inverse"
+msgstr "Hero banner a due colonne inverso"
+
+#: patterns/hero-banner-6.php
+msgctxt "Pattern title"
+msgid "Hero banner with background"
+msgstr "Hero banner con sfondo"
+
+#: patterns/hero-banner.php
+msgctxt "Pattern title"
+msgid "Hero banner"
+msgstr "Hero banner"
+
+#: patterns/hero-page-2.php
+msgctxt "Pattern title"
+msgid "Hero page title blend"
+msgstr "Intestazione pagina Hero blend"
+
+#: patterns/hero-page.php
+msgctxt "Pattern title"
+msgid "Hero page title"
+msgstr "Intestazione pagina Hero"
+
+#: patterns/hero-single-2.php
+msgctxt "Pattern title"
+msgid "Hero single title blend"
+msgstr "Intestazione singola Hero blend"
+
+#: patterns/hero-single.php
+msgctxt "Pattern title"
+msgid "Hero single title"
+msgstr "Intestazione singola Hero"
+
+#: patterns/post-grid.php
+msgctxt "Pattern title"
+msgid "Post grid"
+msgstr "Griglia post"
+
+#: patterns/pricing-2.php
+msgctxt "Pattern title"
+msgid "Pricing two column highlight"
+msgstr "Prezzi a due colonne in evidenza"
+
+#: patterns/pricing-3.php
+msgctxt "Pattern title"
+msgid "Pricing two column with icon"
+msgstr "Prezzi a due colonne con icona"
+
+#: patterns/pricing-4.php
+msgctxt "Pattern title"
+msgid "Pricing three column"
+msgstr "Prezzi a tre colonne"
+
+#: patterns/pricing-5.php
+msgctxt "Pattern title"
+msgid "Pricing three column highlight"
+msgstr "Prezzi a tre colonne in evidenza"
+
+#: patterns/pricing-6.php
+msgctxt "Pattern title"
+msgid "Pricing three column with icon"
+msgstr "Prezzi a tre colonne con icona"
+
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing two column"
+msgstr "Prezzi a due colonne"
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar default"
+msgstr "Sidebar predefinita"
+
+#: patterns/split-image-right.php
+msgctxt "Pattern title"
+msgid "Split image right"
+msgstr "Immagine divisa a destra"
+
+#: patterns/template-404.php
+msgctxt "Pattern title"
+msgid "Template 404"
+msgstr "Template 404"
+
+#: patterns/template-archive.php
+msgctxt "Pattern title"
+msgid "Template Archive"
+msgstr "Template Archivio"
+
+#: patterns/template-index.php
+msgctxt "Pattern title"
+msgid "Template index"
+msgstr "Template indice"
+
+#: patterns/template-page-sidebar.php
+msgctxt "Pattern title"
+msgid "Template page sidebar"
+msgstr "Template pagina sidebar"
+
+#: patterns/template-page.php
+msgctxt "Pattern title"
+msgid "Template page"
+msgstr "Template pagina"
+
+#: patterns/template-search.php
+msgctxt "Pattern title"
+msgid "Template search"
+msgstr "Template ricerca"
+
+#: patterns/template-single-sidebar.php
+msgctxt "Pattern title"
+msgid "Template single sidebar"
+msgstr "Template singolo sidebar"
+
+#: patterns/template-single.php
+msgctxt "Pattern title"
+msgid "Template single"
+msgstr "Template singolo"
+
+#: patterns/testimonials-2.php
+msgctxt "Pattern title"
+msgid "Testimonial grid"
+msgstr "Griglia testimonianze"
+
+#: patterns/testimonials-3.php
+msgctxt "Pattern title"
+msgid "Testimonial list"
+msgstr "Elenco testimonianze"
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonial"
+msgstr "Testimonianza"
+
+#: patterns/text-2.php
+msgctxt "Pattern title"
+msgid "Counter four column center"
+msgstr "Contatore quattro colonne centrale"
+
+#: patterns/text-3.php
+msgctxt "Pattern title"
+msgid "Counter four column left"
+msgstr "Contatore quattro colonne a sinistra"
+
+#: patterns/text-4.php
+msgctxt "Pattern title"
+msgid "Counter three column center"
+msgstr "Contatore tre colonne centrale"
+
+#: patterns/text-5.php
+msgctxt "Pattern title"
+msgid "text with download"
+msgstr "testo con download"
+
+#: patterns/text.php
+msgctxt "Pattern title"
+msgid "Counter three column left"
+msgstr "Contatore tre colonne a sinistra"
+
+#: patterns/three-column-featured.php
+msgctxt "Pattern title"
+msgid "Three column featured"
+msgstr "Tre colonne in evidenza"
+
+#: patterns/wide-banner-with-button.php
+msgctxt "Pattern title"
+msgid "Wide banner with button center"
+msgstr "Ampio banner con pulsante centrale"
+
+#: styles/aquamarine.json
+msgctxt "Style variation name"
+msgid "Aquamarine"
+msgstr "Acquamarina"
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr "Scuro"
+
+#: styles/easter-green.json
+msgctxt "Style variation name"
+msgid "Easter Green"
+msgstr "Verde Pasqua"
+
+#: styles/mango.json
+msgctxt "Style variation name"
+msgid "Mango"
+msgstr "Mango"
+
+#: styles/pink.json
+msgctxt "Style variation name"
+msgid "Pink"
+msgstr "Rosa"
+
+#: styles/rain-forest.json
+msgctxt "Style variation name"
+msgid "Rain Forest"
+msgstr "Foresta Pluviale"
+
+#: styles/sweet-corn.json
+msgctxt "Style variation name"
+msgid "Sweet Corn"
+msgstr "Mais Dolce"
+
+#: styles/ultra-marine.json
+msgctxt "Style variation name"
+msgid "Ultra Marine"
+msgstr "Ultra Marino"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "Primario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "Secondario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Heading"
+msgstr "Intestazione"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Body"
+msgstr "Corpo"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr "Sfondo"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr "Terziario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Quaternary"
+msgstr "Quaternario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr "Superficie"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Foreground"
+msgstr "Primo piano"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Outline"
+msgstr "Outline"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral"
+msgstr "Neutro"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Transparent"
+msgstr "Trasparente"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Current Color"
+msgstr "Colore attuale"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Inherit"
+msgstr "Eredita"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Gradient name"
+msgid "Primary"
+msgstr "Primario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary"
+msgstr "Primario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Secondary"
+msgstr "Secondario"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Tertiary"
+msgstr "Terziario"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XXX Small"
+msgstr "XXX Piccolo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX Small"
+msgstr "XX Piccolo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X Small"
+msgstr "X Piccolo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "Piccolo"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "Medio"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X Large"
+msgstr "X Grande"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX Large"
+msgstr "XX Grande"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr "Inter"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr "X Piccolo"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Piccolo"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Medio"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Large"
+msgstr "X Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XX Large"
+msgstr "XX Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXX Large"
+msgstr "XXX Grande"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXXX Large"
+msgstr "XXXX Grande"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page sidebar"
+msgstr "Barra laterale della pagina"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single sidebar"
+msgstr "Barra laterale singola"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Intestazione"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Piè di pagina"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "Barra laterale"

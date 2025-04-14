@@ -15,7 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-
 register_block_style(
 	'core/tag-cloud',
 	array(
@@ -34,5 +33,5 @@ register_block_style(
 				line-height: var(--wp--custom--line-height--initial);
             }
 		',
-	) 
+	)
 );

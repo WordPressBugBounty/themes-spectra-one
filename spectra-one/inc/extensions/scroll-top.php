@@ -17,14 +17,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_filter( 'wp', SWT_NS . 'scroll_top', 10, 2 );
 
-
 /**
  * Scroll to top
  *
  * @since 1.0.2
  * @return void
  */
-function scroll_top():void {
+function scroll_top(): void {
 	$global_theme_options = get_option( 'swt_theme_options' );
 
 	$is_scroll_top_enabled = isset( $global_theme_options['scroll_top'] ) ? $global_theme_options['scroll_top'] : false;
@@ -42,8 +41,8 @@ function scroll_top():void {
  * @since 1.0.2
  * @return void
  */
-function render_scroll_top():void {
-	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php 
+function render_scroll_top(): void {
+	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
 	echo fetch_svg_icon( 'arrow-top', 'swt-scroll-top', false ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
 }
 
@@ -83,7 +82,6 @@ function scroll_top_inline_css( string $css ): string {
 
 	return $css;
 }
-
 
 /**
  * Scroll top inline js.

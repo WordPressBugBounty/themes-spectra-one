@@ -24,8 +24,8 @@ add_filter( 'render_block', SWT_NS . 'render_remove_blocks', 10, 2 );
  * @param array  $block Block Properties As An Array.
  * @return string
  */
-function render_remove_blocks( string $block_content, array $block ):string {
-	$post_id = get_the_ID();
+function render_remove_blocks( string $block_content, array $block ): string {
+	$post_id = intval( get_the_ID() );
 
 	// condition for page and post title.
 	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php

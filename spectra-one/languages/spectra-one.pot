@@ -1,4 +1,4 @@
-# Copyright (C) 2024 Brainstorm Force
+# Copyright (C) 2025 Brainstorm Force
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-13T07:49:03+00:00\n"
+"POT-Creation-Date: 2025-04-14T05:50:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: spectra-one\n"
 
 #. Theme Name of the theme
@@ -34,31 +34,31 @@ msgstr ""
 msgid "https://brainstormforce.com/"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:67
+#: inc/admin/welcome-notice.php:68
 msgid "Close this notice.."
 msgstr ""
 
-#: inc/admin/welcome-notice.php:72
+#: inc/admin/welcome-notice.php:73
 msgid "Thanks for installing the Spectra One theme &#x1F389;"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:75
+#: inc/admin/welcome-notice.php:76
 msgid "Please install the Spectra Builder"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:78
+#: inc/admin/welcome-notice.php:79
 msgid "Once you have installed the Spectra Builder plugin, you will be ready to build amazing, fast-loading websites."
 msgstr ""
 
-#: inc/admin/welcome-notice.php:84
+#: inc/admin/welcome-notice.php:85
 msgid "Activate Spectra Builder"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:84
+#: inc/admin/welcome-notice.php:85
 msgid "Install Spectra Builder"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:89
+#: inc/admin/welcome-notice.php:90
 #: patterns/alternate-image-text.php:45
 #: patterns/alternate-image-text.php:63
 #: patterns/alternate-image-text.php:91
@@ -75,15 +75,15 @@ msgstr ""
 msgid "Learn More"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:222
+#: inc/admin/welcome-notice.php:223
 msgid "Activating"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:223
+#: inc/admin/welcome-notice.php:224
 msgid "Installing"
 msgstr ""
 
-#: inc/admin/welcome-notice.php:224
+#: inc/admin/welcome-notice.php:225
 msgid "Done"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgid "Simple"
 msgstr ""
 
 #: inc/block-styles/post-terms.php:22
-#: inc/block-styles/tag-cloud.php:23
+#: inc/block-styles/tag-cloud.php:22
 msgid "Pill"
 msgstr ""
 
@@ -121,19 +121,19 @@ msgstr ""
 msgid "Edit template"
 msgstr ""
 
-#: inc/extensions/hide-elements.php:58
+#: inc/extensions/hide-elements.php:57
 msgid "Disable Header"
 msgstr ""
 
-#: inc/extensions/hide-elements.php:62
+#: inc/extensions/hide-elements.php:61
 msgid "Disable Footer"
 msgstr ""
 
-#: inc/scripts.php:264
+#: inc/scripts.php:302
 msgid "Pages"
 msgstr ""
 
-#: inc/scripts.php:269
+#: inc/scripts.php:307
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -146,7 +146,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: inc/scripts.php:274
+#: inc/scripts.php:312
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -156,7 +156,7 @@ msgstr ""
 msgid "Pricing"
 msgstr ""
 
-#: inc/utilities/helpers.php:267
+#: inc/utilities/helpers.php:264
 msgid " Icon"
 msgstr ""
 
@@ -188,7 +188,7 @@ msgstr ""
 
 #: patterns/alternate-image-text.php:42
 #: patterns/feature-8.php:32
-#: patterns/text-5.php:31
+#: patterns/text-5.php:23
 msgid "Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types."
 msgstr ""
 
@@ -297,7 +297,7 @@ msgstr ""
 #: patterns/call-to-action-2.php:25
 #: patterns/call-to-action-3.php:25
 #: patterns/call-to-action-4.php:30
-#: patterns/call-to-action-5.php:37
+#: patterns/call-to-action-5.php:36
 #: patterns/call-to-action-8.php:21
 #: patterns/call-to-action-9.php:21
 #: patterns/call-to-action-10.php:29
@@ -343,21 +343,21 @@ msgid "Left text with image"
 msgstr ""
 
 #: patterns/call-to-action-4.php:21
-#: patterns/call-to-action-5.php:28
-#: patterns/call-to-action-6.php:32
-#: patterns/call-to-action-7.php:32
+#: patterns/call-to-action-5.php:27
+#: patterns/call-to-action-6.php:31
+#: patterns/call-to-action-7.php:31
 #: patterns/call-to-action-10.php:20
 #: patterns/split-image-right.php:21
 msgid "Everything you need to create amazing websites"
 msgstr ""
 
 #: patterns/call-to-action-4.php:25
-#: patterns/call-to-action-5.php:32
-#: patterns/call-to-action-6.php:36
-#: patterns/call-to-action-7.php:36
+#: patterns/call-to-action-5.php:31
+#: patterns/call-to-action-6.php:35
+#: patterns/call-to-action-7.php:35
 #: patterns/call-to-action-10.php:24
 #: patterns/split-image-right.php:24
-#: patterns/text-5.php:51
+#: patterns/text-5.php:43
 msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
 msgstr ""
 
@@ -368,20 +368,20 @@ msgctxt "Pattern title"
 msgid "Right text with image"
 msgstr ""
 
-#: patterns/call-to-action-6.php:28
-#: patterns/call-to-action-7.php:28
+#: patterns/call-to-action-6.php:27
+#: patterns/call-to-action-7.php:27
 #: patterns/feature-4.php:25
 #: patterns/feature-5.php:25
 #: patterns/feature-6.php:13
 #: patterns/feature-8.php:23
 #: patterns/feature.php:29
 #: patterns/hero-banner-6.php:20
-#: patterns/text-5.php:22
+#: patterns/text-5.php:14
 msgid "Full Site Editing"
 msgstr ""
 
-#: patterns/call-to-action-6.php:41
-#: patterns/call-to-action-7.php:41
+#: patterns/call-to-action-6.php:40
+#: patterns/call-to-action-7.php:40
 msgid "Install Spectra Theme"
 msgstr ""
 
@@ -790,7 +790,7 @@ msgstr ""
 #: patterns/feature-6.php:17
 #: patterns/feature-8.php:28
 #: patterns/feature.php:33
-#: patterns/text-5.php:27
+#: patterns/text-5.php:19
 msgid "Unleash the power of block editor"
 msgstr ""
 
@@ -1800,15 +1800,15 @@ msgctxt "Pattern title"
 msgid "text with download"
 msgstr ""
 
-#: patterns/text-5.php:39
+#: patterns/text-5.php:31
 msgid "Download Spectra Theme"
 msgstr ""
 
-#: patterns/text-5.php:43
+#: patterns/text-5.php:35
 msgid "Version 1.0.0"
 msgstr ""
 
-#: patterns/text-5.php:56
+#: patterns/text-5.php:48
 msgid "Download Now"
 msgstr ""
 
@@ -1829,56 +1829,48 @@ msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:44
-#: src/block-extensions/header.js:45
 #: build/editor.js:45
 msgid "Enable Sticky Header"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:45
-#: src/block-extensions/header.js:48
 #: build/editor.js:48
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:53
-#: src/block-extensions/header.js:71
 #: build/editor.js:71
 msgid "Enable Transparent Header"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:54
-#: src/block-extensions/header.js:74
 #: build/editor.js:74
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:494
-#: src/components/install-plugin-notice.js:102
 #: build/editor.js:507
 msgid "Spectra plugin"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:496
-#: src/components/install-plugin-notice.js:106
 #: build/editor.js:511
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:778
-#: src/extensions/panel/components.js:29
 #: build/editor.js:781
 msgid "Disable Elements"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:782
-#: src/extensions/panel/components.js:38
 #: build/editor.js:790
 msgid "Header Settings"
 msgstr ""
@@ -1886,8 +1878,6 @@ msgstr ""
 #: assets/js/editor.js:1
 #: build/editor.js:833
 #: build/editor.js:837
-#: src/extensions/panel/sidebar.js:19
-#: src/extensions/panel/sidebar.js:27
 #: build/editor.js:828
 #: build/editor.js:836
 msgid "Spectra Page Settings"
@@ -1895,49 +1885,42 @@ msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:207
-#: src/block-extensions/responsive.js:39
 #: build/editor.js:249
 msgid "Hide Desktop"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:213
-#: src/block-extensions/responsive.js:54
 #: build/editor.js:264
 msgid "Hide Tablet"
 msgstr ""
 
 #: assets/js/editor.js:1
 #: build/editor.js:219
-#: src/block-extensions/responsive.js:65
 #: build/editor.js:275
 msgid "Hide Mobile"
 msgstr ""
 
 #: assets/js/settings.js:1
 #: build/settings.js:76
-#: src/admin/components/editor-settings.js:61
 #: build/settings.js:61
 msgid "Spectra One Settings"
 msgstr ""
 
 #: assets/js/settings.js:1
 #: build/settings.js:84
-#: src/admin/components/editor-settings.js:70
 #: build/settings.js:70
 msgid "Scroll to top updated"
 msgstr ""
 
 #: assets/js/settings.js:1
 #: build/settings.js:85
-#: src/admin/components/editor-settings.js:71
 #: build/settings.js:71
 msgid "Scroll To Top"
 msgstr ""
 
 #: assets/js/settings.js:1
 #: build/settings.js:357
-#: src/admin/settings.js:15
 #: build/settings.js:205
 msgid "Spectra One Editor Settings"
 msgstr ""

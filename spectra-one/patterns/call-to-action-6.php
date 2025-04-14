@@ -6,11 +6,10 @@
  * Keywords: right text with image
  */
 
-
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/placeholder-portrait.svg",
+    $get_url . 'assets/image/placeholder-portrait.svg',
 ];
 
 ?>

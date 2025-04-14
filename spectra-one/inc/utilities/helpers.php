@@ -28,7 +28,6 @@ function get_uri( string $path = '' ): string {
 	return trailingslashit( esc_url( get_template_directory_uri() . SWT_DS ) . $path );
 }
 
-
 /**
  * Is spectra plugin is enabled / available
  *
@@ -62,9 +61,9 @@ function rtl_css( string $direction = '' ): string {
 	$is_site_rtl = is_rtl() ? true : false;
 	if ( 'left' === $direction ) {
 		return $is_site_rtl ? esc_attr( 'right' ) : esc_attr( 'left' );
-	} else {
-		return $is_site_rtl ? esc_attr( 'left' ) : esc_attr( 'right' );
 	}
+
+	return $is_site_rtl ? esc_attr( 'left' ) : esc_attr( 'right' );
 }
 
 /**
@@ -110,7 +109,7 @@ function parse_css( array $css_output = array(), $min_media = '', $max_media = '
 			}
 		}
 
-		if ( '' != $parse_css && ( '' !== $min_media || '' !== $max_media ) ) {
+		if ( '' !== $parse_css && ( '' !== $min_media || '' !== $max_media ) ) {
 
 			$media_css       = '@media ';
 			$min_media_css   = '';
@@ -127,9 +126,7 @@ function parse_css( array $css_output = array(), $min_media = '', $max_media = '
 				$media_separator = ' and ';
 			}
 
-			$media_css .= $min_media_css . $media_separator . $max_media_css . '{' . $parse_css . '}';
-
-			return $media_css;
+			return $media_css . $min_media_css . $media_separator . $max_media_css . '{' . $parse_css . '}';
 		}
 	}
 
@@ -155,11 +152,11 @@ function render_image_placeholder( string $html, array $block ): string {
 		return $html;
 	}
 
-	$url_rel    = ( isset( $block['linkTarget'] ) && $block['linkTarget'] ) ? 'target="' . $block['linkTarget'] . '"' : '';
-	$url_target = ( isset( $block['rel'] ) && $block['rel'] ) ? 'rel="' . $block['rel'] . '"' : '';
+	$url_rel    = isset( $block['linkTarget'] ) && $block['linkTarget'] ? 'target="' . $block['linkTarget'] . '"' : '';
+	$url_target = isset( $block['rel'] ) && $block['rel'] ? 'rel="' . $block['rel'] . '"' : '';
 
 	/** @psalm-suppress PossiblyFalseOperand */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
-	$default_placeholder = ( isset( $block['isLink'] ) && true === $block['isLink'] ) ? '<a href="' . get_the_permalink() . '" ' . $url_rel . ' ' . $url_target . ' ><figure class="wp-block-image"><img src="" alt=""/></figure></a>' : '<figure class="wp-block-image"><img src="" alt=""/></figure>';
+	$default_placeholder = isset( $block['isLink'] ) && true === $block['isLink'] ? '<a href="' . get_the_permalink() . '" ' . $url_rel . ' ' . $url_target . ' ><figure class="wp-block-image"><img src="" alt=""/></figure></a>' : '<figure class="wp-block-image"><img src="" alt=""/></figure>';
 	$html                = ! $html ? $default_placeholder : $html;
 	$dom                 = dom( $html );
 	$svg                 = get_svg_icon( 'placeholder', 30 );
@@ -240,7 +237,7 @@ function render_image_placeholder( string $html, array $block ): string {
  *
  * @return string
  */
-function get_svg_icon( string $slug, int $size = null ): string {
+function get_svg_icon( string $slug, ?int $size = null ): string {
 	ob_start();
 	echo file_get_contents( SWT_DIR . 'assets/svg/svgs.json' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Required to get svg.json.
 	$icon_set = json_decode( ob_get_clean(), true );
@@ -279,7 +276,6 @@ function get_svg_icon( string $slug, int $size = null ): string {
 
 	return $dom->saveHTML();
 }
-
 
 /**
  * Converts css array to string.
@@ -338,9 +334,6 @@ function css_string_to_array( string $css ): array {
 	return $array;
 }
 
-
-
-
 /**
  * Check if page title is enabled or disabled.
  *
@@ -354,7 +347,6 @@ function is_page_title( int $post_id = 0 ): bool {
 	return is_singular() && boolval( $check_meta );
 }
 
-
 /**
  * Get an SVG Icon
  *
@@ -364,7 +356,7 @@ function is_page_title( int $post_id = 0 ): bool {
  * @param bool   $base if the baseline class should be added.
  * @return string
  */
-function fetch_svg_icon( string $icon = '', string $class = '', bool $base = true ) :string {
+function fetch_svg_icon( string $icon = '', string $class = '', bool $base = true ): string {
 	$swt_svgs = null;
 	$output   = '<span class="swt-svg' . ( $base ? ' svg-baseline' : '' ) . ( $class ? ' ' . $class : '' ) . '">';
 
@@ -393,7 +385,7 @@ function wp_version_compare( $version, $compare ) {
 	if ( ! $wp_version ) {
 		return null;
 	}
-	list( $current_version ) = explode( '-', $wp_version );
+	[ $current_version ] = explode( '-', $wp_version );
 	return version_compare( $current_version, $version, $compare );
 }
 

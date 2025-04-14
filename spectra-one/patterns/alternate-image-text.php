@@ -9,9 +9,9 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/content-1.png",
-    $get_url . "assets/image/content-2.png",
-    $get_url . "assets/image/content-3.png",
+    $get_url . 'assets/image/content-1.png',
+    $get_url . 'assets/image/content-2.png',
+    $get_url . 'assets/image/content-3.png',
 ];
 ?>
 

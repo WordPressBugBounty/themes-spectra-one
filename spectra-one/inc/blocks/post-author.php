@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_filter( 'render_block_core/post-author', SWT_NS . 'render_post_author_block', 10, 2 );
 
-
 /**
  * Modifies front end HTML output of block.
  *
@@ -31,7 +30,7 @@ add_filter( 'render_block_core/post-author', SWT_NS . 'render_post_author_block'
 function render_post_author_block( string $html, array $block ): string {
 	$post_id = get_the_ID();
 	if ( isset( $block['blockName'] ) && 'core/post-author' === $block['blockName'] ) {
-	
+
 		if ( ! get_the_author_meta( 'description', $post_id ) ) {
 			add_filter( 'swt_dynamic_theme_css', SWT_NS . 'remove_author_bio' );
 		}
@@ -40,7 +39,6 @@ function render_post_author_block( string $html, array $block ): string {
 	}
 	return $html;
 }
-
 
 /**
  * Load Inline Css.
@@ -77,5 +75,4 @@ function remove_author_bio( string $css ): string {
 
 	$css .= parse_css( $css_output );
 	return $css;
-
 }

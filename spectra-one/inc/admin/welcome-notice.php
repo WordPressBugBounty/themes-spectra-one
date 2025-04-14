@@ -50,6 +50,7 @@ function render_welcome_notice(): void {
 	wp_register_script( SWT_SLUG . '-welcome-notice', $js . 'welcome_notice.js', $deps, SWT_VER, true );
 
 	wp_enqueue_script( SWT_SLUG . '-welcome-notice' );
+	wp_set_script_translations( SWT_SLUG . '-welcome-notice', 'spectra-one', SWT_DIR . 'languages' );
 
 	wp_localize_script(
 		SWT_SLUG . '-welcome-notice',
@@ -107,7 +108,7 @@ function render_welcome_notice(): void {
  *
  * @since 0.0.1
  */
-function close_welcome_notice() {
+function close_welcome_notice(): void {
 	if ( ! isset( $_POST['nonce'] ) ) {
 		return;
 	}

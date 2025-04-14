@@ -71,5 +71,5 @@ register_block_style(
 				-moz-osx-font-smoothing: grayscale;
 			}
 		',
-	) 
+	)
 );

@@ -10,7 +10,7 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/hero-img.png"
+    $get_url . 'assets/image/hero-img.png',
 ];
 ?>
 

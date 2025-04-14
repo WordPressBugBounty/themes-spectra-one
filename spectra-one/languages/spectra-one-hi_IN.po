@@ -1,0 +1,2307 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: gpt-po v1.2.1\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-15T16:50:04+00:00\n"
+"PO-Revision-Date: 2025-01-15T16:50:04+00:00\n"
+"Language: \n"
+
+#: patterns/text-2.php:44
+#: patterns/text-3.php:44
+msgid "12"
+msgstr "12"
+
+#: patterns/text-2.php:14
+#: patterns/text-3.php:14
+#: patterns/text-4.php:14
+#: patterns/text.php:14
+msgid "32"
+msgstr "32"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Spectra One"
+msgstr "स्पेक्ट्रा वन"
+
+#. Description of the theme
+#: style.css
+msgid "Spectra One is a beautiful and modern WordPress theme built with the Full Site Editing (FSE) feature. It's a versatile theme that can be used for blogs, portfolios, businesses, and more. Spectra One comes with a sleek and professional design that will make your website stand out from the crowd."
+msgstr "स्पेक्ट्रा वन एक सुंदर और आधुनिक वर्डप्रेस थीम है जो फुल साइट एडिटिंग (FSE) फीचर के साथ बनाई गई है। यह एक बहुपरकारी थीम है जिसका उपयोग ब्लॉग, पोर्टफोलियो, व्यवसायों और अधिक के लिए किया जा सकता है। स्पेक्ट्रा वन एक चिकनी और पेशेवर डिज़ाइन के साथ आता है जो आपकी वेबसाइट को भीड़ से अलग दिखाएगा।"
+
+#. Author of the theme
+#: style.css
+msgid "Brainstorm Force"
+msgstr "ब्रेनस्टॉर्म फोर्स"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://brainstormforce.com/"
+msgstr "https://brainstormforce.com/"
+
+#: inc/admin/welcome-notice.php:68
+msgid "Close this notice.."
+msgstr "इस नोटिस को बंद करें.."
+
+#: inc/admin/welcome-notice.php:73
+msgid "Thanks for installing the Spectra One theme &#x1F389;"
+msgstr "स्पेक्ट्रा वन थीम स्थापित करने के लिए धन्यवाद &#x1F389;"
+
+#: inc/admin/welcome-notice.php:76
+msgid "Please install the Spectra Builder"
+msgstr "कृपया स्पेक्ट्रा बिल्डर स्थापित करें"
+
+#: inc/admin/welcome-notice.php:79
+msgid "Once you have installed the Spectra Builder plugin, you will be ready to build amazing, fast-loading websites."
+msgstr "एक बार जब आप स्पेक्ट्रा बिल्डर प्लगइन स्थापित कर लेंगे, तो आप अद्भुत, तेज़-लोडिंग वेबसाइट बनाने के लिए तैयार होंगे।"
+
+#: inc/admin/welcome-notice.php:85
+msgid "Activate Spectra Builder"
+msgstr "स्पेक्ट्रा बिल्डर सक्रिय करें"
+
+#: inc/admin/welcome-notice.php:85
+msgid "Install Spectra Builder"
+msgstr "स्पेक्ट्रा बिल्डर स्थापित करें"
+
+#: inc/admin/welcome-notice.php:90
+#: patterns/alternate-image-text.php:45
+#: patterns/alternate-image-text.php:63
+#: patterns/alternate-image-text.php:91
+#: patterns/call-to-action-10.php:33
+#: patterns/footer-4.php:86
+#: patterns/footer-5.php:103
+#: patterns/hero-banner-2.php:32
+#: patterns/hero-banner-3.php:32
+#: patterns/hero-banner-4.php:31
+#: patterns/hero-banner-5.php:31
+#: patterns/hero-banner-6.php:37
+#: patterns/hero-banner.php:29
+#: patterns/split-image-right.php:29
+msgid "Learn More"
+msgstr "अधिक जानें"
+
+#: inc/admin/welcome-notice.php:223
+msgid "Activating"
+msgstr "सक्रिय करना"
+
+#: inc/admin/welcome-notice.php:224
+msgid "Installing"
+msgstr "स्थापित करना"
+
+#: inc/admin/welcome-notice.php:225
+msgid "Done"
+msgstr "हो गया"
+
+#: inc/block-styles/archives.php:24
+#: inc/block-styles/categories.php:24
+#: inc/block-styles/search.php:24
+msgid "Minimal"
+msgstr "न्यूनतम"
+
+#: inc/block-styles/button.php:22
+msgid "Secondary"
+msgstr "द्वितीयक"
+
+#: inc/block-styles/button.php:41
+msgid "Inverse"
+msgstr "विपरीत"
+
+#: inc/block-styles/latest-comments.php:24
+#: inc/block-styles/latest-posts.php:24
+#: inc/block-styles/post-author.php:24
+msgid "Simple"
+msgstr "सरल"
+
+#: inc/block-styles/post-terms.php:22
+#: inc/block-styles/tag-cloud.php:22
+msgid "Pill"
+msgstr "गोल"
+
+#: inc/block-styles/separator.php:22
+msgid "Wide Thin Line"
+msgstr "चौड़ी पतली रेखा"
+
+#: inc/extensions/admin-bar.php:61
+#: inc/extensions/admin-bar.php:64
+msgid "Edit template"
+msgstr "टेम्पलेट संपादित करें"
+
+#: inc/extensions/hide-elements.php:57
+msgid "Disable Header"
+msgstr "हेडर अक्षम करें"
+
+#: inc/extensions/hide-elements.php:61
+msgid "Disable Footer"
+msgstr "फुटर अक्षम करें"
+
+#: inc/scripts.php:302
+msgid "Pages"
+msgstr "पृष्ठ"
+
+#: inc/scripts.php:307
+#: patterns/footer-2.php:27
+#: patterns/footer-3.php:26
+#: patterns/footer-5.php:27
+#: patterns/header-2.php:27
+#: patterns/header-3.php:29
+#: patterns/header-4.php:31
+#: patterns/header-5.php:29
+#: patterns/header-6.php:30
+#: patterns/header.php:28
+msgid "Contact"
+msgstr "संपर्क"
+
+#: inc/scripts.php:312
+#: patterns/pricing-2.php:20
+#: patterns/pricing-3.php:22
+#: patterns/pricing-4.php:20
+#: patterns/pricing-5.php:20
+#: patterns/pricing-6.php:23
+#: patterns/pricing.php:20
+msgid "Pricing"
+msgstr "मूल्य निर्धारण"
+
+#: inc/utilities/helpers.php:264
+msgid " Icon"
+msgstr "आइकन"
+
+#: patterns/alternate-image-text.php:21
+msgid "Discover a new way to build website"
+msgstr "वेबसाइट बनाने का एक नया तरीका खोजें"
+
+#: patterns/alternate-image-text.php:24
+#: patterns/feature-4.php:33
+#: patterns/feature-5.php:33
+#: patterns/feature-6.php:21
+#: patterns/feature.php:36
+msgid "Get online quickly with easy-to-use Full Site Editor builder"
+msgstr "आसान-से-उपयोग फुल साइट एडिटर बिल्डर के साथ जल्दी ऑनलाइन हो जाएं"
+
+#: patterns/alternate-image-text.php:36
+#: patterns/feature-6.php:30
+msgid "01"
+msgstr "01"
+
+#: patterns/alternate-image-text.php:39
+msgid "Visual editing experience"
+msgstr "दृश्य संपादन अनुभव"
+
+#: patterns/alternate-image-text.php:42
+#: patterns/feature-8.php:32
+#: patterns/text-5.php:23
+msgid "Customize the entire website layout, including the header, footer, and all other template parts. With FSE, we can create and edit templates for their entire website, including single posts, archive pages, and custom post types."
+msgstr "पूरी वेबसाइट लेआउट को अनुकूलित करें, जिसमें हेडर, फुटर और सभी अन्य टेम्पलेट भाग शामिल हैं। FSE के साथ, हम अपनी पूरी वेबसाइट के लिए टेम्पलेट बना और संपादित कर सकते हैं, जिसमें एकल पोस्ट, आर्काइव पृष्ठ और कस्टम पोस्ट प्रकार शामिल हैं।"
+
+#: patterns/alternate-image-text.php:54
+#: patterns/feature-6.php:50
+msgid "02"
+msgstr "02"
+
+#: patterns/alternate-image-text.php:57
+msgid "Innovative block patterns"
+msgstr "नवोन्मेषी ब्लॉक पैटर्न"
+
+#: patterns/alternate-image-text.php:60
+msgid "Block patterns are pre-designed block layouts that we can easily insert into their content. These patterns can help to save time and create visually appealing designs. Allows us to create custom themes using the block-based template."
+msgstr "ब्लॉक पैटर्न पूर्व-डिज़ाइन किए गए ब्लॉक लेआउट हैं जिन्हें हम आसानी से अपनी सामग्री में सम्मिलित कर सकते हैं। ये पैटर्न समय बचाने और दृश्य रूप से आकर्षक डिज़ाइन बनाने में मदद कर सकते हैं। हमें ब्लॉक-आधारित टेम्पलेट का उपयोग करके कस्टम थीम बनाने की अनुमति देता है।"
+
+#: patterns/alternate-image-text.php:82
+#: patterns/feature-6.php:70
+msgid "03"
+msgstr "03"
+
+#: patterns/alternate-image-text.php:85
+msgid "Beautiful global styles"
+msgstr "सुंदर वैश्विक शैलियाँ"
+
+#: patterns/alternate-image-text.php:88
+msgid "Global styles enable us to create and apply consistent design elements across the entire website, including typography, colors, and spacing. Providing us with more control over our website's look and feel."
+msgstr "वैश्विक शैलियाँ हमें पूरी वेबसाइट में टाइपोग्राफी, रंग और स्पेसिंग सहित सुसंगत डिज़ाइन तत्व बनाने और लागू करने की अनुमति देती हैं। यह हमें हमारी वेबसाइट के रूप और अनुभव पर अधिक नियंत्रण प्रदान करता है।"
+
+#: patterns/announcement-bar-2.php:14
+msgid "Announcement message can be here.."
+msgstr "यहां घोषणा संदेश हो सकता है.."
+
+#: patterns/announcement-bar.php:13
+msgid "Announcement message can be here.. "
+msgstr "यहां घोषणा संदेश हो सकता है.."
+
+#: patterns/announcement-bar.php:13
+msgid "click here"
+msgstr "यहां क्लिक करें"
+
+#: patterns/blog-2.php:13
+#: patterns/blog-3.php:13
+#: patterns/blog-4.php:13
+#: patterns/blog.php:13
+msgid "Latest Posts"
+msgstr "नवीनतम पोस्ट"
+
+#: patterns/blog-3.php:33
+msgid "Read More"
+msgstr "और पढ़ें"
+
+#: patterns/call-to-action-2.php:14
+#: patterns/call-to-action-3.php:14
+#: patterns/call-to-action-8.php:12
+#: patterns/call-to-action-9.php:12
+#: patterns/call-to-action.php:14
+#: patterns/wide-banner-with-button.php:12
+msgid "Build your own website"
+msgstr "अपनी खुद की वेबसाइट बनाएं"
+
+#: patterns/call-to-action-2.php:18
+#: patterns/call-to-action-3.php:18
+#: patterns/call-to-action-8.php:16
+#: patterns/call-to-action-9.php:16
+#: patterns/call-to-action.php:18
+#: patterns/wide-banner-with-button.php:15
+msgid "Take your website to the next level!"
+msgstr "अपनी वेबसाइट को अगले स्तर पर ले जाएं!"
+
+#: patterns/call-to-action-2.php:25
+#: patterns/call-to-action-3.php:25
+#: patterns/call-to-action-4.php:30
+#: patterns/call-to-action-5.php:36
+#: patterns/call-to-action-8.php:21
+#: patterns/call-to-action-9.php:21
+#: patterns/call-to-action-10.php:29
+#: patterns/call-to-action.php:25
+#: patterns/header-2.php:31
+#: patterns/header-3.php:39
+#: patterns/header-4.php:36
+#: patterns/header-5.php:34
+#: patterns/header-6.php:40
+#: patterns/header.php:32
+#: patterns/hero-banner-2.php:28
+#: patterns/hero-banner-3.php:28
+#: patterns/hero-banner-4.php:28
+#: patterns/hero-banner-5.php:28
+#: patterns/hero-banner-6.php:33
+#: patterns/hero-banner.php:26
+#: patterns/pricing-2.php:50
+#: patterns/pricing-2.php:110
+#: patterns/pricing-3.php:99
+#: patterns/pricing-3.php:184
+#: patterns/pricing-4.php:57
+#: patterns/pricing-4.php:129
+#: patterns/pricing-4.php:197
+#: patterns/pricing-5.php:57
+#: patterns/pricing-5.php:130
+#: patterns/pricing-5.php:207
+#: patterns/pricing-6.php:204
+#: patterns/pricing-6.php:286
+#: patterns/pricing.php:50
+#: patterns/pricing.php:110
+#: patterns/wide-banner-with-button.php:19
+msgid "Get Started"
+msgstr "शुरू करें"
+
+#: patterns/call-to-action-4.php:21
+#: patterns/call-to-action-5.php:27
+#: patterns/call-to-action-6.php:31
+#: patterns/call-to-action-7.php:31
+#: patterns/call-to-action-10.php:20
+#: patterns/split-image-right.php:21
+msgid "Everything you need to create amazing websites"
+msgstr "अद्भुत वेबसाइट बनाने के लिए आपको जो कुछ भी चाहिए"
+
+#: patterns/call-to-action-4.php:25
+#: patterns/call-to-action-5.php:31
+#: patterns/call-to-action-6.php:35
+#: patterns/call-to-action-7.php:35
+#: patterns/call-to-action-10.php:24
+#: patterns/split-image-right.php:24
+#: patterns/text-5.php:43
+msgid "Interactive design tools and its many customization options to customize anything and everything needed to build the fully-functional website of your dreams."
+msgstr "इंटरएक्टिव डिज़ाइन टूल और इसकी कई अनुकूलन विकल्प जो किसी भी चीज़ को अनुकूलित करने के लिए आवश्यक हैं और आपके सपनों की पूरी कार्यात्मक वेबसाइट बनाने के लिए।"
+
+#: patterns/call-to-action-6.php:27
+#: patterns/call-to-action-7.php:27
+#: patterns/feature-4.php:25
+#: patterns/feature-5.php:25
+#: patterns/feature-6.php:13
+#: patterns/feature-8.php:23
+#: patterns/feature.php:29
+#: patterns/hero-banner-6.php:20
+#: patterns/text-5.php:14
+msgid "Full Site Editing"
+msgstr "फुल साइट एडिटिंग"
+
+#: patterns/call-to-action-6.php:40
+#: patterns/call-to-action-7.php:40
+msgid "Install Spectra Theme"
+msgstr "स्पेक्ट्रा थीम स्थापित करें"
+
+#: patterns/contact-2.php:27
+#: patterns/contact-3.php:26
+#: patterns/contact-4.php:27
+#: patterns/contact-5.php:70
+#: patterns/contact-6.php:75
+#: patterns/contact-7.php:90
+#: patterns/contact-8.php:91
+msgid "Esther Howard"
+msgstr "एस्टर हॉवर्ड"
+
+#: patterns/contact-2.php:31
+#: patterns/contact-3.php:30
+#: patterns/contact-4.php:31
+msgid "Senior Product Designer at Spectra"
+msgstr "स्पेक्ट्रा में सीनियर प्रोडक्ट डिज़ाइनर"
+
+#: patterns/contact-2.php:47
+#: patterns/contact-3.php:44
+#: patterns/contact-4.php:45
+msgid "Behance"
+msgstr "बिहांस"
+
+#: patterns/contact-2.php:51
+#: patterns/contact-3.php:48
+#: patterns/contact-4.php:49
+msgid "Dribbble"
+msgstr "ड्रिब्बल"
+
+#: patterns/contact-2.php:55
+#: patterns/contact-3.php:52
+#: patterns/contact-4.php:53
+msgid "Linkedin"
+msgstr "लिंक्डइन"
+
+#: patterns/contact-2.php:59
+#: patterns/contact-3.php:56
+#: patterns/contact-4.php:57
+msgid "Github"
+msgstr "गिटहब"
+
+#: patterns/contact-5.php:22
+#: patterns/contact-6.php:23
+#: patterns/contact-7.php:22
+#: patterns/contact-8.php:23
+msgid "Meet the team"
+msgstr "टीम से मिलें"
+
+#: patterns/contact-5.php:25
+#: patterns/contact-6.php:26
+#: patterns/contact-7.php:26
+#: patterns/contact-8.php:27
+msgid "The talent driving our success"
+msgstr "हमारी सफलता को बढ़ावा देने वाली प्रतिभा"
+
+#: patterns/contact-5.php:28
+#: patterns/contact-6.php:29
+#: patterns/contact-7.php:30
+#: patterns/contact-8.php:31
+msgid "Meet our dedicated team of professionals who are passionate about providing top-notch service and delivering exceptional results."
+msgstr "हमारी समर्पित पेशेवर टीम से मिलें जो शीर्ष-स्तरीय सेवा प्रदान करने और असाधारण परिणाम देने के प्रति उत्साही है।"
+
+#: patterns/contact-5.php:36
+#: patterns/contact-6.php:39
+#: patterns/contact-7.php:42
+#: patterns/contact-8.php:43
+msgid "Wade Warren"
+msgstr "वेड वॉरेन"
+
+#: patterns/contact-5.php:39
+#: patterns/contact-6.php:42
+#: patterns/contact-7.php:46
+#: patterns/contact-8.php:47
+msgid "Creative Director"
+msgstr "क्रिएटिव डायरेक्टर"
+
+#: patterns/contact-5.php:53
+#: patterns/contact-6.php:57
+#: patterns/contact-7.php:66
+#: patterns/contact-8.php:67
+#: patterns/contact-9.php:31
+#: patterns/testimonials-2.php:194
+#: patterns/testimonials.php:108
+msgid "Leslie Alexander"
+msgstr "लेस्ली अलेक्जेंडर"
+
+#: patterns/contact-5.php:56
+#: patterns/contact-6.php:60
+#: patterns/contact-7.php:70
+#: patterns/contact-8.php:71
+msgid "Product Manager"
+msgstr "प्रोडक्ट मैनेजर"
+
+#: patterns/contact-5.php:73
+#: patterns/contact-6.php:78
+#: patterns/contact-7.php:94
+#: patterns/contact-8.php:95
+msgid "Senior Product Designer"
+msgstr "सीनियर प्रोडक्ट डिज़ाइनर"
+
+#: patterns/contact-6.php:93
+#: patterns/contact-8.php:115
+#: patterns/testimonials-2.php:228
+#: patterns/testimonials-3.php:84
+#: patterns/testimonials.php:60
+msgid "Jacob Jones"
+msgstr "जैकब जोन्स"
+
+#: patterns/contact-6.php:96
+#: patterns/contact-8.php:119
+msgid "Senior Developer"
+msgstr "सीनियर डेवलपर"
+
+#: patterns/contact-9.php:27
+msgid "Meet the owner"
+msgstr "मालिक से मिलें"
+
+#: patterns/contact-9.php:35
+msgid "Leslie loves exploring new foods, devouring motivational books, and hanging out with her loved ones. She's a real-life inspiration and proof that hard work and passion pay off!"
+msgstr "लेस्ली को नए खाद्य पदार्थों का अन्वेषण करना, प्रेरणादायक किताबें पढ़ना और अपने प्रियजनों के साथ समय बिताना पसंद है। वह असली जीवन की प्रेरणा हैं और यह साबित करती हैं कि मेहनत और जुनून का फल मिलता है!"
+
+#: patterns/contact.php:15
+#: patterns/footer-5.php:108
+msgid "Get in touch"
+msgstr "संपर्क करें"
+
+#: patterns/contact.php:18
+msgid "We look forward to hearing from you"
+msgstr "हम आपकी प्रतिक्रिया का इंतजार कर रहे हैं"
+
+#: patterns/contact.php:21
+msgid "We look forward to hearing from you and providing the assistance you need. Whether you have a general inquiry, require technical support, or want to learn more about our products, our knowledgeable team is ready to assist you."
+msgstr "हम आपकी प्रतिक्रिया का इंतजार कर रहे हैं और आपको आवश्यक सहायता प्रदान करने के लिए तत्पर हैं। चाहे आपके पास सामान्य पूछताछ हो, तकनीकी सहायता की आवश्यकता हो, या हमारे उत्पादों के बारे में अधिक जानना चाहते हों, हमारी जानकार टीम आपकी सहायता के लिए तैयार है।"
+
+#: patterns/contact.php:27
+#: patterns/text-2.php:34
+#: patterns/text-3.php:34
+#: patterns/text-4.php:34
+#: patterns/text.php:34
+msgid "4.8"
+msgstr "4.8"
+
+#: patterns/contact.php:30
+#: patterns/text-2.php:38
+#: patterns/text-3.php:38
+msgid "Average ratings"
+msgstr "औसत रेटिंग"
+
+#: patterns/contact.php:35
+#: patterns/text-2.php:24
+#: patterns/text-3.php:24
+#: patterns/text-4.php:24
+#: patterns/text.php:24
+msgid "2000+"
+msgstr "2000+"
+
+#: patterns/contact.php:38
+#: patterns/text-2.php:28
+#: patterns/text-3.php:28
+msgid "Active installs"
+msgstr "सक्रिय इंस्टॉलेशन"
+
+#: patterns/contact.php:46
+msgid "Contact info"
+msgstr "संपर्क जानकारी"
+
+#: patterns/contact.php:53
+msgid "Address"
+msgstr "पता"
+
+#: patterns/contact.php:56
+msgid "123 Demo Ave. Manchester,"
+msgstr "123 डेमो एवेन्यू, मैनचेस्टर,"
+
+#: patterns/contact.php:56
+msgid "Kentucky, KY 40962"
+msgstr "केंटकी, KY 40962"
+
+#: patterns/contact.php:64
+msgid "Phone"
+msgstr "फोन"
+
+#: patterns/contact.php:67
+msgid "606-123-4567"
+msgstr "606-123-4567"
+
+#: patterns/contact.php:75
+msgid "Email"
+msgstr "ईमेल"
+
+#: patterns/contact.php:78
+msgid "mail@demosite.com"
+msgstr "mail@demosite.com"
+
+#: patterns/contact.php:86
+msgid "Follow us"
+msgstr "हमारा अनुसरण करें"
+
+#: patterns/faq-2.php:13
+msgid "Have a question?"
+msgstr "क्या आपके पास कोई प्रश्न है?"
+
+#: patterns/faq-2.php:17
+#: patterns/faq.php:12
+msgid "Frequently Asked Questions"
+msgstr "अक्सर पूछे जाने वाले प्रश्न"
+
+#: patterns/faq-2.php:25
+#: patterns/faq.php:27
+msgid "What are some benefits of using Full Site Editing?"
+msgstr "फुल साइट एडिटिंग के कुछ लाभ क्या हैं?"
+
+#: patterns/faq-2.php:29
+#: patterns/faq.php:30
+msgid "Full Site Editing provides a more user-friendly, streamlined approach to website design and customization. It allows users to see changes in real-time, provides more control over design elements, and enables developers to create more custom blocks and templates."
+msgstr "फुल साइट एडिटिंग वेबसाइट डिज़ाइन और अनुकूलन के लिए एक अधिक उपयोगकर्ता-अनुकूल, सुव्यवस्थित दृष्टिकोण प्रदान करता है। यह उपयोगकर्ताओं को वास्तविक समय में परिवर्तन देखने, डिज़ाइन तत्वों पर अधिक नियंत्रण प्रदान करता है, और डेवलपर्स को अधिक कस्टम ब्लॉक और टेम्पलेट बनाने में सक्षम बनाता है।"
+
+#: patterns/faq-2.php:37
+#: patterns/faq.php:16
+msgid "What is Full Site Editing?"
+msgstr "फुल साइट एडिटिंग क्या है?"
+
+#: patterns/faq-2.php:41
+#: patterns/faq.php:19
+msgid "Full Site Editing (FSE) is a feature in WordPress that allows users to visually design and customize their entire website, including the header, footer, and other template parts."
+msgstr "फुल साइट एडिटिंग (FSE) एक विशेषता है जो वर्डप्रेस में उपयोगकर्ताओं को अपने पूरे वेबसाइट को दृश्य रूप से डिज़ाइन और अनुकूलित करने की अनुमति देती है, जिसमें हेडर, फूटर और अन्य टेम्पलेट भाग शामिल हैं।"
+
+#: patterns/faq-2.php:51
+#: patterns/faq.php:49
+msgid "Do I need to know how to code to use Full Site Editing?"
+msgstr "क्या मुझे फुल साइट एडिटिंग का उपयोग करने के लिए कोडिंग जानने की आवश्यकता है?"
+
+#: patterns/faq-2.php:55
+#: patterns/faq.php:52
+msgid "No, Full Site Editing does not require knowledge of coding or web development. The drag-and-drop interface and pre-designed templates make it easy for users to create a professional-looking website without any coding experience."
+msgstr "नहीं, फुल साइट एडिटिंग के लिए कोडिंग या वेब विकास का ज्ञान आवश्यक नहीं है। ड्रैग-एंड-ड्रॉप इंटरफ़ेस और पूर्व-डिज़ाइन किए गए टेम्पलेट्स उपयोगकर्ताओं को बिना किसी कोडिंग अनुभव के एक पेशेवर दिखने वाली वेबसाइट बनाने में आसान बनाते हैं।"
+
+#: patterns/faq-2.php:63
+#: patterns/faq.php:38
+msgid "Can I use Full Site Editing on my existing WordPress website?"
+msgstr "क्या मैं अपने मौजूदा वर्डप्रेस वेबसाइट पर फुल साइट एडिटिंग का उपयोग कर सकता हूँ?"
+
+#: patterns/faq-2.php:67
+#: patterns/faq.php:41
+msgid "Yes, you can use Full Site Editing on an existing WordPress website by installing a compatible theme that supports the feature."
+msgstr "हाँ, आप एक संगत थीम स्थापित करके अपने मौजूदा वर्डप्रेस वेबसाइट पर फुल साइट एडिटिंग का उपयोग कर सकते हैं जो इस विशेषता का समर्थन करती है।"
+
+#: patterns/feature-2.php:28
+#: patterns/feature-3.php:27
+#: patterns/feature-4.php:44
+#: patterns/feature-5.php:46
+#: patterns/feature-6.php:34
+#: patterns/feature-7.php:35
+#: patterns/feature.php:47
+#: patterns/three-column-featured.php:26
+msgid "Easily Customizable"
+msgstr "आसान अनुकूलन योग्य"
+
+#: patterns/feature-2.php:32
+#: patterns/feature-3.php:31
+#: patterns/feature-4.php:48
+#: patterns/feature-5.php:50
+#: patterns/feature-6.php:38
+#: patterns/feature-7.php:39
+#: patterns/feature.php:50
+#: patterns/three-column-featured.php:29
+msgid "Tailor your website to your liking with endless options to personalize the design and functionality."
+msgstr "अपनी पसंद के अनुसार अपनी वेबसाइट को अनुकूलित करें, डिज़ाइन और कार्यक्षमता को व्यक्तिगत बनाने के लिए अंतहीन विकल्पों के साथ।"
+
+#: patterns/feature-2.php:42
+#: patterns/feature-3.php:41
+#: patterns/feature-4.php:58
+#: patterns/feature-5.php:62
+#: patterns/feature-6.php:54
+#: patterns/feature-7.php:49
+#: patterns/feature.php:62
+#: patterns/three-column-featured.php:37
+msgid "Blazing Fast"
+msgstr "तेज गति"
+
+#: patterns/feature-2.php:46
+#: patterns/feature-3.php:45
+#: patterns/feature-4.php:62
+#: patterns/feature-5.php:66
+#: patterns/feature-6.php:58
+#: patterns/feature-7.php:53
+#: patterns/feature.php:65
+#: patterns/three-column-featured.php:40
+msgid "Experience lightning-fast page load speeds for optimal user experience and SEO ranking."
+msgstr "उपयोगकर्ता अनुभव और SEO रैंकिंग के लिए त्वरित पृष्ठ लोड गति का अनुभव करें।"
+
+#: patterns/feature-2.php:56
+#: patterns/feature-4.php:72
+#: patterns/feature-5.php:78
+#: patterns/feature-6.php:74
+#: patterns/feature-7.php:63
+#: patterns/feature.php:77
+#: patterns/three-column-featured.php:48
+msgid "SEO Optimized"
+msgstr "SEO अनुकूलित"
+
+#: patterns/feature-2.php:60
+#: patterns/feature-4.php:76
+#: patterns/feature-5.php:82
+#: patterns/feature-6.php:78
+#: patterns/feature-7.php:67
+#: patterns/feature.php:80
+#: patterns/three-column-featured.php:51
+msgid "Built with search engines in mind, achieve higher rankings and more traffic with optimized code."
+msgstr "खोज इंजनों को ध्यान में रखते हुए निर्मित, अनुकूलित कोड के साथ उच्च रैंकिंग और अधिक ट्रैफ़िक प्राप्त करें।"
+
+#: patterns/feature-4.php:29
+#: patterns/feature-5.php:29
+#: patterns/feature-6.php:17
+#: patterns/feature-8.php:28
+#: patterns/feature.php:33
+#: patterns/text-5.php:19
+msgid "Unleash the power of block editor"
+msgstr "ब्लॉक संपादक की शक्ति को अनलॉक करें"
+
+#: patterns/feature-4.php:88
+#: patterns/feature-5.php:96
+#: patterns/feature-6.php:96
+msgid "Drag and Drop"
+msgstr "खींचें और छोड़ें"
+
+#: patterns/feature-4.php:92
+#: patterns/feature-5.php:100
+#: patterns/feature-6.php:100
+msgid "Easily customize your website's layout and design using an intuitive, drag-and-drop interface."
+msgstr "एक सहज, खींचें और छोड़ें इंटरफ़ेस का उपयोग करके अपनी वेबसाइट के लेआउट और डिज़ाइन को आसानी से अनुकूलित करें।"
+
+#: patterns/feature-4.php:102
+#: patterns/feature-5.php:112
+#: patterns/feature-6.php:116
+msgid "Global Styles"
+msgstr "वैश्विक शैलियाँ"
+
+#: patterns/feature-4.php:106
+#: patterns/feature-5.php:116
+#: patterns/feature-6.php:120
+msgid "Define global styling settings for your website, such as typography, colors, and spacing."
+msgstr "अपनी वेबसाइट के लिए वैश्विक स्टाइलिंग सेटिंग्स को परिभाषित करें, जैसे कि टाइपोग्राफी, रंग और स्पेसिंग।"
+
+#: patterns/feature-4.php:116
+#: patterns/feature-5.php:128
+#: patterns/feature-6.php:136
+msgid "Design Patterns"
+msgstr "डिज़ाइन पैटर्न"
+
+#: patterns/feature-4.php:120
+#: patterns/feature-5.php:132
+#: patterns/feature-6.php:140
+msgid "Spectra offers a wide selection of meticulously crafted patterns to enhance your content."
+msgstr "स्पेक्ट्रा आपके सामग्री को बढ़ाने के लिए बारीकी से तैयार किए गए पैटर्न का एक विस्तृत चयन प्रदान करता है।"
+
+#: patterns/feature-6.php:42
+#: patterns/feature-6.php:62
+#: patterns/feature-6.php:82
+#: patterns/feature-6.php:104
+#: patterns/feature-6.php:124
+#: patterns/feature-6.php:144
+#: patterns/feature-8.php:36
+msgid "Learn More →"
+msgstr "और जानें →"
+
+#: patterns/feature-6.php:92
+msgid "04"
+msgstr "04"
+
+#: patterns/feature-6.php:112
+msgid "05"
+msgstr "05"
+
+#: patterns/feature-6.php:132
+msgid "06"
+msgstr "06"
+
+#: patterns/feature-8.php:52
+msgid "Tailor your website to your liking with endless options."
+msgstr "अपनी पसंद के अनुसार अपनी वेबसाइट को अनुकूलित करें, अंतहीन विकल्पों के साथ।"
+
+#: patterns/feature-8.php:64
+msgid "Experience lightning-fast page load speeds."
+msgstr "त्वरित पृष्ठ लोड गति का अनुभव करें।"
+
+#: patterns/featured-logos.php:24
+msgid "Brought to you by the creators of"
+msgstr "आपके लिए लाए हैं"
+
+#: patterns/footer-2.php:24
+#: patterns/footer-3.php:23
+#: patterns/footer-5.php:24
+#: patterns/header-2.php:24
+#: patterns/header-3.php:26
+#: patterns/header-4.php:28
+#: patterns/header-5.php:26
+#: patterns/header-6.php:27
+#: patterns/header.php:25
+msgid "Home"
+msgstr "मुख्य पृष्ठ"
+
+#: patterns/footer-2.php:25
+#: patterns/footer-3.php:24
+#: patterns/footer-5.php:25
+#: patterns/header-2.php:25
+#: patterns/header-3.php:27
+#: patterns/header-4.php:29
+#: patterns/header-5.php:27
+#: patterns/header-6.php:28
+#: patterns/header.php:26
+msgid "About"
+msgstr "हमारे बारे में"
+
+#: patterns/footer-2.php:26
+#: patterns/footer-3.php:25
+#: patterns/footer-5.php:26
+#: patterns/header-2.php:26
+#: patterns/header-3.php:28
+#: patterns/header-4.php:30
+#: patterns/header-5.php:28
+#: patterns/header-6.php:29
+#: patterns/header.php:27
+msgid "Blog"
+msgstr "ब्लॉग"
+
+#: patterns/footer-2.php:39
+#: patterns/footer-3.php:32
+#: patterns/footer-4.php:98
+#: patterns/footer-5.php:123
+#: patterns/footer.php:88
+msgid "© %d ·"
+msgstr "© %d ·"
+
+#: patterns/footer-2.php:45
+msgid "Privacy"
+msgstr "गोपनीयता"
+
+#: patterns/footer-2.php:48
+msgid "."
+msgstr "."
+
+#: patterns/footer-2.php:51
+msgid "Terms"
+msgstr "शर्तें"
+
+#: patterns/footer-4.php:28
+#: patterns/footer-5.php:45
+#: patterns/footer.php:37
+msgid "Products"
+msgstr "उत्पाद"
+
+#: patterns/footer-4.php:31
+#: patterns/footer-5.php:48
+#: patterns/footer.php:40
+msgid "Products List"
+msgstr "उत्पाद सूची"
+
+#: patterns/footer-4.php:32
+#: patterns/footer-5.php:49
+#: patterns/footer.php:41
+msgid "Plans \\u0026amp; Pricing"
+msgstr "योजनाएँ और मूल्य निर्धारण"
+
+#: patterns/footer-4.php:33
+#: patterns/footer-5.php:50
+#: patterns/footer.php:42
+msgid "Services"
+msgstr "सेवाएँ"
+
+#: patterns/footer-4.php:34
+#: patterns/footer-5.php:51
+#: patterns/footer.php:43
+msgid "Partners"
+msgstr "भागीदार"
+
+#: patterns/footer-4.php:43
+#: patterns/footer-5.php:56
+#: patterns/footer.php:48
+msgid "Company"
+msgstr "कंपनी"
+
+#: patterns/footer-4.php:46
+#: patterns/footer-5.php:59
+#: patterns/footer.php:51
+msgid "About Us"
+msgstr "हमारे बारे में"
+
+#: patterns/footer-4.php:47
+#: patterns/footer-5.php:60
+#: patterns/footer.php:52
+msgid "News"
+msgstr "समाचार"
+
+#: patterns/footer-4.php:48
+#: patterns/footer-5.php:61
+#: patterns/footer.php:53
+msgid "Contact Us"
+msgstr "हमसे संपर्क करें"
+
+#: patterns/footer-4.php:49
+#: patterns/footer-5.php:62
+#: patterns/footer.php:54
+msgid "Meet Our Team"
+msgstr "हमारी टीम से मिलें"
+
+#: patterns/footer-4.php:54
+#: patterns/footer-5.php:82
+#: patterns/footer.php:63
+msgid "Resources"
+msgstr "संसाधन"
+
+#: patterns/footer-4.php:57
+#: patterns/footer-5.php:74
+#: patterns/footer.php:66
+msgid "Gallery"
+msgstr "गैलरी"
+
+#: patterns/footer-4.php:58
+#: patterns/footer-5.php:75
+#: patterns/footer.php:67
+msgid "Blog Articles"
+msgstr "ब्लॉग लेख"
+
+#: patterns/footer-4.php:59
+#: patterns/footer-5.php:76
+#: patterns/footer.php:68
+msgid "Brand Assets"
+msgstr "ब्रांड संपत्तियाँ"
+
+#: patterns/footer-4.php:60
+#: patterns/footer-5.php:77
+#: patterns/footer.php:69
+msgid "Brand Guidelines"
+msgstr "ब्रांड दिशानिर्देश"
+
+#: patterns/footer-4.php:69
+#: patterns/footer-5.php:71
+#: patterns/footer.php:74
+msgid "Support"
+msgstr "समर्थन"
+
+#: patterns/footer-4.php:72
+#: patterns/footer-5.php:85
+#: patterns/footer.php:77
+msgid "Knowledge Base"
+msgstr "ज्ञान आधार"
+
+#: patterns/footer-4.php:73
+#: patterns/footer-5.php:86
+#: patterns/footer.php:78
+msgid "Contact Support"
+msgstr "समर्थन से संपर्क करें"
+
+#: patterns/footer-4.php:74
+#: patterns/footer-5.php:87
+#: patterns/footer-5.php:132
+#: patterns/footer.php:79
+msgid "Privacy Policy"
+msgstr "गोपनीयता नीति"
+
+#: patterns/footer-4.php:75
+#: patterns/footer-5.php:88
+#: patterns/footer.php:80
+msgid "TOS"
+msgstr "TOS"
+
+#: patterns/footer-4.php:80
+msgid "Need help?"
+msgstr "क्या मदद चाहिए?"
+
+#: patterns/footer-4.php:83
+#: patterns/footer-5.php:100
+msgid "What’s New"
+msgstr "क्या नया है"
+
+#: patterns/footer-4.php:84
+#: patterns/footer-5.php:101
+msgid "How to Videos"
+msgstr "कैसे वीडियो"
+
+#: patterns/footer-4.php:85
+#: patterns/footer-5.php:102
+msgid "Ask the Community"
+msgstr "समुदाय से पूछें"
+
+#: patterns/footer-4.php:102
+#: patterns/footer-5.php:127
+#: patterns/footer.php:92
+msgid "· All rights reserved"
+msgstr "· सभी अधिकार सुरक्षित"
+
+#: patterns/footer-5.php:97
+msgid "Need Help?"
+msgstr "क्या मदद चाहिए?"
+
+#: patterns/footer-5.php:111
+msgid "Book A Meeting"
+msgstr "एक बैठक बुक करें"
+
+#: patterns/footer-5.php:112
+msgid "Get Quote"
+msgstr "उद्धरण प्राप्त करें"
+
+#: patterns/footer-5.php:113
+msgid "Ask Product Details"
+msgstr "उत्पाद विवरण पूछें"
+
+#: patterns/footer-5.php:114
+msgid "Service Inquiry"
+msgstr "सेवा पूछताछ"
+
+#: patterns/footer-5.php:135
+msgid "·"
+msgstr "·"
+
+#: patterns/footer-5.php:138
+msgid "Terms and Conditions"
+msgstr "शर्तें और नियम"
+
+#: patterns/footer.php:24
+msgid "Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium."
+msgstr "निसल लिबेरो उल्लमकोर्पर आईप्सम विवेरा मौरिस नॉन पेलेंटेस्क प्लेसरट लॉरेम लासिनिया सगिटिस नॉन प्रेटियम।"
+
+#: patterns/hero-banner-2.php:19
+#: patterns/hero-banner-3.php:19
+#: patterns/hero-banner-4.php:21
+#: patterns/hero-banner-5.php:21
+#: patterns/hero-banner-6.php:24
+#: patterns/hero-banner.php:19
+msgid "Launch Your Website Today!"
+msgstr "आज ही अपनी वेबसाइट लॉन्च करें!"
+
+#: patterns/hero-banner-2.php:23
+#: patterns/hero-banner-3.php:23
+#: patterns/hero-banner-4.php:24
+#: patterns/hero-banner-5.php:24
+#: patterns/hero-banner-6.php:28
+#: patterns/hero-banner.php:22
+msgid "Create a functional and visually appealing website"
+msgstr "एक कार्यात्मक और दृश्यात्मक रूप से आकर्षक वेबसाइट बनाएं"
+
+#: patterns/post-grid.php:12
+msgid "Latest from the blog"
+msgstr "ब्लॉग से नवीनतम"
+
+#: patterns/pricing-2.php:23
+#: patterns/pricing-3.php:25
+#: patterns/pricing-4.php:24
+#: patterns/pricing-5.php:24
+#: patterns/pricing-6.php:27
+#: patterns/pricing.php:23
+msgid "Pricing tailored to your needs"
+msgstr "आपकी आवश्यकताओं के अनुसार मूल्य निर्धारण"
+
+#: patterns/pricing-2.php:26
+#: patterns/pricing-3.php:28
+#: patterns/pricing-4.php:28
+#: patterns/pricing-5.php:28
+#: patterns/pricing-6.php:31
+#: patterns/pricing.php:26
+msgid "Select your favorite plan and start your online store today!"
+msgstr "अपनी पसंदीदा योजना चुनें और आज ही अपनी ऑनलाइन स्टोर शुरू करें!"
+
+#: patterns/pricing-2.php:34
+#: patterns/pricing-3.php:43
+#: patterns/pricing-4.php:37
+#: patterns/pricing-5.php:37
+#: patterns/pricing-6.php:48
+#: patterns/pricing.php:34
+msgid "Starter Plan"
+msgstr "स्टार्टर योजना"
+
+#: patterns/pricing-2.php:37
+#: patterns/pricing-3.php:46
+#: patterns/pricing-4.php:41
+#: patterns/pricing-4.php:184
+#: patterns/pricing-5.php:41
+#: patterns/pricing-5.php:191
+#: patterns/pricing-6.php:52
+#: patterns/pricing-6.php:226
+#: patterns/pricing.php:37
+msgid "Everything you need to get start building your website."
+msgstr "अपनी वेबसाइट बनाने के लिए आवश्यक सभी चीजें।"
+
+#: patterns/pricing-2.php:42
+#: patterns/pricing-3.php:51
+#: patterns/pricing-4.php:47
+#: patterns/pricing-5.php:47
+#: patterns/pricing-6.php:58
+#: patterns/pricing.php:42
+msgid "$9.99"
+msgstr "$9.99"
+
+#: patterns/pricing-2.php:45
+#: patterns/pricing-2.php:105
+#: patterns/pricing-3.php:54
+#: patterns/pricing-3.php:131
+#: patterns/pricing-4.php:51
+#: patterns/pricing-4.php:123
+#: patterns/pricing-4.php:192
+#: patterns/pricing-5.php:51
+#: patterns/pricing-5.php:124
+#: patterns/pricing-5.php:201
+#: patterns/pricing-6.php:62
+#: patterns/pricing-6.php:146
+#: patterns/pricing-6.php:236
+#: patterns/pricing.php:45
+#: patterns/pricing.php:105
+msgid "/ month"
+msgstr "/ माह"
+
+#: patterns/pricing-2.php:60
+#: patterns/pricing-3.php:66
+#: patterns/pricing-4.php:69
+#: patterns/pricing-5.php:69
+#: patterns/pricing-6.php:77
+#: patterns/pricing.php:60
+msgid "Customization options"
+msgstr "अनुकूलन विकल्प"
+
+#: patterns/pricing-2.php:68
+#: patterns/pricing-3.php:74
+#: patterns/pricing-4.php:78
+#: patterns/pricing-5.php:78
+#: patterns/pricing-6.php:85
+#: patterns/pricing.php:68
+msgid "Essential pattern library"
+msgstr "आवश्यक पैटर्न पुस्तकालय"
+
+#: patterns/pricing-2.php:76
+#: patterns/pricing-3.php:82
+#: patterns/pricing-4.php:87
+#: patterns/pricing-5.php:87
+#: patterns/pricing-6.php:93
+#: patterns/pricing.php:76
+msgid "Handcrafted theme styles"
+msgstr "हैंडक्राफ्टेड थीम शैलियाँ"
+
+#: patterns/pricing-2.php:84
+#: patterns/pricing-3.php:90
+#: patterns/pricing-4.php:96
+#: patterns/pricing-5.php:96
+#: patterns/pricing-6.php:101
+#: patterns/pricing.php:84
+msgid "Unmatched performance"
+msgstr "बेजोड़ प्रदर्शन"
+
+#: patterns/pricing-2.php:94
+#: patterns/pricing-3.php:120
+#: patterns/pricing-4.php:109
+#: patterns/pricing-5.php:110
+#: patterns/pricing-6.php:132
+#: patterns/pricing.php:94
+msgid "Pro Plan"
+msgstr "प्रो योजना"
+
+#: patterns/pricing-2.php:97
+#: patterns/pricing-3.php:123
+#: patterns/pricing-4.php:113
+#: patterns/pricing-5.php:114
+#: patterns/pricing-6.php:136
+#: patterns/pricing.php:97
+msgid "Unlock the full potential of your website with our Pro plan."
+msgstr "हमारी प्रो योजना के साथ अपनी वेबसाइट की पूरी क्षमता को अनलॉक करें।"
+
+#: patterns/pricing-2.php:102
+#: patterns/pricing-3.php:128
+#: patterns/pricing-4.php:119
+#: patterns/pricing-5.php:120
+#: patterns/pricing-6.php:142
+#: patterns/pricing.php:102
+msgid "$19.99"
+msgstr "$19.99"
+
+#: patterns/pricing-2.php:120
+#: patterns/pricing-3.php:143
+#: patterns/pricing-4.php:139
+#: patterns/pricing-5.php:142
+#: patterns/pricing-6.php:161
+#: patterns/pricing.php:120
+msgid "Everything in Starter Plan plus..."
+msgstr "स्टार्टर योजना में सब कुछ प्लस..."
+
+#: patterns/pricing-2.php:128
+#: patterns/pricing-3.php:151
+#: patterns/pricing-4.php:147
+#: patterns/pricing-5.php:150
+#: patterns/pricing-6.php:169
+#: patterns/pricing.php:128
+msgid "Custom typography"
+msgstr "कस्टम टाइपोग्राफी"
+
+#: patterns/pricing-2.php:136
+#: patterns/pricing-3.php:159
+#: patterns/pricing-4.php:155
+#: patterns/pricing-5.php:158
+#: patterns/pricing-6.php:177
+#: patterns/pricing.php:136
+msgid "Premium pattern library"
+msgstr "प्रीमियम पैटर्न पुस्तकालय"
+
+#: patterns/pricing-2.php:144
+#: patterns/pricing-3.php:167
+#: patterns/pricing-4.php:163
+#: patterns/pricing-5.php:166
+#: patterns/pricing-6.php:185
+#: patterns/pricing.php:144
+msgid "Pro blocks access"
+msgstr "प्रो ब्लॉक्स एक्सेस"
+
+#: patterns/pricing-2.php:152
+#: patterns/pricing-3.php:175
+#: patterns/pricing-4.php:171
+#: patterns/pricing-5.php:174
+#: patterns/pricing-6.php:193
+#: patterns/pricing.php:152
+msgid "Priority customer support"
+msgstr "प्राथमिकता ग्राहक समर्थन"
+
+#: patterns/pricing-3.php:114
+msgid "Recommended"
+msgstr "सिफारिश की गई"
+
+#: patterns/pricing-4.php:181
+#: patterns/pricing-5.php:187
+#: patterns/pricing-6.php:222
+msgid "Growth Plan"
+msgstr "विकास योजना"
+
+#: patterns/pricing-4.php:189
+#: patterns/pricing-5.php:197
+#: patterns/pricing-6.php:232
+msgid "$29.99"
+msgstr "$29.99"
+
+#: patterns/pricing-4.php:207
+#: patterns/pricing-5.php:218
+#: patterns/pricing-6.php:251
+msgid "Everything in Pro Plan plus..."
+msgstr "प्रो योजना में सब कुछ प्लस..."
+
+#: patterns/pricing-4.php:215
+#: patterns/pricing-5.php:226
+#: patterns/pricing-6.php:259
+msgid "5 Team members license"
+msgstr "5 टीम सदस्यों का लाइसेंस"
+
+#: patterns/pricing-4.php:223
+#: patterns/pricing-5.php:234
+#: patterns/pricing-6.php:267
+msgid "Premium starter templates"
+msgstr "प्रीमियम स्टार्टर टेम्पलेट्स"
+
+#: patterns/pricing-4.php:231
+#: patterns/pricing-5.php:242
+#: patterns/pricing-6.php:275
+msgid "Premium support"
+msgstr "प्रीमियम समर्थन"
+
+#: patterns/sidebar.php:11
+msgid "More from the blog"
+msgstr "ब्लॉग से अधिक"
+
+#: patterns/sidebar.php:21
+msgid "Recommended Topics"
+msgstr "सिफारिश की गई विषय"
+
+#: patterns/sidebar.php:31
+msgid "Popular Tags"
+msgstr "लोकप्रिय टैग"
+
+#: patterns/template-404.php:13
+msgid "Page Not Found"
+msgstr "पृष्ठ नहीं मिला"
+
+#: patterns/template-404.php:17
+msgid "Can't find what you're looking for? Don't worry, we've got your back."
+msgstr "क्या आप जो खोज रहे हैं उसे नहीं मिल रहा? चिंता न करें, हम आपकी मदद करेंगे।"
+
+#: patterns/template-404.php:22
+#: patterns/template-search.php:23
+msgid "Search..."
+msgstr "खोजें..."
+
+#: patterns/template-404.php:22
+#: patterns/template-search.php:23
+msgid "Search"
+msgstr "खोजें"
+
+#: patterns/template-search.php:19
+msgid "Sorry, but nothing matched your search terms. Try another search?"
+msgstr "क्षमा करें, लेकिन आपकी खोज शर्तों से कुछ भी मेल नहीं खाता। क्या आप कोई और खोज करना चाहेंगे?"
+
+#: patterns/testimonials-2.php:24
+#: patterns/testimonials-3.php:22
+#: patterns/testimonials.php:22
+msgid "Testimonials"
+msgstr "गवाही"
+
+#: patterns/testimonials-2.php:28
+#: patterns/testimonials-3.php:26
+#: patterns/testimonials.php:25
+msgid "See what people have to say about us"
+msgstr "देखें कि लोग हमारे बारे में क्या कहते हैं"
+
+#: patterns/testimonials-2.php:37
+#: patterns/testimonials-2.php:71
+#: patterns/testimonials-2.php:105
+#: patterns/testimonials-2.php:141
+#: patterns/testimonials-2.php:175
+#: patterns/testimonials-2.php:209
+#: patterns/testimonials-3.php:33
+#: patterns/testimonials-3.php:65
+#: patterns/testimonials-3.php:97
+msgid "★★★★★"
+msgstr "★★★★★"
+
+#: patterns/testimonials-2.php:41
+#: patterns/testimonials-3.php:37
+#: patterns/testimonials.php:45
+msgid "Highly recommended!"
+msgstr "उच्च सिफारिश की गई!"
+
+#: patterns/testimonials-2.php:45
+msgid "This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable. "
+msgstr "इस थीम ने मेरी वेबसाइट बनाने की प्रक्रिया को बहुत आसान बना दिया। ड्रैग-एंड-ड्रॉप इंटरफेस का उपयोग करना आसान था और टेम्पलेट्स को अनुकूलित किया जा सकता था।"
+
+#: patterns/testimonials-2.php:56
+#: patterns/testimonials-3.php:52
+#: patterns/testimonials.php:37
+msgid "Darlene Robertson"
+msgstr "डार्लिन रॉबर्टसन"
+
+#: patterns/testimonials-2.php:60
+#: patterns/testimonials-3.php:56
+#: patterns/testimonials.php:40
+msgid "Web designer"
+msgstr "वेब डिज़ाइनर"
+
+#: patterns/testimonials-2.php:75
+#: patterns/testimonials-3.php:69
+#: patterns/testimonials.php:68
+msgid "Endless customization"
+msgstr "असीमित अनुकूलन"
+
+#: patterns/testimonials-2.php:79
+#: patterns/testimonials-3.php:73
+#: patterns/testimonials.php:71
+msgid "Endless customization options and responsive design, plus great customer support. Highly recommend!"
+msgstr "असीमित अनुकूलन विकल्प और उत्तरदायी डिज़ाइन, साथ ही शानदार ग्राहक समर्थन। अत्यधिक सिफारिश की जाती है!"
+
+#: patterns/testimonials-2.php:90
+#: patterns/testimonials-3.php:116
+#: patterns/testimonials.php:85
+msgid "Ralph Edwards"
+msgstr "राल्फ एडवर्ड्स"
+
+#: patterns/testimonials-2.php:94
+#: patterns/testimonials-3.php:120
+#: patterns/testimonials.php:88
+msgid "Marketing Coordinator"
+msgstr "मार्केटिंग समन्वयक"
+
+#: patterns/testimonials-2.php:109
+msgid "Superb quality!"
+msgstr "शानदार गुणवत्ता!"
+
+#: patterns/testimonials-2.php:113
+msgid "I've tried countless themes, but none have impressed me as much as this! It's incredibly fast, which means my website load in a snap."
+msgstr "मैंने अनगिनत थीम का प्रयास किया है, लेकिन इनमें से कोई भी मुझे इस तरह से प्रभावित नहीं करता! यह अविश्वसनीय रूप से तेज है, जिसका मतलब है कि मेरी वेबसाइट एक झटके में लोड होती है।"
+
+#: patterns/testimonials-2.php:124
+msgid "Jenny Wilson"
+msgstr "जैनी विल्सन"
+
+#: patterns/testimonials-2.php:128
+msgid "Marketer"
+msgstr "मार्केटर"
+
+#: patterns/testimonials-2.php:145
+#: patterns/testimonials.php:116
+msgid "Easy to use"
+msgstr "उपयोग में आसान"
+
+#: patterns/testimonials-2.php:149
+#: patterns/testimonials.php:119
+msgid "As a small business owner, I needed a website that was affordable. I was able to create a beautiful website that represented my brand."
+msgstr "एक छोटे व्यवसाय के मालिक के रूप में, मुझे एक ऐसी वेबसाइट की आवश्यकता थी जो सस्ती हो। मैं एक सुंदर वेबसाइट बनाने में सक्षम था जो मेरे ब्रांड का प्रतिनिधित्व करती थी।"
+
+#: patterns/testimonials-2.php:160
+msgid "Ronald Richards"
+msgstr "रोनाल्ड रिचर्ड्स"
+
+#: patterns/testimonials-2.php:164
+msgid "Developer"
+msgstr "डेवलपर"
+
+#: patterns/testimonials-2.php:179
+msgid "Really love it!"
+msgstr "मुझे वास्तव में यह पसंद है!"
+
+#: patterns/testimonials-2.php:183
+msgid "This block-based WordPress theme is a game-changer. I've struggled with complex themes in the past, but this one is easy to use."
+msgstr "यह ब्लॉक-आधारित वर्डप्रेस थीम एक गेम-चेंजर है। मैंने अतीत में जटिल थीम के साथ संघर्ष किया है, लेकिन यह उपयोग में आसान है।"
+
+#: patterns/testimonials-2.php:198
+#: patterns/testimonials.php:111
+msgid "Business owner"
+msgstr "व्यवसाय के मालिक"
+
+#: patterns/testimonials-2.php:213
+#: patterns/testimonials-3.php:101
+#: patterns/testimonials.php:93
+msgid "Great on any device"
+msgstr "किसी भी डिवाइस पर शानदार"
+
+#: patterns/testimonials-2.php:217
+#: patterns/testimonials-3.php:105
+#: patterns/testimonials.php:96
+msgid "I've used a few different website builders over the years, and this one is by far the best. The responsive design ensures that my website looks great on any device."
+msgstr "मैंने वर्षों में कुछ अलग-अलग वेबसाइट बिल्डरों का उपयोग किया है, और यह अब तक का सबसे अच्छा है। उत्तरदायी डिज़ाइन यह सुनिश्चित करता है कि मेरी वेबसाइट किसी भी डिवाइस पर शानदार दिखती है।"
+
+#: patterns/testimonials-2.php:232
+#: patterns/testimonials-3.php:88
+#: patterns/testimonials.php:63
+msgid "Freelancer"
+msgstr "फ्रीलांसर"
+
+#: patterns/testimonials-3.php:41
+#: patterns/testimonials.php:48
+msgid "This theme made the process of building my website a breeze. The drag-and-drop interface was easy to use and the templates were customizable."
+msgstr "इस थीम ने मेरी वेबसाइट बनाने की प्रक्रिया को बहुत आसान बना दिया। ड्रैग-एंड-ड्रॉप इंटरफेस का उपयोग करना आसान था और टेम्पलेट्स को अनुकूलित किया जा सकता था।"
+
+#: patterns/text-2.php:18
+#: patterns/text-3.php:18
+msgid "Essentials patterns"
+msgstr "आवश्यक पैटर्न"
+
+#: patterns/text-2.php:48
+#: patterns/text-3.php:48
+msgid "Style variations"
+msgstr "शैली भिन्नताएँ"
+
+#: patterns/text-4.php:18
+#: patterns/text.php:18
+msgid "Donec viverra arcu euismod eu blandit mauris viverra."
+msgstr "Donec viverra arcu euismod eu blandit mauris viverra."
+
+#: patterns/text-4.php:28
+#: patterns/text.php:28
+msgid "Placerat elit libero nulla faucibus quam turpis habitasse."
+msgstr "Placerat elit libero nulla faucibus quam turpis habitasse."
+
+#: patterns/text-4.php:38
+#: patterns/text.php:38
+msgid "Mi accumsan pharetra auctor egestas morbi facilisis."
+msgstr "Mi accumsan pharetra auctor egestas morbi facilisis."
+
+#: patterns/text-5.php:31
+msgid "Download Spectra Theme"
+msgstr "स्पेक्ट्रा थीम डाउनलोड करें"
+
+#: patterns/text-5.php:35
+msgid "Version 1.0.0"
+msgstr "संस्करण 1.0.0"
+
+#: patterns/text-5.php:48
+msgid "Download Now"
+msgstr "अब डाउनलोड करें"
+
+#: assets/js/editor.js:1
+#: build/editor.js:44
+#: build/editor.js:45
+msgid "Enable Sticky Header"
+msgstr "स्टिकी हेडर सक्षम करें"
+
+#: assets/js/editor.js:1
+#: build/editor.js:45
+#: build/editor.js:48
+msgid "Transparent header option will be disabled on enabling this option."
+msgstr "इस विकल्प को सक्षम करने पर पारदर्शी हेडर विकल्प अक्षम कर दिया जाएगा।"
+
+#: assets/js/editor.js:1
+#: build/editor.js:53
+#: build/editor.js:71
+msgid "Enable Transparent Header"
+msgstr "पारदर्शी हेडर सक्षम करें"
+
+#: assets/js/editor.js:1
+#: build/editor.js:54
+#: build/editor.js:74
+msgid "Sticky header option will be disabled on enabling this option."
+msgstr "इस विकल्प को सक्षम करने पर स्टिकी हेडर विकल्प अक्षम कर दिया जाएगा।"
+
+#: assets/js/editor.js:1
+#: build/editor.js:494
+#: build/editor.js:507
+msgid "Spectra plugin"
+msgstr "स्पेक्ट्रा प्लगइन"
+
+#: assets/js/editor.js:1
+#: build/editor.js:496
+#: build/editor.js:511
+msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
+msgstr "अपने वेबसाइट को उन्नत और शक्तिशाली ब्लॉकों के साथ पावर-अप करें जो आपको जल्दी से वेबसाइट बनाने में मदद करते हैं!"
+
+#: assets/js/editor.js:1
+#: build/editor.js:778
+#: build/editor.js:781
+msgid "Disable Elements"
+msgstr "तत्व अक्षम करें"
+
+#: assets/js/editor.js:1
+#: build/editor.js:782
+#: build/editor.js:790
+msgid "Header Settings"
+msgstr "हेडर सेटिंग्स"
+
+#: assets/js/editor.js:1
+#: build/editor.js:833
+#: build/editor.js:837
+#: build/editor.js:828
+#: build/editor.js:836
+msgid "Spectra Page Settings"
+msgstr "स्पेक्ट्रा पृष्ठ सेटिंग्स"
+
+#: assets/js/editor.js:1
+#: build/editor.js:207
+#: build/editor.js:249
+msgid "Hide Desktop"
+msgstr "डेस्कटॉप छिपाएँ"
+
+#: assets/js/editor.js:1
+#: build/editor.js:213
+#: build/editor.js:264
+msgid "Hide Tablet"
+msgstr "टैबलेट छिपाएँ"
+
+#: assets/js/editor.js:1
+#: build/editor.js:219
+#: build/editor.js:275
+msgid "Hide Mobile"
+msgstr "मोबाइल छिपाएँ"
+
+#: assets/js/settings.js:1
+#: build/settings.js:76
+#: build/settings.js:61
+msgid "Spectra One Settings"
+msgstr "स्पेक्ट्रा वन सेटिंग्स"
+
+#: assets/js/settings.js:1
+#: build/settings.js:84
+#: build/settings.js:70
+msgid "Scroll to top updated"
+msgstr "ऊपर स्क्रॉल अपडेट किया गया"
+
+#: assets/js/settings.js:1
+#: build/settings.js:85
+#: build/settings.js:71
+msgid "Scroll To Top"
+msgstr "ऊपर स्क्रॉल करें"
+
+#: assets/js/settings.js:1
+#: build/settings.js:357
+#: build/settings.js:205
+msgid "Spectra One Editor Settings"
+msgstr "स्पेक्ट्रा वन संपादक सेटिंग्स"
+
+#: patterns/alternate-image-text.php
+msgctxt "Pattern title"
+msgid "Alternate image text"
+msgstr "वैकल्पिक छवि पाठ"
+
+#: patterns/announcement-bar-2.php
+msgctxt "Pattern title"
+msgid "Announcement bar with social"
+msgstr "सोशल के साथ घोषणा बार"
+
+#: patterns/announcement-bar.php
+msgctxt "Pattern title"
+msgid "Announcement bar"
+msgstr "घोषणा बार"
+
+#: patterns/blog-2.php
+msgctxt "Pattern title"
+msgid "Blog simple"
+msgstr "ब्लॉग सरल"
+
+#: patterns/blog-3.php
+msgctxt "Pattern title"
+msgid "Blog classic"
+msgstr "ब्लॉग क्लासिक"
+
+#: patterns/blog-4.php
+msgctxt "Pattern title"
+msgid "Blog left featured image"
+msgstr "ब्लॉग बाईं ओर विशेष छवि"
+
+#: patterns/blog.php
+msgctxt "Pattern title"
+msgid "Blog grid"
+msgstr "ब्लॉग ग्रिड"
+
+#: patterns/call-to-action-2.php
+msgctxt "Pattern title"
+msgid "Wide banner with button blend"
+msgstr "बटन मिश्रण के साथ चौड़ा बैनर"
+
+#: patterns/call-to-action-3.php
+msgctxt "Pattern title"
+msgid "Wide banner with button inverse"
+msgstr "बटन विपरीत के साथ चौड़ा बैनर"
+
+#: patterns/call-to-action-4.php
+msgctxt "Pattern title"
+msgid "Left text with image"
+msgstr "छवि के साथ बाईं ओर पाठ"
+
+#: patterns/call-to-action-5.php
+#: patterns/call-to-action-6.php
+#: patterns/call-to-action-7.php
+msgctxt "Pattern title"
+msgid "Right text with image"
+msgstr "छवि के साथ दाईं ओर पाठ"
+
+#: patterns/call-to-action-8.php
+msgctxt "Pattern title"
+msgid "Wide banner with button center blend"
+msgstr "बटन केंद्र मिश्रण के साथ चौड़ा बैनर"
+
+#: patterns/call-to-action-9.php
+msgctxt "Pattern title"
+msgid "Wide banner with button center inverse"
+msgstr "बटन केंद्र विपरीत के साथ चौड़ा बैनर"
+
+#: patterns/call-to-action-10.php
+msgctxt "Pattern title"
+msgid "Wide Hero banner with background"
+msgstr "पृष्ठभूमि के साथ चौड़ा हीरो बैनर"
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Wide banner with button"
+msgstr "बटन के साथ चौड़ा बैनर"
+
+#: patterns/contact-2.php
+msgctxt "Pattern title"
+msgid "Contact info card"
+msgstr "संपर्क जानकारी कार्ड"
+
+#: patterns/contact-3.php
+msgctxt "Pattern title"
+msgid "Contact info card with gradient"
+msgstr "ग्रेडिएंट के साथ संपर्क जानकारी कार्ड"
+
+#: patterns/contact-4.php
+msgctxt "Pattern title"
+msgid "Contact info card with background"
+msgstr "पृष्ठभूमि के साथ संपर्क जानकारी कार्ड"
+
+#: patterns/contact-5.php
+msgctxt "Pattern title"
+msgid "Teams three column"
+msgstr "टीम तीन कॉलम"
+
+#: patterns/contact-6.php
+msgctxt "Pattern title"
+msgid "Teams four columns circle"
+msgstr "टीम चार कॉलम वृत्त"
+
+#: patterns/contact-7.php
+msgctxt "Pattern title"
+msgid "Teams three columns square"
+msgstr "टीम तीन कॉलम वर्ग"
+
+#: patterns/contact-8.php
+msgctxt "Pattern title"
+msgid "Teams four columns square"
+msgstr "टीम चार कॉलम वर्ग"
+
+#: patterns/contact-9.php
+msgctxt "Pattern title"
+msgid "Author details"
+msgstr "लेखक विवरण"
+
+#: patterns/contact.php
+msgctxt "Pattern title"
+msgid "Text with contact info"
+msgstr "संपर्क जानकारी के साथ पाठ"
+
+#: patterns/faq-2.php
+msgctxt "Pattern title"
+msgid "Two column FAQ"
+msgstr "दो कॉलम FAQ"
+
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "FAQ"
+msgstr "FAQ"
+
+#: patterns/feature-2.php
+msgctxt "Pattern title"
+msgid "Three column featured center"
+msgstr "तीन कॉलम विशेष केंद्रित"
+
+#: patterns/feature-3.php
+msgctxt "Pattern title"
+msgid "Two column featured left"
+msgstr "दो कॉलम विशेष बाईं ओर"
+
+#: patterns/feature-4.php
+msgctxt "Pattern title"
+msgid "Three column featured grid"
+msgstr "तीन कॉलम विशेष ग्रिड"
+
+#: patterns/feature-5.php
+msgctxt "Pattern title"
+msgid "Three column featured grid outline"
+msgstr "तीन कॉलम विशेष ग्रिड रूपरेखा"
+
+#: patterns/feature-6.php
+msgctxt "Pattern title"
+msgid "Three column featured grid background"
+msgstr "तीन कॉलम विशेष ग्रिड पृष्ठभूमि"
+
+#: patterns/feature-7.php
+msgctxt "Pattern title"
+msgid "Image with feature list"
+msgstr "विशेषता सूची के साथ छवि"
+
+#: patterns/feature-8.php
+msgctxt "Pattern title"
+msgid "Image with feature list column"
+msgstr "विशेषता सूची कॉलम के साथ छवि"
+
+#: patterns/feature.php
+msgctxt "Pattern title"
+msgid "Image with feature list and heading"
+msgstr "विशेषता सूची और शीर्षक के साथ छवि"
+
+#: patterns/featured-logos.php
+msgctxt "Pattern title"
+msgid "Featured logos"
+msgstr "विशेषीकृत लोगो"
+
+#: patterns/footer-2.php
+msgctxt "Pattern title"
+msgid "Footer minimal menu center"
+msgstr "फुटर न्यूनतम मेनू केंद्र"
+
+#: patterns/footer-3.php
+msgctxt "Pattern title"
+msgid "Footer minimal menu right"
+msgstr "फुटर न्यूनतम मेनू दाईं ओर"
+
+#: patterns/footer-4.php
+msgctxt "Pattern title"
+msgid "Footer five columns menu inline"
+msgstr "फुटर पांच कॉलम मेनू इनलाइन"
+
+#: patterns/footer-5.php
+msgctxt "Pattern title"
+msgid "Footer six columns menu separated"
+msgstr "फुटर छह कॉलम मेनू अलग"
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "फुटर"
+
+#: patterns/header-2.php
+msgctxt "Pattern title"
+msgid "Header center menu"
+msgstr "हेडर केंद्र मेनू"
+
+#: patterns/header-3.php
+msgctxt "Pattern title"
+msgid "Header left menu"
+msgstr "हेडर बाईं ओर मेनू"
+
+#: patterns/header-4.php
+msgctxt "Pattern title"
+msgid "Header blend"
+msgstr "हेडर मिश्रण"
+
+#: patterns/header-5.php
+msgctxt "Pattern title"
+msgid "Header center menu blend"
+msgstr "हेडर केंद्र मेनू मिश्रण"
+
+#: patterns/header-6.php
+msgctxt "Pattern title"
+msgid "Header left menu blend"
+msgstr "हेडर बाएं मेनू मिश्रण"
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr "हेडर"
+
+#: patterns/hero-banner-2.php
+msgctxt "Pattern title"
+msgid "Hero banner blend"
+msgstr "हीरो बैनर मिश्रण"
+
+#: patterns/hero-banner-3.php
+msgctxt "Pattern title"
+msgid "Hero banner inverse"
+msgstr "हीरो बैनर विपरीत"
+
+#: patterns/hero-banner-4.php
+msgctxt "Pattern title"
+msgid "Hero banner two column blend"
+msgstr "हीरो बैनर दो कॉलम मिश्रण"
+
+#: patterns/hero-banner-5.php
+msgctxt "Pattern title"
+msgid "Hero banner two column inverse"
+msgstr "हीरो बैनर दो कॉलम विपरीत"
+
+#: patterns/hero-banner-6.php
+msgctxt "Pattern title"
+msgid "Hero banner with background"
+msgstr "हीरो बैनर बैकग्राउंड के साथ"
+
+#: patterns/hero-banner.php
+msgctxt "Pattern title"
+msgid "Hero banner"
+msgstr "हीरो बैनर"
+
+#: patterns/hero-page-2.php
+msgctxt "Pattern title"
+msgid "Hero page title blend"
+msgstr "हीरो पृष्ठ शीर्षक मिश्रण"
+
+#: patterns/hero-page.php
+msgctxt "Pattern title"
+msgid "Hero page title"
+msgstr "हीरो पृष्ठ शीर्षक"
+
+#: patterns/hero-single-2.php
+msgctxt "Pattern title"
+msgid "Hero single title blend"
+msgstr "हीरो सिंगल शीर्षक मिश्रण"
+
+#: patterns/hero-single.php
+msgctxt "Pattern title"
+msgid "Hero single title"
+msgstr "हीरो सिंगल शीर्षक"
+
+#: patterns/post-grid.php
+msgctxt "Pattern title"
+msgid "Post grid"
+msgstr "पोस्ट ग्रिड"
+
+#: patterns/pricing-2.php
+msgctxt "Pattern title"
+msgid "Pricing two column highlight"
+msgstr "मूल्य निर्धारण दो कॉलम हाइलाइट"
+
+#: patterns/pricing-3.php
+msgctxt "Pattern title"
+msgid "Pricing two column with icon"
+msgstr "मूल्य निर्धारण दो कॉलम आइकन के साथ"
+
+#: patterns/pricing-4.php
+msgctxt "Pattern title"
+msgid "Pricing three column"
+msgstr "मूल्य निर्धारण तीन कॉलम"
+
+#: patterns/pricing-5.php
+msgctxt "Pattern title"
+msgid "Pricing three column highlight"
+msgstr "मूल्य निर्धारण तीन कॉलम हाइलाइट"
+
+#: patterns/pricing-6.php
+msgctxt "Pattern title"
+msgid "Pricing three column with icon"
+msgstr "मूल्य निर्धारण तीन कॉलम आइकन के साथ"
+
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing two column"
+msgstr "मूल्य निर्धारण दो कॉलम"
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar default"
+msgstr "साइडबार डिफ़ॉल्ट"
+
+#: patterns/split-image-right.php
+msgctxt "Pattern title"
+msgid "Split image right"
+msgstr "स्प्लिट इमेज दाएं"
+
+#: patterns/template-404.php
+msgctxt "Pattern title"
+msgid "Template 404"
+msgstr "टेम्पलेट 404"
+
+#: patterns/template-archive.php
+msgctxt "Pattern title"
+msgid "Template Archive"
+msgstr "टेम्पलेट आर्काइव"
+
+#: patterns/template-index.php
+msgctxt "Pattern title"
+msgid "Template index"
+msgstr "टेम्पलेट इंडेक्स"
+
+#: patterns/template-page-sidebar.php
+msgctxt "Pattern title"
+msgid "Template page sidebar"
+msgstr "टेम्पलेट पृष्ठ साइडबार"
+
+#: patterns/template-page.php
+msgctxt "Pattern title"
+msgid "Template page"
+msgstr "टेम्पलेट पृष्ठ"
+
+#: patterns/template-search.php
+msgctxt "Pattern title"
+msgid "Template search"
+msgstr "टेम्पलेट खोज"
+
+#: patterns/template-single-sidebar.php
+msgctxt "Pattern title"
+msgid "Template single sidebar"
+msgstr "टेम्पलेट सिंगल साइडबार"
+
+#: patterns/template-single.php
+msgctxt "Pattern title"
+msgid "Template single"
+msgstr "टेम्पलेट सिंगल"
+
+#: patterns/testimonials-2.php
+msgctxt "Pattern title"
+msgid "Testimonial grid"
+msgstr "गवाही ग्रिड"
+
+#: patterns/testimonials-3.php
+msgctxt "Pattern title"
+msgid "Testimonial list"
+msgstr "गवाही सूची"
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonial"
+msgstr "गवाही"
+
+#: patterns/text-2.php
+msgctxt "Pattern title"
+msgid "Counter four column center"
+msgstr "काउंटर चार कॉलम केंद्र"
+
+#: patterns/text-3.php
+msgctxt "Pattern title"
+msgid "Counter four column left"
+msgstr "काउंटर चार कॉलम बाएं"
+
+#: patterns/text-4.php
+msgctxt "Pattern title"
+msgid "Counter three column center"
+msgstr "काउंटर तीन कॉलम केंद्र"
+
+#: patterns/text-5.php
+msgctxt "Pattern title"
+msgid "text with download"
+msgstr "डाउनलोड के साथ पाठ"
+
+#: patterns/text.php
+msgctxt "Pattern title"
+msgid "Counter three column left"
+msgstr "काउंटर तीन कॉलम बाएं"
+
+#: patterns/three-column-featured.php
+msgctxt "Pattern title"
+msgid "Three column featured"
+msgstr "तीन कॉलम विशेष"
+
+#: patterns/wide-banner-with-button.php
+msgctxt "Pattern title"
+msgid "Wide banner with button center"
+msgstr "बटन केंद्र के साथ चौड़ा बैनर"
+
+#: styles/aquamarine.json
+msgctxt "Style variation name"
+msgid "Aquamarine"
+msgstr "एक्वामरीन"
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr "गहरा"
+
+#: styles/easter-green.json
+msgctxt "Style variation name"
+msgid "Easter Green"
+msgstr "ईस्टर हरा"
+
+#: styles/mango.json
+msgctxt "Style variation name"
+msgid "Mango"
+msgstr "आम"
+
+#: styles/pink.json
+msgctxt "Style variation name"
+msgid "Pink"
+msgstr "गुलाबी"
+
+#: styles/rain-forest.json
+msgctxt "Style variation name"
+msgid "Rain Forest"
+msgstr "वृष्टि वन"
+
+#: styles/sweet-corn.json
+msgctxt "Style variation name"
+msgid "Sweet Corn"
+msgstr "मीठा मकई"
+
+#: styles/ultra-marine.json
+msgctxt "Style variation name"
+msgid "Ultra Marine"
+msgstr "अल्ट्रा मरीन"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "प्राथमिक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "द्वितीयक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Heading"
+msgstr "शीर्षक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Body"
+msgstr "शरीर"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr "पृष्ठभूमि"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr "तृतीयक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Quaternary"
+msgstr "चतुर्थक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr "सतह"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Foreground"
+msgstr "फोरग्राउंड"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Outline"
+msgstr "आउटलाइन"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral"
+msgstr "न्यूट्रल"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Transparent"
+msgstr "पारदर्शी"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Current Color"
+msgstr "वर्तमान रंग"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Color name"
+msgid "Inherit"
+msgstr "विरासत"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Gradient name"
+msgid "Primary"
+msgstr "प्राथमिक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary"
+msgstr "प्राथमिक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Secondary"
+msgstr "द्वितीयक"
+
+#: styles/aquamarine.json
+#: styles/dark.json
+#: styles/easter-green.json
+#: styles/mango.json
+#: styles/pink.json
+#: styles/rain-forest.json
+#: styles/sweet-corn.json
+#: styles/ultra-marine.json
+#: theme.json
+msgctxt "Duotone name"
+msgid "Tertiary"
+msgstr "तृतीयक"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XXX Small"
+msgstr "XXX छोटा"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX Small"
+msgstr "XX छोटा"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X Small"
+msgstr "X छोटा"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "छोटा"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "मध्यम"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "बड़ा"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X Large"
+msgstr "X बड़ा"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX Large"
+msgstr "XX बड़ा"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr "इंटर"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr "X छोटा"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "छोटा"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "मध्यम"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "बड़ा"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Large"
+msgstr "X बड़ा"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XX Large"
+msgstr "XX बड़ा"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXX Large"
+msgstr "XXX बड़ा"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XXXX Large"
+msgstr "XXXX बड़ा"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page sidebar"
+msgstr "पृष्ठ साइडबार"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single sidebar"
+msgstr "एकल साइडबार"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "हेडर"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "फुटर"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "साइडबार"

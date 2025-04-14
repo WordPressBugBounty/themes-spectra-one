@@ -29,7 +29,6 @@ function enqueue_frontend_scripts(): void {
 	$file_prefix = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? '' : '.min';
 	$dir_name    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? 'unminified' : 'minified';
 
-
 	$js_uri = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
 	$asset  = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/script.asset.php' : require SWT_DIR . 'assets/js/script.asset.php';
 	$deps   = $asset['dependencies'];
@@ -65,6 +64,7 @@ function enqueue_frontend_scripts(): void {
 	wp_register_script( SWT_SLUG, $js_uri . 'script.js', $deps, SWT_VER, true );
 
 	wp_enqueue_script( SWT_SLUG );
+	wp_set_script_translations( SWT_SLUG, 'spectra-one', SWT_DIR . 'languages' );
 
 	$swt_inline_js = apply_filters( 'swt_dynamic_theme_js', '' );
 
@@ -99,7 +99,7 @@ function enqueue_editor_scripts(): void {
 
 	$js    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? get_uri() . 'build/' : get_uri() . 'assets/js/';
 	$asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/editor.asset.php' : require SWT_DIR . 'assets/js/editor.asset.php';
-	$deps  = $asset['dependencies'];    
+	$deps  = $asset['dependencies'];
 	array_push( $deps, 'updates' );
 
 	$settings_asset = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? require SWT_DIR . 'build/settings.asset.php' : require SWT_DIR . 'assets/js/settings.asset.php';
@@ -111,10 +111,12 @@ function enqueue_editor_scripts(): void {
 	wp_register_script( SWT_SLUG . '-editor', $js . 'editor.js', $deps, SWT_VER, true );
 
 	wp_enqueue_script( SWT_SLUG . '-editor' );
+	wp_set_script_translations( SWT_SLUG . '-editor', 'spectra-one', SWT_DIR . 'languages' );
 
 	if ( isset( $GLOBALS['pagenow'] ) && 'site-editor.php' === $GLOBALS['pagenow'] ) {
 		wp_register_script( SWT_SLUG . '-settings', $js . 'settings.js', $settings_deps, SWT_VER, true );
 		wp_enqueue_script( SWT_SLUG . '-settings' );
+		wp_set_script_translations( SWT_SLUG . '-settings', 'spectra-one', SWT_DIR . 'languages' );
 	}
 
 	$editor_script_data = localize_editor_script();
@@ -222,12 +224,9 @@ function enqueue_editor_block_styles(): void {
 	add_editor_style( $css_uri . 'editor' . $file_prefix . '.css' );
 
 	add_editor_style( $css_uri . 'gutenberg' . $file_prefix . '.css' );
-
 }
 
 add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );
-
-
 
 /**
  * Enqueue Editor Scripts.
@@ -236,19 +235,58 @@ add_action( 'after_setup_theme', SWT_NS . 'enqueue_editor_block_styles' );
  *
  * @return void
  */
-function spectra_one_setup(): void {
+function spectra_one_load_textdomain(): void {
 	/*
 	* Make theme available for translation.
 	* Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyfifteen
 	* If you're building a theme based on spectra-one, use a find and replace
 	* to change 'spectra-one' to the name of your theme in all the template files
 	*/
-	load_theme_textdomain( 'spectra-one', get_uri() . 'languages' );
+	$lang_dir = SWT_DIR . 'languages/';
+
+	/**
+	 * Filters the languages directory path to use for plugin.
+	 *
+	 * @param string $lang_dir The languages directory path.
+	 */
+	$lang_dir = apply_filters( 'swt_languages_directory', $lang_dir );
+
+	// Traditional WordPress plugin locale filter.
+	global $wp_version;
+
+	$get_locale = get_locale();
+
+	if ( $wp_version >= 4.7 ) {
+		$get_locale = get_user_locale();
+	}
+
+	/**
+	 * Language Locale for plugin
+	 *
+	 * @var string $get_locale The locale to use.
+	 * Uses get_user_locale()` in WordPress 4.7 or greater,
+	 * otherwise uses `get_locale()`.
+	 */
+	$locale = apply_filters( 'plugin_locale', $get_locale, 'spectra-one' );
+	$mofile = sprintf( '%1$s-%2$s.mo', 'spectra-one', $locale );
+
+	// Setup paths to current locale file.
+	$mofile_global = defined( 'WP_LANG_DIR' ) ? WP_LANG_DIR . '/plugins/' . $mofile : '';
+	$mofile_local  = $lang_dir . $mofile;
+
+	if ( file_exists( $mofile_global ) ) {
+		// Look in global /wp-content/languages/spectra-one/ folder.
+		load_textdomain( 'spectra-one', $mofile_global );
+	} elseif ( file_exists( $mofile_local ) ) {
+		// Look in local /wp-content/plugins/spectra-one/languages/ folder.
+		load_textdomain( 'spectra-one', $mofile_local );
+	} else {
+		// Load the default language files.
+		load_theme_textdomain( 'spectra-one', get_uri() . 'languages' );
+	}
 }
 
-add_action( 'after_setup_theme', SWT_NS . 'spectra_one_setup' );
-
-
+add_action( 'init', SWT_NS . 'spectra_one_load_textdomain' );
 
 /**
  * Pattern categories.
@@ -273,7 +311,6 @@ function pattern_categories(): void {
 		'pricing',
 		array( 'label' => esc_html__( 'Pricing', 'spectra-one' ) )
 	);
-
 }
 
 add_action( 'init', SWT_NS . 'pattern_categories' );

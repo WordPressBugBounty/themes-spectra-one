@@ -21,13 +21,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  * @since 1.0.5
  */
-function run_function_after_theme_update():void {
+function run_function_after_theme_update(): void {
 	$version          = wp_get_theme()->get( 'Version' );
 	$update_callbacks = backward_compatibility_update_callbacks();
 
 	if ( $version ) {
 		/** @psalm-suppress PossiblyInvalidArgument */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- $version comes from wordpress function itself.
-		list( $current_version ) = explode( '-', $version );
+		[ $current_version ] = explode( '-', $version );
 		$old_version             = get_option( 'swt_theme_version' );
 
 		if ( $old_version !== $current_version && $old_version < $current_version ) {
@@ -51,18 +51,16 @@ function run_function_after_theme_update():void {
 }
 add_action( 'after_setup_theme', SWT_NS . 'run_function_after_theme_update' );
 
-
 /**
  * Implement theme update logic.
  *
  * @return void
  * @since 1.0.5
  */
-function remove_option_after_theme_update() {
+function remove_option_after_theme_update(): void {
 	delete_option( 'swt_theme_version' );
 }
 add_action( 'switch_theme', SWT_NS . 'remove_option_after_theme_update' );
-
 
 /**
  * Update fonts for the Spectra plugin.
@@ -73,7 +71,7 @@ add_action( 'switch_theme', SWT_NS . 'remove_option_after_theme_update' );
  *
  * @return void
  */
-function updater_spectra_plugin_fonts() {
+function updater_spectra_plugin_fonts(): void {
 
 	if ( is_spectra_plugin() ) {
 		/** @psalm-suppress UndefinedClass */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Needed to Regenerate fonts.
@@ -99,7 +97,7 @@ function updater_spectra_plugin_fonts() {
  *
  * @return void
  */
-function updater_custom_fonts_plugin() {
+function updater_custom_fonts_plugin(): void {
 
 	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Needed to Regenerate fonts.
 	$is_custom_font_plugin = is_custom_fonts_plugin();
@@ -118,7 +116,6 @@ function updater_custom_fonts_plugin() {
 		bcf_google_fonts_compatibility()->update_fse_theme_json();
 		// @codingStandardsIgnoreEnd
 	}
-
 }
 
 /**
@@ -132,14 +129,13 @@ function backward_compatibility_update_callbacks() {
 	);
 }
 
-
 /**
  * Handle backward compatibility for v1.1.1
  *
  * @return void
  * @since 1.1.1
  */
-function backward_compatibility_1_1_1() {
+function backward_compatibility_1_1_1(): void {
 	$swt_theme_options = get_option( 'swt_theme_options', array() );
 
 	if ( ! isset( $swt_theme_options['enable_default_spacing_paddings'] ) ) {

@@ -74,5 +74,5 @@ register_block_style(
                 margin-top: 0.2em;
             }
 		',
-	) 
+	)
 );

@@ -25,7 +25,7 @@ add_filter( 'render_block', SWT_NS . 'render_dynamic_variables', 10, 2 );
  * @param array  $block Block Properties As An Array.
  * @return string
  */
-function render_dynamic_variables( string $block_content, array $block ):string {
+function render_dynamic_variables( string $block_content, array $block ): string {
 
 	if ( isset( $block['blockName'] ) && ( 'core/navigation-submenu' === $block['blockName'] || 'core/navigation-link' === $block['blockName'] ) && get_home_url() ) {
 
@@ -46,6 +46,6 @@ function render_dynamic_variables( string $block_content, array $block ):string 
 
 		$block_content = $dom->saveHTML();
 	}
-	
+
 	return $block_content;
 }

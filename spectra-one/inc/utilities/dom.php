@@ -16,17 +16,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 use function bin2hex;
-use function iconv;
-use function libxml_clear_errors;
+use function current;
 use DOMDocument;
 use DOMElement;
+use function iconv;
 use function is_a;
+use function libxml_clear_errors;
 use function libxml_use_internal_errors;
-use function current;
-use function preg_replace_callback;
 use function ltrim;
-use function strtoupper;
+use function preg_replace_callback;
 use function sprintf;
+use function strtoupper;
 
 /**
  * Formatted DOMDocument object from string.

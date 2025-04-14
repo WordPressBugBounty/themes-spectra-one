@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_filter( 'render_block_core/post-terms', SWT_NS . 'render_post_terms_block', 10, 2 );
 
-
 /**
  * Modifies front end HTML output of block.
  *
@@ -35,7 +34,6 @@ function render_post_terms_block( string $html, array $block ): string {
 	}
 	return $html;
 }
-
 
 /**
  * Load Inline Css.

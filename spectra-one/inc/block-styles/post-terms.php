@@ -38,5 +38,5 @@ register_block_style(
 				display: none;
 			}
 		',
-	) 
+	)
 );

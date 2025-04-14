@@ -24,7 +24,7 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  * @param array  $block Block Properties As An Array.
  * @return string
  */
-function render_header( string $block_content, array $block ):string {
+function render_header( string $block_content, array $block ): string {
 	$post_id = swt_get_the_ID();
 
 	$sticky_header_condition = $post_id
@@ -36,7 +36,7 @@ function render_header( string $block_content, array $block ):string {
 		: ( $block['attrs']['SWTTransparentHeader'] ?? false );
 
 	/** @psalm-suppress PossiblyFalseArgument */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
-	$not_transparent_header_condition = ! ( isset( $block['attrs']['SWTTransparentHeader'] ) ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, '_swt_meta_transparent_header', true ) );
+	$not_transparent_header_condition = ! isset( $block['attrs']['SWTTransparentHeader'] ) || ( isset( $block['attrs']['SWTTransparentHeader'] ) && false === $block['attrs']['SWTTransparentHeader'] ) || ( get_post_meta( $post_id, '_swt_meta_transparent_header', true ) );
 
 	if ( $sticky_header_condition && ! get_post_meta( $post_id, '_swt_meta_transparent_header', true ) ) {
 
@@ -61,7 +61,7 @@ function render_header( string $block_content, array $block ):string {
 	}
 
 	if ( $transparent_header_condition && ! get_post_meta( $post_id, '_swt_meta_sticky_header', true ) ) {
-		
+
 		$dom    = dom( $block_content );
 		$header = get_dom_element( 'header', $dom );
 
@@ -214,7 +214,6 @@ function header_transparent_inline_css( string $css ): string {
 	$css .= parse_css( $css_output );
 	return $css;
 }
-
 
 /**
  * Load header wp_admin_bar spacing inline js.

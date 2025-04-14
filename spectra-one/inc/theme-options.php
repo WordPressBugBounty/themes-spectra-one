@@ -58,7 +58,6 @@ function get_theme_custom_styles(): array {
 	);
 }
 
-
 /**
  * Get css variable prefix
  *
@@ -68,7 +67,6 @@ function get_theme_custom_styles(): array {
 function get_css_variable_prefix(): string {
 	return '--wp--preset--color--';
 }
-
 
 /**
  * Get palette slugs
@@ -102,16 +100,15 @@ function get_palette_slugs(): array {
  * @param string $font font size and unit.
  * @return array
  */
-function split_font_size_and_unit( string $font ):array {
+function split_font_size_and_unit( string $font ): array {
 
 	if ( ! str_contains( $font, 'var:preset' ) ) {
-		$font = preg_split( '/(?<=[0-9])(?=[a-z]+)/i', $font );
-		return $font;
-	} else {
-		return array(
-			'0' => $font,
-		);
+		return preg_split( '/(?<=[0-9])(?=[a-z]+)/i', $font );
 	}
+
+	return array(
+		'0' => $font,
+	);
 }
 
 /**
@@ -208,5 +205,4 @@ function get_spectra_one_settings(): array {
 		'headings-line-height'     => $headings_line_height,
 		'headings-font-variant'    => $headings_font_variant,
 	);
-
 }

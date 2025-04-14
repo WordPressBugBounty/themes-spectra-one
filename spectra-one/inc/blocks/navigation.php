@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_filter( 'render_block_core/navigation', SWT_NS . 'render_navigation_block', 10, 2 );
 
-
 /**
  * Modifies front end HTML output of block.
  *
@@ -33,9 +32,9 @@ function render_navigation_block( string $block_content, array $block ): string 
 	if ( isset( $block['blockName'] ) && 'core/navigation' === $block['blockName'] ) {
 
 		/**
-		* Remove this once WordPress fixes this issue in 6.3 and above, Where it add the same classes to sub navigation which causes color issue.
-		* Start
-		*/
+		 * Remove this once WordPress fixes this issue in 6.3 and above, Where it add the same classes to sub navigation which causes color issue.
+		 * Start
+		 */
 
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'navigation_inline_css' );
 
@@ -48,22 +47,19 @@ function render_navigation_block( string $block_content, array $block ): string 
 
 		$classes = $element->getAttribute( 'class' );
 
-
 		if ( str_contains( $classes, 'wp-block-navigation__container' ) ) {
 			$element->setAttribute( 'class', 'wp-block-navigation__container' );
 		}
 		$block_content = $dom->saveHTML();
 
 		/**
-		* End
-		*/
+		 * End
+		 */
 
 	}
 
 	return $block_content;
 }
-
-
 
 /**
  * Load Inline Css.

@@ -9,10 +9,10 @@
  $get_url = trailingslashit(get_template_directory_uri());
 
  $images = [
-    $get_url . "assets/image/placeholder-portrait.svg",
-     $get_url . "assets/image/featured-1.svg",
-     $get_url . "assets/image/featured-2.svg",
-     $get_url . "assets/image/featured-3.svg",
+     $get_url . 'assets/image/placeholder-portrait.svg',
+     $get_url . 'assets/image/featured-1.svg',
+     $get_url . 'assets/image/featured-2.svg',
+     $get_url . 'assets/image/featured-3.svg',
  ];
 
  ?>

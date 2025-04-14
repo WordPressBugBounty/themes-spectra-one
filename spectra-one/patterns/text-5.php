@@ -5,14 +5,6 @@
  * Categories: call-to-action
  * Keywords: text with download
  */
-
-
-$get_url = trailingslashit(get_template_directory_uri());
-
-$images = [
-    $get_url . "assets/image/placeholder-portrait.svg",
-];
-
 ?>
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large","padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->

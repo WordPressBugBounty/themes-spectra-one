@@ -17,7 +17,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_filter( 'render_block_core/navigation-submenu', SWT_NS . 'render_navigation_submenu_block', 10, 2 );
 
-
 /**
  * Modifies front end HTML output of block.
  *
@@ -35,7 +34,6 @@ function render_navigation_submenu_block( string $html, array $block ): string {
 	}
 	return $html;
 }
-
 
 /**
  * Load Inline Css.

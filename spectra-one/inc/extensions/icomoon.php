@@ -15,19 +15,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-add_filter( 'block_editor_settings_all', SWT_NS . 'icomoon_block_editor_css', 10, 2 ); 
+add_filter( 'block_editor_settings_all', SWT_NS . 'icomoon_block_editor_css', 10, 2 );
 
 add_filter( 'render_block', SWT_NS . 'render_icomoon', 10, 2 );
 
 /**
  * Icomoon render function.
- * 
+ *
  * @since 1.0.0
  * @param string $block_content Entire Block Content.
  * @param array  $block Block Properties As An Array.
  * @return string
  */
-function render_icomoon( string $block_content, array $block ):string {
+function render_icomoon( string $block_content, array $block ): string {
 
 	if ( ( isset( $block['blockName'] ) && 'core/archives' === $block['blockName'] ) || ( isset( $block['blockName'] ) && 'core/categories' === $block['blockName'] ) ) {
 		if ( isset( $block['attrs']['displayAsDropdown'] ) && true === $block['attrs']['displayAsDropdown'] ) {
@@ -46,9 +46,8 @@ function render_icomoon( string $block_content, array $block ):string {
  * @return string
  */
 function icomoon_inline_css( string $css ): string {
-	return $css .= icomoon_import_fonts();
+	return $css . icomoon_import_fonts();
 }
-
 
 /**
  * Load icomoon editor inline css.
@@ -57,19 +56,19 @@ function icomoon_inline_css( string $css ): string {
  * @param array $editor_settings Inline CSS.
  * @return array
  */
-function icomoon_block_editor_css( array $editor_settings ):array {
+function icomoon_block_editor_css( array $editor_settings ): array {
 
 	$editor_settings['styles'][] = array( 'css' => icomoon_import_fonts() );
 
 	return $editor_settings;
-} 
+}
 /**
  * Import icomoon fonts.
  *
  * @since 1.0.0
  * @return string
  */
-function icomoon_import_fonts():string {
+function icomoon_import_fonts(): string {
 
 	$css_output = array(
 
@@ -83,4 +82,4 @@ function icomoon_import_fonts():string {
 	);
 
 	return parse_css( $css_output );
-}	
+}

@@ -24,4 +24,3 @@ require_once __DIR__ . '/admin-bar.php';
 require_once __DIR__ . '/icomoon.php';
 require_once __DIR__ . '/scroll-top.php';
 require_once __DIR__ . '/dynamic-variables.php';
-

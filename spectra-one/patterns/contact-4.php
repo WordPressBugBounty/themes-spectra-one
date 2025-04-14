@@ -9,8 +9,8 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/placeholder-wide.svg",
-    $get_url . "assets/image/avatar-square-3.jpg",
+    $get_url . 'assets/image/placeholder-wide.svg',
+    $get_url . 'assets/image/avatar-square-3.jpg',
 ];
 
 ?>

@@ -23,7 +23,7 @@ add_action( 'init', SWT_NS . 'register_meta_settings' );
  * @since 0.0.1
  * @return void
  */
-function register_meta_settings():void {
+function register_meta_settings(): void {
 	register_post_meta(
 		'',
 		'_swt_meta_header_display',

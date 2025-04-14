@@ -24,8 +24,8 @@ add_filter( 'admin_bar_menu', SWT_NS . 'add_admin_menu', 90, 1 );
  * @since 1.0.0
  * @return void
  */
-function add_admin_menu( \WP_Admin_Bar $admin_bar ):void {
-	
+function add_admin_menu( \WP_Admin_Bar $admin_bar ): void {
+
 	if ( is_admin() ) {
 		return;
 	}
@@ -42,12 +42,12 @@ function add_admin_menu( \WP_Admin_Bar $admin_bar ):void {
 
 	foreach ( $get_block_templates as $single ) {
 
-		if ( $template_path && isset( $single->slug ) && $single->slug === $template_path ) {
+		if ( $template_path && $single->slug === $template_path ) {
 			$id = $single->id;
 			break;
 		}
 
-		if ( isset( $single->content ) && $single->content === $_wp_current_template_content ) {
+		if ( $single->content === $_wp_current_template_content ) {
 			$id = $single->id;
 			break;
 		}
@@ -63,6 +63,6 @@ function add_admin_menu( \WP_Admin_Bar $admin_bar ):void {
 			'meta'   => array(
 				'title' => __( 'Edit template', 'spectra-one' ), // This title will show on hover.
 			),
-		) 
+		)
 	);
 }

@@ -15,7 +15,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-
 add_filter( 'wp', SWT_NS . 'spectra_compatibility', 10, 2 );
 
 // @codingStandardsIgnoreStart
@@ -23,7 +22,7 @@ add_filter( 'wp', SWT_NS . 'spectra_compatibility', 10, 2 );
  * @psalm-suppress MissingClosureParamType
  * @psalm-suppress MissingClosureReturnType
  */
-add_filter( 'uagb_default_blocks_editor_spacing', function( $spacing ) {
+add_filter( 'uagb_default_blocks_editor_spacing', static function( $spacing ) {
 	$block_spacing = apply_filters( 'swt_spctr_editor_block_spacing', 15 );
 	return $spacing > $block_spacing ? $spacing : $block_spacing;
 });
@@ -36,7 +35,7 @@ add_filter( 'uagb_default_blocks_editor_spacing', function( $spacing ) {
  *
  * @since 1.1.1
  */
-add_filter( 'wp_theme_json_data_user', function( $theme_json ) {
+add_filter( 'wp_theme_json_data_user', static function( $theme_json ) {
 
 	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
 	if ( ! enable_default_spacing_paddings() ) {
@@ -60,7 +59,7 @@ add_filter( 'wp_theme_json_data_user', function( $theme_json ) {
  * @since 0.0.3
  * @return void
  */
-function spectra_compatibility() {
+function spectra_compatibility(): void {
 	if ( is_spectra_plugin() ) {
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'spectra_compatibility_inline_css' );
 	}

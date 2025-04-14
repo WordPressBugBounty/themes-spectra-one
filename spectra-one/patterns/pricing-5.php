@@ -9,7 +9,7 @@
 $get_url = trailingslashit(get_template_directory_uri());
 
 $images = [
-    $get_url . "assets/image/circle-check.svg"
+    $get_url . 'assets/image/circle-check.svg',
 ];
 
 ?>
