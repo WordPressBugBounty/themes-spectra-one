@@ -32,7 +32,7 @@ function create_rest_routes(): void {
 				'methods'             => \WP_REST_Server::READABLE,
 				'callback'            => SWT_NS . 'swt_get_global_settings',
 				'permission_callback' => static function () {
-					return true;
+					return current_user_can( 'edit_theme_options' );
 				},
 			),
 			array(
@@ -70,9 +70,27 @@ function swt_update_global_settings( \WP_REST_Request $request ) {
 
 	$fields = isset( $request['setting'] ) ? $request['setting'] : array();
 
-	if ( ! empty( $fields ) ) {
-		update_option( 'swt_theme_options', $fields );
+	if ( ! is_array( $fields ) || empty( $fields ) ) {
+		return new \WP_REST_Response(
+			array( 'message' => __( 'No valid settings were provided for update.', 'spectra-one' ) ),
+			200
+		);
 	}
+
+	$allowed_fields = array( 'scroll_top', 'enable_default_spacing_paddings' );
+	$options        = get_option( 'swt_theme_options', array() );
+
+	if ( ! is_array( $options ) ) {
+		$options = array();
+	}
+
+	foreach ( $allowed_fields as $key ) {
+		if ( isset( $fields[ $key ] ) ) {
+			$options[ $key ] = (bool) $fields[ $key ];
+		}
+	}
+
+	update_option( 'swt_theme_options', $options );
 
 	return rest_ensure_response( 'success' );
 }

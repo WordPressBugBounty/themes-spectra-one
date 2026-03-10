@@ -152,11 +152,11 @@ function render_image_placeholder( string $html, array $block ): string {
 		return $html;
 	}
 
-	$url_rel    = isset( $block['linkTarget'] ) && $block['linkTarget'] ? 'target="' . $block['linkTarget'] . '"' : '';
-	$url_target = isset( $block['rel'] ) && $block['rel'] ? 'rel="' . $block['rel'] . '"' : '';
+	$url_rel    = isset( $block['linkTarget'] ) && $block['linkTarget'] ? 'target="' . esc_attr( $block['linkTarget'] ) . '"' : '';
+	$url_target = isset( $block['rel'] ) && $block['rel'] ? 'rel="' . esc_attr( $block['rel'] ) . '"' : '';
 
 	/** @psalm-suppress PossiblyFalseOperand */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort
-	$default_placeholder = isset( $block['isLink'] ) && true === $block['isLink'] ? '<a href="' . get_the_permalink() . '" ' . $url_rel . ' ' . $url_target . ' ><figure class="wp-block-image"><img src="" alt=""/></figure></a>' : '<figure class="wp-block-image"><img src="" alt=""/></figure>';
+	$default_placeholder = isset( $block['isLink'] ) && true === $block['isLink'] ? '<a href="' . esc_url( get_the_permalink() ) . '" ' . $url_rel . ' ' . $url_target . ' ><figure class="wp-block-image"><img src="" alt=""/></figure></a>' : '<figure class="wp-block-image"><img src="" alt=""/></figure>';
 	$html                = ! $html ? $default_placeholder : $html;
 	$dom                 = dom( $html );
 	$svg                 = get_svg_icon( 'placeholder', 30 );

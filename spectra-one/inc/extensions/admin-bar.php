@@ -59,7 +59,7 @@ function add_admin_menu( \WP_Admin_Bar $admin_bar ): void {
 			'parent' => null,
 			'group'  => null,
 			'title'  => '<span class="ab-icon dashicons-edit" style="top:2px"></span>' . __( 'Edit template', 'spectra-one' ),
-			'href'   => admin_url( 'site-editor.php?postType=wp_template&postId=' . $id . '' ),
+			'href'   => esc_url( admin_url( 'site-editor.php?postType=wp_template&postId=' . rawurlencode( $id ) ) ),
 			'meta'   => array(
 				'title' => __( 'Edit template', 'spectra-one' ), // This title will show on hover.
 			),

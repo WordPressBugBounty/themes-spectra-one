@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-const SWT_VER  = '1.1.7';
+const SWT_VER  = '1.1.8';
 const SWT_SLUG = 'spectra-one';
 const SWT_NAME = 'Spectra One';
 const SWT_PFX  = 'swt';
@@ -42,3 +42,8 @@ require_once SWT_DIR . 'inc/block-styles/all.php';
 
 require_once SWT_DIR . 'inc/admin/welcome-notice.php';
 require_once SWT_DIR . 'inc/admin/settings.php';
+
+/**
+ * Abilities API (WordPress 6.9+)
+ */
+require_once SWT_DIR . 'inc/abilities/bootstrap.php';

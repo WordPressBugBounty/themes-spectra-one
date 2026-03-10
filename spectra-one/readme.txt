@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.8
-Stable tag: 1.1.7
+Tested up to: 6.9
+Stable tag: 1.1.8
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,11 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.1.8 =
+* Improvement: Added early return in render_header to skip processing for non-header blocks.
+* Fix: Used dynamic tag name from block attributes instead of hardcoded selectors in header rendering.
+* Security: Strengthen theme security and harden against potential vulnerabilities.
 
 = 1.1.7 =
 * New: Added translations for the Arabic, Chinese, Dutch, French, German, Hindi, Italian, Polish, Portuguese and Spanish languages.

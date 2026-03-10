@@ -109,13 +109,16 @@ function render_welcome_notice(): void {
  * @since 0.0.1
  */
 function close_welcome_notice(): void {
-	if ( ! isset( $_POST['nonce'] ) ) {
-		return;
+	// Verify user has admin-level capability before processing.
+	if ( ! current_user_can( 'manage_options' ) ) {
+		wp_die( esc_html__( 'You do not have permission to perform this action.', 'spectra-one' ), 403 );
 	}
 
-	if ( isset( $_POST['nonce'] ) && is_string( $_POST['nonce'] ) && ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'swt-dismiss-welcome-notice-nonce' ) ) {
-		return;
+	// Verify nonce to prevent CSRF attacks.
+	if ( ! isset( $_POST['nonce'] ) || ! is_string( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( $_POST['nonce'] ), 'swt-dismiss-welcome-notice-nonce' ) ) {
+		wp_die( esc_html__( 'Security check failed.', 'spectra-one' ), 403 );
 	}
+
 	update_option( 'swt-dismiss-welcome-notice', 'yes' );
 	wp_die();
 }

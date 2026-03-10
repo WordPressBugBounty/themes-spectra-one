@@ -25,7 +25,13 @@ add_filter( 'render_block', SWT_NS . 'render_header', 10, 2 );
  * @return string
  */
 function render_header( string $block_content, array $block ): string {
-	$post_id = swt_get_the_ID();
+	// Skip processing if the block is not a header template part.
+	if ( 'core/template-part' !== ( $block['blockName'] ?? '' ) || ! isset( $block['attrs']['slug'] ) || 'header' !== $block['attrs']['slug'] ) {
+		return $block_content;
+	}
+
+	$tag_name = $block['attrs']['tagName'] ?? 'header';
+	$post_id  = swt_get_the_ID();
 
 	$sticky_header_condition = $post_id
 		? get_post_meta( $post_id, '_swt_meta_sticky_header', true ) || ( $block['attrs']['SWTStickyHeader'] ?? false )
@@ -41,7 +47,7 @@ function render_header( string $block_content, array $block ): string {
 	if ( $sticky_header_condition && ! get_post_meta( $post_id, '_swt_meta_transparent_header', true ) ) {
 
 		$dom    = dom( $block_content );
-		$header = get_dom_element( 'header', $dom );
+		$header = get_dom_element( $tag_name, $dom );
 
 		if ( ! $header ) {
 			return $block_content;
@@ -63,7 +69,7 @@ function render_header( string $block_content, array $block ): string {
 	if ( $transparent_header_condition && ! get_post_meta( $post_id, '_swt_meta_sticky_header', true ) ) {
 
 		$dom    = dom( $block_content );
-		$header = get_dom_element( 'header', $dom );
+		$header = get_dom_element( $tag_name, $dom );
 
 		if ( ! $header ) {
 			return $block_content;
@@ -236,8 +242,7 @@ function header_wp_admin_bar_spacing_js( string $js ): string {
 
 	function wpAdminPaddingOffset() {
 		const wpAdminBar = document.querySelector('#wpadminbar');
-		const header = document.querySelector( 'header' );
-
+		const header = document.querySelector( '.swt-sticky-header' );
 
 		if( header && wpAdminBar && ! header.classList.contains('swt-transparent-header') ) {
 			header.style.top = wpAdminBar.offsetHeight + 'px';
