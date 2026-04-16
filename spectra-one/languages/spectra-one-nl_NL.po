@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.2.1\n"
+"Last-Translator: gpt-po v1.1.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -84,15 +84,15 @@ msgstr "Installeer Spectra Builder"
 msgid "Learn More"
 msgstr "Leer Meer"
 
-#: inc/admin/welcome-notice.php:223
+#: inc/admin/welcome-notice.php:226
 msgid "Activating"
 msgstr "Activeren"
 
-#: inc/admin/welcome-notice.php:224
+#: inc/admin/welcome-notice.php:227
 msgid "Installing"
 msgstr "Installeren"
 
-#: inc/admin/welcome-notice.php:225
+#: inc/admin/welcome-notice.php:228
 msgid "Done"
 msgstr "Klaar"
 
@@ -102,6 +102,7 @@ msgstr "Klaar"
 msgid "Minimal"
 msgstr "Minimaal"
 
+#: inc/abilities/settings/update-color-palette.php:197
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "Secundair"
@@ -767,6 +768,7 @@ msgstr "Blog"
 #: patterns/footer-4.php:98
 #: patterns/footer-5.php:123
 #: patterns/footer.php:88
+#, php-format
 msgid "© %d ·"
 msgstr "© %d ·"
 
@@ -1407,103 +1409,636 @@ msgstr "Versie 1.0.0"
 msgid "Download Now"
 msgstr "Nu Downloaden"
 
-#: assets/js/editor.js:1
-#: build/editor.js:44
-#: build/editor.js:45
+#: src/block-extensions/header.js:45
 msgid "Enable Sticky Header"
 msgstr "Sticky Header Inschakelen"
 
-#: assets/js/editor.js:1
-#: build/editor.js:45
-#: build/editor.js:48
+#: src/block-extensions/header.js:48
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr "De optie voor een transparante header wordt uitgeschakeld bij het inschakelen van deze optie."
 
-#: assets/js/editor.js:1
-#: build/editor.js:53
-#: build/editor.js:71
+#: src/block-extensions/header.js:71
 msgid "Enable Transparent Header"
 msgstr "Transparante Header Inschakelen"
 
-#: assets/js/editor.js:1
-#: build/editor.js:54
-#: build/editor.js:74
+#: src/block-extensions/header.js:74
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr "De optie voor een sticky header wordt uitgeschakeld bij het inschakelen van deze optie."
 
-#: assets/js/editor.js:1
-#: build/editor.js:494
-#: build/editor.js:507
+#: src/components/install-plugin-notice.js:102
 msgid "Spectra plugin"
 msgstr "Spectra-plugin"
 
-#: assets/js/editor.js:1
-#: build/editor.js:496
-#: build/editor.js:511
+#: src/components/install-plugin-notice.js:106
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr "Versterk je website met geavanceerde en krachtige blokken die je helpen om in een mum van tijd websites te bouwen!"
 
-#: assets/js/editor.js:1
-#: build/editor.js:778
-#: build/editor.js:781
+#: src/extensions/panel/components.js:29
 msgid "Disable Elements"
 msgstr "Elementen Uitschakelen"
 
-#: assets/js/editor.js:1
-#: build/editor.js:782
-#: build/editor.js:790
+#: src/extensions/panel/components.js:38
 msgid "Header Settings"
 msgstr "Headerinstellingen"
 
-#: assets/js/editor.js:1
-#: build/editor.js:833
-#: build/editor.js:837
-#: build/editor.js:828
-#: build/editor.js:836
+#: src/extensions/panel/sidebar.js:19
+#: src/extensions/panel/sidebar.js:27
 msgid "Spectra Page Settings"
 msgstr "Spectra Pagina-instellingen"
 
-#: assets/js/editor.js:1
-#: build/editor.js:207
-#: build/editor.js:249
+#: src/block-extensions/responsive.js:39
 msgid "Hide Desktop"
 msgstr "Desktop Verbergen"
 
-#: assets/js/editor.js:1
-#: build/editor.js:213
-#: build/editor.js:264
+#: src/block-extensions/responsive.js:54
 msgid "Hide Tablet"
 msgstr "Verberg tablet"
 
-#: assets/js/editor.js:1
-#: build/editor.js:219
-#: build/editor.js:275
+#: src/block-extensions/responsive.js:65
 msgid "Hide Mobile"
 msgstr "Verberg mobiel"
 
-#: assets/js/settings.js:1
-#: build/settings.js:76
-#: build/settings.js:61
+#: src/admin/components/editor-settings.js:61
 msgid "Spectra One Settings"
 msgstr "Spectra One-instellingen"
 
-#: assets/js/settings.js:1
-#: build/settings.js:84
-#: build/settings.js:70
+#: src/admin/components/editor-settings.js:70
 msgid "Scroll to top updated"
 msgstr "Scrollen naar boven bijgewerkt"
 
-#: assets/js/settings.js:1
-#: build/settings.js:85
-#: build/settings.js:71
+#: src/admin/components/editor-settings.js:71
 msgid "Scroll To Top"
 msgstr "Scrollen naar boven"
 
-#: assets/js/settings.js:1
-#: build/settings.js:357
-#: build/settings.js:205
+#: src/admin/settings.js:15
 msgid "Spectra One Editor Settings"
 msgstr "Spectra One-editorinstellingen"
+
+#. translators: %s: error message
+#: inc/abilities/ability.php:128
+#, php-format
+msgid "An unexpected error occurred: %s"
+msgstr "Er is een onverwachte fout opgetreden: %s"
+
+#. translators: %s: error message
+#: inc/abilities/ability.php:131
+#, php-format
+msgid "A system error occurred: %s"
+msgstr "Er is een systeemfout opgetreden: %s"
+
+#: inc/abilities/ability.php:377
+msgid "An unexpected error occurred."
+msgstr "Er is een onverwachte fout opgetreden."
+
+#: inc/abilities/display/get-post-display-settings.php:27
+msgid "Get Post Display Settings"
+msgstr "Berichtweergave-instellingen ophalen"
+
+#: inc/abilities/display/get-post-display-settings.php:28
+msgid "Returns the Spectra One display settings for a specific post or page, including header/footer visibility, sticky header, transparent header, and title display toggles."
+msgstr "Geeft de Spectra One weergave-instellingen voor een specifieke post of pagina, inclusief zichtbaarheid van de header/footer, sticky header, transparante header en titelweergave schakelaars. "
+
+#: inc/abilities/display/get-post-display-settings.php:114
+#: inc/abilities/display/update-post-display-settings.php:142
+msgid "Invalid post ID."
+msgstr "Ongeldige post-ID."
+
+#: inc/abilities/display/get-post-display-settings.php:115
+#: inc/abilities/display/update-post-display-settings.php:143
+msgid "Provide a valid post or page ID."
+msgstr "Geef een geldige post- of pagina-ID op."
+
+#. translators: %d: post ID
+#: inc/abilities/display/get-post-display-settings.php:123
+#: inc/abilities/display/update-post-display-settings.php:151
+#, php-format
+msgid "Post %d not found."
+msgstr "Bericht %d niet gevonden."
+
+#: inc/abilities/display/get-post-display-settings.php:130
+msgid "You do not have permission to view this post's settings."
+msgstr "Je hebt geen toestemming om de instellingen van dit bericht te bekijken."
+
+#. translators: %s: post title
+#: inc/abilities/display/get-post-display-settings.php:136
+#, php-format
+msgid "Retrieved display settings for \"%s\"."
+msgstr "Weergave-instellingen voor \"%s\" opgehaald."
+
+#: inc/abilities/display/list-posts-with-display-overrides.php:27
+msgid "List Posts With Display Overrides"
+msgstr "Berichten weergeven met weergave-overschrijvingen"
+
+#: inc/abilities/display/list-posts-with-display-overrides.php:28
+msgid "Lists all posts and pages that have Spectra One display overrides (hidden header, hidden footer, sticky header, etc.). Useful for auditing which pages have custom display settings."
+msgstr "Lijst van alle berichten en pagina's die Spectra One-weergave-overschrijvingen hebben (verborgen header, verborgen footer, plakkerige header, enz.). Handig voor het controleren welke pagina's aangepaste weergave-instellingen hebben."
+
+#. translators: %d: number of posts
+#: inc/abilities/display/list-posts-with-display-overrides.php:182
+#, php-format
+msgid "Found %d posts with display overrides."
+msgstr "%d berichten gevonden met weergave-overschrijvingen."
+
+#: inc/abilities/display/update-post-display-settings.php:27
+msgid "Update Post Display Settings"
+msgstr "Instellingen voor berichtweergave bijwerken"
+
+#: inc/abilities/display/update-post-display-settings.php:28
+msgid "Updates Spectra One display settings for a specific post or page. Toggle header/footer visibility, sticky header, transparent header, or page title display. Only provided fields are updated. Always confirm with the user before running this — state the post title, ID, and which fields will change. Use spectra-one/get-post-display-settings first to show current values."
+msgstr "Werkt de weergave-instellingen van Spectra One bij voor een specifiek bericht of pagina. Schakel de zichtbaarheid van de header/footer, sticky header, transparante header of paginatitelweergave in of uit. Alleen de opgegeven velden worden bijgewerkt. Bevestig altijd met de gebruiker voordat u dit uitvoert — vermeld de berichttitel, ID en welke velden zullen veranderen. Gebruik eerst spectra-one/get-post-display-settings om de huidige waarden te tonen."
+
+#: inc/abilities/display/update-post-display-settings.php:157
+msgid "You do not have permission to edit this post."
+msgstr "Je hebt geen toestemming om dit bericht te bewerken."
+
+#: inc/abilities/display/update-post-display-settings.php:187
+msgid "No display settings provided to update."
+msgstr "Geen weergave-instellingen opgegeven om bij te werken."
+
+#: inc/abilities/display/update-post-display-settings.php:188
+msgid "Provide at least one of: hide_header, hide_footer, hide_title, sticky_header, transparent_header."
+msgstr "Geef ten minste één van de volgende op: hide_header, hide_footer, hide_title, sticky_header, transparent_header."
+
+#. translators: 1: post title, 2: updated fields
+#: inc/abilities/display/update-post-display-settings.php:194
+#, php-format
+msgid "Updated display settings for \"%1$s\": %2$s."
+msgstr "Bijgewerkte weergave-instellingen voor \"%1$s\": %2$s."
+
+#: inc/abilities/init.php:87
+msgid "Spectra One Theme"
+msgstr "Spectra One Thema"
+
+#: inc/abilities/init.php:88
+msgid "Abilities for the Spectra One theme including settings, patterns, display controls, and style variations."
+msgstr "Mogelijkheden voor het Spectra One-thema, inclusief instellingen, patronen, weergavebedieningen en stijlvariaties."
+
+#: inc/abilities/patterns/get-pattern-markup.php:27
+msgid "Get Spectra One Pattern Markup"
+msgstr "Verkrijg Spectra One Patroonopmaak"
+
+#: inc/abilities/patterns/get-pattern-markup.php:28
+msgid "Returns the block markup for a specific Spectra One pattern by slug. Use this to get the block editor content for inserting into a page or post."
+msgstr "Geeft de blokopmaak terug voor een specifiek Spectra One-patroon op basis van de slug. Gebruik dit om de inhoud van de blokeditor te verkrijgen voor invoeging in een pagina of bericht."
+
+#: inc/abilities/patterns/get-pattern-markup.php:88
+msgid "Pattern slug is required."
+msgstr "Patroon-slug is vereist."
+
+#: inc/abilities/patterns/get-pattern-markup.php:89
+msgid "Provide a slug like \"spectra-one/hero-banner\". Use list-patterns to see available slugs."
+msgstr "Geef een slug zoals \"spectra-one/hero-banner\". Gebruik lijstpatronen om beschikbare slugs te zien."
+
+#. translators: %s: pattern slug
+#: inc/abilities/patterns/get-pattern-markup.php:99
+#, php-format
+msgid "Pattern \"%s\" not found."
+msgstr "Patroon \"%s\" niet gevonden."
+
+#: inc/abilities/patterns/get-pattern-markup.php:100
+msgid "Use spectra-one/list-patterns to see all available pattern slugs."
+msgstr "Gebruik spectra-one/list-patterns om alle beschikbare patroon-slugs te zien."
+
+#. translators: %s: pattern title
+#: inc/abilities/patterns/get-pattern-markup.php:108
+#, php-format
+msgid "Retrieved pattern markup for \"%s\"."
+msgstr "Patroonopmaak opgehaald voor \"%s\"."
+
+#: inc/abilities/patterns/list-pattern-categories.php:27
+msgid "List Spectra One Pattern Categories"
+msgstr "Lijst Spectra One-patrooncategorieën"
+
+#: inc/abilities/patterns/list-pattern-categories.php:28
+msgid "Returns all block pattern categories registered by the Spectra One theme."
+msgstr "Geeft alle blokpatrooncategorieën terug die zijn geregistreerd door het Spectra One-thema."
+
+#. translators: %d: number of categories
+#: inc/abilities/patterns/list-pattern-categories.php:103
+#, php-format
+msgid "Found %d pattern categories."
+msgstr "%d patrooncategorieën gevonden."
+
+#: inc/abilities/patterns/list-patterns.php:27
+msgid "List Spectra One Block Patterns"
+msgstr "Lijst Spectra One Blokpatronen"
+
+#: inc/abilities/patterns/list-patterns.php:28
+msgid "Returns all available Spectra One block patterns with their titles, slugs, categories, and keywords. Use this to discover what design patterns are available for building pages."
+msgstr "Geeft alle beschikbare Spectra One-blokpatronen terug met hun titels, slugs, categorieën en trefwoorden. Gebruik dit om te ontdekken welke ontwerppatronen beschikbaar zijn voor het bouwen van pagina's."
+
+#. translators: %d: number of patterns
+#: inc/abilities/patterns/list-patterns.php:124
+#, php-format
+msgid "Found %d Spectra One patterns."
+msgstr "%d Spectra One-patronen gevonden."
+
+#: inc/abilities/response.php:75
+msgid "An unknown error occurred."
+msgstr "Er is een onbekende fout opgetreden."
+
+#: inc/abilities/settings/get-color-palette.php:27
+msgid "Get Spectra One Color Palette"
+msgstr "Verkrijg Spectra One-kleurenpalet"
+
+#: inc/abilities/settings/get-color-palette.php:28
+msgid "Returns the active Spectra One color palette including any user customizations. Shows all theme colors: primary, secondary, heading, body, background, tertiary, quaternary, surface, foreground, outline, and neutral."
+msgstr "Geeft het actieve Spectra One-kleurenpalet terug, inclusief eventuele aanpassingen door de gebruiker. Toont alle themakleuren: primair, secundair, kop, lichaam, achtergrond, tertiair, quaternair, oppervlak, voorgrond, omtrek en neutraal."
+
+#. translators: %d: number of colors
+#: inc/abilities/settings/get-color-palette.php:114
+#, php-format
+msgid "Retrieved color palette with %d colors."
+msgstr "Opgehaalde kleurenpalet met %d kleuren."
+
+#: inc/abilities/settings/get-theme-settings.php:27
+msgid "Get Spectra One Theme Settings"
+msgstr "Verkrijg Spectra One Thema-instellingen"
+
+#: inc/abilities/settings/get-theme-settings.php:28
+msgid "Returns the current Spectra One theme settings including global options (scroll-to-top), color palette, and typography configuration. Use this to understand the active theme configuration."
+msgstr "Geeft de huidige Spectra One-thema-instellingen terug, inclusief globale opties (scroll-to-top), kleurenpalet en typografieconfiguratie. Gebruik dit om de actieve themaconfiguratie te begrijpen."
+
+#: inc/abilities/settings/get-theme-settings.php:104
+msgid "Retrieved Spectra One theme settings successfully."
+msgstr "Spectra One-thema-instellingen succesvol opgehaald."
+
+#: inc/abilities/settings/get-typography-settings.php:27
+msgid "Get Spectra One Typography Settings"
+msgstr "Verkrijg Spectra One Typografie-instellingen"
+
+#: inc/abilities/settings/get-typography-settings.php:28
+msgid "Returns the current typography configuration including body and heading font families, weights, line heights, and responsive font sizes."
+msgstr "Geeft de huidige typografieconfiguratie terug, inclusief lettertypefamilies voor de tekst en koppen, gewichten, regelhoogtes en responsieve lettergroottes. "
+
+#: inc/abilities/settings/get-typography-settings.php:89
+msgid "Retrieved typography settings successfully."
+msgstr "Typografie-instellingen succesvol opgehaald."
+
+#: inc/abilities/settings/install-font.php:64
+msgid "Install Font"
+msgstr "Lettertype installeren"
+
+#: inc/abilities/settings/install-font.php:65
+msgid "Downloads a Google Font and registers it in WordPress so blocks can use it. After installing, use spectra-one/update-typography to apply it to body or headings. Provide the font name (e.g. \"Playfair Display\") and desired weights (e.g. [400, 700]). Skips if the font is already installed."
+msgstr "Downloadt een Google-lettertype en registreert het in WordPress zodat blokken het kunnen gebruiken. Na installatie, gebruik spectra-one/update-typography om het toe te passen op de body of koppen. Geef de naam van het lettertype op (bijv. \"Playfair Display\") en de gewenste gewichten (bijv. [400, 700]). Slaat over als het lettertype al is geïnstalleerd."
+
+#: inc/abilities/settings/install-font.php:154
+msgid "Font name is required and must contain only letters, numbers, spaces, and hyphens."
+msgstr "De naam van het lettertype is verplicht en mag alleen letters, cijfers, spaties en koppeltekens bevatten."
+
+#: inc/abilities/settings/install-font.php:155
+msgid "Provide the Google Font name, e.g. \"Playfair Display\"."
+msgstr "Geef de naam van het Google-lettertype op, bijvoorbeeld \"Playfair Display\"."
+
+#: inc/abilities/settings/install-font.php:165
+msgid "All provided weights are invalid."
+msgstr "Alle opgegeven gewichten zijn ongeldig."
+
+#: inc/abilities/settings/install-font.php:166
+msgid "Font weights must be integers between 100 and 900 in steps of 100 (e.g. 400, 700)."
+msgstr "Letterdiktes moeten gehele getallen zijn tussen 100 en 900 in stappen van 100 (bijv. 400, 700)."
+
+#. translators: %s: font name
+#: inc/abilities/settings/install-font.php:176
+#, php-format
+msgid "Font \"%s\" is already installed."
+msgstr "Lettertype \"%s\" is al geïnstalleerd."
+
+#. translators: %s: font name
+#: inc/abilities/settings/install-font.php:190
+#, php-format
+msgid "Failed to download font \"%s\" from Google Fonts."
+msgstr "Kan het lettertype \"%s\" niet downloaden van Google Fonts."
+
+#: inc/abilities/settings/install-font.php:191
+msgid "Check that the font name is correct and matches fonts.google.com exactly."
+msgstr "Controleer of de naam van het lettertype correct is en exact overeenkomt met fonts.google.com."
+
+#. translators: 1: font name, 2: comma-separated weights, 3: font slug
+#: inc/abilities/settings/install-font.php:206
+#, php-format
+msgid "Font \"%1$s\" installed with weights: %2$s. Use slug \"%3$s\" with spectra-one/update-typography."
+msgstr "Lettertype \"%1$s\" geïnstalleerd met gewichten: %2$s. Gebruik slug \"%3$s\" met spectra-one/update-typography."
+
+#: inc/abilities/settings/install-font.php:571
+msgid "Failed to encode font family data."
+msgstr "Kan lettertypefamiliegegevens niet coderen."
+
+#: inc/abilities/settings/install-font.php:596
+msgid "Failed to encode font face data."
+msgstr "Kan lettertypegegevens niet coderen."
+
+#: inc/abilities/settings/update-color-palette.php:44
+msgid "Update Spectra One Color Palette"
+msgstr "Update Spectra One Kleurenpalet"
+
+#: inc/abilities/settings/update-color-palette.php:45
+msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
+msgstr "Werkt het FSE globale stijlen kleurenpalet en elementstijlen (tekst, koppen, links, knoppen) bij met merkkleuren. Accepteert 4 hex-kleuren: primair, secundair, kop, lichaam. Leidt ondersteunende kleuren (oppervlak, omtrek, tertiair) automatisch af."
+
+#: inc/abilities/settings/update-color-palette.php:129
+#: inc/abilities/settings/update-typography.php:160
+msgid "No global styles found. Is an FSE/block theme active?"
+msgstr "Geen globale stijlen gevonden. Is er een FSE/blokthema actief?"
+
+#: inc/abilities/settings/update-color-palette.php:130
+#: inc/abilities/settings/update-typography.php:161
+msgid "This ability requires an active block theme with global styles support."
+msgstr "Deze functie vereist een actief blokthema met ondersteuning voor globale stijlen."
+
+#: inc/abilities/settings/update-color-palette.php:143
+msgid "Color palette and element styles updated with brand colors."
+msgstr "Kleurenpalet en elementstijlen bijgewerkt met merkkleuren."
+
+#: inc/abilities/settings/update-color-palette.php:160
+msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
+msgstr "Er zijn precies 4 merk kleuren vereist: [primair, secundair, kop, lichaam]."
+
+#: inc/abilities/settings/update-color-palette.php:161
+msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
+msgstr "Geef een array van 4 hex-kleurenstrings door zoals [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
+
+#. translators: 1: color index, 2: color value
+#: inc/abilities/settings/update-color-palette.php:170
+#, php-format
+msgid "Invalid hex color at index %1$d: %2$s"
+msgstr "Ongeldige hex-kleur op index %1$d: %2$s"
+
+#: inc/abilities/settings/update-color-palette.php:171
+msgid "Colors must be 6-digit hex values like #FF6B6B."
+msgstr "Kleuren moeten 6-cijferige hex-waarden zijn zoals #FF6B6B."
+
+#: inc/abilities/settings/update-color-palette.php:192
+msgid "Primary"
+msgstr "Primair"
+
+#: inc/abilities/settings/update-color-palette.php:202
+msgid "Heading"
+msgstr "Kop"
+
+#: inc/abilities/settings/update-color-palette.php:207
+msgid "Body"
+msgstr "Lichaam"
+
+#: inc/abilities/settings/update-color-palette.php:212
+msgid "Foreground"
+msgstr "Voorgrond"
+
+#: inc/abilities/settings/update-color-palette.php:217
+msgid "Background"
+msgstr "Achtergrond"
+
+#: inc/abilities/settings/update-color-palette.php:222
+msgid "Surface"
+msgstr "Oppervlak"
+
+#: inc/abilities/settings/update-color-palette.php:227
+msgid "Tertiary"
+msgstr "Tertiair"
+
+#: inc/abilities/settings/update-color-palette.php:232
+msgid "Outline"
+msgstr "Overzicht"
+
+#: inc/abilities/settings/update-color-palette.php:237
+msgid "Black"
+msgstr "Zwart"
+
+#: inc/abilities/settings/update-navigation.php:56
+msgid "Update Navigation Menu"
+msgstr "Bijwerken navigatiemenu"
+
+#: inc/abilities/settings/update-navigation.php:57
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "Werkt het navigatiemenu van de site bij met paginalinks. Accepteert een array van menu-items [{label, url}]. Maakt de navigatiepost indien nodig en koppelt het koptekstsjabloondeel om het te gebruiken. Voor FSE-blokthema's — gebruikt wp:navigatie-linkblokken, geen klassieke menu's."
+
+#: inc/abilities/settings/update-navigation.php:162
+msgid "At least one menu item is required."
+msgstr "Er is ten minste één menu-item vereist."
+
+#: inc/abilities/settings/update-navigation.php:163
+msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
+msgstr "Voorzie items als [{\"label\": \"Home\", \"url\": \"/\"}]."
+
+#: inc/abilities/settings/update-navigation.php:174
+msgid "No valid menu items provided."
+msgstr "Geen geldige menu-items opgegeven."
+
+#: inc/abilities/settings/update-navigation.php:175
+msgid "Each item needs at least a \"label\"."
+msgstr "Elk item heeft ten minste een \"label\" nodig."
+
+#. translators: %d: number of menu items
+#: inc/abilities/settings/update-navigation.php:201
+#, php-format
+msgid "Navigation updated with %d menu items."
+msgstr "Navigatie bijgewerkt met %d menu-items."
+
+#: inc/abilities/settings/update-template-part.php:48
+msgid "Update Template Part"
+msgstr "Werk sjabloondeel bij"
+
+#: inc/abilities/settings/update-template-part.php:49
+msgid "Switches the active header or footer design by updating the FSE template part to reference a different Spectra One pattern. Use spectra-one/list-patterns with category \"header\" or \"footer\" to see available patterns first."
+msgstr "Wijzigt het actieve ontwerp van de kop- of voettekst door het FSE-sjabloondeel bij te werken om naar een ander Spectra One-patroon te verwijzen. Gebruik spectra-one/list-patterns met de categorie \"header\" of \"footer\" om eerst de beschikbare patronen te bekijken."
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:146
+#, php-format
+msgid "Could not find the %s template part."
+msgstr "Kon het %s-sjabloondeel niet vinden."
+
+#. translators: 1: area name, 2: pattern slug
+#: inc/abilities/settings/update-template-part.php:163
+#, php-format
+msgid "%1$s updated to use pattern \"%2$s\"."
+msgstr "%1$s bijgewerkt om het patroon \"%2$s\" te gebruiken."
+
+#: inc/abilities/settings/update-template-part.php:182
+msgid "Invalid area. Must be \"header\" or \"footer\"."
+msgstr "Ongeldig gebied. Moet \"header\" of \"footer\" zijn."
+
+#: inc/abilities/settings/update-template-part.php:191
+#, php-format
+msgid "Pattern must start with \"%1$s\" for the %2$s area."
+msgstr "Patroon moet beginnen met \"%1$s\" voor het %2$s-gebied."
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:202
+#, php-format
+msgid "Pattern \"%s\" is not registered."
+msgstr "Patroon \"%s\" is niet geregistreerd."
+
+#: inc/abilities/settings/update-theme-settings.php:27
+msgid "Update Spectra One Theme Settings"
+msgstr "Update Spectra One Thema-instellingen"
+
+#: inc/abilities/settings/update-theme-settings.php:28
+msgid "Updates Spectra One global theme options such as scroll-to-top toggle. Only the provided fields are updated. This modifies options visible to all site visitors. Always confirm with the user before running this — show which settings will change and their new values."
+msgstr "Werkt de globale thema-opties van Spectra One bij, zoals de scroll-to-top schakelaar. Alleen de verstrekte velden worden bijgewerkt. Dit wijzigt opties die zichtbaar zijn voor alle sitebezoekers. Bevestig altijd met de gebruiker voordat u dit uitvoert — toon welke instellingen zullen veranderen en hun nieuwe waarden."
+
+#: inc/abilities/settings/update-theme-settings.php:116
+msgid "No settings provided to update."
+msgstr "Geen instellingen opgegeven om bij te werken."
+
+#: inc/abilities/settings/update-theme-settings.php:117
+msgid "Provide at least one setting to update (e.g. scroll_top)."
+msgstr "Geef ten minste één instelling op om bij te werken (bijv. scroll_top)."
+
+#. translators: %s: list of updated fields
+#: inc/abilities/settings/update-theme-settings.php:125
+#, php-format
+msgid "Theme settings updated: %s."
+msgstr "Thema-instellingen bijgewerkt: %s."
+
+#: inc/abilities/settings/update-typography.php:61
+msgid "Update Spectra One Typography"
+msgstr "Update Spectra One Typografie"
+
+#: inc/abilities/settings/update-typography.php:62
+msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
+msgstr "Werk de FSE globale stijlen typografie bij voor lichaamstekst en koppen. Stel lettertypefamilie in (op basis van slug), lettergewicht en regelhoogte. Lettertypefamilies moeten geregistreerd zijn in theme.json. Beschikbare gewichten: dun, extraLicht, licht, normaal, medium, semiVet, vet, extraVet, zwart (of numeriek 100-900). Beschikbare regelhoogtes: initieel, xxKlein, xKlein, klein, medium, groot."
+
+#: inc/abilities/settings/update-typography.php:168
+msgid "No typography fields provided to update."
+msgstr "Geen typografievelden opgegeven om bij te werken."
+
+#: inc/abilities/settings/update-typography.php:169
+msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
+msgstr "Geef ten minste één van de volgende op: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
+
+#. translators: %s: comma-separated list of field=value pairs that were rejected
+#: inc/abilities/settings/update-typography.php:190
+#, php-format
+msgid "Invalid typography values: %s."
+msgstr "Ongeldige typografiewaarden: %s."
+
+#: inc/abilities/settings/update-typography.php:191
+msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
+msgstr "Lettertypen moeten worden benoemd (thin..black) of numeriek (100-900 in stappen van 100). Regelhoogtes moeten worden benoemd (initial, xxSmall..large) of numeriek (0 < n <= 5)."
+
+#. translators: %s: comma-separated list of updated fields
+#: inc/abilities/settings/update-typography.php:214
+#, php-format
+msgid "Typography updated: %s."
+msgstr "Typografie bijgewerkt: %s."
+
+#: inc/abilities/theme/get-theme-info.php:27
+msgid "Get Spectra One Theme Info"
+msgstr "Verkrijg Spectra One Thema Info"
+
+#: inc/abilities/theme/get-theme-info.php:28
+msgid "Returns Spectra One theme metadata including version, required WordPress/PHP versions, and Spectra plugin compatibility status. Call this first when working with the theme."
+msgstr "Geeft Spectra One thema metadata terug, inclusief versie, vereiste WordPress/PHP-versies en Spectra plugin compatibiliteitsstatus. Roep dit als eerste aan bij het werken met het thema."
+
+#. translators: %s: theme version
+#: inc/abilities/theme/get-theme-info.php:130
+#, php-format
+msgid "Spectra One theme v%s info retrieved."
+msgstr "Spectra One-thema v%s informatie opgehaald."
+
+#: inc/abilities/theme/list-hooks.php:27
+msgid "List Spectra One Hooks"
+msgstr "Lijst Spectra One Hooks"
+
+#: inc/abilities/theme/list-hooks.php:28
+msgid "Returns custom action hooks and filters provided by the Spectra One theme via do_action and apply_filters. These are extension points that developers and child themes can hook into. Each hook includes its name, type, accepted parameters, default value, file location, and description."
+msgstr "Geeft aangepaste actiehooks en filters terug die door het Spectra One-thema worden geleverd via do_action en apply_filters. Dit zijn uitbreidingspunten waarop ontwikkelaars en child-thema's kunnen inhaken. Elke hook bevat zijn naam, type, geaccepteerde parameters, standaardwaarde, bestandslocatie en beschrijving."
+
+#. translators: %d: number of hooks
+#: inc/abilities/theme/list-hooks.php:116
+#, php-format
+msgid "Found %d Spectra One hooks."
+msgstr "%d Spectra One haken gevonden."
+
+#: inc/abilities/theme/list-hooks.php:139
+msgid "Filters the dynamic inline CSS added to the frontend. Extensions append CSS for sticky header, scroll-to-top, navigation, responsive blocks, etc."
+msgstr "Filtert de dynamische inline CSS die aan de frontend wordt toegevoegd. Extensies voegen CSS toe voor een plakkerige header, scroll naar boven, navigatie, responsieve blokken, enz."
+
+#: inc/abilities/theme/list-hooks.php:147
+msgid "Filters the dynamic inline JavaScript added to the frontend. Extensions append JS for sticky header, scroll-to-top, admin bar spacing, etc."
+msgstr "Filtert de dynamische inline JavaScript die aan de frontend wordt toegevoegd. Extensies voegen JS toe voor een plakkerige header, scroll naar boven, adminbalkruimte, enz."
+
+#: inc/abilities/theme/list-hooks.php:155
+msgid "Controls whether frontend scripts and styles are enqueued. Return false to completely disable theme frontend assets."
+msgstr "Bepaalt of frontend-scripts en -stijlen worden ingeschakeld. Retourneer false om de frontend-assets van het thema volledig uit te schakelen."
+
+#: inc/abilities/theme/list-hooks.php:163
+msgid "Controls whether block editor scripts and styles are enqueued. Return false to disable theme editor assets."
+msgstr "Bepaalt of scripts en stijlen van de blokeditor worden ingeschakeld. Retourneer false om themabewerker-assets uit te schakelen."
+
+#: inc/abilities/theme/list-hooks.php:171
+msgid "Filters the localized data array passed to the block editor script. Contains screen ID, Spectra plugin status, and other editor context."
+msgstr "Filtert de gelokaliseerde gegevensarray die naar het blokeditor-script wordt doorgegeven. Bevat scherm-ID, Spectra-plug-instatus en andere editorcontext. "
+
+#: inc/abilities/theme/list-hooks.php:179
+msgid "Filters the path to the theme languages directory for loading translations."
+msgstr "Filtert het pad naar de thematalenmap voor het laden van vertalingen."
+
+#: inc/abilities/theme/list-hooks.php:187
+msgid "Filters the SVG icons array used by the theme. Add, remove, or modify available SVG icons."
+msgstr "Filtert de SVG-pictogrammenreeks die door het thema wordt gebruikt. Voeg SVG-pictogrammen toe, verwijder ze of wijzig ze."
+
+#: inc/abilities/theme/list-hooks.php:195
+msgid "Controls whether the mobile modal navigation menu content is centered. Return false to disable centering."
+msgstr "Bepaalt of de inhoud van het mobiele modale navigatiemenu gecentreerd is. Retourneer false om centreren uit te schakelen."
+
+#: inc/abilities/theme/list-hooks.php:203
+msgid "Filters the default block spacing value (in pixels) used in the Spectra plugin editor."
+msgstr "Filtert de standaard blokafstandwaarde (in pixels) die wordt gebruikt in de Spectra-plugineditor."
+
+#: inc/abilities/theme/list-hooks.php:211
+msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
+msgstr "Bepaalt of een specifieke Spectra One-vaardigheid zichtbaar is in de REST API. Ontvangt de vaardigheids-ID en instantie als extra parameters."
+
+#: inc/abilities/theme/list-hooks.php:219
+msgid "Controls whether a specific Spectra One ability is publicly exposed via MCP (Model Context Protocol). Receives the ability ID and instance as additional parameters."
+msgstr "Bepaalt of een specifieke Spectra One-vaardigheid openbaar wordt blootgesteld via MCP (Model Context Protocol). Ontvangt de vaardigheids-ID en instantie als extra parameters."
+
+#: inc/abilities/theme/list-style-variations.php:27
+msgid "List Spectra One Style Variations"
+msgstr "Lijst Spectra One Stijlvariaties"
+
+#: inc/abilities/theme/list-style-variations.php:28
+msgid "Returns all available Spectra One style variations (color schemes) with their titles and color palettes. Use this to see what visual themes are available."
+msgstr "Geeft alle beschikbare Spectra One stijlvariaties (kleurenschema's) terug met hun titels en kleurenpaletten. Gebruik dit om te zien welke visuele thema's beschikbaar zijn."
+
+#. translators: %d: number of variations
+#: inc/abilities/theme/list-style-variations.php:127
+#, php-format
+msgid "Found %d style variations."
+msgstr "%d stijlaanpassingen gevonden."
+
+#: inc/abilities/theme/list-templates.php:27
+msgid "List Spectra One Templates"
+msgstr "Lijst Spectra One-sjablonen"
+
+#: inc/abilities/theme/list-templates.php:28
+msgid "Returns all templates and template parts registered by the Spectra One theme."
+msgstr "Geeft alle sjablonen en sjabloondelen terug die zijn geregistreerd door het Spectra One-thema."
+
+#. translators: %d: number of templates
+#: inc/abilities/theme/list-templates.php:131
+#, php-format
+msgid "Found %d templates."
+msgstr "%d sjablonen gevonden."
+
+#: inc/abilities/traits/global-styles.php:62
+msgid "Failed to encode global styles as JSON."
+msgstr "Kan globale stijlen niet als JSON coderen."
+
+#: inc/admin/settings.php:75
+msgid "No valid settings were provided for update."
+msgstr "Er zijn geen geldige instellingen verstrekt voor de update."
+
+#: inc/admin/welcome-notice.php:114
+msgid "You do not have permission to perform this action."
+msgstr "Je hebt geen toestemming om deze actie uit te voeren."
+
+#: inc/admin/welcome-notice.php:119
+msgid "Security check failed."
+msgstr "Beveiligingscontrole mislukt."
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"
@@ -1962,6 +2497,7 @@ msgctxt "Style variation name"
 msgid "Ultra Marine"
 msgstr "Ultra Marine"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1970,11 +2506,11 @@ msgstr "Ultra Marine"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Primary"
 msgstr "Primair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1983,11 +2519,11 @@ msgstr "Primair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Secondary"
 msgstr "Secundair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1996,11 +2532,11 @@ msgstr "Secundair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Heading"
 msgstr "Kop"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2009,11 +2545,11 @@ msgstr "Kop"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Body"
 msgstr "Lichaam"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2022,11 +2558,11 @@ msgstr "Lichaam"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Background"
 msgstr "Achtergrond"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2035,11 +2571,11 @@ msgstr "Achtergrond"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Tertiary"
 msgstr "Tertiair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2048,11 +2584,11 @@ msgstr "Tertiair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Quaternary"
 msgstr "Kwartair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2061,11 +2597,11 @@ msgstr "Kwartair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Surface"
 msgstr "Oppervlak"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2074,11 +2610,11 @@ msgstr "Oppervlak"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Foreground"
 msgstr "Voorgrond"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2087,11 +2623,11 @@ msgstr "Voorgrond"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Outline"
 msgstr "Omtrek"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2100,11 +2636,11 @@ msgstr "Omtrek"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Neutral"
 msgstr "Neutraal"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2113,11 +2649,11 @@ msgstr "Neutraal"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Transparent"
 msgstr "Transparant"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2126,11 +2662,11 @@ msgstr "Transparant"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Current Color"
 msgstr "Huidige kleur"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2139,11 +2675,11 @@ msgstr "Huidige kleur"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Inherit"
 msgstr "Overnemen"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2152,11 +2688,11 @@ msgstr "Overnemen"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Gradient name"
 msgid "Primary"
 msgstr "Primair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2165,11 +2701,11 @@ msgstr "Primair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Primary"
 msgstr "Primair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2178,11 +2714,11 @@ msgstr "Primair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Secondary"
 msgstr "Secundair"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2191,7 +2727,6 @@ msgstr "Secundair"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Tertiary"
 msgstr "Tertiaal"

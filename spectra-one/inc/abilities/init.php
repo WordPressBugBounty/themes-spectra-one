@@ -113,7 +113,12 @@ final class Init {
 			'settings/get-theme-settings',
 			'settings/update-theme-settings',
 			'settings/get-color-palette',
+			'settings/update-color-palette',
 			'settings/get-typography-settings',
+			'settings/update-typography',
+			'settings/install-font',
+			'settings/update-navigation',
+			'settings/update-template-part',
 
 			// Pattern abilities.
 			'patterns/list-patterns',

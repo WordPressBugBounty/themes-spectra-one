@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.2.1\n"
+"Last-Translator: gpt-po v1.1.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -84,15 +84,15 @@ msgstr "安装 Spectra Builder"
 msgid "Learn More"
 msgstr "了解更多"
 
-#: inc/admin/welcome-notice.php:223
+#: inc/admin/welcome-notice.php:226
 msgid "Activating"
 msgstr "激活中"
 
-#: inc/admin/welcome-notice.php:224
+#: inc/admin/welcome-notice.php:227
 msgid "Installing"
 msgstr "安装中"
 
-#: inc/admin/welcome-notice.php:225
+#: inc/admin/welcome-notice.php:228
 msgid "Done"
 msgstr "完成"
 
@@ -102,6 +102,7 @@ msgstr "完成"
 msgid "Minimal"
 msgstr "简约"
 
+#: inc/abilities/settings/update-color-palette.php:197
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "次要"
@@ -767,6 +768,7 @@ msgstr "博客"
 #: patterns/footer-4.php:98
 #: patterns/footer-5.php:123
 #: patterns/footer.php:88
+#, php-format
 msgid "© %d ·"
 msgstr "© %d ·"
 
@@ -1407,103 +1409,636 @@ msgstr "版本 1.0.0"
 msgid "Download Now"
 msgstr "立即下载"
 
-#: assets/js/editor.js:1
-#: build/editor.js:44
-#: build/editor.js:45
+#: src/block-extensions/header.js:45
 msgid "Enable Sticky Header"
 msgstr "启用粘性头部"
 
-#: assets/js/editor.js:1
-#: build/editor.js:45
-#: build/editor.js:48
+#: src/block-extensions/header.js:48
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr "启用此选项时，透明头部选项将被禁用。"
 
-#: assets/js/editor.js:1
-#: build/editor.js:53
-#: build/editor.js:71
+#: src/block-extensions/header.js:71
 msgid "Enable Transparent Header"
 msgstr "启用透明头部"
 
-#: assets/js/editor.js:1
-#: build/editor.js:54
-#: build/editor.js:74
+#: src/block-extensions/header.js:74
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr "启用此选项时，粘性头部选项将被禁用。"
 
-#: assets/js/editor.js:1
-#: build/editor.js:494
-#: build/editor.js:507
+#: src/components/install-plugin-notice.js:102
 msgid "Spectra plugin"
 msgstr "Spectra插件"
 
-#: assets/js/editor.js:1
-#: build/editor.js:496
-#: build/editor.js:511
+#: src/components/install-plugin-notice.js:106
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr "通过先进而强大的区块增强您的网站，帮助您快速构建网站！"
 
-#: assets/js/editor.js:1
-#: build/editor.js:778
-#: build/editor.js:781
+#: src/extensions/panel/components.js:29
 msgid "Disable Elements"
 msgstr "禁用元素"
 
-#: assets/js/editor.js:1
-#: build/editor.js:782
-#: build/editor.js:790
+#: src/extensions/panel/components.js:38
 msgid "Header Settings"
 msgstr "头部设置"
 
-#: assets/js/editor.js:1
-#: build/editor.js:833
-#: build/editor.js:837
-#: build/editor.js:828
-#: build/editor.js:836
+#: src/extensions/panel/sidebar.js:19
+#: src/extensions/panel/sidebar.js:27
 msgid "Spectra Page Settings"
 msgstr "Spectra页面设置"
 
-#: assets/js/editor.js:1
-#: build/editor.js:207
-#: build/editor.js:249
+#: src/block-extensions/responsive.js:39
 msgid "Hide Desktop"
 msgstr "隐藏桌面"
 
-#: assets/js/editor.js:1
-#: build/editor.js:213
-#: build/editor.js:264
+#: src/block-extensions/responsive.js:54
 msgid "Hide Tablet"
 msgstr "隐藏平板"
 
-#: assets/js/editor.js:1
-#: build/editor.js:219
-#: build/editor.js:275
+#: src/block-extensions/responsive.js:65
 msgid "Hide Mobile"
 msgstr "隐藏移动设备"
 
-#: assets/js/settings.js:1
-#: build/settings.js:76
-#: build/settings.js:61
+#: src/admin/components/editor-settings.js:61
 msgid "Spectra One Settings"
 msgstr "Spectra One 设置"
 
-#: assets/js/settings.js:1
-#: build/settings.js:84
-#: build/settings.js:70
+#: src/admin/components/editor-settings.js:70
 msgid "Scroll to top updated"
 msgstr "已更新至顶部"
 
-#: assets/js/settings.js:1
-#: build/settings.js:85
-#: build/settings.js:71
+#: src/admin/components/editor-settings.js:71
 msgid "Scroll To Top"
 msgstr "滚动到顶部"
 
-#: assets/js/settings.js:1
-#: build/settings.js:357
-#: build/settings.js:205
+#: src/admin/settings.js:15
 msgid "Spectra One Editor Settings"
 msgstr "Spectra One 编辑器设置"
+
+#. translators: %s: error message
+#: inc/abilities/ability.php:128
+#, php-format
+msgid "An unexpected error occurred: %s"
+msgstr "发生了意外错误：%s"
+
+#. translators: %s: error message
+#: inc/abilities/ability.php:131
+#, php-format
+msgid "A system error occurred: %s"
+msgstr "发生系统错误：%s"
+
+#: inc/abilities/ability.php:377
+msgid "An unexpected error occurred."
+msgstr "发生了意外错误。"
+
+#: inc/abilities/display/get-post-display-settings.php:27
+msgid "Get Post Display Settings"
+msgstr "获取帖子显示设置"
+
+#: inc/abilities/display/get-post-display-settings.php:28
+msgid "Returns the Spectra One display settings for a specific post or page, including header/footer visibility, sticky header, transparent header, and title display toggles."
+msgstr "返回特定文章或页面的Spectra One显示设置，包括页眉/页脚可见性、固定页眉、透明页眉和标题显示切换。"
+
+#: inc/abilities/display/get-post-display-settings.php:114
+#: inc/abilities/display/update-post-display-settings.php:142
+msgid "Invalid post ID."
+msgstr "无效的帖子ID。"
+
+#: inc/abilities/display/get-post-display-settings.php:115
+#: inc/abilities/display/update-post-display-settings.php:143
+msgid "Provide a valid post or page ID."
+msgstr "提供有效的文章或页面ID。"
+
+#. translators: %d: post ID
+#: inc/abilities/display/get-post-display-settings.php:123
+#: inc/abilities/display/update-post-display-settings.php:151
+#, php-format
+msgid "Post %d not found."
+msgstr "帖子 %d 未找到。"
+
+#: inc/abilities/display/get-post-display-settings.php:130
+msgid "You do not have permission to view this post's settings."
+msgstr "您没有权限查看此帖子的设置。"
+
+#. translators: %s: post title
+#: inc/abilities/display/get-post-display-settings.php:136
+#, php-format
+msgid "Retrieved display settings for \"%s\"."
+msgstr "已检索到“%s”的显示设置。"
+
+#: inc/abilities/display/list-posts-with-display-overrides.php:27
+msgid "List Posts With Display Overrides"
+msgstr "列出具有显示覆盖的帖子"
+
+#: inc/abilities/display/list-posts-with-display-overrides.php:28
+msgid "Lists all posts and pages that have Spectra One display overrides (hidden header, hidden footer, sticky header, etc.). Useful for auditing which pages have custom display settings."
+msgstr "列出所有具有 Spectra One 显示覆盖（隐藏页眉、隐藏页脚、固定页眉等）的帖子和页面。 这对于审计哪些页面具有自定义显示设置非常有用。"
+
+#. translators: %d: number of posts
+#: inc/abilities/display/list-posts-with-display-overrides.php:182
+#, php-format
+msgid "Found %d posts with display overrides."
+msgstr "找到 %d 篇帖子具有显示覆盖。"
+
+#: inc/abilities/display/update-post-display-settings.php:27
+msgid "Update Post Display Settings"
+msgstr "更新帖子显示设置"
+
+#: inc/abilities/display/update-post-display-settings.php:28
+msgid "Updates Spectra One display settings for a specific post or page. Toggle header/footer visibility, sticky header, transparent header, or page title display. Only provided fields are updated. Always confirm with the user before running this — state the post title, ID, and which fields will change. Use spectra-one/get-post-display-settings first to show current values."
+msgstr "更新特定文章或页面的Spectra One显示设置。切换页眉/页脚可见性、固定页眉、透明页眉或页面标题显示。仅更新提供的字段。在运行此操作之前，请始终与用户确认——说明文章标题、ID以及将更改的字段。首先使用spectra-one/get-post-display-settings显示当前值。"
+
+#: inc/abilities/display/update-post-display-settings.php:157
+msgid "You do not have permission to edit this post."
+msgstr "您没有权限编辑此帖子。"
+
+#: inc/abilities/display/update-post-display-settings.php:187
+msgid "No display settings provided to update."
+msgstr "未提供显示设置进行更新。"
+
+#: inc/abilities/display/update-post-display-settings.php:188
+msgid "Provide at least one of: hide_header, hide_footer, hide_title, sticky_header, transparent_header."
+msgstr "提供以下至少一项：hide_header、hide_footer、hide_title、sticky_header、transparent_header。"
+
+#. translators: 1: post title, 2: updated fields
+#: inc/abilities/display/update-post-display-settings.php:194
+#, php-format
+msgid "Updated display settings for \"%1$s\": %2$s."
+msgstr "更新了“%1$s”的显示设置：%2$s。"
+
+#: inc/abilities/init.php:87
+msgid "Spectra One Theme"
+msgstr "光谱一号主题"
+
+#: inc/abilities/init.php:88
+msgid "Abilities for the Spectra One theme including settings, patterns, display controls, and style variations."
+msgstr "Spectra One 主题的功能包括设置、模式、显示控制和样式变化。"
+
+#: inc/abilities/patterns/get-pattern-markup.php:27
+msgid "Get Spectra One Pattern Markup"
+msgstr "获取 Spectra One 模式标记"
+
+#: inc/abilities/patterns/get-pattern-markup.php:28
+msgid "Returns the block markup for a specific Spectra One pattern by slug. Use this to get the block editor content for inserting into a page or post."
+msgstr "返回特定 Spectra One 模式的块标记，通过 slug 获取。使用此功能获取要插入页面或文章的块编辑器内容。"
+
+#: inc/abilities/patterns/get-pattern-markup.php:88
+msgid "Pattern slug is required."
+msgstr "模式标识是必需的。"
+
+#: inc/abilities/patterns/get-pattern-markup.php:89
+msgid "Provide a slug like \"spectra-one/hero-banner\". Use list-patterns to see available slugs."
+msgstr "提供一个类似于“spectra-one/hero-banner”的短标签。使用列表模式查看可用的短标签。"
+
+#. translators: %s: pattern slug
+#: inc/abilities/patterns/get-pattern-markup.php:99
+#, php-format
+msgid "Pattern \"%s\" not found."
+msgstr "未找到模式“%s”。"
+
+#: inc/abilities/patterns/get-pattern-markup.php:100
+msgid "Use spectra-one/list-patterns to see all available pattern slugs."
+msgstr "使用 spectra-one/list-patterns 查看所有可用的模式标识。"
+
+#. translators: %s: pattern title
+#: inc/abilities/patterns/get-pattern-markup.php:108
+#, php-format
+msgid "Retrieved pattern markup for \"%s\"."
+msgstr "已检索到 \"%s\" 的模式标记。"
+
+#: inc/abilities/patterns/list-pattern-categories.php:27
+msgid "List Spectra One Pattern Categories"
+msgstr "列出光谱一号模式类别"
+
+#: inc/abilities/patterns/list-pattern-categories.php:28
+msgid "Returns all block pattern categories registered by the Spectra One theme."
+msgstr "返回由 Spectra One 主题注册的所有区块模式类别。"
+
+#. translators: %d: number of categories
+#: inc/abilities/patterns/list-pattern-categories.php:103
+#, php-format
+msgid "Found %d pattern categories."
+msgstr "找到 %d 个模式类别。"
+
+#: inc/abilities/patterns/list-patterns.php:27
+msgid "List Spectra One Block Patterns"
+msgstr "列出 Spectra One 区块模式"
+
+#: inc/abilities/patterns/list-patterns.php:28
+msgid "Returns all available Spectra One block patterns with their titles, slugs, categories, and keywords. Use this to discover what design patterns are available for building pages."
+msgstr "返回所有可用的 Spectra One 块模式及其标题、别名、类别和关键词。使用此功能可以发现用于构建页面的设计模式。"
+
+#. translators: %d: number of patterns
+#: inc/abilities/patterns/list-patterns.php:124
+#, php-format
+msgid "Found %d Spectra One patterns."
+msgstr "找到 %d 个 Spectra One 模式。"
+
+#: inc/abilities/response.php:75
+msgid "An unknown error occurred."
+msgstr "发生未知错误。"
+
+#: inc/abilities/settings/get-color-palette.php:27
+msgid "Get Spectra One Color Palette"
+msgstr "获取 Spectra One 颜色调色板"
+
+#: inc/abilities/settings/get-color-palette.php:28
+msgid "Returns the active Spectra One color palette including any user customizations. Shows all theme colors: primary, secondary, heading, body, background, tertiary, quaternary, surface, foreground, outline, and neutral."
+msgstr "返回活动的 Spectra One 颜色调色板，包括任何用户自定义。显示所有主题颜色：主色、次色、标题、正文、背景、第三色、第四色、表面、前景、轮廓和中性色。"
+
+#. translators: %d: number of colors
+#: inc/abilities/settings/get-color-palette.php:114
+#, php-format
+msgid "Retrieved color palette with %d colors."
+msgstr "检索到包含 %d 种颜色的调色板。"
+
+#: inc/abilities/settings/get-theme-settings.php:27
+msgid "Get Spectra One Theme Settings"
+msgstr "获取 Spectra One 主题设置"
+
+#: inc/abilities/settings/get-theme-settings.php:28
+msgid "Returns the current Spectra One theme settings including global options (scroll-to-top), color palette, and typography configuration. Use this to understand the active theme configuration."
+msgstr "返回当前的 Spectra One 主题设置，包括全局选项（滚动到顶部）、调色板和排版配置。使用此功能了解活动主题配置。"
+
+#: inc/abilities/settings/get-theme-settings.php:104
+msgid "Retrieved Spectra One theme settings successfully."
+msgstr "成功检索到 Spectra One 主题设置。"
+
+#: inc/abilities/settings/get-typography-settings.php:27
+msgid "Get Spectra One Typography Settings"
+msgstr "获取 Spectra One 字体设置"
+
+#: inc/abilities/settings/get-typography-settings.php:28
+msgid "Returns the current typography configuration including body and heading font families, weights, line heights, and responsive font sizes."
+msgstr "返回当前的排版配置，包括正文和标题的字体系列、字重、行高和响应式字体大小。"
+
+#: inc/abilities/settings/get-typography-settings.php:89
+msgid "Retrieved typography settings successfully."
+msgstr "成功检索到排版设置。"
+
+#: inc/abilities/settings/install-font.php:64
+msgid "Install Font"
+msgstr "安装字体"
+
+#: inc/abilities/settings/install-font.php:65
+msgid "Downloads a Google Font and registers it in WordPress so blocks can use it. After installing, use spectra-one/update-typography to apply it to body or headings. Provide the font name (e.g. \"Playfair Display\") and desired weights (e.g. [400, 700]). Skips if the font is already installed."
+msgstr "下载 Google 字体并在 WordPress 中注册，以便区块可以使用它。安装后，使用 spectra-one/update-typography 将其应用于正文或标题。提供字体名称（例如 \"Playfair Display\"）和所需的字重（例如 [400, 700]）。如果字体已安装，则跳过。"
+
+#: inc/abilities/settings/install-font.php:154
+msgid "Font name is required and must contain only letters, numbers, spaces, and hyphens."
+msgstr "字体名称是必需的，并且只能包含字母、数字、空格和连字符。"
+
+#: inc/abilities/settings/install-font.php:155
+msgid "Provide the Google Font name, e.g. \"Playfair Display\"."
+msgstr "提供 Google 字体名称，例如“Playfair Display”。"
+
+#: inc/abilities/settings/install-font.php:165
+msgid "All provided weights are invalid."
+msgstr "所有提供的重量都是无效的。"
+
+#: inc/abilities/settings/install-font.php:166
+msgid "Font weights must be integers between 100 and 900 in steps of 100 (e.g. 400, 700)."
+msgstr "字体粗细必须是介于 100 到 900 之间的整数，以 100 为步长（例如 400、700）。"
+
+#. translators: %s: font name
+#: inc/abilities/settings/install-font.php:176
+#, php-format
+msgid "Font \"%s\" is already installed."
+msgstr "字体“%s”已安装。"
+
+#. translators: %s: font name
+#: inc/abilities/settings/install-font.php:190
+#, php-format
+msgid "Failed to download font \"%s\" from Google Fonts."
+msgstr "无法从 Google Fonts 下载字体“%s”。"
+
+#: inc/abilities/settings/install-font.php:191
+msgid "Check that the font name is correct and matches fonts.google.com exactly."
+msgstr "检查字体名称是否正确，并与 fonts.google.com 完全匹配。"
+
+#. translators: 1: font name, 2: comma-separated weights, 3: font slug
+#: inc/abilities/settings/install-font.php:206
+#, php-format
+msgid "Font \"%1$s\" installed with weights: %2$s. Use slug \"%3$s\" with spectra-one/update-typography."
+msgstr "字体“%1$s”已安装，权重为：%2$s。使用 slug“%3$s”与 spectra-one/update-typography。"
+
+#: inc/abilities/settings/install-font.php:571
+msgid "Failed to encode font family data."
+msgstr "无法编码字体系列数据。"
+
+#: inc/abilities/settings/install-font.php:596
+msgid "Failed to encode font face data."
+msgstr "无法编码字体面数据。"
+
+#: inc/abilities/settings/update-color-palette.php:44
+msgid "Update Spectra One Color Palette"
+msgstr "更新 Spectra One 颜色调色板"
+
+#: inc/abilities/settings/update-color-palette.php:45
+msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
+msgstr "使用品牌颜色更新 FSE 全局样式的调色板和元素样式（文本、标题、链接、按钮）。接受 4 种十六进制颜色：主色、次色、标题色、正文色。自动派生支持颜色（表面色、轮廓色、第三级色）。"
+
+#: inc/abilities/settings/update-color-palette.php:129
+#: inc/abilities/settings/update-typography.php:160
+msgid "No global styles found. Is an FSE/block theme active?"
+msgstr "未找到全局样式。是否激活了FSE/区块主题？"
+
+#: inc/abilities/settings/update-color-palette.php:130
+#: inc/abilities/settings/update-typography.php:161
+msgid "This ability requires an active block theme with global styles support."
+msgstr "此功能需要具有全局样式支持的活动区块主题。"
+
+#: inc/abilities/settings/update-color-palette.php:143
+msgid "Color palette and element styles updated with brand colors."
+msgstr "颜色调色板和元素样式已更新为品牌颜色。"
+
+#: inc/abilities/settings/update-color-palette.php:160
+msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
+msgstr "需要正好 4 种品牌颜色：[主色、次色、标题色、正文色]。"
+
+#: inc/abilities/settings/update-color-palette.php:161
+msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
+msgstr "传递一个包含 4 个十六进制颜色字符串的数组，例如 [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]。"
+
+#. translators: 1: color index, 2: color value
+#: inc/abilities/settings/update-color-palette.php:170
+#, php-format
+msgid "Invalid hex color at index %1$d: %2$s"
+msgstr "索引 %1$d 处的十六进制颜色无效：%2$s"
+
+#: inc/abilities/settings/update-color-palette.php:171
+msgid "Colors must be 6-digit hex values like #FF6B6B."
+msgstr "颜色必须是6位十六进制值，例如#FF6B6B。"
+
+#: inc/abilities/settings/update-color-palette.php:192
+msgid "Primary"
+msgstr "主要"
+
+#: inc/abilities/settings/update-color-palette.php:202
+msgid "Heading"
+msgstr "标题"
+
+#: inc/abilities/settings/update-color-palette.php:207
+msgid "Body"
+msgstr "身体"
+
+#: inc/abilities/settings/update-color-palette.php:212
+msgid "Foreground"
+msgstr "前景"
+
+#: inc/abilities/settings/update-color-palette.php:217
+msgid "Background"
+msgstr "背景"
+
+#: inc/abilities/settings/update-color-palette.php:222
+msgid "Surface"
+msgstr "表面"
+
+#: inc/abilities/settings/update-color-palette.php:227
+msgid "Tertiary"
+msgstr "第三"
+
+#: inc/abilities/settings/update-color-palette.php:232
+msgid "Outline"
+msgstr "大纲"
+
+#: inc/abilities/settings/update-color-palette.php:237
+msgid "Black"
+msgstr "黑色"
+
+#: inc/abilities/settings/update-navigation.php:56
+msgid "Update Navigation Menu"
+msgstr "更新导航菜单"
+
+#: inc/abilities/settings/update-navigation.php:57
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "更新网站导航菜单与页面链接。接受一个菜单项数组 [{label, url}]。如果需要，创建导航文章并连接头部模板部分以使用它。对于 FSE 块主题，使用 wp:navigation-link 块，而不是经典菜单。"
+
+#: inc/abilities/settings/update-navigation.php:162
+msgid "At least one menu item is required."
+msgstr "至少需要一个菜单项。"
+
+#: inc/abilities/settings/update-navigation.php:163
+msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
+msgstr "提供项目为 [{\"label\": \"首页\", \"url\": \"/\"}]。"
+
+#: inc/abilities/settings/update-navigation.php:174
+msgid "No valid menu items provided."
+msgstr "未提供有效的菜单项。"
+
+#: inc/abilities/settings/update-navigation.php:175
+msgid "Each item needs at least a \"label\"."
+msgstr "每个项目至少需要一个“标签”。"
+
+#. translators: %d: number of menu items
+#: inc/abilities/settings/update-navigation.php:201
+#, php-format
+msgid "Navigation updated with %d menu items."
+msgstr "导航已更新，包含 %d 个菜单项。"
+
+#: inc/abilities/settings/update-template-part.php:48
+msgid "Update Template Part"
+msgstr "更新模板部分"
+
+#: inc/abilities/settings/update-template-part.php:49
+msgid "Switches the active header or footer design by updating the FSE template part to reference a different Spectra One pattern. Use spectra-one/list-patterns with category \"header\" or \"footer\" to see available patterns first."
+msgstr "通过更新 FSE 模板部分以引用不同的 Spectra One 模式来切换活动的页眉或页脚设计。首先使用 spectra-one/list-patterns 和类别 \"header\" 或 \"footer\" 查看可用的模式。"
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:146
+#, php-format
+msgid "Could not find the %s template part."
+msgstr "找不到 %s 模板部分。"
+
+#. translators: 1: area name, 2: pattern slug
+#: inc/abilities/settings/update-template-part.php:163
+#, php-format
+msgid "%1$s updated to use pattern \"%2$s\"."
+msgstr "%1$s 已更新为使用模式“%2$s”。"
+
+#: inc/abilities/settings/update-template-part.php:182
+msgid "Invalid area. Must be \"header\" or \"footer\"."
+msgstr "无效区域。必须是“header”或“footer”。"
+
+#: inc/abilities/settings/update-template-part.php:191
+#, php-format
+msgid "Pattern must start with \"%1$s\" for the %2$s area."
+msgstr "模式必须以“%1$s”开头，适用于%2$s区域。"
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:202
+#, php-format
+msgid "Pattern \"%s\" is not registered."
+msgstr "模式“%s”未注册。"
+
+#: inc/abilities/settings/update-theme-settings.php:27
+msgid "Update Spectra One Theme Settings"
+msgstr "更新 Spectra One 主题设置"
+
+#: inc/abilities/settings/update-theme-settings.php:28
+msgid "Updates Spectra One global theme options such as scroll-to-top toggle. Only the provided fields are updated. This modifies options visible to all site visitors. Always confirm with the user before running this — show which settings will change and their new values."
+msgstr "更新 Spectra One 全局主题选项，例如滚动到顶部切换。仅更新提供的字段。这会修改所有网站访问者可见的选项。在运行此操作之前，请始终与用户确认——显示将更改的设置及其新值。"
+
+#: inc/abilities/settings/update-theme-settings.php:116
+msgid "No settings provided to update."
+msgstr "没有提供设置进行更新。"
+
+#: inc/abilities/settings/update-theme-settings.php:117
+msgid "Provide at least one setting to update (e.g. scroll_top)."
+msgstr "请提供至少一个设置进行更新（例如 scroll_top）。"
+
+#. translators: %s: list of updated fields
+#: inc/abilities/settings/update-theme-settings.php:125
+#, php-format
+msgid "Theme settings updated: %s."
+msgstr "主题设置已更新：%s。"
+
+#: inc/abilities/settings/update-typography.php:61
+msgid "Update Spectra One Typography"
+msgstr "更新 Spectra One 字体"
+
+#: inc/abilities/settings/update-typography.php:62
+msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
+msgstr "更新 FSE 全局样式中的正文和标题的排版。设置字体系列（通过 slug）、字体粗细和行高。字体系列必须在 theme.json 中注册。可用的字体粗细：thin、extraLight、light、regular、medium、semiBold、bold、extraBold、black（或数字 100-900）。可用的行高：initial、xxSmall、xSmall、small、medium、large。"
+
+#: inc/abilities/settings/update-typography.php:168
+msgid "No typography fields provided to update."
+msgstr "没有提供要更新的排版字段。"
+
+#: inc/abilities/settings/update-typography.php:169
+msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
+msgstr "提供以下至少一项：body_font_family、body_font_weight、body_line_height、body_font_size、heading_font_family、heading_font_weight、heading_line_height。"
+
+#. translators: %s: comma-separated list of field=value pairs that were rejected
+#: inc/abilities/settings/update-typography.php:190
+#, php-format
+msgid "Invalid typography values: %s."
+msgstr "无效的排版值：%s。"
+
+#: inc/abilities/settings/update-typography.php:191
+msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
+msgstr "字体粗细必须命名为（thin..black）或数字（100-900，以100为步长）。行高必须命名为（initial, xxSmall..large）或数字（0 < n <= 5）。"
+
+#. translators: %s: comma-separated list of updated fields
+#: inc/abilities/settings/update-typography.php:214
+#, php-format
+msgid "Typography updated: %s."
+msgstr "排版已更新：%s。"
+
+#: inc/abilities/theme/get-theme-info.php:27
+msgid "Get Spectra One Theme Info"
+msgstr "获取 Spectra One 主题信息"
+
+#: inc/abilities/theme/get-theme-info.php:28
+msgid "Returns Spectra One theme metadata including version, required WordPress/PHP versions, and Spectra plugin compatibility status. Call this first when working with the theme."
+msgstr "返回 Spectra One 主题元数据，包括版本、所需的 WordPress/PHP 版本以及 Spectra 插件兼容性状态。使用该主题时，请首先调用此功能。"
+
+#. translators: %s: theme version
+#: inc/abilities/theme/get-theme-info.php:130
+#, php-format
+msgid "Spectra One theme v%s info retrieved."
+msgstr "Spectra One 主题 v%s 信息已检索。"
+
+#: inc/abilities/theme/list-hooks.php:27
+msgid "List Spectra One Hooks"
+msgstr "列出 Spectra One Hooks"
+
+#: inc/abilities/theme/list-hooks.php:28
+msgid "Returns custom action hooks and filters provided by the Spectra One theme via do_action and apply_filters. These are extension points that developers and child themes can hook into. Each hook includes its name, type, accepted parameters, default value, file location, and description."
+msgstr "通过 do_action 和 apply_filters 返回 Spectra One 主题提供的自定义操作钩子和过滤器。这些是开发人员和子主题可以挂接的扩展点。每个钩子包括其名称、类型、接受的参数、默认值、文件位置和描述。"
+
+#. translators: %d: number of hooks
+#: inc/abilities/theme/list-hooks.php:116
+#, php-format
+msgid "Found %d Spectra One hooks."
+msgstr "找到 %d 个 Spectra One 钩子。"
+
+#: inc/abilities/theme/list-hooks.php:139
+msgid "Filters the dynamic inline CSS added to the frontend. Extensions append CSS for sticky header, scroll-to-top, navigation, responsive blocks, etc."
+msgstr "过滤添加到前端的动态内联CSS。扩展程序为粘性标题、返回顶部、导航、响应式块等附加CSS。"
+
+#: inc/abilities/theme/list-hooks.php:147
+msgid "Filters the dynamic inline JavaScript added to the frontend. Extensions append JS for sticky header, scroll-to-top, admin bar spacing, etc."
+msgstr "过滤添加到前端的动态内联JavaScript。扩展程序附加JS用于固定标题、返回顶部、管理栏间距等。"
+
+#: inc/abilities/theme/list-hooks.php:155
+msgid "Controls whether frontend scripts and styles are enqueued. Return false to completely disable theme frontend assets."
+msgstr "控制是否将前端脚本和样式加入队列。返回 false 以完全禁用主题前端资产。"
+
+#: inc/abilities/theme/list-hooks.php:163
+msgid "Controls whether block editor scripts and styles are enqueued. Return false to disable theme editor assets."
+msgstr "控制是否将块编辑器脚本和样式入队。返回 false 以禁用主题编辑器资产。"
+
+#: inc/abilities/theme/list-hooks.php:171
+msgid "Filters the localized data array passed to the block editor script. Contains screen ID, Spectra plugin status, and other editor context."
+msgstr "筛选传递给块编辑器脚本的本地化数据数组。包含屏幕 ID、Spectra 插件状态和其他编辑器上下文。"
+
+#: inc/abilities/theme/list-hooks.php:179
+msgid "Filters the path to the theme languages directory for loading translations."
+msgstr "筛选主题语言目录的路径以加载翻译。"
+
+#: inc/abilities/theme/list-hooks.php:187
+msgid "Filters the SVG icons array used by the theme. Add, remove, or modify available SVG icons."
+msgstr "筛选主题使用的SVG图标数组。添加、删除或修改可用的SVG图标。"
+
+#: inc/abilities/theme/list-hooks.php:195
+msgid "Controls whether the mobile modal navigation menu content is centered. Return false to disable centering."
+msgstr "控制移动模态导航菜单内容是否居中。返回 false 以禁用居中。"
+
+#: inc/abilities/theme/list-hooks.php:203
+msgid "Filters the default block spacing value (in pixels) used in the Spectra plugin editor."
+msgstr "过滤在 Spectra 插件编辑器中使用的默认块间距值（以像素为单位）。"
+
+#: inc/abilities/theme/list-hooks.php:211
+msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
+msgstr "控制特定的Spectra One能力是否在REST API中可见。接收能力ID和实例作为附加参数。"
+
+#: inc/abilities/theme/list-hooks.php:219
+msgid "Controls whether a specific Spectra One ability is publicly exposed via MCP (Model Context Protocol). Receives the ability ID and instance as additional parameters."
+msgstr "控制是否通过 MCP（模型上下文协议）公开特定的 Spectra One 功能。接收功能 ID 和实例作为附加参数。"
+
+#: inc/abilities/theme/list-style-variations.php:27
+msgid "List Spectra One Style Variations"
+msgstr "列出 Spectra One 样式变体"
+
+#: inc/abilities/theme/list-style-variations.php:28
+msgid "Returns all available Spectra One style variations (color schemes) with their titles and color palettes. Use this to see what visual themes are available."
+msgstr "返回所有可用的 Spectra One 样式变体（配色方案），包括它们的标题和调色板。使用此功能查看可用的视觉主题。"
+
+#. translators: %d: number of variations
+#: inc/abilities/theme/list-style-variations.php:127
+#, php-format
+msgid "Found %d style variations."
+msgstr "找到 %d 种样式变体。"
+
+#: inc/abilities/theme/list-templates.php:27
+msgid "List Spectra One Templates"
+msgstr "列出 Spectra One 模板"
+
+#: inc/abilities/theme/list-templates.php:28
+msgid "Returns all templates and template parts registered by the Spectra One theme."
+msgstr "返回由 Spectra One 主题注册的所有模板和模板部分。"
+
+#. translators: %d: number of templates
+#: inc/abilities/theme/list-templates.php:131
+#, php-format
+msgid "Found %d templates."
+msgstr "找到 %d 个模板。"
+
+#: inc/abilities/traits/global-styles.php:62
+msgid "Failed to encode global styles as JSON."
+msgstr "无法将全局样式编码为JSON。"
+
+#: inc/admin/settings.php:75
+msgid "No valid settings were provided for update."
+msgstr "未提供有效的设置进行更新。"
+
+#: inc/admin/welcome-notice.php:114
+msgid "You do not have permission to perform this action."
+msgstr "您没有权限执行此操作。"
+
+#: inc/admin/welcome-notice.php:119
+msgid "Security check failed."
+msgstr "安全检查失败。"
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"
@@ -1962,6 +2497,7 @@ msgctxt "Style variation name"
 msgid "Ultra Marine"
 msgstr "超海洋蓝"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1970,11 +2506,11 @@ msgstr "超海洋蓝"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Primary"
 msgstr "主色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1983,11 +2519,11 @@ msgstr "主色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Secondary"
 msgstr "次色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1996,11 +2532,11 @@ msgstr "次色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Heading"
 msgstr "标题"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2009,11 +2545,11 @@ msgstr "标题"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Body"
 msgstr "正文"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2022,11 +2558,11 @@ msgstr "正文"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Background"
 msgstr "背景"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2035,11 +2571,11 @@ msgstr "背景"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Tertiary"
 msgstr "第三色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2048,11 +2584,11 @@ msgstr "第三色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Quaternary"
 msgstr "第四色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2061,11 +2597,11 @@ msgstr "第四色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Surface"
 msgstr "表面"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2074,11 +2610,11 @@ msgstr "表面"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Foreground"
 msgstr "前景"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2087,11 +2623,11 @@ msgstr "前景"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Outline"
 msgstr "轮廓"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2100,11 +2636,11 @@ msgstr "轮廓"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Neutral"
 msgstr "中性"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2113,11 +2649,11 @@ msgstr "中性"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Transparent"
 msgstr "透明"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2126,11 +2662,11 @@ msgstr "透明"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Current Color"
 msgstr "当前颜色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2139,11 +2675,11 @@ msgstr "当前颜色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Inherit"
 msgstr "继承"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2152,11 +2688,11 @@ msgstr "继承"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Gradient name"
 msgid "Primary"
 msgstr "主色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2165,11 +2701,11 @@ msgstr "主色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Primary"
 msgstr "主色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2178,11 +2714,11 @@ msgstr "主色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Secondary"
 msgstr "次色"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2191,7 +2727,6 @@ msgstr "次色"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Tertiary"
 msgstr "第三色"

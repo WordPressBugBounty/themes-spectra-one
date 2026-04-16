@@ -68,7 +68,10 @@ final class List_Hooks extends Ability {
 					'type'        => 'array',
 					'description' => 'List of hooks with name, type, parameters, default value, file, and description.',
 				),
-				'total' => array( 'type' => 'integer', 'description' => 'Total number of hooks returned.' ),
+				'total' => array(
+					'type'        => 'integer',
+					'description' => 'Total number of hooks returned.',
+				),
 			)
 		);
 	}

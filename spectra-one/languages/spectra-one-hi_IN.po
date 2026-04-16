@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.2.1\n"
+"Last-Translator: gpt-po v1.1.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -84,15 +84,15 @@ msgstr "स्पेक्ट्रा बिल्डर स्थापित 
 msgid "Learn More"
 msgstr "अधिक जानें"
 
-#: inc/admin/welcome-notice.php:223
+#: inc/admin/welcome-notice.php:226
 msgid "Activating"
 msgstr "सक्रिय करना"
 
-#: inc/admin/welcome-notice.php:224
+#: inc/admin/welcome-notice.php:227
 msgid "Installing"
 msgstr "स्थापित करना"
 
-#: inc/admin/welcome-notice.php:225
+#: inc/admin/welcome-notice.php:228
 msgid "Done"
 msgstr "हो गया"
 
@@ -102,6 +102,7 @@ msgstr "हो गया"
 msgid "Minimal"
 msgstr "न्यूनतम"
 
+#: inc/abilities/settings/update-color-palette.php:197
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "द्वितीयक"
@@ -767,6 +768,7 @@ msgstr "ब्लॉग"
 #: patterns/footer-4.php:98
 #: patterns/footer-5.php:123
 #: patterns/footer.php:88
+#, php-format
 msgid "© %d ·"
 msgstr "© %d ·"
 
@@ -1407,103 +1409,636 @@ msgstr "संस्करण 1.0.0"
 msgid "Download Now"
 msgstr "अब डाउनलोड करें"
 
-#: assets/js/editor.js:1
-#: build/editor.js:44
-#: build/editor.js:45
+#: src/block-extensions/header.js:45
 msgid "Enable Sticky Header"
 msgstr "स्टिकी हेडर सक्षम करें"
 
-#: assets/js/editor.js:1
-#: build/editor.js:45
-#: build/editor.js:48
+#: src/block-extensions/header.js:48
 msgid "Transparent header option will be disabled on enabling this option."
 msgstr "इस विकल्प को सक्षम करने पर पारदर्शी हेडर विकल्प अक्षम कर दिया जाएगा।"
 
-#: assets/js/editor.js:1
-#: build/editor.js:53
-#: build/editor.js:71
+#: src/block-extensions/header.js:71
 msgid "Enable Transparent Header"
 msgstr "पारदर्शी हेडर सक्षम करें"
 
-#: assets/js/editor.js:1
-#: build/editor.js:54
-#: build/editor.js:74
+#: src/block-extensions/header.js:74
 msgid "Sticky header option will be disabled on enabling this option."
 msgstr "इस विकल्प को सक्षम करने पर स्टिकी हेडर विकल्प अक्षम कर दिया जाएगा।"
 
-#: assets/js/editor.js:1
-#: build/editor.js:494
-#: build/editor.js:507
+#: src/components/install-plugin-notice.js:102
 msgid "Spectra plugin"
 msgstr "स्पेक्ट्रा प्लगइन"
 
-#: assets/js/editor.js:1
-#: build/editor.js:496
-#: build/editor.js:511
+#: src/components/install-plugin-notice.js:106
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr "अपने वेबसाइट को उन्नत और शक्तिशाली ब्लॉकों के साथ पावर-अप करें जो आपको जल्दी से वेबसाइट बनाने में मदद करते हैं!"
 
-#: assets/js/editor.js:1
-#: build/editor.js:778
-#: build/editor.js:781
+#: src/extensions/panel/components.js:29
 msgid "Disable Elements"
 msgstr "तत्व अक्षम करें"
 
-#: assets/js/editor.js:1
-#: build/editor.js:782
-#: build/editor.js:790
+#: src/extensions/panel/components.js:38
 msgid "Header Settings"
 msgstr "हेडर सेटिंग्स"
 
-#: assets/js/editor.js:1
-#: build/editor.js:833
-#: build/editor.js:837
-#: build/editor.js:828
-#: build/editor.js:836
+#: src/extensions/panel/sidebar.js:19
+#: src/extensions/panel/sidebar.js:27
 msgid "Spectra Page Settings"
 msgstr "स्पेक्ट्रा पृष्ठ सेटिंग्स"
 
-#: assets/js/editor.js:1
-#: build/editor.js:207
-#: build/editor.js:249
+#: src/block-extensions/responsive.js:39
 msgid "Hide Desktop"
 msgstr "डेस्कटॉप छिपाएँ"
 
-#: assets/js/editor.js:1
-#: build/editor.js:213
-#: build/editor.js:264
+#: src/block-extensions/responsive.js:54
 msgid "Hide Tablet"
 msgstr "टैबलेट छिपाएँ"
 
-#: assets/js/editor.js:1
-#: build/editor.js:219
-#: build/editor.js:275
+#: src/block-extensions/responsive.js:65
 msgid "Hide Mobile"
 msgstr "मोबाइल छिपाएँ"
 
-#: assets/js/settings.js:1
-#: build/settings.js:76
-#: build/settings.js:61
+#: src/admin/components/editor-settings.js:61
 msgid "Spectra One Settings"
 msgstr "स्पेक्ट्रा वन सेटिंग्स"
 
-#: assets/js/settings.js:1
-#: build/settings.js:84
-#: build/settings.js:70
+#: src/admin/components/editor-settings.js:70
 msgid "Scroll to top updated"
 msgstr "ऊपर स्क्रॉल अपडेट किया गया"
 
-#: assets/js/settings.js:1
-#: build/settings.js:85
-#: build/settings.js:71
+#: src/admin/components/editor-settings.js:71
 msgid "Scroll To Top"
 msgstr "ऊपर स्क्रॉल करें"
 
-#: assets/js/settings.js:1
-#: build/settings.js:357
-#: build/settings.js:205
+#: src/admin/settings.js:15
 msgid "Spectra One Editor Settings"
 msgstr "स्पेक्ट्रा वन संपादक सेटिंग्स"
+
+#. translators: %s: error message
+#: inc/abilities/ability.php:128
+#, php-format
+msgid "An unexpected error occurred: %s"
+msgstr "एक अप्रत्याशित त्रुटि हुई: %s"
+
+#. translators: %s: error message
+#: inc/abilities/ability.php:131
+#, php-format
+msgid "A system error occurred: %s"
+msgstr "एक सिस्टम त्रुटि हुई: %s"
+
+#: inc/abilities/ability.php:377
+msgid "An unexpected error occurred."
+msgstr "एक अप्रत्याशित त्रुटि हुई।"
+
+#: inc/abilities/display/get-post-display-settings.php:27
+msgid "Get Post Display Settings"
+msgstr "पोस्ट डिस्प्ले सेटिंग्स प्राप्त करें"
+
+#: inc/abilities/display/get-post-display-settings.php:28
+msgid "Returns the Spectra One display settings for a specific post or page, including header/footer visibility, sticky header, transparent header, and title display toggles."
+msgstr "किसी विशेष पोस्ट या पृष्ठ के लिए स्पेक्ट्रा वन डिस्प्ले सेटिंग्स लौटाता है, जिसमें हेडर/फूटर दृश्यता, स्टिकी हेडर, पारदर्शी हेडर, और शीर्षक प्रदर्शन टॉगल शामिल हैं।"
+
+#: inc/abilities/display/get-post-display-settings.php:114
+#: inc/abilities/display/update-post-display-settings.php:142
+msgid "Invalid post ID."
+msgstr "अमान्य पोस्ट आईडी।"
+
+#: inc/abilities/display/get-post-display-settings.php:115
+#: inc/abilities/display/update-post-display-settings.php:143
+msgid "Provide a valid post or page ID."
+msgstr "एक मान्य पोस्ट या पृष्ठ आईडी प्रदान करें।"
+
+#. translators: %d: post ID
+#: inc/abilities/display/get-post-display-settings.php:123
+#: inc/abilities/display/update-post-display-settings.php:151
+#, php-format
+msgid "Post %d not found."
+msgstr "पोस्ट %d नहीं मिला।"
+
+#: inc/abilities/display/get-post-display-settings.php:130
+msgid "You do not have permission to view this post's settings."
+msgstr "आपको इस पोस्ट की सेटिंग्स देखने की अनुमति नहीं है।"
+
+#. translators: %s: post title
+#: inc/abilities/display/get-post-display-settings.php:136
+#, php-format
+msgid "Retrieved display settings for \"%s\"."
+msgstr "\"%s\" के लिए प्रदर्शन सेटिंग्स प्राप्त की गईं।"
+
+#: inc/abilities/display/list-posts-with-display-overrides.php:27
+msgid "List Posts With Display Overrides"
+msgstr "प्रदर्शन ओवरराइड के साथ पोस्ट सूचीबद्ध करें"
+
+#: inc/abilities/display/list-posts-with-display-overrides.php:28
+msgid "Lists all posts and pages that have Spectra One display overrides (hidden header, hidden footer, sticky header, etc.). Useful for auditing which pages have custom display settings."
+msgstr "सभी पोस्ट और पृष्ठों को सूचीबद्ध करता है जिनमें स्पेक्ट्रा वन डिस्प्ले ओवरराइड्स हैं (छिपा हुआ हेडर, छिपा हुआ फुटर, स्टिकी हेडर, आदि)। यह जांचने के लिए उपयोगी है कि किन पृष्ठों में कस्टम डिस्प्ले सेटिंग्स हैं।"
+
+#. translators: %d: number of posts
+#: inc/abilities/display/list-posts-with-display-overrides.php:182
+#, php-format
+msgid "Found %d posts with display overrides."
+msgstr "%d पोस्ट डिस्प्ले ओवरराइड्स के साथ पाए गए।"
+
+#: inc/abilities/display/update-post-display-settings.php:27
+msgid "Update Post Display Settings"
+msgstr "पोस्ट प्रदर्शन सेटिंग्स अपडेट करें"
+
+#: inc/abilities/display/update-post-display-settings.php:28
+msgid "Updates Spectra One display settings for a specific post or page. Toggle header/footer visibility, sticky header, transparent header, or page title display. Only provided fields are updated. Always confirm with the user before running this — state the post title, ID, and which fields will change. Use spectra-one/get-post-display-settings first to show current values."
+msgstr "किसी विशेष पोस्ट या पृष्ठ के लिए स्पेक्ट्रा वन डिस्प्ले सेटिंग्स को अपडेट करता है। हेडर/फूटर दृश्यता, स्टिकी हेडर, पारदर्शी हेडर, या पृष्ठ शीर्षक प्रदर्शन को टॉगल करें। केवल प्रदान किए गए फ़ील्ड अपडेट किए जाते हैं। इसे चलाने से पहले हमेशा उपयोगकर्ता से पुष्टि करें — पोस्ट शीर्षक, आईडी, और कौन से फ़ील्ड बदलेंगे, यह बताएं। वर्तमान मान दिखाने के लिए पहले spectra-one/get-post-display-settings का उपयोग करें।"
+
+#: inc/abilities/display/update-post-display-settings.php:157
+msgid "You do not have permission to edit this post."
+msgstr "आपको इस पोस्ट को संपादित करने की अनुमति नहीं है।"
+
+#: inc/abilities/display/update-post-display-settings.php:187
+msgid "No display settings provided to update."
+msgstr "अपडेट करने के लिए कोई डिस्प्ले सेटिंग्स प्रदान नहीं की गईं।"
+
+#: inc/abilities/display/update-post-display-settings.php:188
+msgid "Provide at least one of: hide_header, hide_footer, hide_title, sticky_header, transparent_header."
+msgstr "कम से कम इनमें से एक प्रदान करें: hide_header, hide_footer, hide_title, sticky_header, transparent_header."
+
+#. translators: 1: post title, 2: updated fields
+#: inc/abilities/display/update-post-display-settings.php:194
+#, php-format
+msgid "Updated display settings for \"%1$s\": %2$s."
+msgstr "\"%1$s\" के लिए प्रदर्शन सेटिंग्स अपडेट की गईं: %2$s."
+
+#: inc/abilities/init.php:87
+msgid "Spectra One Theme"
+msgstr "स्पेक्ट्रा वन थीम"
+
+#: inc/abilities/init.php:88
+msgid "Abilities for the Spectra One theme including settings, patterns, display controls, and style variations."
+msgstr "स्पेक्ट्रा वन थीम के लिए क्षमताएं, जिनमें सेटिंग्स, पैटर्न, डिस्प्ले नियंत्रण और शैली भिन्नताएं शामिल हैं।"
+
+#: inc/abilities/patterns/get-pattern-markup.php:27
+msgid "Get Spectra One Pattern Markup"
+msgstr "स्पेक्ट्रा वन पैटर्न मार्कअप प्राप्त करें"
+
+#: inc/abilities/patterns/get-pattern-markup.php:28
+msgid "Returns the block markup for a specific Spectra One pattern by slug. Use this to get the block editor content for inserting into a page or post."
+msgstr "किसी विशेष स्पेक्ट्रा वन पैटर्न के लिए स्लग द्वारा ब्लॉक मार्कअप लौटाता है। इसे पृष्ठ या पोस्ट में सम्मिलित करने के लिए ब्लॉक संपादक सामग्री प्राप्त करने के लिए उपयोग करें।"
+
+#: inc/abilities/patterns/get-pattern-markup.php:88
+msgid "Pattern slug is required."
+msgstr "पैटर्न स्लग आवश्यक है।"
+
+#: inc/abilities/patterns/get-pattern-markup.php:89
+msgid "Provide a slug like \"spectra-one/hero-banner\". Use list-patterns to see available slugs."
+msgstr "\"spectra-one/hero-banner\" जैसा एक स्लग प्रदान करें। उपलब्ध स्लग देखने के लिए सूची-पैटर्न का उपयोग करें।"
+
+#. translators: %s: pattern slug
+#: inc/abilities/patterns/get-pattern-markup.php:99
+#, php-format
+msgid "Pattern \"%s\" not found."
+msgstr "पैटर्न \"%s\" नहीं मिला।"
+
+#: inc/abilities/patterns/get-pattern-markup.php:100
+msgid "Use spectra-one/list-patterns to see all available pattern slugs."
+msgstr "सभी उपलब्ध पैटर्न स्लग देखने के लिए spectra-one/list-patterns का उपयोग करें।"
+
+#. translators: %s: pattern title
+#: inc/abilities/patterns/get-pattern-markup.php:108
+#, php-format
+msgid "Retrieved pattern markup for \"%s\"."
+msgstr "\"%s\" के लिए पैटर्न मार्कअप प्राप्त किया।"
+
+#: inc/abilities/patterns/list-pattern-categories.php:27
+msgid "List Spectra One Pattern Categories"
+msgstr "स्पेक्ट्रा वन पैटर्न श्रेणियों की सूची बनाएं"
+
+#: inc/abilities/patterns/list-pattern-categories.php:28
+msgid "Returns all block pattern categories registered by the Spectra One theme."
+msgstr "स्पेक्ट्रा वन थीम द्वारा पंजीकृत सभी ब्लॉक पैटर्न श्रेणियों को लौटाता है।"
+
+#. translators: %d: number of categories
+#: inc/abilities/patterns/list-pattern-categories.php:103
+#, php-format
+msgid "Found %d pattern categories."
+msgstr "%d पैटर्न श्रेणियाँ मिलीं।"
+
+#: inc/abilities/patterns/list-patterns.php:27
+msgid "List Spectra One Block Patterns"
+msgstr "स्पेक्ट्रा वन ब्लॉक पैटर्न सूचीबद्ध करें"
+
+#: inc/abilities/patterns/list-patterns.php:28
+msgid "Returns all available Spectra One block patterns with their titles, slugs, categories, and keywords. Use this to discover what design patterns are available for building pages."
+msgstr "सभी उपलब्ध स्पेक्ट्रा वन ब्लॉक पैटर्न उनके शीर्षक, स्लग, श्रेणियाँ, और कीवर्ड के साथ लौटाता है। इसका उपयोग यह जानने के लिए करें कि पृष्ठ बनाने के लिए कौन से डिज़ाइन पैटर्न उपलब्ध हैं।"
+
+#. translators: %d: number of patterns
+#: inc/abilities/patterns/list-patterns.php:124
+#, php-format
+msgid "Found %d Spectra One patterns."
+msgstr "%d स्पेक्ट्रा वन पैटर्न मिले।"
+
+#: inc/abilities/response.php:75
+msgid "An unknown error occurred."
+msgstr "एक अज्ञात त्रुटि हुई।"
+
+#: inc/abilities/settings/get-color-palette.php:27
+msgid "Get Spectra One Color Palette"
+msgstr "स्पेक्ट्रा वन रंग पैलेट प्राप्त करें"
+
+#: inc/abilities/settings/get-color-palette.php:28
+msgid "Returns the active Spectra One color palette including any user customizations. Shows all theme colors: primary, secondary, heading, body, background, tertiary, quaternary, surface, foreground, outline, and neutral."
+msgstr "सक्रिय स्पेक्ट्रा वन रंग पैलेट को लौटाता है जिसमें किसी भी उपयोगकर्ता अनुकूलन शामिल हैं। सभी थीम रंग दिखाता है: प्राथमिक, द्वितीयक, शीर्षक, शरीर, पृष्ठभूमि, तृतीयक, चतुर्थक, सतह, अग्रभूमि, रूपरेखा, और तटस्थ।"
+
+#. translators: %d: number of colors
+#: inc/abilities/settings/get-color-palette.php:114
+#, php-format
+msgid "Retrieved color palette with %d colors."
+msgstr "%d रंगों के साथ रंग पैलेट प्राप्त किया गया।"
+
+#: inc/abilities/settings/get-theme-settings.php:27
+msgid "Get Spectra One Theme Settings"
+msgstr "स्पेक्ट्रा वन थीम सेटिंग्स प्राप्त करें"
+
+#: inc/abilities/settings/get-theme-settings.php:28
+msgid "Returns the current Spectra One theme settings including global options (scroll-to-top), color palette, and typography configuration. Use this to understand the active theme configuration."
+msgstr "वर्तमान स्पेक्ट्रा वन थीम सेटिंग्स लौटाता है जिसमें वैश्विक विकल्प (स्क्रॉल-टू-टॉप), रंग पैलेट, और टाइपोग्राफी कॉन्फ़िगरेशन शामिल हैं। सक्रिय थीम कॉन्फ़िगरेशन को समझने के लिए इसका उपयोग करें।"
+
+#: inc/abilities/settings/get-theme-settings.php:104
+msgid "Retrieved Spectra One theme settings successfully."
+msgstr "स्पेक्ट्रा वन थीम सेटिंग्स को सफलतापूर्वक प्राप्त किया गया।"
+
+#: inc/abilities/settings/get-typography-settings.php:27
+msgid "Get Spectra One Typography Settings"
+msgstr "स्पेक्ट्रा वन टाइपोग्राफी सेटिंग्स प्राप्त करें"
+
+#: inc/abilities/settings/get-typography-settings.php:28
+msgid "Returns the current typography configuration including body and heading font families, weights, line heights, and responsive font sizes."
+msgstr "वर्तमान टाइपोग्राफी कॉन्फ़िगरेशन लौटाता है जिसमें बॉडी और हेडिंग फ़ॉन्ट परिवार, वज़न, लाइन ऊँचाई, और उत्तरदायी फ़ॉन्ट आकार शामिल हैं।"
+
+#: inc/abilities/settings/get-typography-settings.php:89
+msgid "Retrieved typography settings successfully."
+msgstr "टाइपोग्राफी सेटिंग्स सफलतापूर्वक प्राप्त की गईं।"
+
+#: inc/abilities/settings/install-font.php:64
+msgid "Install Font"
+msgstr "फ़ॉन्ट इंस्टॉल करें"
+
+#: inc/abilities/settings/install-font.php:65
+msgid "Downloads a Google Font and registers it in WordPress so blocks can use it. After installing, use spectra-one/update-typography to apply it to body or headings. Provide the font name (e.g. \"Playfair Display\") and desired weights (e.g. [400, 700]). Skips if the font is already installed."
+msgstr "एक Google फ़ॉन्ट डाउनलोड करता है और इसे वर्डप्रेस में रजिस्टर करता है ताकि ब्लॉक्स इसका उपयोग कर सकें। इंस्टॉल करने के बाद, इसे बॉडी या हेडिंग्स पर लागू करने के लिए spectra-one/update-typography का उपयोग करें। फ़ॉन्ट का नाम (जैसे \"Playfair Display\") और इच्छित वज़न (जैसे [400, 700]) प्रदान करें। अगर फ़ॉन्ट पहले से इंस्टॉल है तो इसे छोड़ देता है।"
+
+#: inc/abilities/settings/install-font.php:154
+msgid "Font name is required and must contain only letters, numbers, spaces, and hyphens."
+msgstr "फ़ॉन्ट नाम आवश्यक है और इसमें केवल अक्षर, संख्याएँ, स्पेस और हाइफ़न शामिल होने चाहिए।"
+
+#: inc/abilities/settings/install-font.php:155
+msgid "Provide the Google Font name, e.g. \"Playfair Display\"."
+msgstr "Google फ़ॉन्ट का नाम प्रदान करें, जैसे \"Playfair Display\"."
+
+#: inc/abilities/settings/install-font.php:165
+msgid "All provided weights are invalid."
+msgstr "सभी प्रदान किए गए वजन अमान्य हैं।"
+
+#: inc/abilities/settings/install-font.php:166
+msgid "Font weights must be integers between 100 and 900 in steps of 100 (e.g. 400, 700)."
+msgstr "फ़ॉन्ट वज़न 100 से 900 के बीच 100 के अंतराल में पूर्णांक होने चाहिए (जैसे 400, 700)।"
+
+#. translators: %s: font name
+#: inc/abilities/settings/install-font.php:176
+#, php-format
+msgid "Font \"%s\" is already installed."
+msgstr "फ़ॉन्ट \"%s\" पहले से ही इंस्टॉल है।"
+
+#. translators: %s: font name
+#: inc/abilities/settings/install-font.php:190
+#, php-format
+msgid "Failed to download font \"%s\" from Google Fonts."
+msgstr "Google फ़ॉन्ट्स से \"%s\" फ़ॉन्ट डाउनलोड करने में विफल।"
+
+#: inc/abilities/settings/install-font.php:191
+msgid "Check that the font name is correct and matches fonts.google.com exactly."
+msgstr "जांचें कि फ़ॉन्ट का नाम सही है और fonts.google.com से बिल्कुल मेल खाता है।"
+
+#. translators: 1: font name, 2: comma-separated weights, 3: font slug
+#: inc/abilities/settings/install-font.php:206
+#, php-format
+msgid "Font \"%1$s\" installed with weights: %2$s. Use slug \"%3$s\" with spectra-one/update-typography."
+msgstr "फ़ॉन्ट \"%1$s\" को वज़न: %2$s के साथ स्थापित किया गया। स्पेक्ट्रा-वन/अपडेट-टाइपोग्राफी के साथ स्लग \"%3$s\" का उपयोग करें।"
+
+#: inc/abilities/settings/install-font.php:571
+msgid "Failed to encode font family data."
+msgstr "फ़ॉन्ट परिवार डेटा को एन्कोड करने में विफल।"
+
+#: inc/abilities/settings/install-font.php:596
+msgid "Failed to encode font face data."
+msgstr "फ़ॉन्ट फ़ेस डेटा को एन्कोड करने में विफल।"
+
+#: inc/abilities/settings/update-color-palette.php:44
+msgid "Update Spectra One Color Palette"
+msgstr "स्पेक्ट्रा वन रंग पैलेट अपडेट करें"
+
+#: inc/abilities/settings/update-color-palette.php:45
+msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
+msgstr "ब्रांड रंगों के साथ FSE वैश्विक शैलियों के रंग पैलेट और तत्व शैलियों (पाठ, शीर्षक, लिंक, बटन) को अपडेट करता है। 4 हेक्स रंग स्वीकार करता है: प्राथमिक, द्वितीयक, शीर्षक, शरीर। सहायक रंगों (सतह, रूपरेखा, तृतीयक) को स्वचालित रूप से निकालता है।"
+
+#: inc/abilities/settings/update-color-palette.php:129
+#: inc/abilities/settings/update-typography.php:160
+msgid "No global styles found. Is an FSE/block theme active?"
+msgstr "कोई वैश्विक शैलियाँ नहीं मिलीं। क्या कोई FSE/ब्लॉक थीम सक्रिय है?"
+
+#: inc/abilities/settings/update-color-palette.php:130
+#: inc/abilities/settings/update-typography.php:161
+msgid "This ability requires an active block theme with global styles support."
+msgstr "इस क्षमता के लिए वैश्विक शैलियों के समर्थन के साथ एक सक्रिय ब्लॉक थीम की आवश्यकता होती है।"
+
+#: inc/abilities/settings/update-color-palette.php:143
+msgid "Color palette and element styles updated with brand colors."
+msgstr "ब्रांड रंगों के साथ रंग पैलेट और तत्व शैलियाँ अपडेट की गईं।"
+
+#: inc/abilities/settings/update-color-palette.php:160
+msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
+msgstr "कुल 4 ब्रांड रंग आवश्यक हैं: [प्राथमिक, द्वितीयक, शीर्षक, शरीर]."
+
+#: inc/abilities/settings/update-color-palette.php:161
+msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
+msgstr "4 हेक्स रंग स्ट्रिंग्स की एक array पास करें जैसे [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
+
+#. translators: 1: color index, 2: color value
+#: inc/abilities/settings/update-color-palette.php:170
+#, php-format
+msgid "Invalid hex color at index %1$d: %2$s"
+msgstr "इंडेक्स %1$d पर अमान्य हेक्स रंग: %2$s"
+
+#: inc/abilities/settings/update-color-palette.php:171
+msgid "Colors must be 6-digit hex values like #FF6B6B."
+msgstr "रंग 6-अंकीय हेक्स मान जैसे #FF6B6B होने चाहिए।"
+
+#: inc/abilities/settings/update-color-palette.php:192
+msgid "Primary"
+msgstr "प्राथमिक"
+
+#: inc/abilities/settings/update-color-palette.php:202
+msgid "Heading"
+msgstr "शीर्षक"
+
+#: inc/abilities/settings/update-color-palette.php:207
+msgid "Body"
+msgstr "शरीर"
+
+#: inc/abilities/settings/update-color-palette.php:212
+msgid "Foreground"
+msgstr "अग्रभूमि"
+
+#: inc/abilities/settings/update-color-palette.php:217
+msgid "Background"
+msgstr "पृष्ठभूमि"
+
+#: inc/abilities/settings/update-color-palette.php:222
+msgid "Surface"
+msgstr "सतह"
+
+#: inc/abilities/settings/update-color-palette.php:227
+msgid "Tertiary"
+msgstr "तृतीयक"
+
+#: inc/abilities/settings/update-color-palette.php:232
+msgid "Outline"
+msgstr "रूपरेखा"
+
+#: inc/abilities/settings/update-color-palette.php:237
+msgid "Black"
+msgstr "काला"
+
+#: inc/abilities/settings/update-navigation.php:56
+msgid "Update Navigation Menu"
+msgstr "नेविगेशन मेनू अपडेट करें"
+
+#: inc/abilities/settings/update-navigation.php:57
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "पृष्ठ लिंक के साथ साइट नेविगेशन मेनू को अपडेट करता है। मेनू आइटम की एक सरणी स्वीकार करता है [{लेबल, यूआरएल}]। यदि आवश्यक हो तो नेविगेशन पोस्ट बनाता है और इसे उपयोग करने के लिए हेडर टेम्पलेट भाग को जोड़ता है। FSE ब्लॉक थीम के लिए — wp:navigation-link ब्लॉक्स का उपयोग करता है, क्लासिक मेनू नहीं।"
+
+#: inc/abilities/settings/update-navigation.php:162
+msgid "At least one menu item is required."
+msgstr "कम से कम एक मेनू आइटम आवश्यक है।"
+
+#: inc/abilities/settings/update-navigation.php:163
+msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
+msgstr "आइटम्स को [{\"label\": \"Home\", \"url\": \"/\"}] के रूप में प्रदान करें।"
+
+#: inc/abilities/settings/update-navigation.php:174
+msgid "No valid menu items provided."
+msgstr "कोई मान्य मेनू आइटम प्रदान नहीं किए गए।"
+
+#: inc/abilities/settings/update-navigation.php:175
+msgid "Each item needs at least a \"label\"."
+msgstr "प्रत्येक आइटम के लिए कम से कम एक \"लेबल\" आवश्यक है।"
+
+#. translators: %d: number of menu items
+#: inc/abilities/settings/update-navigation.php:201
+#, php-format
+msgid "Navigation updated with %d menu items."
+msgstr "नेविगेशन को %d मेनू आइटम्स के साथ अपडेट किया गया।"
+
+#: inc/abilities/settings/update-template-part.php:48
+msgid "Update Template Part"
+msgstr "टेम्पलेट भाग अपडेट करें"
+
+#: inc/abilities/settings/update-template-part.php:49
+msgid "Switches the active header or footer design by updating the FSE template part to reference a different Spectra One pattern. Use spectra-one/list-patterns with category \"header\" or \"footer\" to see available patterns first."
+msgstr "सक्रिय हेडर या फुटर डिज़ाइन को बदलता है, FSE टेम्पलेट भाग को एक अलग स्पेक्ट्रा वन पैटर्न का संदर्भ देने के लिए अपडेट करके। उपलब्ध पैटर्न पहले देखने के लिए श्रेणी \"हेडर\" या \"फुटर\" के साथ spectra-one/list-patterns का उपयोग करें।"
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:146
+#, php-format
+msgid "Could not find the %s template part."
+msgstr "%s टेम्पलेट भाग नहीं मिला।"
+
+#. translators: 1: area name, 2: pattern slug
+#: inc/abilities/settings/update-template-part.php:163
+#, php-format
+msgid "%1$s updated to use pattern \"%2$s\"."
+msgstr "%1$s को \"%2$s\" पैटर्न का उपयोग करने के लिए अपडेट किया गया।"
+
+#: inc/abilities/settings/update-template-part.php:182
+msgid "Invalid area. Must be \"header\" or \"footer\"."
+msgstr "अमान्य क्षेत्र। \"हेडर\" या \"फुटर\" होना चाहिए।"
+
+#: inc/abilities/settings/update-template-part.php:191
+#, php-format
+msgid "Pattern must start with \"%1$s\" for the %2$s area."
+msgstr "पैटर्न को %2$s क्षेत्र के लिए \"%1$s\" से शुरू होना चाहिए."
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:202
+#, php-format
+msgid "Pattern \"%s\" is not registered."
+msgstr "पैटर्न \"%s\" पंजीकृत नहीं है।"
+
+#: inc/abilities/settings/update-theme-settings.php:27
+msgid "Update Spectra One Theme Settings"
+msgstr "स्पेक्ट्रा वन थीम सेटिंग्स अपडेट करें"
+
+#: inc/abilities/settings/update-theme-settings.php:28
+msgid "Updates Spectra One global theme options such as scroll-to-top toggle. Only the provided fields are updated. This modifies options visible to all site visitors. Always confirm with the user before running this — show which settings will change and their new values."
+msgstr "स्क्रॉल-टू-टॉप टॉगल जैसे स्पेक्ट्रा वन वैश्विक थीम विकल्पों को अपडेट करता है। केवल प्रदान किए गए फ़ील्ड अपडेट किए जाते हैं। यह उन विकल्पों को संशोधित करता है जो सभी साइट आगंतुकों को दिखाई देते हैं। इसे चलाने से पहले हमेशा उपयोगकर्ता से पुष्टि करें — दिखाएं कि कौन सी सेटिंग्स बदलेंगी और उनके नए मान क्या होंगे।"
+
+#: inc/abilities/settings/update-theme-settings.php:116
+msgid "No settings provided to update."
+msgstr "अपडेट करने के लिए कोई सेटिंग्स प्रदान नहीं की गईं।"
+
+#: inc/abilities/settings/update-theme-settings.php:117
+msgid "Provide at least one setting to update (e.g. scroll_top)."
+msgstr "कम से कम एक सेटिंग अपडेट करने के लिए प्रदान करें (जैसे कि scroll_top)।"
+
+#. translators: %s: list of updated fields
+#: inc/abilities/settings/update-theme-settings.php:125
+#, php-format
+msgid "Theme settings updated: %s."
+msgstr "थीम सेटिंग्स अपडेट की गईं: %s."
+
+#: inc/abilities/settings/update-typography.php:61
+msgid "Update Spectra One Typography"
+msgstr "स्पेक्ट्रा वन टाइपोग्राफी अपडेट करें"
+
+#: inc/abilities/settings/update-typography.php:62
+msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
+msgstr "FSE वैश्विक शैलियों की टाइपोग्राफी को बॉडी टेक्स्ट और हेडिंग्स के लिए अपडेट करता है। फ़ॉन्ट परिवार (स्लग द्वारा), फ़ॉन्ट वज़न, और लाइन ऊँचाई सेट करें। फ़ॉन्ट परिवारों को theme.json में पंजीकृत होना चाहिए। उपलब्ध वज़न: पतला, अतिरिक्त हल्का, हल्का, नियमित, मध्यम, अर्ध बोल्ड, बोल्ड, अतिरिक्त बोल्ड, काला (या संख्यात्मक 100-900)। उपलब्ध लाइन ऊँचाई: प्रारंभिक, xxछोटा, xछोटा, छोटा, मध्यम, बड़ा।"
+
+#: inc/abilities/settings/update-typography.php:168
+msgid "No typography fields provided to update."
+msgstr "अद्यतन करने के लिए कोई टाइपोग्राफी फ़ील्ड प्रदान नहीं किए गए।"
+
+#: inc/abilities/settings/update-typography.php:169
+msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
+msgstr "कम से कम इनमें से एक प्रदान करें: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
+
+#. translators: %s: comma-separated list of field=value pairs that were rejected
+#: inc/abilities/settings/update-typography.php:190
+#, php-format
+msgid "Invalid typography values: %s."
+msgstr "अमान्य टाइपोग्राफी मान: %s."
+
+#: inc/abilities/settings/update-typography.php:191
+msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
+msgstr "फ़ॉन्ट वज़न को नामित किया जाना चाहिए (पतला..काला) या संख्यात्मक (100-900, 100 के अंतराल में)। लाइन ऊँचाई को नामित किया जाना चाहिए (प्रारंभिक, xxSmall..बड़ा) या संख्यात्मक (0 < n <= 5)।"
+
+#. translators: %s: comma-separated list of updated fields
+#: inc/abilities/settings/update-typography.php:214
+#, php-format
+msgid "Typography updated: %s."
+msgstr "टाइपोग्राफी अपडेट की गई: %s."
+
+#: inc/abilities/theme/get-theme-info.php:27
+msgid "Get Spectra One Theme Info"
+msgstr "स्पेक्ट्रा वन थीम जानकारी प्राप्त करें"
+
+#: inc/abilities/theme/get-theme-info.php:28
+msgid "Returns Spectra One theme metadata including version, required WordPress/PHP versions, and Spectra plugin compatibility status. Call this first when working with the theme."
+msgstr "स्पेक्ट्रा वन थीम मेटाडेटा लौटाता है जिसमें संस्करण, आवश्यक वर्डप्रेस/पीएचपी संस्करण, और स्पेक्ट्रा प्लगइन संगतता स्थिति शामिल है। थीम के साथ काम करते समय इसे पहले कॉल करें।"
+
+#. translators: %s: theme version
+#: inc/abilities/theme/get-theme-info.php:130
+#, php-format
+msgid "Spectra One theme v%s info retrieved."
+msgstr "Spectra One थीम v%s की जानकारी प्राप्त की गई।"
+
+#: inc/abilities/theme/list-hooks.php:27
+msgid "List Spectra One Hooks"
+msgstr "स्पेक्ट्रा वन हुक्स सूचीबद्ध करें"
+
+#: inc/abilities/theme/list-hooks.php:28
+msgid "Returns custom action hooks and filters provided by the Spectra One theme via do_action and apply_filters. These are extension points that developers and child themes can hook into. Each hook includes its name, type, accepted parameters, default value, file location, and description."
+msgstr "स्पेक्ट्रा वन थीम द्वारा do_action और apply_filters के माध्यम से प्रदान किए गए कस्टम एक्शन हुक और फिल्टर लौटाता है। ये विस्तार बिंदु हैं जिनमें डेवलपर्स और चाइल्ड थीम हुक कर सकते हैं। प्रत्येक हुक में इसका नाम, प्रकार, स्वीकृत पैरामीटर, डिफ़ॉल्ट मान, फ़ाइल स्थान और विवरण शामिल होता है।"
+
+#. translators: %d: number of hooks
+#: inc/abilities/theme/list-hooks.php:116
+#, php-format
+msgid "Found %d Spectra One hooks."
+msgstr "%d स्पेक्ट्रा वन हुक्स पाए गए।"
+
+#: inc/abilities/theme/list-hooks.php:139
+msgid "Filters the dynamic inline CSS added to the frontend. Extensions append CSS for sticky header, scroll-to-top, navigation, responsive blocks, etc."
+msgstr "फ्रंटएंड में जोड़े गए डायनामिक इनलाइन CSS को फ़िल्टर करता है। एक्सटेंशन चिपचिपे हेडर, स्क्रॉल-टू-टॉप, नेविगेशन, उत्तरदायी ब्लॉक्स आदि के लिए CSS जोड़ते हैं।"
+
+#: inc/abilities/theme/list-hooks.php:147
+msgid "Filters the dynamic inline JavaScript added to the frontend. Extensions append JS for sticky header, scroll-to-top, admin bar spacing, etc."
+msgstr "फ्रंटएंड में जोड़े गए डायनामिक इनलाइन जावास्क्रिप्ट को फिल्टर करता है। एक्सटेंशन चिपचिपे हेडर, स्क्रॉल-टू-टॉप, एडमिन बार स्पेसिंग आदि के लिए JS जोड़ते हैं।"
+
+#: inc/abilities/theme/list-hooks.php:155
+msgid "Controls whether frontend scripts and styles are enqueued. Return false to completely disable theme frontend assets."
+msgstr "यह नियंत्रित करता है कि फ्रंटेंड स्क्रिप्ट और स्टाइल्स कतारबद्ध हैं या नहीं। थीम फ्रंटेंड एसेट्स को पूरी तरह से अक्षम करने के लिए false लौटाएं।"
+
+#: inc/abilities/theme/list-hooks.php:163
+msgid "Controls whether block editor scripts and styles are enqueued. Return false to disable theme editor assets."
+msgstr "नियंत्रण करता है कि ब्लॉक संपादक स्क्रिप्ट और शैलियाँ कतारबद्ध हैं या नहीं। थीम संपादक संपत्तियों को अक्षम करने के लिए false लौटाएँ।"
+
+#: inc/abilities/theme/list-hooks.php:171
+msgid "Filters the localized data array passed to the block editor script. Contains screen ID, Spectra plugin status, and other editor context."
+msgstr "ब्लॉक संपादक स्क्रिप्ट को पास किए गए स्थानीयकृत डेटा एरे को फ़िल्टर करता है। इसमें स्क्रीन आईडी, स्पेक्ट्रा प्लगइन स्थिति, और अन्य संपादक संदर्भ शामिल होते हैं।"
+
+#: inc/abilities/theme/list-hooks.php:179
+msgid "Filters the path to the theme languages directory for loading translations."
+msgstr "अनुवादों को लोड करने के लिए थीम भाषाओं की निर्देशिका के पथ को फ़िल्टर करता है।"
+
+#: inc/abilities/theme/list-hooks.php:187
+msgid "Filters the SVG icons array used by the theme. Add, remove, or modify available SVG icons."
+msgstr "थीम द्वारा उपयोग की जाने वाली SVG आइकन सरणी को फ़िल्टर करता है। उपलब्ध SVG आइकनों को जोड़ें, हटाएं या संशोधित करें।"
+
+#: inc/abilities/theme/list-hooks.php:195
+msgid "Controls whether the mobile modal navigation menu content is centered. Return false to disable centering."
+msgstr "नियंत्रण करता है कि मोबाइल मोडल नेविगेशन मेनू सामग्री केंद्रित है या नहीं। केंद्रित करना बंद करने के लिए false लौटाएं।"
+
+#: inc/abilities/theme/list-hooks.php:203
+msgid "Filters the default block spacing value (in pixels) used in the Spectra plugin editor."
+msgstr "स्पेक्ट्रा प्लगइन संपादक में उपयोग किए गए डिफ़ॉल्ट ब्लॉक स्पेसिंग मान (पिक्सल में) को फ़िल्टर करता है।"
+
+#: inc/abilities/theme/list-hooks.php:211
+msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
+msgstr "यह नियंत्रित करता है कि क्या एक विशिष्ट स्पेक्ट्रा वन क्षमता REST API में दिखाई देती है। अतिरिक्त पैरामीटर के रूप में क्षमता आईडी और उदाहरण प्राप्त करता है।"
+
+#: inc/abilities/theme/list-hooks.php:219
+msgid "Controls whether a specific Spectra One ability is publicly exposed via MCP (Model Context Protocol). Receives the ability ID and instance as additional parameters."
+msgstr "यह नियंत्रित करता है कि क्या एक विशिष्ट स्पेक्ट्रा वन क्षमता को एमसीपी (मॉडल संदर्भ प्रोटोकॉल) के माध्यम से सार्वजनिक रूप से उजागर किया गया है। अतिरिक्त पैरामीटर के रूप में क्षमता आईडी और उदाहरण प्राप्त करता है।"
+
+#: inc/abilities/theme/list-style-variations.php:27
+msgid "List Spectra One Style Variations"
+msgstr "स्पेक्ट्रा वन शैली विविधताओं की सूची बनाएं"
+
+#: inc/abilities/theme/list-style-variations.php:28
+msgid "Returns all available Spectra One style variations (color schemes) with their titles and color palettes. Use this to see what visual themes are available."
+msgstr "सभी उपलब्ध स्पेक्ट्रा वन शैली विविधताओं (रंग योजनाओं) को उनके शीर्षकों और रंग पैलेट्स के साथ लौटाता है। यह देखने के लिए इसका उपयोग करें कि कौन-कौन से दृश्य थीम उपलब्ध हैं।"
+
+#. translators: %d: number of variations
+#: inc/abilities/theme/list-style-variations.php:127
+#, php-format
+msgid "Found %d style variations."
+msgstr "%d शैली विविधताएँ मिलीं।"
+
+#: inc/abilities/theme/list-templates.php:27
+msgid "List Spectra One Templates"
+msgstr "स्पेक्ट्रा वन टेम्पलेट्स सूचीबद्ध करें"
+
+#: inc/abilities/theme/list-templates.php:28
+msgid "Returns all templates and template parts registered by the Spectra One theme."
+msgstr "स्पेक्ट्रा वन थीम द्वारा पंजीकृत सभी टेम्पलेट्स और टेम्पलेट भागों को लौटाता है।"
+
+#. translators: %d: number of templates
+#: inc/abilities/theme/list-templates.php:131
+#, php-format
+msgid "Found %d templates."
+msgstr "%d टेम्पलेट्स मिले।"
+
+#: inc/abilities/traits/global-styles.php:62
+msgid "Failed to encode global styles as JSON."
+msgstr "ग्लोबल शैलियों को JSON के रूप में एन्कोड करने में विफल।"
+
+#: inc/admin/settings.php:75
+msgid "No valid settings were provided for update."
+msgstr "अद्यतन के लिए कोई मान्य सेटिंग्स प्रदान नहीं की गईं।"
+
+#: inc/admin/welcome-notice.php:114
+msgid "You do not have permission to perform this action."
+msgstr "आपको यह कार्य करने की अनुमति नहीं है।"
+
+#: inc/admin/welcome-notice.php:119
+msgid "Security check failed."
+msgstr "सुरक्षा जांच विफल हो गई।"
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"
@@ -1962,6 +2497,7 @@ msgctxt "Style variation name"
 msgid "Ultra Marine"
 msgstr "अल्ट्रा मरीन"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1970,11 +2506,11 @@ msgstr "अल्ट्रा मरीन"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Primary"
 msgstr "प्राथमिक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1983,11 +2519,11 @@ msgstr "प्राथमिक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Secondary"
 msgstr "द्वितीयक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -1996,11 +2532,11 @@ msgstr "द्वितीयक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Heading"
 msgstr "शीर्षक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2009,11 +2545,11 @@ msgstr "शीर्षक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Body"
 msgstr "शरीर"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2022,11 +2558,11 @@ msgstr "शरीर"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Background"
 msgstr "पृष्ठभूमि"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2035,11 +2571,11 @@ msgstr "पृष्ठभूमि"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Tertiary"
 msgstr "तृतीयक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2048,11 +2584,11 @@ msgstr "तृतीयक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Quaternary"
 msgstr "चतुर्थक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2061,11 +2597,11 @@ msgstr "चतुर्थक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Surface"
 msgstr "सतह"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2074,11 +2610,11 @@ msgstr "सतह"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Foreground"
 msgstr "फोरग्राउंड"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2087,11 +2623,11 @@ msgstr "फोरग्राउंड"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Outline"
 msgstr "आउटलाइन"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2100,11 +2636,11 @@ msgstr "आउटलाइन"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Neutral"
 msgstr "न्यूट्रल"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2113,11 +2649,11 @@ msgstr "न्यूट्रल"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Transparent"
 msgstr "पारदर्शी"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2126,11 +2662,11 @@ msgstr "पारदर्शी"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Current Color"
 msgstr "वर्तमान रंग"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2139,11 +2675,11 @@ msgstr "वर्तमान रंग"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Color name"
 msgid "Inherit"
 msgstr "विरासत"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2152,11 +2688,11 @@ msgstr "विरासत"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Gradient name"
 msgid "Primary"
 msgstr "प्राथमिक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2165,11 +2701,11 @@ msgstr "प्राथमिक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Primary"
 msgstr "प्राथमिक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2178,11 +2714,11 @@ msgstr "प्राथमिक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Secondary"
 msgstr "द्वितीयक"
 
+#: theme.json
 #: styles/aquamarine.json
 #: styles/dark.json
 #: styles/easter-green.json
@@ -2191,7 +2727,6 @@ msgstr "द्वितीयक"
 #: styles/rain-forest.json
 #: styles/sweet-corn.json
 #: styles/ultra-marine.json
-#: theme.json
 msgctxt "Duotone name"
 msgid "Tertiary"
 msgstr "तृतीयक"

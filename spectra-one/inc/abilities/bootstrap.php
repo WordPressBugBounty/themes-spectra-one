@@ -26,8 +26,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 function init(): void {
 	$abilities_dir = \Swt\SWT_DIR . 'inc/abilities/';
 
-	// Load base classes.
+	// Load shared traits first so abilities can compose them via `use`.
+	require_once $abilities_dir . 'traits/global-styles.php';
+
+	// Load base classes and utility helpers.
 	require_once $abilities_dir . 'response.php';
+	require_once $abilities_dir . 'helpers.php';
 	require_once $abilities_dir . 'ability.php';
 	require_once $abilities_dir . 'init.php';
 

@@ -106,8 +106,8 @@ final class Update_Theme_Settings extends Ability {
 
 		foreach ( $allowed_fields as $field ) {
 			if ( isset( $args[ $field ] ) ) {
-				$options[ $field ]  = (bool) $args[ $field ];
-				$updated_fields[]   = $field;
+				$options[ $field ] = (bool) $args[ $field ];
+				$updated_fields[]  = $field;
 			}
 		}
 

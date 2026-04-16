@@ -81,20 +81,33 @@ final class Get_Color_Palette extends Ability {
 		$theme_json = \Swt\get_theme_json();
 		$db_styles  = \Swt\get_theme_custom_styles();
 
-		$colors = array();
-		if ( ! empty( $db_styles['post_content'] ) && isset( $db_styles['post_content']['settings']['color']['palette']['theme'] ) ) {
-			$colors = $db_styles['post_content']['settings']['color']['palette']['theme'];
-		} elseif ( isset( $theme_json['settings']['color']['palette'] ) ) {
+		$colors     = array();
+		$db_palette = $db_styles['post_content']['settings']['color']['palette'] ?? array();
+
+		// The update-color-palette ability writes to settings.color.palette.custom,
+		// which is the origin WordPress uses for user-added colors in the editor.
+		// Prefer custom over theme when both are present so writes are immediately
+		// visible on subsequent reads.
+		if ( is_array( $db_palette ) && ! empty( $db_palette['custom'] ) && is_array( $db_palette['custom'] ) ) {
+			$colors = $db_palette['custom'];
+		} elseif ( is_array( $db_palette ) && ! empty( $db_palette['theme'] ) && is_array( $db_palette['theme'] ) ) {
+			$colors = $db_palette['theme'];
+		} elseif ( isset( $theme_json['settings']['color']['palette'] ) && is_array( $theme_json['settings']['color']['palette'] ) ) {
 			$colors = $theme_json['settings']['color']['palette'];
 		}
 
-		$formatted = array_values( array_map( static function ( array $color ) {
-			return array(
-				'name'  => esc_html( $color['name'] ?? '' ),
-				'slug'  => sanitize_text_field( $color['slug'] ?? '' ),
-				'color' => sanitize_text_field( $color['color'] ?? '' ),
-			);
-		}, $colors ) );
+		$formatted = array_values(
+			array_map(
+				static function ( array $color ) {
+					return array(
+						'name'  => esc_html( $color['name'] ?? '' ),
+						'slug'  => sanitize_text_field( $color['slug'] ?? '' ),
+						'color' => sanitize_text_field( $color['color'] ?? '' ),
+					);
+				},
+				$colors
+			)
+		);
 
 		return Response::success(
 			/* translators: %d: number of colors */

@@ -79,8 +79,14 @@ final class List_Posts_With_Display_Overrides extends Ability {
 					'type'        => 'array',
 					'description' => 'Posts with display overrides including id, title, type, edit URL, and active overrides.',
 				),
-				'total'       => array( 'type' => 'integer', 'description' => 'Total matching posts.' ),
-				'total_pages' => array( 'type' => 'integer', 'description' => 'Total pages.' ),
+				'total'       => array(
+					'type'        => 'integer',
+					'description' => 'Total matching posts.',
+				),
+				'total_pages' => array(
+					'type'        => 'integer',
+					'description' => 'Total pages.',
+				),
 			)
 		);
 	}
@@ -138,15 +144,17 @@ final class List_Posts_With_Display_Overrides extends Ability {
 			);
 		}
 
-		$query = new \WP_Query( array(
-			'post_type'      => array( 'post', 'page' ),
-			'post_status'    => 'publish',
-			'meta_query'     => $meta_query, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
-			'paged'          => $page,
-			'posts_per_page' => $per_page,
-			'orderby'        => 'title',
-			'order'          => 'ASC',
-		) );
+		$query = new \WP_Query(
+			array(
+				'post_type'      => array( 'post', 'page' ),
+				'post_status'    => 'publish',
+				'meta_query'     => $meta_query, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query
+				'paged'          => $page,
+				'posts_per_page' => $per_page,
+				'orderby'        => 'title',
+				'order'          => 'ASC',
+			)
+		);
 
 		$posts = array();
 		/** @var \WP_Post $post */

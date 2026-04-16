@@ -55,13 +55,34 @@ final class Get_Post_Display_Settings extends Ability {
 	public function get_output_schema() {
 		return $this->build_output_schema(
 			array(
-				'post_id'            => array( 'type' => 'integer', 'description' => 'The post ID.' ),
-				'title'              => array( 'type' => 'string', 'description' => 'The post title.' ),
-				'hide_header'        => array( 'type' => 'boolean', 'description' => 'Whether header is hidden.' ),
-				'hide_footer'        => array( 'type' => 'boolean', 'description' => 'Whether footer is hidden.' ),
-				'hide_title'         => array( 'type' => 'boolean', 'description' => 'Whether page title is hidden.' ),
-				'sticky_header'      => array( 'type' => 'boolean', 'description' => 'Whether sticky header is enabled.' ),
-				'transparent_header' => array( 'type' => 'boolean', 'description' => 'Whether transparent header is enabled.' ),
+				'post_id'            => array(
+					'type'        => 'integer',
+					'description' => 'The post ID.',
+				),
+				'title'              => array(
+					'type'        => 'string',
+					'description' => 'The post title.',
+				),
+				'hide_header'        => array(
+					'type'        => 'boolean',
+					'description' => 'Whether header is hidden.',
+				),
+				'hide_footer'        => array(
+					'type'        => 'boolean',
+					'description' => 'Whether footer is hidden.',
+				),
+				'hide_title'         => array(
+					'type'        => 'boolean',
+					'description' => 'Whether page title is hidden.',
+				),
+				'sticky_header'      => array(
+					'type'        => 'boolean',
+					'description' => 'Whether sticky header is enabled.',
+				),
+				'transparent_header' => array(
+					'type'        => 'boolean',
+					'description' => 'Whether transparent header is enabled.',
+				),
 			)
 		);
 	}

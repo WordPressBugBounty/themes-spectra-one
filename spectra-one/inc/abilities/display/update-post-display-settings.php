@@ -88,8 +88,14 @@ final class Update_Post_Display_Settings extends Ability {
 	public function get_output_schema() {
 		return $this->build_output_schema(
 			array(
-				'post_id'        => array( 'type' => 'integer', 'description' => 'The post ID.' ),
-				'updated_fields' => array( 'type' => 'array', 'description' => 'Fields that were updated.' ),
+				'post_id'        => array(
+					'type'        => 'integer',
+					'description' => 'The post ID.',
+				),
+				'updated_fields' => array(
+					'type'        => 'array',
+					'description' => 'Fields that were updated.',
+				),
 				'settings'       => array(
 					'type'        => 'object',
 					'description' => 'Current display settings after update.',

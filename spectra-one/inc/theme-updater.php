@@ -28,7 +28,7 @@ function run_function_after_theme_update(): void {
 	if ( $version ) {
 		/** @psalm-suppress PossiblyInvalidArgument */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- $version comes from wordpress function itself.
 		[ $current_version ] = explode( '-', $version );
-		$old_version             = get_option( 'swt_theme_version' );
+		$old_version         = get_option( 'swt_theme_version' );
 
 		if ( $old_version !== $current_version && $old_version < $current_version ) {
 			// Run your function here.

@@ -69,7 +69,10 @@ final class List_Templates extends Ability {
 					'type'        => 'array',
 					'description' => 'Templates with slug and type (template or part).',
 				),
-				'total'     => array( 'type' => 'integer', 'description' => 'Total templates.' ),
+				'total'     => array(
+					'type'        => 'integer',
+					'description' => 'Total templates.',
+				),
 			)
 		);
 	}

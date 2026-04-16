@@ -49,16 +49,46 @@ final class Get_Theme_Info extends Ability {
 	public function get_output_schema() {
 		return $this->build_output_schema(
 			array(
-				'name'                  => array( 'type' => 'string', 'description' => 'Theme name.' ),
-				'version'               => array( 'type' => 'string', 'description' => 'Theme version.' ),
-				'slug'                  => array( 'type' => 'string', 'description' => 'Theme slug.' ),
-				'text_domain'           => array( 'type' => 'string', 'description' => 'Text domain.' ),
-				'requires_wp'           => array( 'type' => 'string', 'description' => 'Minimum WordPress version.' ),
-				'requires_php'          => array( 'type' => 'string', 'description' => 'Minimum PHP version.' ),
-				'spectra_plugin_status' => array( 'type' => 'string', 'description' => 'Spectra plugin status: activated, installed, or not-installed.' ),
-				'style_variations'      => array( 'type' => 'integer', 'description' => 'Number of style variations.' ),
-				'patterns'              => array( 'type' => 'integer', 'description' => 'Number of block patterns.' ),
-				'templates'             => array( 'type' => 'integer', 'description' => 'Number of templates.' ),
+				'name'                  => array(
+					'type'        => 'string',
+					'description' => 'Theme name.',
+				),
+				'version'               => array(
+					'type'        => 'string',
+					'description' => 'Theme version.',
+				),
+				'slug'                  => array(
+					'type'        => 'string',
+					'description' => 'Theme slug.',
+				),
+				'text_domain'           => array(
+					'type'        => 'string',
+					'description' => 'Text domain.',
+				),
+				'requires_wp'           => array(
+					'type'        => 'string',
+					'description' => 'Minimum WordPress version.',
+				),
+				'requires_php'          => array(
+					'type'        => 'string',
+					'description' => 'Minimum PHP version.',
+				),
+				'spectra_plugin_status' => array(
+					'type'        => 'string',
+					'description' => 'Spectra plugin status: activated, installed, or not-installed.',
+				),
+				'style_variations'      => array(
+					'type'        => 'integer',
+					'description' => 'Number of style variations.',
+				),
+				'patterns'              => array(
+					'type'        => 'integer',
+					'description' => 'Number of block patterns.',
+				),
+				'templates'             => array(
+					'type'        => 'integer',
+					'description' => 'Number of templates.',
+				),
 			)
 		);
 	}

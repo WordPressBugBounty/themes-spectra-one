@@ -62,7 +62,10 @@ final class List_Style_Variations extends Ability {
 					'type'        => 'array',
 					'description' => 'Style variations with title, slug, and color palette.',
 				),
-				'total'      => array( 'type' => 'integer', 'description' => 'Total variations.' ),
+				'total'      => array(
+					'type'        => 'integer',
+					'description' => 'Total variations.',
+				),
 			)
 		);
 	}
@@ -99,13 +102,16 @@ final class List_Style_Variations extends Ability {
 
 				$colors = array();
 				if ( isset( $data['settings']['color']['palette'] ) ) {
-					$colors = array_map( static function ( array $color ) {
-						return array(
-							'name'  => esc_html( $color['name'] ?? '' ),
-							'slug'  => sanitize_text_field( $color['slug'] ?? '' ),
-							'color' => sanitize_text_field( $color['color'] ?? '' ),
-						);
-					}, $data['settings']['color']['palette'] );
+					$colors = array_map(
+						static function ( array $color ) {
+							return array(
+								'name'  => esc_html( $color['name'] ?? '' ),
+								'slug'  => sanitize_text_field( $color['slug'] ?? '' ),
+								'color' => sanitize_text_field( $color['color'] ?? '' ),
+							);
+						},
+						$data['settings']['color']['palette']
+					);
 				}
 
 				$variations[] = array(

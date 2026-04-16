@@ -106,13 +106,18 @@ final class Get_Theme_Settings extends Ability {
 				'options'    => array(
 					'scroll_top' => ! empty( $options['scroll_top'] ),
 				),
-				'colors'     => array_values( array_map( static function ( array $color ) {
-					return array(
-						'name'  => esc_html( $color['name'] ?? '' ),
-						'slug'  => sanitize_text_field( $color['slug'] ?? '' ),
-						'color' => sanitize_text_field( $color['color'] ?? '' ),
-					);
-				}, $colors ) ),
+				'colors'     => array_values(
+					array_map(
+						static function ( array $color ) {
+							return array(
+								'name'  => esc_html( $color['name'] ?? '' ),
+								'slug'  => sanitize_text_field( $color['slug'] ?? '' ),
+								'color' => sanitize_text_field( $color['color'] ?? '' ),
+							);
+						},
+						$colors
+					)
+				),
 				'typography' => array(
 					'body_font_family'     => sanitize_text_field( $settings['body-font-family'] ?? '' ),
 					'body_font_weight'     => sanitize_text_field( $settings['body-font-weight'] ?? '' ),
