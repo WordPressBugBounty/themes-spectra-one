@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 6.9
-Stable tag: 1.2.0
+Tested up to: 7.0
+Stable tag: 1.2.1
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,9 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.2.1 =
+* Improvement: Compatibility with WordPress 7.0.
 
 = 1.2.0 =
 * New: Added WordPress Abilities API integration for AI-assisted theme management — colors, typography, navigation, patterns, templates, display settings, and font installation.

@@ -6,7 +6,7 @@
  *
  * @package Spectra One
  * @subpackage Abilities
- * @since x.x.x
+ * @since 1.2.0
  */
 
 declare( strict_types=1 );
@@ -174,7 +174,7 @@ abstract class Ability {
 		 * @param bool   $show_in_rest     Whether to show in REST API. Default true.
 		 * @param string $ability_id       The ability ID.
 		 * @param self   $ability_instance The ability instance.
-		 * @since x.x.x
+		 * @since 1.2.0
 		 */
 		/** @psalm-suppress TooManyArguments -- WordPress apply_filters accepts variadic args for filter callbacks. */
 		return apply_filters( 'swt_ability_show_in_rest', true, $this->id, $this );
@@ -204,7 +204,7 @@ abstract class Ability {
 		/**
 		 * Filter whether a Spectra One ability is publicly exposed via MCP.
 		 *
-		 * @since x.x.x
+		 * @since 1.2.0
 		 *
 		 * @param bool   $is_public        Whether the ability is public for MCP. Default true.
 		 * @param string $ability_id       The ability ID.
