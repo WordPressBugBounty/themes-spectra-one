@@ -1501,7 +1501,7 @@ msgstr "Restituisce le impostazioni di visualizzazione di Spectra One per un pos
 #: inc/abilities/display/get-post-display-settings.php:114
 #: inc/abilities/display/update-post-display-settings.php:142
 msgid "Invalid post ID."
-msgstr "ID del post non valido. "
+msgstr "ID del post non valido."
 
 #: inc/abilities/display/get-post-display-settings.php:115
 #: inc/abilities/display/update-post-display-settings.php:143
@@ -1646,7 +1646,7 @@ msgid "Returns the active Spectra One color palette including any user customiza
 msgstr "Restituisce la tavolozza di colori attiva di Spectra One, inclusi eventuali personalizzazioni dell'utente. Mostra tutti i colori del tema: primario, secondario, intestazione, corpo, sfondo, terziario, quaternario, superficie, primo piano, contorno e neutro."
 
 #. translators: %d: number of colors
-#: inc/abilities/settings/get-color-palette.php:114
+#: inc/abilities/settings/get-color-palette.php:116
 #, php-format
 msgid "Retrieved color palette with %d colors."
 msgstr "Tavolozza dei colori recuperata con %d colori."
@@ -1669,7 +1669,7 @@ msgstr "Ottieni le impostazioni di tipografia di Spectra One"
 
 #: inc/abilities/settings/get-typography-settings.php:28
 msgid "Returns the current typography configuration including body and heading font families, weights, line heights, and responsive font sizes."
-msgstr "Restituisce la configurazione tipografica attuale, inclusi i font delle famiglie di corpo e intestazione, i pesi, le altezze delle linee e le dimensioni dei caratteri reattive. "
+msgstr "Restituisce la configurazione tipografica attuale, inclusi i font delle famiglie di corpo e intestazione, i pesi, le altezze delle linee e le dimensioni dei caratteri reattive."
 
 #: inc/abilities/settings/get-typography-settings.php:89
 msgid "Retrieved typography settings successfully."
@@ -1813,24 +1813,24 @@ msgstr "Aggiorna il menu di navigazione"
 msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
 msgstr "Aggiorna il menu di navigazione del sito con i link delle pagine. Accetta un array di elementi del menu [{label, url}]. Crea il post di navigazione se necessario e collega la parte del modello dell'intestazione per utilizzarlo. Per i temi a blocchi FSE — utilizza blocchi wp:navigation-link, non menu classici."
 
-#: inc/abilities/settings/update-navigation.php:162
+#: inc/abilities/settings/update-navigation.php:179
 msgid "At least one menu item is required."
 msgstr "È necessario almeno un elemento del menu."
 
-#: inc/abilities/settings/update-navigation.php:163
+#: inc/abilities/settings/update-navigation.php:180
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "Fornisci elementi come [{\"label\": \"Home\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:174
+#: inc/abilities/settings/update-navigation.php:191
 msgid "No valid menu items provided."
 msgstr "Nessun elemento di menu valido fornito."
 
-#: inc/abilities/settings/update-navigation.php:175
+#: inc/abilities/settings/update-navigation.php:192
 msgid "Each item needs at least a \"label\"."
 msgstr "Ogni elemento necessita almeno di un \"etichetta\"."
 
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:201
+#: inc/abilities/settings/update-navigation.php:218
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "Navigazione aggiornata con %d voci di menu."
@@ -2024,7 +2024,7 @@ msgstr "Restituisce tutti i modelli e le parti di modelli registrati dal tema Sp
 msgid "Found %d templates."
 msgstr "Trovati %d modelli."
 
-#: inc/abilities/traits/global-styles.php:62
+#: inc/abilities/traits/global-styles.php:75
 msgid "Failed to encode global styles as JSON."
 msgstr "Impossibile codificare gli stili globali come JSON."
 

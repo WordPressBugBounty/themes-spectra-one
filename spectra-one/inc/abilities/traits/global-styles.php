@@ -55,6 +55,19 @@ trait Global_Styles {
 	 * @return int|\WP_Error Post ID on success, WP_Error on encode/update failure.
 	 */
 	protected function save_global_styles( int $post_id, array $styles ) {
+		// WordPress only honours a user global-styles post when these markers are
+		// present: WP_Theme_JSON_Resolver::get_user_data() discards the ENTIRE
+		// post content unless `isGlobalStylesUserThemeJSON` is true, and
+		// WP_Theme_JSON expects a schema `version`. Without them the saved
+		// palette / typography / fonts are silently ignored (post saves fine, but
+		// nothing renders in the Site Editor or on the frontend).
+		// theme.json schema v2 — universally supported; WP auto-migrates to its
+		// latest internally and overrides this value when reading user data, so a
+		// fixed 2 is safe across WP versions (and avoids depending on the
+		// WP_Theme_JSON::LATEST_VERSION constant, absent in some releases).
+		$styles['version']                     = 2;
+		$styles['isGlobalStylesUserThemeJSON'] = true;
+
 		$json = wp_json_encode( $styles );
 		if ( false === $json ) {
 			return new \WP_Error(

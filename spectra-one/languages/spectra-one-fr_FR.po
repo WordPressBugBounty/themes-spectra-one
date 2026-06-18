@@ -1646,7 +1646,7 @@ msgid "Returns the active Spectra One color palette including any user customiza
 msgstr "Renvoie la palette de couleurs active de Spectra One, y compris toutes les personnalisations utilisateur. Affiche toutes les couleurs du thème : primaire, secondaire, titre, corps, arrière-plan, tertiaire, quaternaire, surface, premier plan, contour et neutre."
 
 #. translators: %d: number of colors
-#: inc/abilities/settings/get-color-palette.php:114
+#: inc/abilities/settings/get-color-palette.php:116
 #, php-format
 msgid "Retrieved color palette with %d colors."
 msgstr "Palette de couleurs récupérée avec %d couleurs."
@@ -1735,7 +1735,7 @@ msgstr "Mettre à jour la palette de couleurs Spectra One"
 
 #: inc/abilities/settings/update-color-palette.php:45
 msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
-msgstr "Met à jour la palette de couleurs et les styles d'éléments (texte, titres, liens, boutons) des styles globaux FSE avec les couleurs de la marque. Accepte 4 couleurs hexadécimales : primaire, secondaire, titre, corps. Déduit automatiquement les couleurs de support (surface, contour, tertiaire). "
+msgstr "Met à jour la palette de couleurs et les styles d'éléments (texte, titres, liens, boutons) des styles globaux FSE avec les couleurs de la marque. Accepte 4 couleurs hexadécimales : primaire, secondaire, titre, corps. Déduit automatiquement les couleurs de support (surface, contour, tertiaire)."
 
 #: inc/abilities/settings/update-color-palette.php:129
 #: inc/abilities/settings/update-typography.php:160
@@ -1813,24 +1813,24 @@ msgstr "Mettre à jour le menu de navigation"
 msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
 msgstr "Met à jour le menu de navigation du site avec des liens de page. Accepte un tableau d'éléments de menu [{label, url}]. Crée le message de navigation si nécessaire et connecte la partie modèle d'en-tête pour l'utiliser. Pour les thèmes de blocs FSE — utilise des blocs wp:navigation-link, pas des menus classiques."
 
-#: inc/abilities/settings/update-navigation.php:162
+#: inc/abilities/settings/update-navigation.php:179
 msgid "At least one menu item is required."
 msgstr "Au moins un élément de menu est requis."
 
-#: inc/abilities/settings/update-navigation.php:163
+#: inc/abilities/settings/update-navigation.php:180
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "Fournissez les éléments comme [{\"label\": \"Accueil\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:174
+#: inc/abilities/settings/update-navigation.php:191
 msgid "No valid menu items provided."
 msgstr "Aucun élément de menu valide fourni."
 
-#: inc/abilities/settings/update-navigation.php:175
+#: inc/abilities/settings/update-navigation.php:192
 msgid "Each item needs at least a \"label\"."
 msgstr "Chaque élément a besoin d'au moins une \"étiquette\"."
 
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:201
+#: inc/abilities/settings/update-navigation.php:218
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "Navigation mise à jour avec %d éléments de menu."
@@ -2024,7 +2024,7 @@ msgstr "Renvoie tous les modèles et les parties de modèles enregistrés par le
 msgid "Found %d templates."
 msgstr "%d modèles trouvés."
 
-#: inc/abilities/traits/global-styles.php:62
+#: inc/abilities/traits/global-styles.php:75
 msgid "Failed to encode global styles as JSON."
 msgstr "Échec de l'encodage des styles globaux en JSON."
 

@@ -1496,7 +1496,7 @@ msgstr "Berichtweergave-instellingen ophalen"
 
 #: inc/abilities/display/get-post-display-settings.php:28
 msgid "Returns the Spectra One display settings for a specific post or page, including header/footer visibility, sticky header, transparent header, and title display toggles."
-msgstr "Geeft de Spectra One weergave-instellingen voor een specifieke post of pagina, inclusief zichtbaarheid van de header/footer, sticky header, transparante header en titelweergave schakelaars. "
+msgstr "Geeft de Spectra One weergave-instellingen voor een specifieke post of pagina, inclusief zichtbaarheid van de header/footer, sticky header, transparante header en titelweergave schakelaars."
 
 #: inc/abilities/display/get-post-display-settings.php:114
 #: inc/abilities/display/update-post-display-settings.php:142
@@ -1646,7 +1646,7 @@ msgid "Returns the active Spectra One color palette including any user customiza
 msgstr "Geeft het actieve Spectra One-kleurenpalet terug, inclusief eventuele aanpassingen door de gebruiker. Toont alle themakleuren: primair, secundair, kop, lichaam, achtergrond, tertiair, quaternair, oppervlak, voorgrond, omtrek en neutraal."
 
 #. translators: %d: number of colors
-#: inc/abilities/settings/get-color-palette.php:114
+#: inc/abilities/settings/get-color-palette.php:116
 #, php-format
 msgid "Retrieved color palette with %d colors."
 msgstr "Opgehaalde kleurenpalet met %d kleuren."
@@ -1669,7 +1669,7 @@ msgstr "Verkrijg Spectra One Typografie-instellingen"
 
 #: inc/abilities/settings/get-typography-settings.php:28
 msgid "Returns the current typography configuration including body and heading font families, weights, line heights, and responsive font sizes."
-msgstr "Geeft de huidige typografieconfiguratie terug, inclusief lettertypefamilies voor de tekst en koppen, gewichten, regelhoogtes en responsieve lettergroottes. "
+msgstr "Geeft de huidige typografieconfiguratie terug, inclusief lettertypefamilies voor de tekst en koppen, gewichten, regelhoogtes en responsieve lettergroottes."
 
 #: inc/abilities/settings/get-typography-settings.php:89
 msgid "Retrieved typography settings successfully."
@@ -1813,24 +1813,24 @@ msgstr "Bijwerken navigatiemenu"
 msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
 msgstr "Werkt het navigatiemenu van de site bij met paginalinks. Accepteert een array van menu-items [{label, url}]. Maakt de navigatiepost indien nodig en koppelt het koptekstsjabloondeel om het te gebruiken. Voor FSE-blokthema's — gebruikt wp:navigatie-linkblokken, geen klassieke menu's."
 
-#: inc/abilities/settings/update-navigation.php:162
+#: inc/abilities/settings/update-navigation.php:179
 msgid "At least one menu item is required."
 msgstr "Er is ten minste één menu-item vereist."
 
-#: inc/abilities/settings/update-navigation.php:163
+#: inc/abilities/settings/update-navigation.php:180
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "Voorzie items als [{\"label\": \"Home\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:174
+#: inc/abilities/settings/update-navigation.php:191
 msgid "No valid menu items provided."
 msgstr "Geen geldige menu-items opgegeven."
 
-#: inc/abilities/settings/update-navigation.php:175
+#: inc/abilities/settings/update-navigation.php:192
 msgid "Each item needs at least a \"label\"."
 msgstr "Elk item heeft ten minste een \"label\" nodig."
 
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:201
+#: inc/abilities/settings/update-navigation.php:218
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "Navigatie bijgewerkt met %d menu-items."
@@ -1970,7 +1970,7 @@ msgstr "Bepaalt of scripts en stijlen van de blokeditor worden ingeschakeld. Ret
 
 #: inc/abilities/theme/list-hooks.php:171
 msgid "Filters the localized data array passed to the block editor script. Contains screen ID, Spectra plugin status, and other editor context."
-msgstr "Filtert de gelokaliseerde gegevensarray die naar het blokeditor-script wordt doorgegeven. Bevat scherm-ID, Spectra-plug-instatus en andere editorcontext. "
+msgstr "Filtert de gelokaliseerde gegevensarray die naar het blokeditor-script wordt doorgegeven. Bevat scherm-ID, Spectra-plug-instatus en andere editorcontext."
 
 #: inc/abilities/theme/list-hooks.php:179
 msgid "Filters the path to the theme languages directory for loading translations."
@@ -2024,7 +2024,7 @@ msgstr "Geeft alle sjablonen en sjabloondelen terug die zijn geregistreerd door 
 msgid "Found %d templates."
 msgstr "%d sjablonen gevonden."
 
-#: inc/abilities/traits/global-styles.php:62
+#: inc/abilities/traits/global-styles.php:75
 msgid "Failed to encode global styles as JSON."
 msgstr "Kan globale stijlen niet als JSON coderen."
 

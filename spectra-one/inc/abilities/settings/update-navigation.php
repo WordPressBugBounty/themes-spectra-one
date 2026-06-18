@@ -78,21 +78,38 @@ final class Update_Navigation extends Ability {
 			'properties' => array(
 				'items'  => array(
 					'type'        => 'array',
-					'description' => 'Array of menu items. Each item: {"label": "Page Title", "url": "/about/", "id": 123}. "id" is optional WordPress page ID for post-type links. "url" can be relative or absolute.',
+					'description' => 'Array of menu items. Each item: {"label": "Page Title", "url": "/about/", "id": 123, "children": [{"label": "Web Design", "url": "/services/web"}]}. "id" is optional WordPress page ID for post-type links. "url" can be relative or absolute. When "children" is non-empty, the item is rendered as a wp:navigation-submenu with the children as inner wp:navigation-link blocks (hierarchical dropdown menu).',
 					'items'       => array(
 						'type'       => 'object',
 						'properties' => array(
-							'label' => array(
+							'label'    => array(
 								'type'        => 'string',
 								'description' => 'Menu item display text.',
 							),
-							'url'   => array(
+							'url'      => array(
 								'type'        => 'string',
 								'description' => 'Link URL (relative or absolute).',
 							),
-							'id'    => array(
+							'id'       => array(
 								'type'        => 'integer',
 								'description' => 'Optional WordPress page/post ID for post-type links.',
+							),
+							'children' => array(
+								'type'        => 'array',
+								'description' => 'Optional sub-menu links. Each child: {"label": "...", "url": "..."}. When present and non-empty, the parent item renders as wp:navigation-submenu wrapping these wp:navigation-link children — a hierarchical dropdown.',
+								'items'       => array(
+									'type'       => 'object',
+									'properties' => array(
+										'label' => array(
+											'type'        => 'string',
+											'description' => 'Child menu item display text.',
+										),
+										'url'   => array(
+											'type'        => 'string',
+											'description' => 'Child link URL (relative or absolute).',
+										),
+									),
+								),
 							),
 						),
 					),
@@ -211,6 +228,13 @@ final class Update_Navigation extends Ability {
 	/**
 	 * Build wp:navigation-link block markup for each valid item.
 	 *
+	 * Items carrying a non-empty `children` array render as a
+	 * `wp:navigation-submenu` wrapper containing inner
+	 * `wp:navigation-link` blocks — the canonical WP-core structure
+	 * for a hierarchical primary menu (Services → Web/SEO/Branding).
+	 * Items without children render as a flat top-level link as
+	 * before.
+	 *
 	 * @param array<int, array<string, mixed>> $items Raw items.
 	 * @return array<int, string> Serialized block markup.
 	 */
@@ -236,7 +260,63 @@ final class Update_Navigation extends Ability {
 				$attrs['kind'] = 'custom';
 			}
 
-			$blocks[] = '<!-- wp:navigation-link ' . Helpers::safe_json_encode( $attrs ) . ' /-->';
+			$children     = isset( $item['children'] ) && is_array( $item['children'] ) ? $item['children'] : array();
+			$inner_blocks = $this->build_submenu_child_blocks( $children );
+
+			if ( empty( $inner_blocks ) ) {
+				$blocks[] = '<!-- wp:navigation-link ' . Helpers::safe_json_encode( $attrs ) . ' /-->';
+				continue;
+			}
+
+			// Submenu wrapper carries the same attrs as a navigation-
+			// link except `isTopLevelLink` is dropped — the submenu
+			// itself is the top-level entry. WP-core's parse_blocks()
+			// expects the submenu's inner blocks between its open/close
+			// comment markers, with one blank line for readability.
+			$submenu_attrs = $attrs;
+			unset( $submenu_attrs['isTopLevelLink'] );
+
+			$blocks[] =
+				'<!-- wp:navigation-submenu ' . Helpers::safe_json_encode( $submenu_attrs ) . ' -->' . "\n"
+				. implode( "\n", $inner_blocks ) . "\n"
+				. '<!-- /wp:navigation-submenu -->';
+		}
+
+		return $blocks;
+	}
+
+	/**
+	 * Build inner `wp:navigation-link` block markup for the children
+	 * of a submenu. Children carry `kind=custom` because the
+	 * `update-navigation` schema only exposes `label`+`url` for
+	 * children (no `id` — sub-links are typically anchor-style
+	 * deep-links like `/services#web` rather than post-type refs).
+	 *
+	 * Children with an empty / missing label are silently dropped —
+	 * same defensive behaviour as the top-level loop. Returns the
+	 * remaining serialized blocks, or an empty array when no children
+	 * are valid.
+	 *
+	 * @param array<int, array<string, mixed>> $children Raw child items.
+	 * @return array<int, string> Serialized block markup, one entry per valid child.
+	 */
+	private function build_submenu_child_blocks( array $children ): array {
+		$blocks = array();
+		foreach ( $children as $child ) {
+			$label = sanitize_text_field( (string) ( $child['label'] ?? '' ) );
+			$url   = (string) ( $child['url'] ?? '' );
+			if ( '' === $label || '' === trim( $url ) ) {
+				continue;
+			}
+
+			$blocks[] = '<!-- wp:navigation-link ' . Helpers::safe_json_encode(
+				array(
+					'label'          => $label,
+					'url'            => esc_url( $url ),
+					'kind'           => 'custom',
+					'isTopLevelLink' => false,
+				)
+			) . ' /-->';
 		}
 
 		return $blocks;
@@ -375,6 +455,12 @@ final class Update_Navigation extends Ability {
 			return ! empty( $template->wp_id );
 		}
 
+		// wp_update_post()/wp_insert_post() run wp_unslash() on the data, so slash
+		// first — otherwise JSON unicode escapes in block-comment attrs (`<`, `&`
+		// from inline `<span>`/`&` in chrome copy) lose their backslash and render
+		// as literal `u003c`/`u0026`. Slash once here; both write paths reuse it.
+		$new_content = wp_slash( $new_content );
+
 		if ( ! empty( $template->wp_id ) ) {
 			$result = wp_update_post(
 				array(
@@ -470,8 +556,17 @@ final class Update_Navigation extends Ability {
 	 * Merge new items with existing navigation items.
 	 *
 	 * Reads the current wp_navigation post, parses existing navigation-link
-	 * blocks via parse_blocks(), and appends new items that don't already
-	 * exist (by ID or URL).
+	 * + navigation-submenu blocks, and appends new top-level items that
+	 * don't already exist (deduped by id / url).
+	 *
+	 * When a new top-level item dedups against an existing one AND
+	 * either side carries `children`, the children sets are MERGED
+	 * (union by url) rather than discarded. This preserves the "I'm
+	 * appending to the menu" semantics for hierarchical entries: a
+	 * second `append=true` call carrying Services + [Web, Branding] on
+	 * top of an existing Services + [Web, SEO] resolves to Services +
+	 * [Web, SEO, Branding] — not Services + [Web, SEO] (children lost)
+	 * and not Services + [Web, Web, SEO, Branding] (duplicates).
 	 *
 	 * @param array $new_items Items to append.
 	 * @return array Merged items (existing + new, deduplicated).
@@ -492,58 +587,141 @@ final class Update_Navigation extends Ability {
 			return $new_items;
 		}
 
-		$existing_ids  = array();
-		$existing_urls = array();
-		foreach ( $existing as $item ) {
+		// Index existing items by id + url so a single pass over the
+		// new items can locate the dedup target in O(1) and merge
+		// children into it in-place.
+		$existing_by_id  = array();
+		$existing_by_url = array();
+		foreach ( $existing as $i => $item ) {
 			if ( ! empty( $item['id'] ) ) {
-				$existing_ids[ $item['id'] ] = true;
+				$existing_by_id[ $item['id'] ] = $i;
 			}
-			$existing_urls[ untrailingslashit( $item['url'] ) ] = true;
+			$url_key = untrailingslashit( $item['url'] ?? '' );
+			if ( '' !== $url_key ) {
+				$existing_by_url[ $url_key ] = $i;
+			}
 		}
 
 		foreach ( $new_items as $item ) {
-			$id  = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
-			$url = untrailingslashit( (string) ( $item['url'] ?? '' ) );
+			$id      = isset( $item['id'] ) ? absint( $item['id'] ) : 0;
+			$url_key = untrailingslashit( (string) ( $item['url'] ?? '' ) );
 
-			if ( $id > 0 && isset( $existing_ids[ $id ] ) ) {
+			$dedup_index = null;
+			if ( $id > 0 && isset( $existing_by_id[ $id ] ) ) {
+				$dedup_index = $existing_by_id[ $id ];
+			} elseif ( '' !== $url_key && isset( $existing_by_url[ $url_key ] ) ) {
+				$dedup_index = $existing_by_url[ $url_key ];
+			}
+
+			if ( null === $dedup_index ) {
+				// Brand-new parent — append wholesale, preserve any
+				// children it carries.
+				$existing[] = $item;
 				continue;
 			}
-			if ( '' !== $url && isset( $existing_urls[ $url ] ) ) {
+
+			// Parent already present. Merge children if either side
+			// carries them; otherwise the dedup is complete (item is
+			// flat and already in the list).
+			$new_children      = is_array( $item['children'] ?? null ) ? $item['children'] : array();
+			$existing_children = is_array( $existing[ $dedup_index ]['children'] ?? null ) ? $existing[ $dedup_index ]['children'] : array();
+
+			if ( empty( $new_children ) && empty( $existing_children ) ) {
 				continue;
 			}
 
-			$existing[] = $item;
+			// Union by url (children don't carry id today). Preserve
+			// existing order; append new children that aren't already
+			// represented.
+			$merged_children = $existing_children;
+			$known_urls      = array();
+			foreach ( $existing_children as $child ) {
+				$ck = untrailingslashit( (string) ( $child['url'] ?? '' ) );
+				if ( '' !== $ck ) {
+					$known_urls[ $ck ] = true;
+				}
+			}
+			foreach ( $new_children as $child ) {
+				if ( ! is_array( $child ) ) {
+					continue;
+				}
+				$ck = untrailingslashit( (string) ( $child['url'] ?? '' ) );
+				if ( '' === $ck || isset( $known_urls[ $ck ] ) ) {
+					continue;
+				}
+				$merged_children[]  = $child;
+				$known_urls[ $ck ] = true;
+			}
+
+			$existing[ $dedup_index ]['children'] = $merged_children;
 		}
 
 		return $existing;
 	}
 
 	/**
-	 * Extract {label, url, id} entries from serialized navigation-link blocks.
+	 * Extract {label, url, id, children?} entries from a serialized
+	 * navigation post. Walks both `core/navigation-link` (flat top-
+	 * level entries) AND `core/navigation-submenu` (dropdown wrappers,
+	 * recursing into their `innerBlocks` for the children) so the
+	 * append-mode dedup path in `merge_with_existing()` sees the full
+	 * existing menu shape — including hierarchical entries.
+	 *
+	 * Without the submenu walk, a re-import with append=true would
+	 * dedup against only the top-level links, miss the children, and
+	 * incorrectly re-emit them on every re-import. The `children` key
+	 * in the returned shape is present only when the source block was
+	 * a submenu with non-empty inner links.
 	 *
 	 * @param string $content Navigation post content.
-	 * @return array<int, array{label: string, url: string, id: int}>
+	 * @return array<int, array{label: string, url: string, id: int, children?: array<int, array{label: string, url: string}>}>
 	 */
 	private function extract_navigation_link_items( string $content ): array {
 		$items  = array();
 		$blocks = parse_blocks( $content );
 
 		foreach ( $blocks as $block ) {
-			if ( ( $block['blockName'] ?? '' ) !== 'core/navigation-link' ) {
+			$block_name = $block['blockName'] ?? '';
+			if ( 'core/navigation-link' !== $block_name && 'core/navigation-submenu' !== $block_name ) {
 				continue;
 			}
 
-			$attrs = $block['attrs'] ?? array();
+			$attrs = is_array( $block['attrs'] ?? null ) ? $block['attrs'] : array();
 			$label = sanitize_text_field( (string) ( $attrs['label'] ?? '' ) );
 			if ( '' === $label ) {
 				continue;
 			}
 
-			$items[] = array(
+			$item = array(
 				'label' => $label,
 				'url'   => (string) ( $attrs['url'] ?? '#' ),
 				'id'    => isset( $attrs['id'] ) ? (int) $attrs['id'] : 0,
 			);
+
+			if ( 'core/navigation-submenu' === $block_name ) {
+				$inner_blocks = is_array( $block['innerBlocks'] ?? null ) ? $block['innerBlocks'] : array();
+				$children     = array();
+				foreach ( $inner_blocks as $inner ) {
+					if ( ( $inner['blockName'] ?? '' ) !== 'core/navigation-link' ) {
+						continue;
+					}
+					$inner_attrs_raw = $inner['attrs'] ?? null;
+					$inner_attrs     = is_array( $inner_attrs_raw ) ? $inner_attrs_raw : array();
+					$inner_label = sanitize_text_field( (string) ( $inner_attrs['label'] ?? '' ) );
+					if ( '' === $inner_label ) {
+						continue;
+					}
+					$children[] = array(
+						'label' => $inner_label,
+						'url'   => (string) ( $inner_attrs['url'] ?? '#' ),
+					);
+				}
+				if ( ! empty( $children ) ) {
+					$item['children'] = $children;
+				}
+			}
+
+			$items[] = $item;
 		}
 
 		return $items;

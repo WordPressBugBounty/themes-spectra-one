@@ -84,11 +84,13 @@ final class Get_Color_Palette extends Ability {
 		$colors     = array();
 		$db_palette = $db_styles['post_content']['settings']['color']['palette'] ?? array();
 
-		// The update-color-palette ability writes to settings.color.palette.custom,
-		// which is the origin WordPress uses for user-added colors in the editor.
-		// Prefer custom over theme when both are present so writes are immediately
-		// visible on subsequent reads.
-		if ( is_array( $db_palette ) && ! empty( $db_palette['custom'] ) && is_array( $db_palette['custom'] ) ) {
+		// update-color-palette writes the canonical FLAT list at
+		// settings.color.palette (a sequential array of {slug,color,name}). A
+		// non-empty list has index 0; the legacy custom/theme branches below
+		// stay only to read older malformed data still sitting in the DB.
+		if ( is_array( $db_palette ) && isset( $db_palette[0] ) ) {
+			$colors = $db_palette;
+		} elseif ( is_array( $db_palette ) && ! empty( $db_palette['custom'] ) && is_array( $db_palette['custom'] ) ) {
 			$colors = $db_palette['custom'];
 		} elseif ( is_array( $db_palette ) && ! empty( $db_palette['theme'] ) && is_array( $db_palette['theme'] ) ) {
 			$colors = $db_palette['theme'];

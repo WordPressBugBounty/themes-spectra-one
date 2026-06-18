@@ -1646,7 +1646,7 @@ msgid "Returns the active Spectra One color palette including any user customiza
 msgstr "返回活动的 Spectra One 颜色调色板，包括任何用户自定义。显示所有主题颜色：主色、次色、标题、正文、背景、第三色、第四色、表面、前景、轮廓和中性色。"
 
 #. translators: %d: number of colors
-#: inc/abilities/settings/get-color-palette.php:114
+#: inc/abilities/settings/get-color-palette.php:116
 #, php-format
 msgid "Retrieved color palette with %d colors."
 msgstr "检索到包含 %d 种颜色的调色板。"
@@ -1813,24 +1813,24 @@ msgstr "更新导航菜单"
 msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
 msgstr "更新网站导航菜单与页面链接。接受一个菜单项数组 [{label, url}]。如果需要，创建导航文章并连接头部模板部分以使用它。对于 FSE 块主题，使用 wp:navigation-link 块，而不是经典菜单。"
 
-#: inc/abilities/settings/update-navigation.php:162
+#: inc/abilities/settings/update-navigation.php:179
 msgid "At least one menu item is required."
 msgstr "至少需要一个菜单项。"
 
-#: inc/abilities/settings/update-navigation.php:163
+#: inc/abilities/settings/update-navigation.php:180
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "提供项目为 [{\"label\": \"首页\", \"url\": \"/\"}]。"
 
-#: inc/abilities/settings/update-navigation.php:174
+#: inc/abilities/settings/update-navigation.php:191
 msgid "No valid menu items provided."
 msgstr "未提供有效的菜单项。"
 
-#: inc/abilities/settings/update-navigation.php:175
+#: inc/abilities/settings/update-navigation.php:192
 msgid "Each item needs at least a \"label\"."
 msgstr "每个项目至少需要一个“标签”。"
 
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:201
+#: inc/abilities/settings/update-navigation.php:218
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "导航已更新，包含 %d 个菜单项。"
@@ -2024,7 +2024,7 @@ msgstr "返回由 Spectra One 主题注册的所有模板和模板部分。"
 msgid "Found %d templates."
 msgstr "找到 %d 个模板。"
 
-#: inc/abilities/traits/global-styles.php:62
+#: inc/abilities/traits/global-styles.php:75
 msgid "Failed to encode global styles as JSON."
 msgstr "无法将全局样式编码为JSON。"
 

@@ -1646,7 +1646,7 @@ msgid "Returns the active Spectra One color palette including any user customiza
 msgstr "Zwraca aktywną paletę kolorów Spectra One, w tym wszelkie dostosowania użytkownika. Pokazuje wszystkie kolory motywu: podstawowy, dodatkowy, nagłówka, treści, tła, trzeci, czwarty, powierzchni, pierwszoplanowy, konturu i neutralny."
 
 #. translators: %d: number of colors
-#: inc/abilities/settings/get-color-palette.php:114
+#: inc/abilities/settings/get-color-palette.php:116
 #, php-format
 msgid "Retrieved color palette with %d colors."
 msgstr "Pobrano paletę kolorów z %d kolorami."
@@ -1813,24 +1813,24 @@ msgstr "Zaktualizuj menu nawigacyjne"
 msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
 msgstr "Aktualizuje menu nawigacyjne witryny z linkami do stron. Akceptuje tablicę elementów menu [{label, url}]. Tworzy wpis nawigacyjny, jeśli to konieczne, i łączy część szablonu nagłówka, aby go użyć. Dla motywów blokowych FSE — używa bloków wp:navigation-link, a nie klasycznych menu."
 
-#: inc/abilities/settings/update-navigation.php:162
+#: inc/abilities/settings/update-navigation.php:179
 msgid "At least one menu item is required."
 msgstr "Wymagana jest co najmniej jedna pozycja menu."
 
-#: inc/abilities/settings/update-navigation.php:163
+#: inc/abilities/settings/update-navigation.php:180
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "Podaj elementy jako [{\"label\": \"Home\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:174
+#: inc/abilities/settings/update-navigation.php:191
 msgid "No valid menu items provided."
 msgstr "Nie podano prawidłowych pozycji menu."
 
-#: inc/abilities/settings/update-navigation.php:175
+#: inc/abilities/settings/update-navigation.php:192
 msgid "Each item needs at least a \"label\"."
 msgstr "Każdy element potrzebuje co najmniej \"etykiety\"."
 
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:201
+#: inc/abilities/settings/update-navigation.php:218
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "Nawigacja zaktualizowana z %d elementami menu."
@@ -2024,7 +2024,7 @@ msgstr "Zwraca wszystkie szablony i części szablonów zarejestrowane przez mot
 msgid "Found %d templates."
 msgstr "Znaleziono %d szablonów."
 
-#: inc/abilities/traits/global-styles.php:62
+#: inc/abilities/traits/global-styles.php:75
 msgid "Failed to encode global styles as JSON."
 msgstr "Nie udało się zakodować globalnych stylów jako JSON."
 

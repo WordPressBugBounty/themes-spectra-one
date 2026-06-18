@@ -1646,7 +1646,7 @@ msgid "Returns the active Spectra One color palette including any user customiza
 msgstr "Devuelve la paleta de colores activa de Spectra One, incluidas las personalizaciones del usuario. Muestra todos los colores del tema: primario, secundario, encabezado, cuerpo, fondo, terciario, cuaternario, superficie, primer plano, contorno y neutro."
 
 #. translators: %d: number of colors
-#: inc/abilities/settings/get-color-palette.php:114
+#: inc/abilities/settings/get-color-palette.php:116
 #, php-format
 msgid "Retrieved color palette with %d colors."
 msgstr "Paleta de colores recuperada con %d colores."
@@ -1813,24 +1813,24 @@ msgstr "Actualizar menú de navegación"
 msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
 msgstr "Actualiza el menú de navegación del sitio con enlaces de página. Acepta un array de elementos del menú [{label, url}]. Crea la publicación de navegación si es necesario y conecta la parte de la plantilla del encabezado para usarla. Para temas de bloques FSE: utiliza bloques wp:navigation-link, no menús clásicos."
 
-#: inc/abilities/settings/update-navigation.php:162
+#: inc/abilities/settings/update-navigation.php:179
 msgid "At least one menu item is required."
 msgstr "Se requiere al menos un elemento del menú."
 
-#: inc/abilities/settings/update-navigation.php:163
+#: inc/abilities/settings/update-navigation.php:180
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "Proporcione elementos como [{\"label\": \"Inicio\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:174
+#: inc/abilities/settings/update-navigation.php:191
 msgid "No valid menu items provided."
 msgstr "No se proporcionaron elementos de menú válidos."
 
-#: inc/abilities/settings/update-navigation.php:175
+#: inc/abilities/settings/update-navigation.php:192
 msgid "Each item needs at least a \"label\"."
 msgstr "Cada elemento necesita al menos una \"etiqueta\"."
 
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:201
+#: inc/abilities/settings/update-navigation.php:218
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "Navegación actualizada con %d elementos de menú."
@@ -2024,7 +2024,7 @@ msgstr "Devuelve todas las plantillas y partes de plantillas registradas por el 
 msgid "Found %d templates."
 msgstr "Se encontraron %d plantillas."
 
-#: inc/abilities/traits/global-styles.php:62
+#: inc/abilities/traits/global-styles.php:75
 msgid "Failed to encode global styles as JSON."
 msgstr "Error al codificar los estilos globales como JSON."
 

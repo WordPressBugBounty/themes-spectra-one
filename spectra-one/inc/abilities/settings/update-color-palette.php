@@ -248,7 +248,13 @@ final class Update_Color_Palette extends Ability {
 	 */
 	private function apply_palette_and_elements( array $global_styles, array $palette ): array {
 		Helpers::ensure_nested( $global_styles, array( 'settings', 'color', 'palette' ) );
-		$global_styles['settings']['color']['palette']['custom'] = $palette;
+		// Canonical theme.json shape: a FLAT list at settings.color.palette.
+		// NOT settings.color.palette.custom — the custom/theme/default origin
+		// split exists only in the editor's MERGED settings API, never in the
+		// stored user global-styles post. WP's WP_Theme_JSON sanitizer treats a
+		// non-list palette node as invalid and drops it, so a nested `custom`
+		// write silently registers no presets (Site Editor + frontend unchanged).
+		$global_styles['settings']['color']['palette'] = $palette;
 
 		Helpers::ensure_nested( $global_styles, array( 'styles', 'color' ) );
 

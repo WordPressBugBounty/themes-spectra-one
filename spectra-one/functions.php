@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-const SWT_VER  = '1.2.1';
+const SWT_VER  = '1.2.2';
 const SWT_SLUG = 'spectra-one';
 const SWT_NAME = 'Spectra One';
 const SWT_PFX  = 'swt';

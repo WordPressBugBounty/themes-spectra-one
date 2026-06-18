@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 7.0
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,10 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.2.2 =
+* Fix: Abilities API — Navigation menus now support dropdown submenus, allowing hierarchical menu structures to be applied via AI-assisted theme management.
+* Fix: Abilities API — Color palette changes applied via AI-assisted theme management now correctly persist and reflect in the Site Editor and on the frontend.
 
 = 1.2.1 =
 * Improvement: Compatibility with WordPress 7.0.
