@@ -60,7 +60,7 @@ add_filter( 'wp_theme_json_data_user', static function( $theme_json ) {
  * @return void
  */
 function spectra_compatibility(): void {
-	if ( is_spectra_plugin() ) {
+	if ( is_spectra_legacy_active() ) {
 		add_filter( 'swt_dynamic_theme_css', SWT_NS . 'spectra_compatibility_inline_css' );
 	}
 }

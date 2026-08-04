@@ -29,7 +29,7 @@ function render_welcome_notice(): void {
 		return;
 	}
 
-	$plugin_status = is_spectra_plugin_status();
+	$plugin_status = get_spectra_blocks_status();
 
 	$file_prefix = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? '' : '.min';
 	$dir_name    = defined( 'SWT_DEBUG' ) && SWT_DEBUG ? 'unminified' : 'minified';
@@ -131,8 +131,13 @@ function close_welcome_notice(): void {
  */
 function welcome_notice_display_conditions(): bool {
 
-	// Check if plugin is active.
-	if ( is_plugin_active( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ) ) {
+	// Never offer Spectra Blocks alongside Spectra Legacy, both on one site is unsupported.
+	if ( is_spectra_legacy_active() ) {
+		return false;
+	}
+
+	// Check if Spectra Blocks is already active.
+	if ( 'activated' === get_spectra_blocks_status() ) {
 		return false;
 	}
 
@@ -177,24 +182,61 @@ function welcome_notice_display_conditions(): bool {
 }
 
 /**
- * Spectra plugin status.
+ * Spectra Blocks install status.
  *
- * @since 0.0.1
- * @return string
+ * @since 1.2.3
+ * @return string One of 'activated', 'installed' or 'not-installed'.
  */
-function is_spectra_plugin_status(): string {
-	$plugin_slug = 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php';
-	$status      = 'not-installed';
+function get_spectra_blocks_status(): string {
+	$basename = get_spectra_blocks_basename();
+	$status   = 'not-installed';
 
-	if ( is_plugin_active( $plugin_slug ) ) {
+	// This runs from REST ( Abilities API ) too, where plugin.php is not loaded.
+	if ( ! function_exists( 'is_plugin_active' ) ) {
+		/** @psalm-suppress MissingFile */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- File is provided by WordPress core.
+		require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	}
+
+	if ( is_plugin_active( $basename ) ) {
 		return 'activated';
 	}
 
-	if ( file_exists( WP_PLUGIN_DIR . '/' . $plugin_slug ) ) {
+	if ( file_exists( WP_PLUGIN_DIR . '/' . $basename ) ) {
 		return 'installed';
 	}
 
 	return $status;
+}
+
+/**
+ * Spectra Blocks status as reported to the editor and the admin notices.
+ *
+ * Reports 'activated' on sites running Spectra Legacy so that the install and
+ * activate prompts stay hidden, running both builders on one site is unsupported.
+ *
+ * @since 1.2.3
+ * @return string One of 'activated', 'installed' or 'not-installed'.
+ */
+function get_spectra_blocks_offer_status(): string {
+	return is_spectra_legacy_active() ? 'activated' : get_spectra_blocks_status();
+}
+
+/**
+ * Spectra plugin status.
+ *
+ * Maps to get_spectra_blocks_offer_status() because that keeps the original
+ * behaviour of reporting 'activated' on Spectra Legacy sites. Use
+ * get_spectra_blocks_status() when the raw Spectra Blocks state is needed.
+ *
+ * @since 0.0.1
+ * @deprecated 1.2.3 Use get_spectra_blocks_offer_status() instead.
+ *
+ * @return string
+ */
+function is_spectra_plugin_status(): string {
+	_deprecated_function( __FUNCTION__, '1.2.3', 'Swt\get_spectra_blocks_offer_status()' );
+
+	return get_spectra_blocks_offer_status();
 }
 
 /**
@@ -210,19 +252,8 @@ function localize_welcome_notice_js( $plugin_status ): array {
 		'nonce'         => wp_create_nonce( 'swt-dismiss-welcome-notice-nonce' ),
 		'ajaxUrl'       => esc_url( admin_url( 'admin-ajax.php' ) ),
 		'pluginStatus'  => $plugin_status,
-		'pluginSlug'    => 'ultimate-addons-for-gutenberg',
-		'activationUrl' => esc_url(
-			add_query_arg(
-				array(
-					'plugin_status' => 'all',
-					'paged'         => '1',
-					'action'        => 'activate',
-					'plugin'        => rawurlencode( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ),
-					'_wpnonce'      => wp_create_nonce( 'activate-plugin_ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ),
-				),
-				admin_url( 'plugins.php' )
-			)
-		),
+		'pluginSlug'    => get_spectra_blocks_slug(),
+		'activationUrl' => get_spectra_blocks_activation_url(),
 		'activating'    => __( 'Activating', 'spectra-one' ) . '&hellip;',
 		'installing'    => __( 'Installing', 'spectra-one' ) . '&hellip;',
 		'done'          => __( 'Done', 'spectra-one' ),

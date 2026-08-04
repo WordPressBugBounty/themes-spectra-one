@@ -171,26 +171,15 @@ function localize_editor_script() {
 	return apply_filters(
 		'swt_editor_localize',
 		array(
-			'is_spectra_plugin'         => defined( 'UAGB_VER' ),
+			'is_spectra_plugin'         => is_spectra_legacy_active(),
 			'get_screen_id'             => $screen_id,
 			'disable_sections'          => get_disable_section_fields(),
-			'pluginStatus'              => is_spectra_plugin_status(),
-			'pluginSlug'                => 'ultimate-addons-for-gutenberg',
+			'pluginStatus'              => get_spectra_blocks_offer_status(),
+			'pluginSlug'                => get_spectra_blocks_slug(),
 			'nonce'				        => wp_create_nonce( 'wp_rest' ),
 			'swt_wp_version_higher_6_3' => $version_compare,
 			'swt_wp_version_higher_6_5' => is_wp_version_compatible( '6.5' ),
-			'activationUrl'             => esc_url(
-				add_query_arg(
-					array(
-						'plugin_status' => 'all',
-						'paged'         => '1',
-						'action'        => 'activate',
-						'plugin'        => rawurlencode( 'ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ),
-						'_wpnonce'      => wp_create_nonce( 'activate-plugin_ultimate-addons-for-gutenberg/ultimate-addons-for-gutenberg.php' ),
-					),
-					admin_url( 'plugins.php' )
-				)
-			),
+			'activationUrl'             => get_spectra_blocks_activation_url(),
 		)
 	);
 }

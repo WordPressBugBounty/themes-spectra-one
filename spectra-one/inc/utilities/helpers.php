@@ -29,13 +29,75 @@ function get_uri( string $path = '' ): string {
 }
 
 /**
+ * Is Spectra Legacy ( Ultimate Addons for Gutenberg ) enabled / available
+ *
+ * This intentionally only detects Spectra Legacy. The theme's editor sidebar
+ * integration, the `uagb_*` filters and the `.uagb-` compatibility CSS all target
+ * markup and hooks that only Spectra Legacy provides. Spectra Blocks is a rebuild
+ * that does not ship them.
+ *
+ * @since 1.2.3
+ * @return bool
+ */
+function is_spectra_legacy_active(): bool {
+	return defined( 'UAGB_VER' ) ? true : false;
+}
+
+/**
  * Is spectra plugin is enabled / available
  *
  * @since 0.0.3
+ * @deprecated 1.2.3 Use is_spectra_legacy_active() instead.
+ *
  * @return bool
  */
 function is_spectra_plugin(): bool {
-	return defined( 'UAGB_VER' ) ? true : false;
+	_deprecated_function( __FUNCTION__, '1.2.3', 'Swt\is_spectra_legacy_active()' );
+
+	return is_spectra_legacy_active();
+}
+
+/**
+ * Spectra Blocks slug ( wordpress.org directory slug ).
+ *
+ * @since 1.2.3
+ * @return string
+ */
+function get_spectra_blocks_slug(): string {
+	return 'spectra-blocks';
+}
+
+/**
+ * Spectra Blocks basename, relative to the plugins directory.
+ *
+ * @since 1.2.3
+ * @return string
+ */
+function get_spectra_blocks_basename(): string {
+	return 'spectra-blocks/spectra-blocks.php';
+}
+
+/**
+ * Admin URL that activates Spectra Blocks.
+ *
+ * @since 1.2.3
+ * @return string
+ */
+function get_spectra_blocks_activation_url(): string {
+	$basename = get_spectra_blocks_basename();
+
+	return esc_url(
+		add_query_arg(
+			array(
+				'plugin_status' => 'all',
+				'paged'         => '1',
+				'action'        => 'activate',
+				'plugin'        => rawurlencode( $basename ),
+				'_wpnonce'      => wp_create_nonce( 'activate-plugin_' . $basename ),
+			),
+			admin_url( 'plugins.php' )
+		)
+	);
 }
 
 /**

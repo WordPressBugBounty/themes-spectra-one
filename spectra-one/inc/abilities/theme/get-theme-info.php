@@ -135,7 +135,7 @@ final class Get_Theme_Info extends Ability {
 				'text_domain'           => 'spectra-one',
 				'requires_wp'           => sanitize_text_field( $theme->get( 'RequiresWP' ) ),
 				'requires_php'          => sanitize_text_field( $theme->get( 'RequiresPHP' ) ),
-				'spectra_plugin_status' => \Swt\is_spectra_plugin_status(),
+				'spectra_plugin_status' => \Swt\get_spectra_blocks_offer_status(),
 				'style_variations'      => $variation_count,
 				'patterns'              => $pattern_count,
 				'templates'             => $template_count,

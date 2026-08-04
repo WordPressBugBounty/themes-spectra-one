@@ -228,7 +228,7 @@
       "fontSizes": [
         {
           "name": "X Small",
-          "size": "clamp(12px, 1.5vw, 14px)",
+          "size": "14px",
           "slug": "x-small",
           "fluid": {
             "min": "12px",
@@ -237,7 +237,7 @@
         },
         {
           "name": "Small",
-          "size": "clamp(14px, 1.6vw, 16px)",
+          "size": "16px",
           "slug": "small",
           "fluid": {
             "min": "14px",
@@ -246,7 +246,7 @@
         },
         {
           "name": "Medium",
-          "size": "clamp(16px, 1.8vw, 18px)",
+          "size": "18px",
           "slug": "medium",
           "fluid": {
             "min": "16px",
@@ -255,7 +255,7 @@
         },
         {
           "name": "Large",
-          "size": "clamp(20px, 2.2vw, 22px)",
+          "size": "22px",
           "slug": "large",
           "fluid": {
             "min": "20px",
@@ -264,7 +264,7 @@
         },
         {
           "name": "X Large",
-          "size": "clamp(24px, 3vw, 28px)",
+          "size": "28px",
           "slug": "x-large",
           "fluid": {
             "min": "24px",
@@ -273,7 +273,7 @@
         },
         {
           "name": "XX Large",
-          "size": "clamp(28px, 3.6vw, 36px)",
+          "size": "36px",
           "slug": "xx-large",
           "fluid": {
             "min": "28px",
@@ -282,7 +282,7 @@
         },
         {
           "name": "XXX Large",
-          "size": "clamp(32px, 3.6vw, 44px)",
+          "size": "44px",
           "slug": "xxx-large",
           "fluid": {
             "min": "32px",
@@ -291,7 +291,7 @@
         },
         {
           "name": "XXXX Large",
-          "size": "clamp(40px, 6.6vw, 56px)",
+          "size": "56px",
           "slug": "xxxx-large",
           "fluid": {
             "min": "40px",

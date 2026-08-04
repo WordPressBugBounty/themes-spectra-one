@@ -84,15 +84,15 @@ msgstr "Installieren Sie den Spectra Builder"
 msgid "Learn More"
 msgstr "Erfahren Sie mehr"
 
-#: inc/admin/welcome-notice.php:226
+#: inc/admin/welcome-notice.php:257
 msgid "Activating"
 msgstr "Aktivierung"
 
-#: inc/admin/welcome-notice.php:227
+#: inc/admin/welcome-notice.php:258
 msgid "Installing"
 msgstr "Installation"
 
-#: inc/admin/welcome-notice.php:228
+#: inc/admin/welcome-notice.php:259
 msgid "Done"
 msgstr "Fertig"
 
@@ -139,11 +139,11 @@ msgstr "Kopfzeile deaktivieren"
 msgid "Disable Footer"
 msgstr "Fußzeile deaktivieren"
 
-#: inc/scripts.php:302
+#: inc/scripts.php:291
 msgid "Pages"
 msgstr "Seiten"
 
-#: inc/scripts.php:307
+#: inc/scripts.php:296
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -156,7 +156,7 @@ msgstr "Seiten"
 msgid "Contact"
 msgstr "Kontakt"
 
-#: inc/scripts.php:312
+#: inc/scripts.php:301
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -166,7 +166,7 @@ msgstr "Kontakt"
 msgid "Pricing"
 msgstr "Preise"
 
-#: inc/utilities/helpers.php:264
+#: inc/utilities/helpers.php:326
 msgid " Icon"
 msgstr "Symbol"
 
