@@ -35,7 +35,6 @@ function run_function_after_theme_update(): void {
 
 			updater_spectra_plugin_fonts();
 			updater_custom_fonts_plugin();
-			migrate_global_styles_font_size_presets();
 
 			if ( false !== $old_version && isset( $update_callbacks[ $current_version ] ) ) {
 				/**
@@ -128,126 +127,6 @@ function backward_compatibility_update_callbacks() {
 	return array(
 		'1.1.1' => SWT_NS . 'backward_compatibility_1_1_1',
 	);
-}
-
-/**
- * Repair legacy font size presets stored in the user's global styles.
- *
- * Older versions stored a `clamp()` string in `size`, which core cannot parse,
- * so any fluid min/max set in the Site Editor never reached the frontend. Those
- * presets are reset to their theme.json defaults; applying the stored min/max
- * instead would resize live sites that currently look correct.
- *
- * @return void
- * @since x.x.x
- */
-function migrate_global_styles_font_size_presets(): void {
-	// Not get_user_global_styles_post_id() -- that creates a post as a side effect.
-	$user_cpt = \WP_Theme_JSON_Resolver::get_user_data_from_wp_global_styles( wp_get_theme() );
-
-	if ( empty( $user_cpt['ID'] ) || ! isset( $user_cpt['post_content'] ) || ! is_string( $user_cpt['post_content'] ) ) {
-		return;
-	}
-
-	$post_id = (int) $user_cpt['ID'];
-	$data    = json_decode( $user_cpt['post_content'], true );
-
-	if ( ! is_array( $data ) || ! isset( $data['settings']['typography']['fontSizes']['theme'] ) || ! is_array( $data['settings']['typography']['fontSizes']['theme'] ) ) {
-		return;
-	}
-
-	$defaults = theme_font_size_presets();
-	$changed  = false;
-
-	foreach ( $data['settings']['typography']['fontSizes']['theme'] as $index => $preset ) {
-		if ( ! is_array( $preset ) || ! isset( $preset['size'] ) || ! is_string( $preset['size'] ) ) {
-			continue;
-		}
-
-		// A plain size already renders correctly.
-		if ( 0 !== strpos( trim( $preset['size'] ), 'clamp(' ) ) {
-			continue;
-		}
-
-		$slug = isset( $preset['slug'] ) && is_string( $preset['slug'] ) ? $preset['slug'] : '';
-
-		if ( isset( $defaults[ $slug ]['size'] ) ) {
-			$data['settings']['typography']['fontSizes']['theme'][ $index ]['size'] = $defaults[ $slug ]['size'];
-
-			if ( isset( $defaults[ $slug ]['fluid'] ) ) {
-				$data['settings']['typography']['fontSizes']['theme'][ $index ]['fluid'] = $defaults[ $slug ]['fluid'];
-			} else {
-				unset( $data['settings']['typography']['fontSizes']['theme'][ $index ]['fluid'] );
-			}
-
-			$changed = true;
-			continue;
-		}
-
-		// Preset the theme no longer ships -- fall back to the clamp's upper bound.
-		$max = clamp_max_value( $preset['size'] );
-
-		if ( null === $max ) {
-			continue;
-		}
-
-		$data['settings']['typography']['fontSizes']['theme'][ $index ]['size'] = $max;
-
-		$changed = true;
-	}
-
-	if ( $changed ) {
-		wp_update_post(
-			array(
-				'ID'           => $post_id,
-				// Same flags core uses for this post type, so the JSON survives kses.
-				'post_content' => (string) wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP ),
-			)
-		);
-	}
-}
-
-/**
- * Font size presets defined by the theme, keyed by slug.
- *
- * Read from resolved theme.json data so child theme overrides are respected.
- *
- * @return array<string, array> Presets keyed by slug.
- * @since x.x.x
- */
-function theme_font_size_presets(): array {
-	$settings = \WP_Theme_JSON_Resolver::get_theme_data()->get_settings();
-	$presets  = $settings['typography']['fontSizes']['theme'] ?? array();
-
-	if ( ! is_array( $presets ) ) {
-		return array();
-	}
-
-	$by_slug = array();
-
-	foreach ( $presets as $preset ) {
-		if ( is_array( $preset ) && isset( $preset['slug'], $preset['size'] ) && is_string( $preset['slug'] ) ) {
-			$by_slug[ $preset['slug'] ] = $preset;
-		}
-	}
-
-	return $by_slug;
-}
-
-/**
- * Parse the upper bound out of a `clamp()` expression.
- *
- * @param string $size Legacy `clamp( min, preferred, max )` value.
- *
- * @return string|null Plain CSS length, or null when it could not be parsed.
- * @since x.x.x
- */
-function clamp_max_value( string $size ): ?string {
-	if ( preg_match( '/,\s*(\d*\.?\d+(?:px|rem|em))\s*\)\s*$/', trim( $size ), $matches ) ) {
-		return $matches[1];
-	}
-
-	return null;
 }
 
 /**

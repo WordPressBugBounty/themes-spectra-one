@@ -76,10 +76,13 @@ trait Global_Styles {
 			);
 		}
 
+		// wp_update_post() runs wp_unslash(), so slash first or an escaped quote truncates the JSON and the whole post is discarded.
 		return wp_update_post(
-			array(
-				'ID'           => $post_id,
-				'post_content' => $json,
+			wp_slash(
+				array(
+					'ID'           => $post_id,
+					'post_content' => $json,
+				)
 			),
 			true
 		);

@@ -15,4 +15,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+require_once __DIR__ . '/global-styles.php';
 require_once __DIR__ . '/spectra.php';

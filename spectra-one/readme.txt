@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 7.0
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,13 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.2.4 =
+* Fix: Updating to 1.2.3 could wipe Global Styles customizations. The theme no longer modifies your saved Global Styles, so this cannot happen again.
+* Fix: Changing colors or typography through AI-assisted theme management no longer clears your saved Global Styles.
+
+= 1.2.3 =
+* Fix: Font size preset Min and Max values under Appearance > Editor > Styles > Typography now apply on the frontend, and the Size field is no longer empty and disabled.
 
 = 1.2.2 =
 * Fix: Abilities API — Navigation menus now support dropdown submenus, allowing hierarchical menu structures to be applied via AI-assisted theme management.
