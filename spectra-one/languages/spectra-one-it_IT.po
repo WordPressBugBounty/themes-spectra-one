@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.1.1\n"
+"Last-Translator: gpt-po v1.2.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -102,7 +102,7 @@ msgstr "Fatto"
 msgid "Minimal"
 msgstr "Minimale"
 
-#: inc/abilities/settings/update-color-palette.php:197
+#: inc/abilities/settings/update-color-palette.php:203
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "Secondario"
@@ -1486,7 +1486,7 @@ msgstr "Si è verificato un errore imprevisto: %s"
 msgid "A system error occurred: %s"
 msgstr "Si è verificato un errore di sistema: %s"
 
-#: inc/abilities/ability.php:377
+#: inc/abilities/ability.php:384
 msgid "An unexpected error occurred."
 msgstr "Si è verificato un errore imprevisto."
 
@@ -1737,100 +1737,84 @@ msgstr "Aggiorna la tavolozza dei colori di Spectra One"
 msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
 msgstr "Aggiorna la tavolozza dei colori e gli stili degli elementi (testo, intestazioni, link, pulsanti) degli stili globali FSE con i colori del marchio. Accetta 4 colori esadecimali: primario, secondario, intestazione, corpo. Deriva automaticamente i colori di supporto (superficie, contorno, terziario)."
 
-#: inc/abilities/settings/update-color-palette.php:129
-#: inc/abilities/settings/update-typography.php:160
+#: inc/abilities/settings/update-color-palette.php:135
+#: inc/abilities/settings/update-typography.php:166
 msgid "No global styles found. Is an FSE/block theme active?"
 msgstr "Nessuno stile globale trovato. È attivo un tema FSE/blocco?"
 
-#: inc/abilities/settings/update-color-palette.php:130
-#: inc/abilities/settings/update-typography.php:161
+#: inc/abilities/settings/update-color-palette.php:136
+#: inc/abilities/settings/update-typography.php:167
 msgid "This ability requires an active block theme with global styles support."
 msgstr "Questa funzionalità richiede un tema a blocchi attivo con supporto per gli stili globali."
 
-#: inc/abilities/settings/update-color-palette.php:143
+#: inc/abilities/settings/update-color-palette.php:149
 msgid "Color palette and element styles updated with brand colors."
 msgstr "La palette dei colori e gli stili degli elementi sono stati aggiornati con i colori del marchio."
 
-#: inc/abilities/settings/update-color-palette.php:160
+#: inc/abilities/settings/update-color-palette.php:166
 msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
 msgstr "Esattamente 4 colori del marchio sono richiesti: [primario, secondario, intestazione, corpo]."
 
-#: inc/abilities/settings/update-color-palette.php:161
+#: inc/abilities/settings/update-color-palette.php:167
 msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 msgstr "Passa un array di 4 stringhe di colori esadecimali come [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 
 #. translators: 1: color index, 2: color value
-#: inc/abilities/settings/update-color-palette.php:170
+#: inc/abilities/settings/update-color-palette.php:176
 #, php-format
 msgid "Invalid hex color at index %1$d: %2$s"
 msgstr "Colore esadecimale non valido all'indice %1$d: %2$s"
 
-#: inc/abilities/settings/update-color-palette.php:171
+#: inc/abilities/settings/update-color-palette.php:177
 msgid "Colors must be 6-digit hex values like #FF6B6B."
 msgstr "I colori devono essere valori esadecimali a 6 cifre come #FF6B6B."
 
-#: inc/abilities/settings/update-color-palette.php:192
+#: inc/abilities/settings/update-color-palette.php:198
 msgid "Primary"
 msgstr "Primario"
 
-#: inc/abilities/settings/update-color-palette.php:202
+#: inc/abilities/settings/update-color-palette.php:208
 msgid "Heading"
 msgstr "Intestazione"
 
-#: inc/abilities/settings/update-color-palette.php:207
+#: inc/abilities/settings/update-color-palette.php:213
 msgid "Body"
 msgstr "Corpo"
 
-#: inc/abilities/settings/update-color-palette.php:212
+#: inc/abilities/settings/update-color-palette.php:218
 msgid "Foreground"
 msgstr "Primo piano"
 
-#: inc/abilities/settings/update-color-palette.php:217
+#: inc/abilities/settings/update-color-palette.php:223
 msgid "Background"
 msgstr "Sfondo"
 
-#: inc/abilities/settings/update-color-palette.php:222
+#: inc/abilities/settings/update-color-palette.php:228
 msgid "Surface"
 msgstr "Superficie"
 
-#: inc/abilities/settings/update-color-palette.php:227
+#: inc/abilities/settings/update-color-palette.php:233
 msgid "Tertiary"
 msgstr "Terziario"
 
-#: inc/abilities/settings/update-color-palette.php:232
+#: inc/abilities/settings/update-color-palette.php:238
 msgid "Outline"
 msgstr "Schema"
 
-#: inc/abilities/settings/update-color-palette.php:237
+#: inc/abilities/settings/update-color-palette.php:243
 msgid "Black"
 msgstr "Nero"
 
-#: inc/abilities/settings/update-navigation.php:56
+#: inc/abilities/settings/update-navigation.php:58
 msgid "Update Navigation Menu"
 msgstr "Aggiorna il menu di navigazione"
 
-#: inc/abilities/settings/update-navigation.php:57
-msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
-msgstr "Aggiorna il menu di navigazione del sito con i link delle pagine. Accetta un array di elementi del menu [{label, url}]. Crea il post di navigazione se necessario e collega la parte del modello dell'intestazione per utilizzarlo. Per i temi a blocchi FSE — utilizza blocchi wp:navigation-link, non menu classici."
-
-#: inc/abilities/settings/update-navigation.php:179
-msgid "At least one menu item is required."
-msgstr "È necessario almeno un elemento del menu."
-
-#: inc/abilities/settings/update-navigation.php:180
+#: inc/abilities/settings/update-navigation.php:196
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "Fornisci elementi come [{\"label\": \"Home\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:191
-msgid "No valid menu items provided."
-msgstr "Nessun elemento di menu valido fornito."
-
-#: inc/abilities/settings/update-navigation.php:192
-msgid "Each item needs at least a \"label\"."
-msgstr "Ogni elemento necessita almeno di un \"etichetta\"."
-
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:218
+#: inc/abilities/settings/update-navigation.php:272
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "Navigazione aggiornata con %d voci di menu."
@@ -1844,28 +1828,28 @@ msgid "Switches the active header or footer design by updating the FSE template 
 msgstr "Cambia il design attivo dell'intestazione o del piè di pagina aggiornando la parte del modello FSE per fare riferimento a un diverso pattern di Spectra One. Usa spectra-one/list-patterns con la categoria \"header\" o \"footer\" per vedere prima i pattern disponibili."
 
 #. translators: %s: area name
-#: inc/abilities/settings/update-template-part.php:146
+#: inc/abilities/settings/update-template-part.php:149
 #, php-format
 msgid "Could not find the %s template part."
 msgstr "Impossibile trovare la parte del modello %s."
 
 #. translators: 1: area name, 2: pattern slug
-#: inc/abilities/settings/update-template-part.php:163
+#: inc/abilities/settings/update-template-part.php:187
 #, php-format
 msgid "%1$s updated to use pattern \"%2$s\"."
 msgstr "%1$s aggiornato per utilizzare il modello \"%2$s\"."
 
-#: inc/abilities/settings/update-template-part.php:182
+#: inc/abilities/settings/update-template-part.php:206
 msgid "Invalid area. Must be \"header\" or \"footer\"."
 msgstr "Area non valida. Deve essere \"header\" o \"footer\"."
 
-#: inc/abilities/settings/update-template-part.php:191
+#: inc/abilities/settings/update-template-part.php:215
 #, php-format
 msgid "Pattern must start with \"%1$s\" for the %2$s area."
 msgstr "Il modello deve iniziare con \"%1$s\" per l'area %2$s."
 
 #. translators: %s: pattern slug
-#: inc/abilities/settings/update-template-part.php:202
+#: inc/abilities/settings/update-template-part.php:226
 #, php-format
 msgid "Pattern \"%s\" is not registered."
 msgstr "Il pattern \"%s\" non è registrato."
@@ -1900,26 +1884,26 @@ msgstr "Aggiorna la tipografia di Spectra One"
 msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
 msgstr "Aggiorna la tipografia degli stili globali FSE per il testo del corpo e i titoli. Imposta la famiglia di font (per slug), il peso del font e l'altezza della linea. Le famiglie di font devono essere registrate in theme.json. Pesi disponibili: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (o numerico 100-900). Altezze di linea disponibili: initial, xxSmall, xSmall, small, medium, large."
 
-#: inc/abilities/settings/update-typography.php:168
+#: inc/abilities/settings/update-typography.php:174
 msgid "No typography fields provided to update."
 msgstr "Nessun campo di tipografia fornito per l'aggiornamento."
 
-#: inc/abilities/settings/update-typography.php:169
+#: inc/abilities/settings/update-typography.php:175
 msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
 msgstr "Fornisci almeno uno dei seguenti: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
 
 #. translators: %s: comma-separated list of field=value pairs that were rejected
-#: inc/abilities/settings/update-typography.php:190
+#: inc/abilities/settings/update-typography.php:196
 #, php-format
 msgid "Invalid typography values: %s."
 msgstr "Valori di tipografia non validi: %s."
 
-#: inc/abilities/settings/update-typography.php:191
+#: inc/abilities/settings/update-typography.php:197
 msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
 msgstr "I pesi dei caratteri devono essere nominati (thin..black) o numerici (100-900 a intervalli di 100). Le altezze delle linee devono essere nominate (initial, xxSmall..large) o numeriche (0 < n <= 5)."
 
 #. translators: %s: comma-separated list of updated fields
-#: inc/abilities/settings/update-typography.php:214
+#: inc/abilities/settings/update-typography.php:220
 #, php-format
 msgid "Typography updated: %s."
 msgstr "Tipografia aggiornata: %s."
@@ -2024,7 +2008,7 @@ msgstr "Restituisce tutti i modelli e le parti di modelli registrati dal tema Sp
 msgid "Found %d templates."
 msgstr "Trovati %d modelli."
 
-#: inc/abilities/traits/global-styles.php:75
+#: inc/abilities/traits/global-styles.php:99
 msgid "Failed to encode global styles as JSON."
 msgstr "Impossibile codificare gli stili globali come JSON."
 
@@ -2039,6 +2023,48 @@ msgstr "Non hai il permesso di eseguire questa azione."
 #: inc/admin/welcome-notice.php:119
 msgid "Security check failed."
 msgstr "Controllo di sicurezza fallito."
+
+#: inc/abilities/settings/update-navigation.php:59
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Targets the menu the header renders; a header managing its menu as inline blocks is migrated verbatim into a navigation entity first. Replace mode (default) sets the menu to exactly the given items — items matched by page id or url keep their existing styling, non-menu blocks (search, social icons) are preserved; append mode keeps every existing item untouched. New items are styled to match their siblings. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "Aggiorna il menu di navigazione del sito con i link delle pagine. Accetta un array di elementi del menu [{label, url}]. Targetizza il menu che l'intestazione rende; un'intestazione che gestisce il proprio menu come blocchi in linea viene migrata parola per parola in un'entità di navigazione prima. La modalità di sostituzione (predefinita) imposta il menu esattamente sugli elementi dati — gli elementi corrispondenti all'ID pagina o all'URL mantengono il loro stile esistente, i blocchi non menu (ricerca, icone social) vengono preservati; la modalità di aggiunta mantiene ogni elemento esistente intatto. I nuovi elementi sono stilizzati per abbinarsi ai loro simili. Per i temi a blocchi FSE — utilizza i blocchi wp:navigation-link, non i menu classici."
+
+#: inc/abilities/settings/update-navigation.php:195
+msgid "At least one menu item with a label is required."
+msgstr "È richiesto almeno un elemento del menu con un'etichetta."
+
+#: inc/abilities/settings/update-navigation.php:221
+msgid "Navigation"
+msgstr "Navigazione"
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:160
+#, php-format
+msgid "The %s template part carries content this ability does not recognize as a switchable pattern reference (imported, user-edited, or drifted from the shipped pattern copy — e.g. after a locale change or theme update) — switching patterns would overwrite it."
+msgstr "La parte del template %s contiene contenuti che questa funzionalità non riconosce come riferimento a un modello switchabile (importato, modificato dall'utente o deviato dalla copia del modello fornita — ad esempio dopo un cambio di lingua o un aggiornamento del tema) — cambiare i modelli sovrascriverebbe questo."
+
+#: inc/abilities/settings/update-template-part.php:161
+msgid "Edit the template part's blocks directly instead of switching patterns."
+msgstr "Modifica direttamente i blocchi della parte del template invece di cambiare i modelli."
+
+#: inc/abilities/settings/update-template-part.php:173
+msgid "Retry without use_site_title, or pick a pattern that contains a logo image."
+msgstr "Riprova senza use_site_title, o scegli un modello che contenga un'immagine del logo."
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:376
+#, php-format
+msgid "Pattern \"%s\" has no registered content to inline."
+msgstr "Il modello \"%s\" non ha contenuti registrati da inserire."
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:405
+#, php-format
+msgid "Pattern \"%s\" has no replaceable logo image (site-logo-img marker), so use_site_title cannot apply."
+msgstr "Il modello \"%s\" non ha un'immagine del logo sostituibile (marcatore site-logo-img), quindi use_site_title non può essere applicato."
+
+#: inc/abilities/traits/global-styles.php:64
+msgid "The global styles post exists but its content is not readable JSON — refusing to write over it."
+msgstr "Il post degli stili globali esiste ma il suo contenuto non è JSON leggibile — rifiuto di sovrascriverlo."
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"

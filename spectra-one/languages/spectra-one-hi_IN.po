@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.1.1\n"
+"Last-Translator: gpt-po v1.2.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -102,7 +102,7 @@ msgstr "हो गया"
 msgid "Minimal"
 msgstr "न्यूनतम"
 
-#: inc/abilities/settings/update-color-palette.php:197
+#: inc/abilities/settings/update-color-palette.php:203
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "द्वितीयक"
@@ -1486,7 +1486,7 @@ msgstr "एक अप्रत्याशित त्रुटि हुई: %
 msgid "A system error occurred: %s"
 msgstr "एक सिस्टम त्रुटि हुई: %s"
 
-#: inc/abilities/ability.php:377
+#: inc/abilities/ability.php:384
 msgid "An unexpected error occurred."
 msgstr "एक अप्रत्याशित त्रुटि हुई।"
 
@@ -1737,100 +1737,84 @@ msgstr "स्पेक्ट्रा वन रंग पैलेट अप�
 msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
 msgstr "ब्रांड रंगों के साथ FSE वैश्विक शैलियों के रंग पैलेट और तत्व शैलियों (पाठ, शीर्षक, लिंक, बटन) को अपडेट करता है। 4 हेक्स रंग स्वीकार करता है: प्राथमिक, द्वितीयक, शीर्षक, शरीर। सहायक रंगों (सतह, रूपरेखा, तृतीयक) को स्वचालित रूप से निकालता है।"
 
-#: inc/abilities/settings/update-color-palette.php:129
-#: inc/abilities/settings/update-typography.php:160
+#: inc/abilities/settings/update-color-palette.php:135
+#: inc/abilities/settings/update-typography.php:166
 msgid "No global styles found. Is an FSE/block theme active?"
 msgstr "कोई वैश्विक शैलियाँ नहीं मिलीं। क्या कोई FSE/ब्लॉक थीम सक्रिय है?"
 
-#: inc/abilities/settings/update-color-palette.php:130
-#: inc/abilities/settings/update-typography.php:161
+#: inc/abilities/settings/update-color-palette.php:136
+#: inc/abilities/settings/update-typography.php:167
 msgid "This ability requires an active block theme with global styles support."
 msgstr "इस क्षमता के लिए वैश्विक शैलियों के समर्थन के साथ एक सक्रिय ब्लॉक थीम की आवश्यकता होती है।"
 
-#: inc/abilities/settings/update-color-palette.php:143
+#: inc/abilities/settings/update-color-palette.php:149
 msgid "Color palette and element styles updated with brand colors."
 msgstr "ब्रांड रंगों के साथ रंग पैलेट और तत्व शैलियाँ अपडेट की गईं।"
 
-#: inc/abilities/settings/update-color-palette.php:160
+#: inc/abilities/settings/update-color-palette.php:166
 msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
 msgstr "कुल 4 ब्रांड रंग आवश्यक हैं: [प्राथमिक, द्वितीयक, शीर्षक, शरीर]."
 
-#: inc/abilities/settings/update-color-palette.php:161
+#: inc/abilities/settings/update-color-palette.php:167
 msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 msgstr "4 हेक्स रंग स्ट्रिंग्स की एक array पास करें जैसे [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 
 #. translators: 1: color index, 2: color value
-#: inc/abilities/settings/update-color-palette.php:170
+#: inc/abilities/settings/update-color-palette.php:176
 #, php-format
 msgid "Invalid hex color at index %1$d: %2$s"
 msgstr "इंडेक्स %1$d पर अमान्य हेक्स रंग: %2$s"
 
-#: inc/abilities/settings/update-color-palette.php:171
+#: inc/abilities/settings/update-color-palette.php:177
 msgid "Colors must be 6-digit hex values like #FF6B6B."
 msgstr "रंग 6-अंकीय हेक्स मान जैसे #FF6B6B होने चाहिए।"
 
-#: inc/abilities/settings/update-color-palette.php:192
+#: inc/abilities/settings/update-color-palette.php:198
 msgid "Primary"
 msgstr "प्राथमिक"
 
-#: inc/abilities/settings/update-color-palette.php:202
+#: inc/abilities/settings/update-color-palette.php:208
 msgid "Heading"
 msgstr "शीर्षक"
 
-#: inc/abilities/settings/update-color-palette.php:207
+#: inc/abilities/settings/update-color-palette.php:213
 msgid "Body"
 msgstr "शरीर"
 
-#: inc/abilities/settings/update-color-palette.php:212
+#: inc/abilities/settings/update-color-palette.php:218
 msgid "Foreground"
 msgstr "अग्रभूमि"
 
-#: inc/abilities/settings/update-color-palette.php:217
+#: inc/abilities/settings/update-color-palette.php:223
 msgid "Background"
 msgstr "पृष्ठभूमि"
 
-#: inc/abilities/settings/update-color-palette.php:222
+#: inc/abilities/settings/update-color-palette.php:228
 msgid "Surface"
 msgstr "सतह"
 
-#: inc/abilities/settings/update-color-palette.php:227
+#: inc/abilities/settings/update-color-palette.php:233
 msgid "Tertiary"
 msgstr "तृतीयक"
 
-#: inc/abilities/settings/update-color-palette.php:232
+#: inc/abilities/settings/update-color-palette.php:238
 msgid "Outline"
 msgstr "रूपरेखा"
 
-#: inc/abilities/settings/update-color-palette.php:237
+#: inc/abilities/settings/update-color-palette.php:243
 msgid "Black"
 msgstr "काला"
 
-#: inc/abilities/settings/update-navigation.php:56
+#: inc/abilities/settings/update-navigation.php:58
 msgid "Update Navigation Menu"
 msgstr "नेविगेशन मेनू अपडेट करें"
 
-#: inc/abilities/settings/update-navigation.php:57
-msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
-msgstr "पृष्ठ लिंक के साथ साइट नेविगेशन मेनू को अपडेट करता है। मेनू आइटम की एक सरणी स्वीकार करता है [{लेबल, यूआरएल}]। यदि आवश्यक हो तो नेविगेशन पोस्ट बनाता है और इसे उपयोग करने के लिए हेडर टेम्पलेट भाग को जोड़ता है। FSE ब्लॉक थीम के लिए — wp:navigation-link ब्लॉक्स का उपयोग करता है, क्लासिक मेनू नहीं।"
-
-#: inc/abilities/settings/update-navigation.php:179
-msgid "At least one menu item is required."
-msgstr "कम से कम एक मेनू आइटम आवश्यक है।"
-
-#: inc/abilities/settings/update-navigation.php:180
+#: inc/abilities/settings/update-navigation.php:196
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "आइटम्स को [{\"label\": \"Home\", \"url\": \"/\"}] के रूप में प्रदान करें।"
 
-#: inc/abilities/settings/update-navigation.php:191
-msgid "No valid menu items provided."
-msgstr "कोई मान्य मेनू आइटम प्रदान नहीं किए गए।"
-
-#: inc/abilities/settings/update-navigation.php:192
-msgid "Each item needs at least a \"label\"."
-msgstr "प्रत्येक आइटम के लिए कम से कम एक \"लेबल\" आवश्यक है।"
-
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:218
+#: inc/abilities/settings/update-navigation.php:272
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "नेविगेशन को %d मेनू आइटम्स के साथ अपडेट किया गया।"
@@ -1844,28 +1828,28 @@ msgid "Switches the active header or footer design by updating the FSE template 
 msgstr "सक्रिय हेडर या फुटर डिज़ाइन को बदलता है, FSE टेम्पलेट भाग को एक अलग स्पेक्ट्रा वन पैटर्न का संदर्भ देने के लिए अपडेट करके। उपलब्ध पैटर्न पहले देखने के लिए श्रेणी \"हेडर\" या \"फुटर\" के साथ spectra-one/list-patterns का उपयोग करें।"
 
 #. translators: %s: area name
-#: inc/abilities/settings/update-template-part.php:146
+#: inc/abilities/settings/update-template-part.php:149
 #, php-format
 msgid "Could not find the %s template part."
 msgstr "%s टेम्पलेट भाग नहीं मिला।"
 
 #. translators: 1: area name, 2: pattern slug
-#: inc/abilities/settings/update-template-part.php:163
+#: inc/abilities/settings/update-template-part.php:187
 #, php-format
 msgid "%1$s updated to use pattern \"%2$s\"."
 msgstr "%1$s को \"%2$s\" पैटर्न का उपयोग करने के लिए अपडेट किया गया।"
 
-#: inc/abilities/settings/update-template-part.php:182
+#: inc/abilities/settings/update-template-part.php:206
 msgid "Invalid area. Must be \"header\" or \"footer\"."
 msgstr "अमान्य क्षेत्र। \"हेडर\" या \"फुटर\" होना चाहिए।"
 
-#: inc/abilities/settings/update-template-part.php:191
+#: inc/abilities/settings/update-template-part.php:215
 #, php-format
 msgid "Pattern must start with \"%1$s\" for the %2$s area."
 msgstr "पैटर्न को %2$s क्षेत्र के लिए \"%1$s\" से शुरू होना चाहिए."
 
 #. translators: %s: pattern slug
-#: inc/abilities/settings/update-template-part.php:202
+#: inc/abilities/settings/update-template-part.php:226
 #, php-format
 msgid "Pattern \"%s\" is not registered."
 msgstr "पैटर्न \"%s\" पंजीकृत नहीं है।"
@@ -1900,26 +1884,26 @@ msgstr "स्पेक्ट्रा वन टाइपोग्राफी 
 msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
 msgstr "FSE वैश्विक शैलियों की टाइपोग्राफी को बॉडी टेक्स्ट और हेडिंग्स के लिए अपडेट करता है। फ़ॉन्ट परिवार (स्लग द्वारा), फ़ॉन्ट वज़न, और लाइन ऊँचाई सेट करें। फ़ॉन्ट परिवारों को theme.json में पंजीकृत होना चाहिए। उपलब्ध वज़न: पतला, अतिरिक्त हल्का, हल्का, नियमित, मध्यम, अर्ध बोल्ड, बोल्ड, अतिरिक्त बोल्ड, काला (या संख्यात्मक 100-900)। उपलब्ध लाइन ऊँचाई: प्रारंभिक, xxछोटा, xछोटा, छोटा, मध्यम, बड़ा।"
 
-#: inc/abilities/settings/update-typography.php:168
+#: inc/abilities/settings/update-typography.php:174
 msgid "No typography fields provided to update."
 msgstr "अद्यतन करने के लिए कोई टाइपोग्राफी फ़ील्ड प्रदान नहीं किए गए।"
 
-#: inc/abilities/settings/update-typography.php:169
+#: inc/abilities/settings/update-typography.php:175
 msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
 msgstr "कम से कम इनमें से एक प्रदान करें: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
 
 #. translators: %s: comma-separated list of field=value pairs that were rejected
-#: inc/abilities/settings/update-typography.php:190
+#: inc/abilities/settings/update-typography.php:196
 #, php-format
 msgid "Invalid typography values: %s."
 msgstr "अमान्य टाइपोग्राफी मान: %s."
 
-#: inc/abilities/settings/update-typography.php:191
+#: inc/abilities/settings/update-typography.php:197
 msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
 msgstr "फ़ॉन्ट वज़न को नामित किया जाना चाहिए (पतला..काला) या संख्यात्मक (100-900, 100 के अंतराल में)। लाइन ऊँचाई को नामित किया जाना चाहिए (प्रारंभिक, xxSmall..बड़ा) या संख्यात्मक (0 < n <= 5)।"
 
 #. translators: %s: comma-separated list of updated fields
-#: inc/abilities/settings/update-typography.php:214
+#: inc/abilities/settings/update-typography.php:220
 #, php-format
 msgid "Typography updated: %s."
 msgstr "टाइपोग्राफी अपडेट की गई: %s."
@@ -2024,7 +2008,7 @@ msgstr "स्पेक्ट्रा वन थीम द्वारा प�
 msgid "Found %d templates."
 msgstr "%d टेम्पलेट्स मिले।"
 
-#: inc/abilities/traits/global-styles.php:75
+#: inc/abilities/traits/global-styles.php:99
 msgid "Failed to encode global styles as JSON."
 msgstr "ग्लोबल शैलियों को JSON के रूप में एन्कोड करने में विफल।"
 
@@ -2039,6 +2023,48 @@ msgstr "आपको यह कार्य करने की अनुमत�
 #: inc/admin/welcome-notice.php:119
 msgid "Security check failed."
 msgstr "सुरक्षा जांच विफल हो गई।"
+
+#: inc/abilities/settings/update-navigation.php:59
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Targets the menu the header renders; a header managing its menu as inline blocks is migrated verbatim into a navigation entity first. Replace mode (default) sets the menu to exactly the given items — items matched by page id or url keep their existing styling, non-menu blocks (search, social icons) are preserved; append mode keeps every existing item untouched. New items are styled to match their siblings. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "साइट नेविगेशन मेनू को पृष्ठ लिंक के साथ अपडेट करता है। मेनू आइटम [{label, url}] का एक एरे स्वीकार करता है। यह मेनू को लक्षित करता है जिसे हेडर इनलाइन ब्लॉकों के रूप में प्रस्तुत करता है; एक हेडर जो अपने मेनू को इनलाइन ब्लॉकों के रूप में प्रबंधित करता है, उसे पहले एक नेविगेशन इकाई में शब्दशः माइग्रेट किया जाता है। प्रतिस्थापन मोड (डिफ़ॉल्ट) मेनू को दिए गए आइटम के अनुसार ठीक सेट करता है - पृष्ठ आईडी या यूआरएल द्वारा मेल खाने वाले आइटम अपनी मौजूदा स्टाइलिंग बनाए रखते हैं, गैर-मेनू ब्लॉक (खोज, सामाजिक आइकन) संरक्षित होते हैं; जोड़ने का मोड हर मौजूदा आइटम को बिना छेड़े रखता है। नए आइटम को उनके भाई-बहनों के साथ मेल खाने के लिए स्टाइल किया जाता है। FSE ब्लॉक थीम के लिए - wp:navigation-link ब्लॉकों का उपयोग करता है, क्लासिक मेनू नहीं।"
+
+#: inc/abilities/settings/update-navigation.php:195
+msgid "At least one menu item with a label is required."
+msgstr "कम से कम एक मेनू आइटम जिसमें एक लेबल हो, आवश्यक है।"
+
+#: inc/abilities/settings/update-navigation.php:221
+msgid "Navigation"
+msgstr "नेविगेशन"
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:160
+#, php-format
+msgid "The %s template part carries content this ability does not recognize as a switchable pattern reference (imported, user-edited, or drifted from the shipped pattern copy — e.g. after a locale change or theme update) — switching patterns would overwrite it."
+msgstr "%s टेम्पलेट भाग उस सामग्री को ले जाता है जिसे यह क्षमता स्विच करने योग्य पैटर्न संदर्भ के रूप में पहचानता नहीं है (आयातित, उपयोगकर्ता-संपादित, या शिप किए गए पैटर्न कॉपी से भटक गया - उदाहरण के लिए, एक स्थानीय परिवर्तन या थीम अपडेट के बाद) - पैटर्न को स्विच करना इसे अधिलेखित कर देगा।"
+
+#: inc/abilities/settings/update-template-part.php:161
+msgid "Edit the template part's blocks directly instead of switching patterns."
+msgstr "पैटर्न स्विच करने के बजाय सीधे टेम्पलेट भाग के ब्लॉकों को संपादित करें।"
+
+#: inc/abilities/settings/update-template-part.php:173
+msgid "Retry without use_site_title, or pick a pattern that contains a logo image."
+msgstr "use_site_title का उपयोग किए बिना पुनः प्रयास करें, या एक ऐसा पैटर्न चुनें जिसमें एक लोगो छवि हो।"
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:376
+#, php-format
+msgid "Pattern \"%s\" has no registered content to inline."
+msgstr "पैटर्न \"%s\" में इनलाइन करने के लिए कोई पंजीकृत सामग्री नहीं है।"
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:405
+#, php-format
+msgid "Pattern \"%s\" has no replaceable logo image (site-logo-img marker), so use_site_title cannot apply."
+msgstr "पैटर्न \"%s\" में कोई प्रतिस्थापनीय लोगो छवि (site-logo-img मार्कर) नहीं है, इसलिए use_site_title लागू नहीं हो सकता।"
+
+#: inc/abilities/traits/global-styles.php:64
+msgid "The global styles post exists but its content is not readable JSON — refusing to write over it."
+msgstr "वैश्विक शैलियों का पोस्ट मौजूद है लेकिन इसकी सामग्री पढ़ने योग्य JSON नहीं है - इसे अधिलेखित करने से इनकार किया जा रहा है।"
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"

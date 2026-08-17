@@ -25,20 +25,44 @@ trait Global_Styles {
 	/**
 	 * Load the global styles post and its decoded content.
 	 *
-	 * @return array{ID: int, styles: array}|null Null when no global styles
-	 *         post exists (e.g. non-FSE theme active).
+	 * Every consumer of this helper is a WRITE ability, so a site that never
+	 * opened the Site Editor (no user global-styles post yet) gets the post
+	 * created here the same way core does, instead of failing.
+	 *
+	 * @return array{ID: int, styles: array}|\WP_Error|null WP_Error when the
+	 *         post exists but its JSON is unreadable (corruption — never write
+	 *         over it); null when the post is absent and cannot be created.
 	 */
 	protected function get_global_styles() {
 		$db_styles = \Swt\get_theme_custom_styles();
 		$post_id   = (int) ( $db_styles['ID'] ?? 0 );
 
 		if ( 0 === $post_id ) {
-			return null;
+			$post_id = (int) \WP_Theme_JSON_Resolver::get_user_global_styles_post_id();
+			if ( $post_id <= 0 ) {
+				return null;
+			}
+			// Freshly seeded by core: just the schema markers, no styles yet —
+			// save_global_styles() re-stamps the markers on every write.
+			return array(
+				'ID'     => $post_id,
+				'styles' => array(),
+			);
 		}
 
-		$styles = $db_styles['post_content'] ?? array();
+		// A null post_content means the post exists but its JSON would not
+		// decode. Writing from here would replace the user's whole style layer
+		// with only what this ability mints — fail closed, and say WHICH
+		// failure this is: corruption needs the operator's attention, "no
+		// styles yet" doesn't.
+		// NOTE: no `?? array()` here — `??` treats null as absent and would
+		// silently re-arm the exact wipe this guard exists to prevent.
+		$styles = array_key_exists( 'post_content', $db_styles ) ? $db_styles['post_content'] : null;
 		if ( ! is_array( $styles ) ) {
-			$styles = array();
+			return new \WP_Error(
+				'swt_global_styles_unreadable',
+				__( 'The global styles post exists but its content is not readable JSON — refusing to write over it.', 'spectra-one' )
+			);
 		}
 
 		return array(
@@ -76,13 +100,13 @@ trait Global_Styles {
 			);
 		}
 
-		// wp_update_post() runs wp_unslash(), so slash first or an escaped quote truncates the JSON and the whole post is discarded.
+		// wp_update_post() runs wp_unslash() on the data — without wp_slash()
+		// the backslashes in JSON escape sequences (quotes in names, unicode
+		// escapes) are stripped and the stored JSON no longer decodes.
 		return wp_update_post(
-			wp_slash(
-				array(
-					'ID'           => $post_id,
-					'post_content' => $json,
-				)
+			array(
+				'ID'           => $post_id,
+				'post_content' => wp_slash( $json ),
 			),
 			true
 		);

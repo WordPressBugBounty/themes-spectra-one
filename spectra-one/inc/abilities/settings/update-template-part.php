@@ -48,6 +48,9 @@ final class Update_Template_Part extends Ability {
 		$this->label       = __( 'Update Template Part', 'spectra-one' );
 		$this->description = __( 'Switches the active header or footer design by updating the FSE template part to reference a different Spectra One pattern. Use spectra-one/list-patterns with category "header" or "footer" to see available patterns first.', 'spectra-one' );
 		$this->capability  = 'edit_theme_options';
+		// Same input → same end state (the part is set to one pattern ref), so
+		// a retry is safe. destructive stays true — it still overwrites.
+		$this->meta['annotations']['idempotent'] = true;
 	}
 
 	/**
@@ -79,7 +82,7 @@ final class Update_Template_Part extends Ability {
 				),
 				'use_site_title' => array(
 					'type'        => 'boolean',
-					'description' => 'Replace the logo image with a wp:site-title block. Useful for sites without a logo.',
+					'description' => 'Replace the logo image with a wp:site-title block. Useful for sites without a logo. Note: this stores an inlined copy of the pattern instead of a live pattern reference, so later theme updates to the pattern will not propagate.',
 				),
 			),
 			'required'   => array( 'area', 'pattern' ),
@@ -147,11 +150,32 @@ final class Update_Template_Part extends Ability {
 			);
 		}
 
+		// Only replace content this tool owns: a plain pattern reference, or
+		// an inlined copy this tool itself produced via use_site_title.
+		// Anything else — imported site chrome, user-edited blocks — would be
+		// silently destroyed by a pattern switch.
+		if ( ! $this->part_content_is_switchable( $template_part->content, $area ) ) {
+			return Response::error(
+				/* translators: %s: area name */
+				sprintf( __( 'The %s template part carries content this ability does not recognize as a switchable pattern reference (imported, user-edited, or drifted from the shipped pattern copy — e.g. after a locale change or theme update) — switching patterns would overwrite it.', 'spectra-one' ), $area ),
+				__( 'Edit the template part\'s blocks directly instead of switching patterns.', 'spectra-one' )
+			);
+		}
+
 		$previous_pattern = $this->extract_current_pattern_slug( $template_part->content );
 		$use_site_title   = ! empty( $args['use_site_title'] );
-		$new_content      = $use_site_title
-			? $this->render_pattern_with_site_title( $pattern )
-			: $this->build_pattern_reference( $pattern );
+
+		if ( $use_site_title ) {
+			$new_content = $this->render_pattern_with_site_title( $pattern );
+			if ( is_wp_error( $new_content ) ) {
+				return Response::error(
+					$new_content->get_error_message(),
+					__( 'Retry without use_site_title, or pick a pattern that contains a logo image.', 'spectra-one' )
+				);
+			}
+		} else {
+			$new_content = $this->build_pattern_reference( $pattern );
+		}
 
 		$result = $this->persist_template_part( $template_part, $area, $new_content );
 		if ( is_wp_error( $result ) ) {
@@ -209,15 +233,72 @@ final class Update_Template_Part extends Ability {
 	/**
 	 * Extract the current pattern slug from template part content.
 	 *
+	 * Parses blocks instead of regex-matching the comment: the shipped
+	 * theme-file parts carry whitespace inside the attrs JSON
+	 * (`{"slug":"spectra-one/header" }`) that an exact-spacing regex misses.
+	 *
 	 * @param string $content Template part content.
 	 * @return string Current pattern slug or empty string.
 	 */
 	private function extract_current_pattern_slug( string $content ): string {
-		if ( 1 === preg_match( '/<!-- wp:pattern \{"slug":"([^"]+)"\}/', $content, $matches ) ) {
-			return $matches[1];
+		foreach ( parse_blocks( $content ) as $block ) {
+			if ( 'core/pattern' === ( $block['blockName'] ?? '' ) ) {
+				return (string) ( $block['attrs']['slug'] ?? '' );
+			}
 		}
 
 		return '';
+	}
+
+	/**
+	 * Whether the part's current content is something this tool may replace.
+	 *
+	 * True for content this tool (or the theme) wrote: a single core/pattern
+	 * reference, empty content, or an inlined copy byte-identical to what
+	 * render_pattern_with_site_title() produces for one of this area's
+	 * patterns. False for everything else — imported chrome, user-edited
+	 * blocks — which a pattern switch would destroy.
+	 *
+	 * @param string $content Current template part content.
+	 * @param string $area    Area slug (bounds the pattern comparison set).
+	 * @return bool
+	 */
+	private function part_content_is_switchable( string $content, string $area ): bool {
+		if ( '' === trim( $content ) ) {
+			return true;
+		}
+
+		$real_blocks = array_values(
+			array_filter(
+				parse_blocks( $content ),
+				static function ( $block ) {
+					return null !== ( $block['blockName'] ?? null );
+				}
+			)
+		);
+
+		if ( 1 === count( $real_blocks ) && 'core/pattern' === $real_blocks[0]['blockName'] ) {
+			return true;
+		}
+
+		// An inlined use_site_title copy is still ours: it must be
+		// byte-identical to what we would regenerate for one of this area's
+		// patterns. Content that has drifted (theme updated the pattern, or
+		// anyone edited the copy) no longer matches and is protected.
+		$registry = \WP_Block_Patterns_Registry::get_instance();
+		$prefix   = self::ALLOWED_AREAS[ $area ] ?? '';
+		foreach ( $registry->get_all_registered() as $registered ) {
+			$slug = (string) ( $registered['slug'] ?? '' );
+			if ( '' === $prefix || 0 !== strpos( $slug, $prefix ) ) {
+				continue;
+			}
+			$ours = $this->render_pattern_with_site_title( $slug );
+			if ( is_string( $ours ) && $ours === $content ) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	/**
@@ -239,6 +320,12 @@ final class Update_Template_Part extends Ability {
 	 * @return int|\WP_Error Post ID or error.
 	 */
 	private function persist_template_part( $template_part, string $area, string $new_content ) {
+		// wp_update_post()/wp_insert_post() run wp_unslash() on the data —
+		// without wp_slash() the backslashes in JSON escape sequences inside
+		// block-comment attrs (`&` in inlined pattern copy renders as literal
+		// u0026amp;) are stripped. Slash once; both write paths reuse it.
+		$new_content = wp_slash( $new_content );
+
 		if ( ! empty( $template_part->wp_id ) ) {
 			return wp_update_post(
 				array(
@@ -271,15 +358,23 @@ final class Update_Template_Part extends Ability {
 	/**
 	 * Render a pattern and replace the logo image with a wp:site-title block.
 	 *
+	 * Errors instead of silently degrading: returning the content unchanged
+	 * (or a bare pattern reference) when the swap could not happen reported
+	 * success for a write that never applied the requested change.
+	 *
 	 * @param string $pattern_slug Pattern slug.
-	 * @return string Block markup with site-title instead of logo image.
+	 * @return string|\WP_Error Block markup with site-title instead of logo image.
 	 */
-	private function render_pattern_with_site_title( string $pattern_slug ): string {
+	private function render_pattern_with_site_title( string $pattern_slug ) {
 		$registry = \WP_Block_Patterns_Registry::get_instance();
 		$pattern  = $registry->get_registered( $pattern_slug );
 
 		if ( ! $pattern || empty( $pattern['content'] ) ) {
-			return $this->build_pattern_reference( $pattern_slug );
+			return new \WP_Error(
+				'swt_pattern_content_unavailable',
+				/* translators: %s: pattern slug */
+				sprintf( __( 'Pattern "%s" has no registered content to inline.', 'spectra-one' ), $pattern_slug )
+			);
 		}
 
 		$content          = (string) $pattern['content'];
@@ -301,9 +396,17 @@ final class Update_Template_Part extends Ability {
 		// Replace the first wp:image logo block (marker: site-logo-img class).
 		// [^>]* avoids matching across comment boundaries; .*? is scoped by the closing tag.
 		$logo_pattern = '/<!-- wp:image [^>]*site-logo-img[^>]*-->.*?<!-- \/wp:image -->/s';
-		$replaced     = preg_replace( $logo_pattern, $site_title_block, $content, 1 );
+		$replaced     = preg_replace( $logo_pattern, $site_title_block, $content, 1, $swaps );
 
-		return is_string( $replaced ) ? $replaced : $content;
+		if ( ! is_string( $replaced ) || 0 === $swaps ) {
+			return new \WP_Error(
+				'swt_logo_marker_not_found',
+				/* translators: %s: pattern slug */
+				sprintf( __( 'Pattern "%s" has no replaceable logo image (site-logo-img marker), so use_site_title cannot apply.', 'spectra-one' ), $pattern_slug )
+			);
+		}
+
+		return $replaced;
 	}
 }
 

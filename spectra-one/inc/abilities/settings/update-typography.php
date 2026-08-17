@@ -61,6 +61,9 @@ final class Update_Typography extends Ability {
 		$this->label       = __( 'Update Spectra One Typography', 'spectra-one' );
 		$this->description = __( 'Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large.', 'spectra-one' );
 		$this->capability  = 'edit_theme_options';
+		// Same input → same end state (per-key typography writes), so a retry
+		// is safe. destructive stays true.
+		$this->meta['annotations']['idempotent'] = true;
 	}
 
 	/**
@@ -155,6 +158,9 @@ final class Update_Typography extends Ability {
 	 */
 	public function execute( $args ) {
 		$context = $this->get_global_styles();
+		if ( is_wp_error( $context ) ) {
+			return Response::from_wp_error( $context );
+		}
 		if ( null === $context ) {
 			return Response::error(
 				__( 'No global styles found. Is an FSE/block theme active?', 'spectra-one' ),

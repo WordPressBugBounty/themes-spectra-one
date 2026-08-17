@@ -2,7 +2,7 @@
 Contributors: brainstormforce
 Requires at least: 6.1
 Tested up to: 7.0
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,11 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.2.5 =
+* Fix: Abilities API — Navigation menu updates applied via AI-assisted theme management now preserve your existing menu styling and any non-link blocks such as search or social icons, and work correctly on a fresh install.
+* Fix: Abilities API — Color palette updates now merge with your existing custom swatches instead of replacing them, and no longer reset heading typography.
+* Fix: Abilities API — Template part updates no longer overwrite blocks you have customized, and your Global Styles are left untouched when the saved styles cannot be read.
 
 = 1.2.4 =
 * Fix: Updating to 1.2.3 could wipe Global Styles customizations. The theme no longer modifies your saved Global Styles, so this cannot happen again.

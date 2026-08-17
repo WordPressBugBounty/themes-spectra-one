@@ -620,7 +620,9 @@ final class Install_Font extends Ability {
 	 */
 	private function add_to_global_styles( string $name, string $slug, array $faces ): bool {
 		$context = $this->get_global_styles();
-		if ( null === $context ) {
+		if ( ! is_array( $context ) ) {
+			// Absent-and-uncreatable (null) or unreadable JSON (WP_Error) —
+			// either way, do not write.
 			return false;
 		}
 

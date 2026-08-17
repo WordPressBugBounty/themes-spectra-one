@@ -44,6 +44,9 @@ final class Update_Color_Palette extends Ability {
 		$this->label       = __( 'Update Spectra One Color Palette', 'spectra-one' );
 		$this->description = __( 'Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically.', 'spectra-one' );
 		$this->capability  = 'edit_theme_options';
+		// Same input → same end state (merge-by-slug + per-key element
+		// writes), so a retry is safe. destructive stays true.
+		$this->meta['annotations']['idempotent'] = true;
 	}
 
 	/**
@@ -124,6 +127,9 @@ final class Update_Color_Palette extends Ability {
 		}
 
 		$context = $this->get_global_styles();
+		if ( is_wp_error( $context ) ) {
+			return Response::from_wp_error( $context );
+		}
 		if ( null === $context ) {
 			return Response::error(
 				__( 'No global styles found. Is an FSE/block theme active?', 'spectra-one' ),
@@ -254,48 +260,115 @@ final class Update_Color_Palette extends Ability {
 		// stored user global-styles post. WP's WP_Theme_JSON sanitizer treats a
 		// non-list palette node as invalid and drops it, so a nested `custom`
 		// write silently registers no presets (Site Editor + frontend unchanged).
-		$global_styles['settings']['color']['palette'] = $palette;
+		//
+		// Merge by slug: this tool owns its role slugs; any other swatch the
+		// user added in the Site Editor is theirs and survives.
+		$existing                                      = $global_styles['settings']['color']['palette'] ?? null;
+		$global_styles['settings']['color']['palette'] = $this->merge_palette_by_slug(
+			is_array( $existing ) ? $this->normalize_palette_list( $existing ) : array(),
+			$palette
+		);
 
+		// Every write below is per-key: assigning a whole node here would
+		// delete its siblings — typography a user (or update-typography)
+		// set on the same element, button padding, link textDecoration.
 		Helpers::ensure_nested( $global_styles, array( 'styles', 'color' ) );
-
-		// Merge rather than replace so unrelated keys (gradient, customDuotone, etc.)
-		// the user may have set remain intact.
 		$global_styles['styles']['color']['text']       = 'var:preset|color|body';
 		$global_styles['styles']['color']['background'] = 'var:preset|color|background';
 
-		Helpers::ensure_nested( $global_styles, array( 'styles', 'elements' ) );
+		Helpers::ensure_nested( $global_styles, array( 'styles', 'elements', 'heading', 'color' ) );
+		$global_styles['styles']['elements']['heading']['color']['text'] = 'var:preset|color|heading';
 
-		$global_styles['styles']['elements']['heading'] = array(
-			'color' => array(
-				'text' => 'var:preset|color|heading',
-			),
-		);
+		Helpers::ensure_nested( $global_styles, array( 'styles', 'elements', 'link', 'color' ) );
+		$global_styles['styles']['elements']['link']['color']['text'] = 'var:preset|color|primary';
+		Helpers::ensure_nested( $global_styles, array( 'styles', 'elements', 'link', ':hover', 'color' ) );
+		$global_styles['styles']['elements']['link'][':hover']['color']['text'] = 'var:preset|color|secondary';
 
-		$global_styles['styles']['elements']['link'] = array(
-			'color'  => array(
-				'text' => 'var:preset|color|primary',
-			),
-			':hover' => array(
-				'color' => array(
-					'text' => 'var:preset|color|secondary',
-				),
-			),
-		);
-
-		$global_styles['styles']['elements']['button'] = array(
-			'color'  => array(
-				'text'       => 'var:preset|color|background',
-				'background' => 'var:preset|color|primary',
-			),
-			':hover' => array(
-				'color' => array(
-					'text'       => 'var:preset|color|background',
-					'background' => 'var:preset|color|secondary',
-				),
-			),
-		);
+		Helpers::ensure_nested( $global_styles, array( 'styles', 'elements', 'button', 'color' ) );
+		$global_styles['styles']['elements']['button']['color']['text']       = 'var:preset|color|background';
+		$global_styles['styles']['elements']['button']['color']['background'] = 'var:preset|color|primary';
+		Helpers::ensure_nested( $global_styles, array( 'styles', 'elements', 'button', ':hover', 'color' ) );
+		$global_styles['styles']['elements']['button'][':hover']['color']['text']       = 'var:preset|color|background';
+		$global_styles['styles']['elements']['button'][':hover']['color']['background'] = 'var:preset|color|secondary';
 
 		return $global_styles;
+	}
+
+	/**
+	 * Normalize a stored palette node to the canonical FLAT entry list.
+	 *
+	 * Older writes left an origin-keyed map ({custom: [...], theme: [...]}) at
+	 * settings.color.palette — get-color-palette still reads that legacy shape.
+	 * Fed raw into the slug merge, each origin bucket has no slug and would
+	 * pass through as a nested LIST; WP_Theme_JSON then drops the
+	 * non-conforming entries and the user's swatches silently vanish. Flatten
+	 * the buckets instead — custom wins over theme on a slug collision, the
+	 * same precedence get-color-palette reads with.
+	 *
+	 * @param array<int|string, mixed> $palette Stored palette node.
+	 * @return array<int, mixed> Flat palette entry list.
+	 */
+	private function normalize_palette_list( array $palette ): array {
+		if ( isset( $palette[0] ) || array() === $palette ) {
+			// Canonical flat list already (or empty).
+			return array_values( $palette );
+		}
+
+		$flat = array();
+		$seen = array();
+		foreach ( array( 'custom', 'theme', 'default' ) as $origin ) {
+			$bucket = $palette[ $origin ] ?? null;
+			if ( ! is_array( $bucket ) ) {
+				continue;
+			}
+			foreach ( $bucket as $entry ) {
+				$slug = is_array( $entry ) ? (string) ( $entry['slug'] ?? '' ) : '';
+				if ( '' !== $slug ) {
+					if ( isset( $seen[ $slug ] ) ) {
+						continue;
+					}
+					$seen[ $slug ] = true;
+				}
+				$flat[] = $entry;
+			}
+		}
+
+		return $flat;
+	}
+
+	/**
+	 * Merge the tool's palette entries into the existing palette by slug.
+	 *
+	 * Entries whose slug this tool mints are replaced in place; entries it
+	 * doesn't know (user-added swatches) pass through untouched; any of the
+	 * tool's slugs not already present are appended in their canonical order.
+	 *
+	 * @param array<int, mixed>                                            $existing Existing palette entries.
+	 * @param array<int, array{slug: string, color: string, name: string}> $ours Palette entries this tool owns.
+	 * @return array<int, array> Merged flat palette list.
+	 */
+	private function merge_palette_by_slug( array $existing, array $ours ): array {
+		$ours_by_slug = array();
+		foreach ( $ours as $entry ) {
+			$ours_by_slug[ $entry['slug'] ] = $entry;
+		}
+
+		$merged = array();
+		foreach ( $existing as $entry ) {
+			$slug = is_array( $entry ) ? (string) ( $entry['slug'] ?? '' ) : '';
+			if ( '' !== $slug && isset( $ours_by_slug[ $slug ] ) ) {
+				$merged[] = $ours_by_slug[ $slug ];
+				unset( $ours_by_slug[ $slug ] );
+				continue;
+			}
+			$merged[] = $entry;
+		}
+
+		foreach ( $ours_by_slug as $entry ) {
+			$merged[] = $entry;
+		}
+
+		return $merged;
 	}
 
 	/**

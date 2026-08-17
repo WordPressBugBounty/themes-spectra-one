@@ -34,27 +34,28 @@ function get_theme_json(): array {
  * @return array
  */
 function get_theme_custom_styles(): array {
-	$args = array(
-		'orderby'     => 'post_type',
-		'post_status' => 'publish',
-		'post_type'   => array( 'wp_global_styles' ),
-		'name'        => 'wp-global-styles-spectra-one',
-	);
+	// Resolve the SAME post core reads: WP_Theme_JSON_Resolver's wp_theme
+	// taxonomy lookup. A hard-coded `wp-global-styles-spectra-one` name query
+	// diverges whenever WordPress suffixed the slug (…-2) or a child theme is
+	// active — reads come back empty and writes land on a post core never
+	// renders.
+	$user_cpt = \WP_Theme_JSON_Resolver::get_user_data_from_wp_global_styles( wp_get_theme() );
 
-	$export_posts  = get_posts( $args );
-	$global_styles = '';
+	$post_id       = isset( $user_cpt['ID'] ) ? (int) $user_cpt['ID'] : 0;
+	$global_styles = isset( $user_cpt['post_content'] ) ? (string) $user_cpt['post_content'] : '';
 
-	/** @psalm-suppress PossiblyInvalidPropertyFetch */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Need to check isset for post_content.
-	if ( isset( $export_posts[0] ) && isset( $export_posts[0]->post_content ) ) {
-		$global_styles = $export_posts[0]->post_content;
-	}
-
-	/** @psalm-suppress PossiblyInvalidPropertyFetch */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort -- Need to check isset for post id.
-	$post_id = isset( $export_posts[0] ) ? $export_posts[0]->ID : '';
+	// The stored content is plain JSON — decode it as-is. Running
+	// stripslashes() first destroyed JSON's own escape sequences: any `"`,
+	// `<`, `>`, `&` or non-ASCII character in a string value made the decode
+	// return null, callers saw an empty style layer, and the next write
+	// replaced the user's entire global styles with only its own keys.
+	$decoded = '' !== trim( $global_styles ) ? json_decode( $global_styles, true ) : array();
 
 	return array(
-		'ID'           => $post_id,
-		'post_content' => $global_styles ? json_decode( stripslashes( $global_styles ), true ) : array(),
+		'ID'           => $post_id > 0 ? $post_id : '',
+		// null (not array()) when the post exists but its JSON is unreadable —
+		// writers must treat that as "do not write", never as "start empty".
+		'post_content' => is_array( $decoded ) ? $decoded : null,
 	);
 }
 

@@ -183,15 +183,22 @@ abstract class Ability {
 	/**
 	 * Get MCP annotations based on tool type.
 	 *
+	 * Conservative defaults: a write ability CAN destroy or duplicate data,
+	 * so it must announce itself as destructive and non-idempotent — MCP
+	 * clients gate confirmation on these flags, and a hardcoded
+	 * `destructive: false` silently exempted every write tool from that
+	 * gate. An ability that is provably additive/idempotent can override
+	 * via `$this->meta['annotations']` (merged in register()).
+	 *
 	 * @return array{readonly: bool, destructive: bool, idempotent: bool}
 	 */
 	public function get_annotations() {
-		$tool_type = $this->get_tool_type();
+		$is_write = 'write' === $this->get_tool_type();
 
 		return array(
-			'readonly'    => 'write' !== $tool_type,
-			'destructive' => false,
-			'idempotent'  => true,
+			'readonly'    => ! $is_write,
+			'destructive' => $is_write,
+			'idempotent'  => ! $is_write,
 		);
 	}
 

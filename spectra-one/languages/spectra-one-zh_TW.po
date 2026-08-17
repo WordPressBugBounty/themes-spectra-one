@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.1.1\n"
+"Last-Translator: gpt-po v1.2.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -102,7 +102,7 @@ msgstr "完成"
 msgid "Minimal"
 msgstr "简约"
 
-#: inc/abilities/settings/update-color-palette.php:197
+#: inc/abilities/settings/update-color-palette.php:203
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "次要"
@@ -1486,7 +1486,7 @@ msgstr "发生了意外错误：%s"
 msgid "A system error occurred: %s"
 msgstr "发生系统错误：%s"
 
-#: inc/abilities/ability.php:377
+#: inc/abilities/ability.php:384
 msgid "An unexpected error occurred."
 msgstr "发生了意外错误。"
 
@@ -1737,100 +1737,84 @@ msgstr "更新 Spectra One 颜色调色板"
 msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
 msgstr "使用品牌颜色更新 FSE 全局样式的调色板和元素样式（文本、标题、链接、按钮）。接受 4 种十六进制颜色：主色、次色、标题色、正文色。自动派生支持颜色（表面色、轮廓色、第三级色）。"
 
-#: inc/abilities/settings/update-color-palette.php:129
-#: inc/abilities/settings/update-typography.php:160
+#: inc/abilities/settings/update-color-palette.php:135
+#: inc/abilities/settings/update-typography.php:166
 msgid "No global styles found. Is an FSE/block theme active?"
 msgstr "未找到全局样式。是否激活了FSE/区块主题？"
 
-#: inc/abilities/settings/update-color-palette.php:130
-#: inc/abilities/settings/update-typography.php:161
+#: inc/abilities/settings/update-color-palette.php:136
+#: inc/abilities/settings/update-typography.php:167
 msgid "This ability requires an active block theme with global styles support."
 msgstr "此功能需要具有全局样式支持的活动区块主题。"
 
-#: inc/abilities/settings/update-color-palette.php:143
+#: inc/abilities/settings/update-color-palette.php:149
 msgid "Color palette and element styles updated with brand colors."
 msgstr "颜色调色板和元素样式已更新为品牌颜色。"
 
-#: inc/abilities/settings/update-color-palette.php:160
+#: inc/abilities/settings/update-color-palette.php:166
 msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
 msgstr "需要正好 4 种品牌颜色：[主色、次色、标题色、正文色]。"
 
-#: inc/abilities/settings/update-color-palette.php:161
+#: inc/abilities/settings/update-color-palette.php:167
 msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 msgstr "传递一个包含 4 个十六进制颜色字符串的数组，例如 [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]。"
 
 #. translators: 1: color index, 2: color value
-#: inc/abilities/settings/update-color-palette.php:170
+#: inc/abilities/settings/update-color-palette.php:176
 #, php-format
 msgid "Invalid hex color at index %1$d: %2$s"
 msgstr "索引 %1$d 处的十六进制颜色无效：%2$s"
 
-#: inc/abilities/settings/update-color-palette.php:171
+#: inc/abilities/settings/update-color-palette.php:177
 msgid "Colors must be 6-digit hex values like #FF6B6B."
 msgstr "颜色必须是6位十六进制值，例如#FF6B6B。"
 
-#: inc/abilities/settings/update-color-palette.php:192
+#: inc/abilities/settings/update-color-palette.php:198
 msgid "Primary"
 msgstr "主要"
 
-#: inc/abilities/settings/update-color-palette.php:202
+#: inc/abilities/settings/update-color-palette.php:208
 msgid "Heading"
 msgstr "标题"
 
-#: inc/abilities/settings/update-color-palette.php:207
+#: inc/abilities/settings/update-color-palette.php:213
 msgid "Body"
 msgstr "身体"
 
-#: inc/abilities/settings/update-color-palette.php:212
+#: inc/abilities/settings/update-color-palette.php:218
 msgid "Foreground"
 msgstr "前景"
 
-#: inc/abilities/settings/update-color-palette.php:217
+#: inc/abilities/settings/update-color-palette.php:223
 msgid "Background"
 msgstr "背景"
 
-#: inc/abilities/settings/update-color-palette.php:222
+#: inc/abilities/settings/update-color-palette.php:228
 msgid "Surface"
 msgstr "表面"
 
-#: inc/abilities/settings/update-color-palette.php:227
+#: inc/abilities/settings/update-color-palette.php:233
 msgid "Tertiary"
 msgstr "第三"
 
-#: inc/abilities/settings/update-color-palette.php:232
+#: inc/abilities/settings/update-color-palette.php:238
 msgid "Outline"
 msgstr "大纲"
 
-#: inc/abilities/settings/update-color-palette.php:237
+#: inc/abilities/settings/update-color-palette.php:243
 msgid "Black"
 msgstr "黑色"
 
-#: inc/abilities/settings/update-navigation.php:56
+#: inc/abilities/settings/update-navigation.php:58
 msgid "Update Navigation Menu"
 msgstr "更新导航菜单"
 
-#: inc/abilities/settings/update-navigation.php:57
-msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
-msgstr "更新网站导航菜单与页面链接。接受一个菜单项数组 [{label, url}]。如果需要，创建导航文章并连接头部模板部分以使用它。对于 FSE 块主题，使用 wp:navigation-link 块，而不是经典菜单。"
-
-#: inc/abilities/settings/update-navigation.php:179
-msgid "At least one menu item is required."
-msgstr "至少需要一个菜单项。"
-
-#: inc/abilities/settings/update-navigation.php:180
+#: inc/abilities/settings/update-navigation.php:196
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "提供项目为 [{\"label\": \"首页\", \"url\": \"/\"}]。"
 
-#: inc/abilities/settings/update-navigation.php:191
-msgid "No valid menu items provided."
-msgstr "未提供有效的菜单项。"
-
-#: inc/abilities/settings/update-navigation.php:192
-msgid "Each item needs at least a \"label\"."
-msgstr "每个项目至少需要一个“标签”。"
-
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:218
+#: inc/abilities/settings/update-navigation.php:272
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "导航已更新，包含 %d 个菜单项。"
@@ -1844,28 +1828,28 @@ msgid "Switches the active header or footer design by updating the FSE template 
 msgstr "通过更新 FSE 模板部分以引用不同的 Spectra One 模式来切换活动的页眉或页脚设计。首先使用 spectra-one/list-patterns 和类别 \"header\" 或 \"footer\" 查看可用的模式。"
 
 #. translators: %s: area name
-#: inc/abilities/settings/update-template-part.php:146
+#: inc/abilities/settings/update-template-part.php:149
 #, php-format
 msgid "Could not find the %s template part."
 msgstr "找不到 %s 模板部分。"
 
 #. translators: 1: area name, 2: pattern slug
-#: inc/abilities/settings/update-template-part.php:163
+#: inc/abilities/settings/update-template-part.php:187
 #, php-format
 msgid "%1$s updated to use pattern \"%2$s\"."
 msgstr "%1$s 已更新为使用模式“%2$s”。"
 
-#: inc/abilities/settings/update-template-part.php:182
+#: inc/abilities/settings/update-template-part.php:206
 msgid "Invalid area. Must be \"header\" or \"footer\"."
 msgstr "无效区域。必须是“header”或“footer”。"
 
-#: inc/abilities/settings/update-template-part.php:191
+#: inc/abilities/settings/update-template-part.php:215
 #, php-format
 msgid "Pattern must start with \"%1$s\" for the %2$s area."
 msgstr "模式必须以“%1$s”开头，适用于%2$s区域。"
 
 #. translators: %s: pattern slug
-#: inc/abilities/settings/update-template-part.php:202
+#: inc/abilities/settings/update-template-part.php:226
 #, php-format
 msgid "Pattern \"%s\" is not registered."
 msgstr "模式“%s”未注册。"
@@ -1900,26 +1884,26 @@ msgstr "更新 Spectra One 字体"
 msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
 msgstr "更新 FSE 全局样式中的正文和标题的排版。设置字体系列（通过 slug）、字体粗细和行高。字体系列必须在 theme.json 中注册。可用的字体粗细：thin、extraLight、light、regular、medium、semiBold、bold、extraBold、black（或数字 100-900）。可用的行高：initial、xxSmall、xSmall、small、medium、large。"
 
-#: inc/abilities/settings/update-typography.php:168
+#: inc/abilities/settings/update-typography.php:174
 msgid "No typography fields provided to update."
 msgstr "没有提供要更新的排版字段。"
 
-#: inc/abilities/settings/update-typography.php:169
+#: inc/abilities/settings/update-typography.php:175
 msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
 msgstr "提供以下至少一项：body_font_family、body_font_weight、body_line_height、body_font_size、heading_font_family、heading_font_weight、heading_line_height。"
 
 #. translators: %s: comma-separated list of field=value pairs that were rejected
-#: inc/abilities/settings/update-typography.php:190
+#: inc/abilities/settings/update-typography.php:196
 #, php-format
 msgid "Invalid typography values: %s."
 msgstr "无效的排版值：%s。"
 
-#: inc/abilities/settings/update-typography.php:191
+#: inc/abilities/settings/update-typography.php:197
 msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
 msgstr "字体粗细必须命名为（thin..black）或数字（100-900，以100为步长）。行高必须命名为（initial, xxSmall..large）或数字（0 < n <= 5）。"
 
 #. translators: %s: comma-separated list of updated fields
-#: inc/abilities/settings/update-typography.php:214
+#: inc/abilities/settings/update-typography.php:220
 #, php-format
 msgid "Typography updated: %s."
 msgstr "排版已更新：%s。"
@@ -2024,7 +2008,7 @@ msgstr "返回由 Spectra One 主题注册的所有模板和模板部分。"
 msgid "Found %d templates."
 msgstr "找到 %d 个模板。"
 
-#: inc/abilities/traits/global-styles.php:75
+#: inc/abilities/traits/global-styles.php:99
 msgid "Failed to encode global styles as JSON."
 msgstr "无法将全局样式编码为JSON。"
 
@@ -2039,6 +2023,48 @@ msgstr "您没有权限执行此操作。"
 #: inc/admin/welcome-notice.php:119
 msgid "Security check failed."
 msgstr "安全检查失败。"
+
+#: inc/abilities/settings/update-navigation.php:59
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Targets the menu the header renders; a header managing its menu as inline blocks is migrated verbatim into a navigation entity first. Replace mode (default) sets the menu to exactly the given items — items matched by page id or url keep their existing styling, non-menu blocks (search, social icons) are preserved; append mode keeps every existing item untouched. New items are styled to match their siblings. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "更新站点导航菜单并添加页面链接。接受一个菜单项数组 [{label, url}]。目标是头部渲染的菜单；一个以行内块管理其菜单的头部会被逐字迁移到导航实体中。替换模式（默认）将菜单设置为完全符合给定项——通过页面 ID 或 URL 匹配的项保持其现有样式，非菜单块（搜索、社交图标）被保留；附加模式保持每个现有项不变。新项的样式与其兄弟项匹配。对于 FSE 块主题——使用 wp:navigation-link 块，而不是经典菜单。"
+
+#: inc/abilities/settings/update-navigation.php:195
+msgid "At least one menu item with a label is required."
+msgstr "至少需要一个带标签的菜单项。"
+
+#: inc/abilities/settings/update-navigation.php:221
+msgid "Navigation"
+msgstr "导航"
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:160
+#, php-format
+msgid "The %s template part carries content this ability does not recognize as a switchable pattern reference (imported, user-edited, or drifted from the shipped pattern copy — e.g. after a locale change or theme update) — switching patterns would overwrite it."
+msgstr " %s 模板部分包含此功能无法识别为可切换模式引用的内容（导入的、用户编辑的或从出厂模式副本漂移的——例如在区域更改或主题更新后）——切换模式将覆盖它。"
+
+#: inc/abilities/settings/update-template-part.php:161
+msgid "Edit the template part's blocks directly instead of switching patterns."
+msgstr "直接编辑模板部分的块，而不是切换模式。"
+
+#: inc/abilities/settings/update-template-part.php:173
+msgid "Retry without use_site_title, or pick a pattern that contains a logo image."
+msgstr "重试时不使用 use_site_title，或选择一个包含 logo 图像的模式。"
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:376
+#, php-format
+msgid "Pattern \"%s\" has no registered content to inline."
+msgstr "模式 \"%s\" 没有注册的内容可以内联。"
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:405
+#, php-format
+msgid "Pattern \"%s\" has no replaceable logo image (site-logo-img marker), so use_site_title cannot apply."
+msgstr "模式 \"%s\" 没有可替换的 logo 图像（site-logo-img 标记），因此无法应用 use_site_title。"
+
+#: inc/abilities/traits/global-styles.php:64
+msgid "The global styles post exists but its content is not readable JSON — refusing to write over it."
+msgstr "全局样式帖子存在，但其内容不是可读的 JSON——拒绝覆盖它。"
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"

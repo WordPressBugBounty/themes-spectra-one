@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: gpt-po v1.1.1\n"
+"Last-Translator: gpt-po v1.2.1\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -102,7 +102,7 @@ msgstr "تم"
 msgid "Minimal"
 msgstr "حد أدنى"
 
-#: inc/abilities/settings/update-color-palette.php:197
+#: inc/abilities/settings/update-color-palette.php:203
 #: inc/block-styles/button.php:22
 msgid "Secondary"
 msgstr "ثانوي"
@@ -1486,7 +1486,7 @@ msgstr "حدث خطأ غير متوقع: %s"
 msgid "A system error occurred: %s"
 msgstr "حدث خطأ في النظام: %s"
 
-#: inc/abilities/ability.php:377
+#: inc/abilities/ability.php:384
 msgid "An unexpected error occurred."
 msgstr "حدث خطأ غير متوقع."
 
@@ -1737,100 +1737,84 @@ msgstr "تحديث لوحة ألوان سبيكترا وان"
 msgid "Updates the FSE global styles color palette and element styles (text, headings, links, buttons) with brand colors. Accepts 4 hex colors: primary, secondary, heading, body. Derives supporting colors (surface, outline, tertiary) automatically."
 msgstr "يُحدِّث لوحة ألوان الأنماط العالمية لـ FSE وأنماط العناصر (النصوص، العناوين، الروابط، الأزرار) باستخدام ألوان العلامة التجارية. يقبل 4 ألوان سداسية عشرية: أساسي، ثانوي، العنوان، الجسم. يستنتج الألوان الداعمة (السطح، الخط الخارجي، الثالث) تلقائيًا."
 
-#: inc/abilities/settings/update-color-palette.php:129
-#: inc/abilities/settings/update-typography.php:160
+#: inc/abilities/settings/update-color-palette.php:135
+#: inc/abilities/settings/update-typography.php:166
 msgid "No global styles found. Is an FSE/block theme active?"
 msgstr "لم يتم العثور على أنماط عالمية. هل هناك قالب FSE/كتلة نشط؟"
 
-#: inc/abilities/settings/update-color-palette.php:130
-#: inc/abilities/settings/update-typography.php:161
+#: inc/abilities/settings/update-color-palette.php:136
+#: inc/abilities/settings/update-typography.php:167
 msgid "This ability requires an active block theme with global styles support."
 msgstr "تتطلب هذه القدرة وجود قالب بلوك نشط يدعم الأنماط العالمية."
 
-#: inc/abilities/settings/update-color-palette.php:143
+#: inc/abilities/settings/update-color-palette.php:149
 msgid "Color palette and element styles updated with brand colors."
 msgstr "تم تحديث لوحة الألوان وأنماط العناصر بألوان العلامة التجارية."
 
-#: inc/abilities/settings/update-color-palette.php:160
+#: inc/abilities/settings/update-color-palette.php:166
 msgid "Exactly 4 brand colors are required: [primary, secondary, heading, body]."
 msgstr "بالضبط 4 ألوان للعلامة التجارية مطلوبة: [أساسي، ثانوي، العنوان، النص]."
 
-#: inc/abilities/settings/update-color-palette.php:161
+#: inc/abilities/settings/update-color-palette.php:167
 msgid "Pass an array of 4 hex color strings like [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 msgstr "مرر مصفوفة من 4 سلاسل ألوان سداسية مثل [\"#0B3C5D\", \"#328CC1\", \"#D9B310\", \"#86BBD8\"]."
 
 #. translators: 1: color index, 2: color value
-#: inc/abilities/settings/update-color-palette.php:170
+#: inc/abilities/settings/update-color-palette.php:176
 #, php-format
 msgid "Invalid hex color at index %1$d: %2$s"
 msgstr "لون سداسي عشري غير صالح في الفهرس %1$d: %2$s"
 
-#: inc/abilities/settings/update-color-palette.php:171
+#: inc/abilities/settings/update-color-palette.php:177
 msgid "Colors must be 6-digit hex values like #FF6B6B."
 msgstr "يجب أن تكون الألوان قيم سداسية مكونة من 6 أرقام مثل #FF6B6B."
 
-#: inc/abilities/settings/update-color-palette.php:192
+#: inc/abilities/settings/update-color-palette.php:198
 msgid "Primary"
 msgstr "أساسي"
 
-#: inc/abilities/settings/update-color-palette.php:202
+#: inc/abilities/settings/update-color-palette.php:208
 msgid "Heading"
 msgstr "عنوان"
 
-#: inc/abilities/settings/update-color-palette.php:207
+#: inc/abilities/settings/update-color-palette.php:213
 msgid "Body"
 msgstr "الجسم"
 
-#: inc/abilities/settings/update-color-palette.php:212
+#: inc/abilities/settings/update-color-palette.php:218
 msgid "Foreground"
 msgstr "المقدمة"
 
-#: inc/abilities/settings/update-color-palette.php:217
+#: inc/abilities/settings/update-color-palette.php:223
 msgid "Background"
 msgstr "الخلفية"
 
-#: inc/abilities/settings/update-color-palette.php:222
+#: inc/abilities/settings/update-color-palette.php:228
 msgid "Surface"
 msgstr "سطح"
 
-#: inc/abilities/settings/update-color-palette.php:227
+#: inc/abilities/settings/update-color-palette.php:233
 msgid "Tertiary"
 msgstr "ثانوي"
 
-#: inc/abilities/settings/update-color-palette.php:232
+#: inc/abilities/settings/update-color-palette.php:238
 msgid "Outline"
 msgstr "مخطط"
 
-#: inc/abilities/settings/update-color-palette.php:237
+#: inc/abilities/settings/update-color-palette.php:243
 msgid "Black"
 msgstr "أسود"
 
-#: inc/abilities/settings/update-navigation.php:56
+#: inc/abilities/settings/update-navigation.php:58
 msgid "Update Navigation Menu"
 msgstr "تحديث قائمة التنقل"
 
-#: inc/abilities/settings/update-navigation.php:57
-msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Creates the navigation post if needed and wires the header template part to use it. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
-msgstr "يقوم بتحديث قائمة التنقل في الموقع بروابط الصفحات. يقبل مصفوفة من عناصر القائمة [{label, url}]. ينشئ منشور التنقل إذا لزم الأمر ويربط جزء القالب الرئيسي لاستخدامه. بالنسبة لمواضيع الكتل FSE — يستخدم كتل wp:navigation-link، وليس القوائم الكلاسيكية."
-
-#: inc/abilities/settings/update-navigation.php:179
-msgid "At least one menu item is required."
-msgstr "مطلوب عنصر قائمة واحد على الأقل."
-
-#: inc/abilities/settings/update-navigation.php:180
+#: inc/abilities/settings/update-navigation.php:196
 msgid "Provide items as [{\"label\": \"Home\", \"url\": \"/\"}]."
 msgstr "قدم العناصر كـ [{\"label\": \"Home\", \"url\": \"/\"}]."
 
-#: inc/abilities/settings/update-navigation.php:191
-msgid "No valid menu items provided."
-msgstr "لم يتم توفير عناصر قائمة صالحة."
-
-#: inc/abilities/settings/update-navigation.php:192
-msgid "Each item needs at least a \"label\"."
-msgstr "يحتاج كل عنصر إلى \"تسمية\" على الأقل."
-
 #. translators: %d: number of menu items
-#: inc/abilities/settings/update-navigation.php:218
+#: inc/abilities/settings/update-navigation.php:272
 #, php-format
 msgid "Navigation updated with %d menu items."
 msgstr "تم تحديث التنقل مع %d من عناصر القائمة."
@@ -1844,28 +1828,28 @@ msgid "Switches the active header or footer design by updating the FSE template 
 msgstr "يغيّر تصميم الرأس أو التذييل النشط عن طريق تحديث جزء قالب FSE للإشارة إلى نمط مختلف من Spectra One. استخدم spectra-one/list-patterns مع الفئة \"header\" أو \"footer\" لرؤية الأنماط المتاحة أولاً."
 
 #. translators: %s: area name
-#: inc/abilities/settings/update-template-part.php:146
+#: inc/abilities/settings/update-template-part.php:149
 #, php-format
 msgid "Could not find the %s template part."
 msgstr "تعذر العثور على جزء القالب %s."
 
 #. translators: 1: area name, 2: pattern slug
-#: inc/abilities/settings/update-template-part.php:163
+#: inc/abilities/settings/update-template-part.php:187
 #, php-format
 msgid "%1$s updated to use pattern \"%2$s\"."
 msgstr "تم تحديث %1$s لاستخدام النمط \"%2$s\"."
 
-#: inc/abilities/settings/update-template-part.php:182
+#: inc/abilities/settings/update-template-part.php:206
 msgid "Invalid area. Must be \"header\" or \"footer\"."
 msgstr "منطقة غير صالحة. يجب أن تكون \"header\" أو \"footer\"."
 
-#: inc/abilities/settings/update-template-part.php:191
+#: inc/abilities/settings/update-template-part.php:215
 #, php-format
 msgid "Pattern must start with \"%1$s\" for the %2$s area."
 msgstr "يجب أن يبدأ النمط بـ \"%1$s\" لمنطقة %2$s."
 
 #. translators: %s: pattern slug
-#: inc/abilities/settings/update-template-part.php:202
+#: inc/abilities/settings/update-template-part.php:226
 #, php-format
 msgid "Pattern \"%s\" is not registered."
 msgstr "النمط \"%s\" غير مسجل."
@@ -1900,26 +1884,26 @@ msgstr "تحديث طباعة سبكترا وان"
 msgid "Updates the FSE global styles typography for body text and headings. Set font family (by slug), font weight, and line height. Font families must be registered in theme.json. Available weights: thin, extraLight, light, regular, medium, semiBold, bold, extraBold, black (or numeric 100-900). Available line heights: initial, xxSmall, xSmall, small, medium, large."
 msgstr "يُحدِّث أنماط الطباعة العالمية لـ FSE للنصوص الأساسية والعناوين. قم بتعيين عائلة الخط (حسب السجل)، وزن الخط، وارتفاع السطر. يجب تسجيل عائلات الخطوط في theme.json. الأوزان المتاحة: رقيق، خفيف جدًا، خفيف، عادي، متوسط، شبه عريض، عريض، عريض جدًا، أسود (أو الأرقام من 100-900). ارتفاعات السطر المتاحة: ابتدائي، صغير جدًا جدًا، صغير جدًا، صغير، متوسط، كبير."
 
-#: inc/abilities/settings/update-typography.php:168
+#: inc/abilities/settings/update-typography.php:174
 msgid "No typography fields provided to update."
 msgstr "لم يتم توفير حقول الطباعة للتحديث."
 
-#: inc/abilities/settings/update-typography.php:169
+#: inc/abilities/settings/update-typography.php:175
 msgid "Provide at least one of: body_font_family, body_font_weight, body_line_height, body_font_size, heading_font_family, heading_font_weight, heading_line_height."
 msgstr "قدم واحدًا على الأقل من: body_font_family، body_font_weight، body_line_height، body_font_size، heading_font_family، heading_font_weight، heading_line_height."
 
 #. translators: %s: comma-separated list of field=value pairs that were rejected
-#: inc/abilities/settings/update-typography.php:190
+#: inc/abilities/settings/update-typography.php:196
 #, php-format
 msgid "Invalid typography values: %s."
 msgstr "قيم الطباعة غير صالحة: %s."
 
-#: inc/abilities/settings/update-typography.php:191
+#: inc/abilities/settings/update-typography.php:197
 msgid "Font weights must be named (thin..black) or numeric (100-900 in steps of 100). Line heights must be named (initial, xxSmall..large) or numeric (0 < n <= 5)."
 msgstr "يجب تسمية أوزان الخطوط (رفيع..أسود) أو رقمية (100-900 بخطوات من 100). يجب تسمية ارتفاعات الخطوط (أولي، xxSmall..كبير) أو رقمية (0 < n <= 5)."
 
 #. translators: %s: comma-separated list of updated fields
-#: inc/abilities/settings/update-typography.php:214
+#: inc/abilities/settings/update-typography.php:220
 #, php-format
 msgid "Typography updated: %s."
 msgstr "تم تحديث الطباعة: %s."
@@ -2024,7 +2008,7 @@ msgstr "يعيد جميع القوالب وأجزاء القوالب المسج�
 msgid "Found %d templates."
 msgstr "تم العثور على %d من القوالب."
 
-#: inc/abilities/traits/global-styles.php:75
+#: inc/abilities/traits/global-styles.php:99
 msgid "Failed to encode global styles as JSON."
 msgstr "فشل في ترميز الأنماط العالمية كـ JSON."
 
@@ -2039,6 +2023,48 @@ msgstr "ليس لديك إذن لتنفيذ هذا الإجراء."
 #: inc/admin/welcome-notice.php:119
 msgid "Security check failed."
 msgstr "فشل التحقق الأمني."
+
+#: inc/abilities/settings/update-navigation.php:59
+msgid "Updates the site navigation menu with page links. Accepts an array of menu items [{label, url}]. Targets the menu the header renders; a header managing its menu as inline blocks is migrated verbatim into a navigation entity first. Replace mode (default) sets the menu to exactly the given items — items matched by page id or url keep their existing styling, non-menu blocks (search, social icons) are preserved; append mode keeps every existing item untouched. New items are styled to match their siblings. For FSE block themes — uses wp:navigation-link blocks, not classic menus."
+msgstr "يحدث قائمة تنقل الموقع مع روابط الصفحات. يقبل مصفوفة من عناصر القائمة [{label, url}]. يستهدف القائمة التي تعرضها الرأس؛ يتم ترحيل رأس يدير قائمته ككتل مضمنة حرفيًا إلى كيان تنقل أولاً. وضع الاستبدال (افتراضي) يحدد القائمة لتكون بالضبط العناصر المعطاة - العناصر المطابقة بواسطة معرف الصفحة أو url تحتفظ بتنسيقها الحالي، وتظل الكتل غير القائمة (البحث، أيقونات التواصل الاجتماعي) محفوظة؛ وضع الإضافة يحتفظ بكل عنصر موجود دون تغيير. يتم تنسيق العناصر الجديدة لتتناسب مع أشقائها. بالنسبة لموضوعات كتل FSE - يستخدم كتل wp:navigation-link، وليس القوائم الكلاسيكية."
+
+#: inc/abilities/settings/update-navigation.php:195
+msgid "At least one menu item with a label is required."
+msgstr "مطلوب عنصر قائمة واحد على الأقل مع تسمية."
+
+#: inc/abilities/settings/update-navigation.php:221
+msgid "Navigation"
+msgstr "التنقل"
+
+#. translators: %s: area name
+#: inc/abilities/settings/update-template-part.php:160
+#, php-format
+msgid "The %s template part carries content this ability does not recognize as a switchable pattern reference (imported, user-edited, or drifted from the shipped pattern copy — e.g. after a locale change or theme update) — switching patterns would overwrite it."
+msgstr "جزء القالب %s يحمل محتوى لا تعترف به هذه القدرة كمرجع نمط قابل للتبديل (مستورد، تم تحريره بواسطة المستخدم، أو انحرف عن نسخة النمط المرسلة - على سبيل المثال بعد تغيير اللغة أو تحديث السمة) - ستؤدي أنماط التبديل إلى الكتابة فوقه."
+
+#: inc/abilities/settings/update-template-part.php:161
+msgid "Edit the template part's blocks directly instead of switching patterns."
+msgstr "قم بتحرير كتل جزء القالب مباشرة بدلاً من تبديل الأنماط."
+
+#: inc/abilities/settings/update-template-part.php:173
+msgid "Retry without use_site_title, or pick a pattern that contains a logo image."
+msgstr "حاول مرة أخرى بدون use_site_title، أو اختر نمطًا يحتوي على صورة شعار."
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:376
+#, php-format
+msgid "Pattern \"%s\" has no registered content to inline."
+msgstr "النمط \"%s\" ليس لديه محتوى مسجل للتضمين."
+
+#. translators: %s: pattern slug
+#: inc/abilities/settings/update-template-part.php:405
+#, php-format
+msgid "Pattern \"%s\" has no replaceable logo image (site-logo-img marker), so use_site_title cannot apply."
+msgstr "النمط \"%s\" ليس لديه صورة شعار قابلة للاستبدال (علامة site-logo-img)، لذا لا يمكن تطبيق use_site_title."
+
+#: inc/abilities/traits/global-styles.php:64
+msgid "The global styles post exists but its content is not readable JSON — refusing to write over it."
+msgstr "توجد مشاركة الأنماط العالمية ولكن محتواها ليس JSON قابل للقراءة - رافض الكتابة فوقه."
 
 #: patterns/alternate-image-text.php
 msgctxt "Pattern title"
