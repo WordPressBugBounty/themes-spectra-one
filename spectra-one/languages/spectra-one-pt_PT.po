@@ -139,11 +139,11 @@ msgstr "Desativar Cabeçalho"
 msgid "Disable Footer"
 msgstr "Desativar Rodapé"
 
-#: inc/scripts.php:291
+#: inc/scripts.php:287
 msgid "Pages"
 msgstr "Páginas"
 
-#: inc/scripts.php:296
+#: inc/scripts.php:292
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -156,7 +156,7 @@ msgstr "Páginas"
 msgid "Contact"
 msgstr "Contato"
 
-#: inc/scripts.php:301
+#: inc/scripts.php:297
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -1441,8 +1441,8 @@ msgstr "Desativar Elementos"
 msgid "Header Settings"
 msgstr "Configurações do Cabeçalho"
 
-#: src/extensions/panel/sidebar.js:19
-#: src/extensions/panel/sidebar.js:27
+#: src/extensions/panel/sidebar.js:25
+#: src/extensions/panel/sidebar.js:33
 msgid "Spectra Page Settings"
 msgstr "Configurações da Página Spectra"
 
@@ -1470,7 +1470,7 @@ msgstr "Rolagem para o topo atualizada"
 msgid "Scroll To Top"
 msgstr "Rolagem para o topo"
 
-#: src/admin/settings.js:15
+#: src/admin/settings.js:17
 msgid "Spectra One Editor Settings"
 msgstr "Configurações do Editor Spectra One"
 
@@ -1486,7 +1486,7 @@ msgstr "Ocorreu um erro inesperado: %s"
 msgid "A system error occurred: %s"
 msgstr "Ocorreu um erro no sistema: %s"
 
-#: inc/abilities/ability.php:384
+#: inc/abilities/ability.php:414
 msgid "An unexpected error occurred."
 msgstr "Ocorreu um erro inesperado."
 
@@ -1972,11 +1972,11 @@ msgstr "Controla se o conteúdo do menu de navegação modal móvel está centra
 msgid "Filters the default block spacing value (in pixels) used in the Spectra plugin editor."
 msgstr "Filtra o valor padrão de espaçamento de bloco (em pixels) usado no editor do plugin Spectra."
 
-#: inc/abilities/theme/list-hooks.php:211
+#: inc/abilities/theme/list-hooks.php:219
 msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
 msgstr "Controla se uma habilidade específica do Spectra One é visível na API REST. Recebe o ID da habilidade e a instância como parâmetros adicionais."
 
-#: inc/abilities/theme/list-hooks.php:219
+#: inc/abilities/theme/list-hooks.php:227
 msgid "Controls whether a specific Spectra One ability is publicly exposed via MCP (Model Context Protocol). Receives the ability ID and instance as additional parameters."
 msgstr "Controla se uma habilidade específica do Spectra One é exposta publicamente via MCP (Protocolo de Contexto de Modelo). Recebe o ID da habilidade e a instância como parâmetros adicionais."
 
@@ -2866,3 +2866,17 @@ msgstr "Rodapé"
 msgctxt "Template part name"
 msgid "Sidebar"
 msgstr "Barra lateral"
+
+#: inc/abilities/theme/list-hooks.php:211
+msgid "Controls whether a specific Spectra One ability is publicly exposed to clients. Seeds the defaults of the REST and MCP exposure filters, so returning false hides the ability everywhere unless a per-channel filter overrides it. Receives the ability ID and instance as additional parameters."
+msgstr ""
+
+#: src/extensions/editor/title.js:171
+#: src/extensions/editor/title.js:183
+msgid "Enable Title"
+msgstr ""
+
+#: src/extensions/editor/title.js:172
+#: src/extensions/editor/title.js:184
+msgid "Disable Title"
+msgstr ""

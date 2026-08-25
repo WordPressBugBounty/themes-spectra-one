@@ -1,8 +1,8 @@
 === Spectra One ===
 Contributors: brainstormforce
 Requires at least: 6.1
-Tested up to: 7.0
-Stable tag: 1.2.5
+Tested up to: 7.1
+Stable tag: 1.2.6
 Requires PHP: 7.4
 License: GPL-2.0-or-later
 Tags: full-site-editing, blog, theme-options, rtl-language-support, full-width-template
@@ -130,6 +130,9 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 © Copyright Spectra One 2023, Spectra.
 
 == Changelog ==
+
+= 1.2.6 =
+* Improvement: Compatibility with WordPress 7.1.
 
 = 1.2.5 =
 * Fix: Abilities API — Navigation menu updates applied via AI-assisted theme management now preserve your existing menu styling and any non-link blocks such as search or social icons, and work correctly on a fresh install.
@@ -309,7 +312,7 @@ https://wpspectra.com/wp-content/uploads/2023/07/avatar-square-4.jpg
 * Fix: Responsive controls conflicting with spectra plugin.
 * Fix: Made patterns translation ready.
 * Fix: Removed html block and added image block for svg icons on front page.
-* Fix: Spectra plugin compatibility with default wordpress blockgap.
+* Fix: Spectra plugin compatibility with default WordPress blockgap.
 * Fix: Header cutting off when transparent and sticky header is used when user is logged in.
 * Fix: Spectra plugin blocks not inherit width from contentSize.
 

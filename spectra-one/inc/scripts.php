@@ -164,22 +164,18 @@ add_action( 'enqueue_block_assets', SWT_NS . 'enqueue_block_assets' );
  */
 function localize_editor_script() {
 
-	/** @psalm-suppress UndefinedFunction */ // phpcs:ignore PossiblyFalseArgument, Generic.Commenting.DocComment.MissingShort -- Function exist in helpers.php
-	$version_compare = wp_version_compare( '6.2.99', '>' );
-	$screen          = get_current_screen();
-	$screen_id       = isset( $screen->id ) ? $screen->id : '';
+	$screen    = get_current_screen();
+	$screen_id = isset( $screen->id ) ? $screen->id : '';
 	return apply_filters(
 		'swt_editor_localize',
 		array(
-			'is_spectra_plugin'         => is_spectra_legacy_active(),
-			'get_screen_id'             => $screen_id,
-			'disable_sections'          => get_disable_section_fields(),
-			'pluginStatus'              => get_spectra_blocks_offer_status(),
-			'pluginSlug'                => get_spectra_blocks_slug(),
-			'nonce'				        => wp_create_nonce( 'wp_rest' ),
-			'swt_wp_version_higher_6_3' => $version_compare,
-			'swt_wp_version_higher_6_5' => is_wp_version_compatible( '6.5' ),
-			'activationUrl'             => get_spectra_blocks_activation_url(),
+			'is_spectra_plugin' => is_spectra_legacy_active(),
+			'get_screen_id'     => $screen_id,
+			'disable_sections'  => get_disable_section_fields(),
+			'pluginStatus'      => get_spectra_blocks_offer_status(),
+			'pluginSlug'        => get_spectra_blocks_slug(),
+			'nonce'             => wp_create_nonce( 'wp_rest' ),
+			'activationUrl'     => get_spectra_blocks_activation_url(),
 		)
 	);
 }

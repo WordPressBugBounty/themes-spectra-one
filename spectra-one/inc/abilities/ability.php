@@ -165,19 +165,22 @@ abstract class Ability {
 	/**
 	 * Get whether to show this ability in the REST API.
 	 *
+	 * Defaults to the unified public flag so `swt_ability_public` acts as the
+	 * single exposure switch; use this filter to override REST only.
+	 *
 	 * @return bool
 	 */
 	public function get_show_in_rest() {
 		/**
 		 * Filter whether to show this ability in the REST API.
 		 *
-		 * @param bool   $show_in_rest     Whether to show in REST API. Default true.
+		 * @param bool   $show_in_rest     Whether to show in REST API. Defaults to the unified public flag.
 		 * @param string $ability_id       The ability ID.
 		 * @param self   $ability_instance The ability instance.
 		 * @since 1.2.0
 		 */
 		/** @psalm-suppress TooManyArguments -- WordPress apply_filters accepts variadic args for filter callbacks. */
-		return apply_filters( 'swt_ability_show_in_rest', true, $this->id, $this );
+		return (bool) apply_filters( 'swt_ability_show_in_rest', $this->get_public(), $this->id, $this );
 	}
 
 	/**
@@ -203,6 +206,32 @@ abstract class Ability {
 	}
 
 	/**
+	 * Get whether this ability is publicly exposed to clients.
+	 *
+	 * Single source of truth for exposure: it is registered as the unified
+	 * `public` meta flag introduced in WordPress 7.1 (default false there)
+	 * and seeds the defaults of the per-channel flags (`show_in_rest`,
+	 * `mcp.public`), so filtering `swt_ability_public` to false hides the
+	 * ability everywhere unless a per-channel filter overrides it.
+	 *
+	 * @since 1.2.6
+	 * @return bool
+	 */
+	public function get_public() {
+		/**
+		 * Filter whether a Spectra One ability is publicly exposed to clients.
+		 *
+		 * @since 1.2.6
+		 *
+		 * @param bool   $is_public        Whether the ability is public. Default true.
+		 * @param string $ability_id       The ability ID.
+		 * @param self   $ability_instance The ability instance.
+		 */
+		/** @psalm-suppress TooManyArguments -- WordPress apply_filters accepts variadic args for filter callbacks. */
+		return (bool) apply_filters( 'swt_ability_public', true, $this->id, $this );
+	}
+
+	/**
 	 * Get MCP meta configuration for this ability.
 	 *
 	 * @return array{public: bool, type: string}
@@ -213,12 +242,12 @@ abstract class Ability {
 		 *
 		 * @since 1.2.0
 		 *
-		 * @param bool   $is_public        Whether the ability is public for MCP. Default true.
+		 * @param bool   $is_public        Whether the ability is public for MCP. Defaults to the unified public flag.
 		 * @param string $ability_id       The ability ID.
 		 * @param self   $ability_instance The ability instance.
 		 */
 		/** @psalm-suppress TooManyArguments -- WordPress apply_filters accepts variadic args for filter callbacks. */
-		$is_public = apply_filters( 'swt_ability_mcp_public', true, $this->id, $this );
+		$is_public = apply_filters( 'swt_ability_mcp_public', $this->get_public(), $this->id, $this );
 
 		return array(
 			'public' => (bool) $is_public,
@@ -311,6 +340,7 @@ abstract class Ability {
 			'tool_type'    => $instance->get_tool_type(),
 			'examples'     => $instance->get_examples(),
 			'version'      => $instance->get_version(),
+			'public'       => $instance->get_public(),
 			'show_in_rest' => $instance->get_show_in_rest(),
 			'annotations'  => $instance->get_annotations(),
 			'mcp'          => $instance->get_mcp(),

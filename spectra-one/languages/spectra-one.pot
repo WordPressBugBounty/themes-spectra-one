@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Spectra One 1.2.5\n"
+"Project-Id-Version: Spectra One 1.2.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/spectra-one\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-17T09:34:05+00:00\n"
+"POT-Creation-Date: 2026-08-24T19:10:06+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: spectra-one\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "A system error occurred: %s"
 msgstr ""
 
-#: inc/abilities/ability.php:384
+#: inc/abilities/ability.php:414
 msgid "An unexpected error occurred."
 msgstr ""
 
@@ -576,10 +576,14 @@ msgid "Filters the default block spacing value (in pixels) used in the Spectra p
 msgstr ""
 
 #: inc/abilities/theme/list-hooks.php:211
-msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
+msgid "Controls whether a specific Spectra One ability is publicly exposed to clients. Seeds the defaults of the REST and MCP exposure filters, so returning false hides the ability everywhere unless a per-channel filter overrides it. Receives the ability ID and instance as additional parameters."
 msgstr ""
 
 #: inc/abilities/theme/list-hooks.php:219
+msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
+msgstr ""
+
+#: inc/abilities/theme/list-hooks.php:227
 msgid "Controls whether a specific Spectra One ability is publicly exposed via MCP (Model Context Protocol). Receives the ability ID and instance as additional parameters."
 msgstr ""
 
@@ -722,11 +726,11 @@ msgstr ""
 msgid "Disable Footer"
 msgstr ""
 
-#: inc/scripts.php:291
+#: inc/scripts.php:287
 msgid "Pages"
 msgstr ""
 
-#: inc/scripts.php:296
+#: inc/scripts.php:292
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -739,7 +743,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: inc/scripts.php:301
+#: inc/scripts.php:297
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -2433,7 +2437,7 @@ msgstr ""
 msgid "Scroll To Top"
 msgstr ""
 
-#: src/admin/settings.js:15
+#: src/admin/settings.js:17
 msgid "Spectra One Editor Settings"
 msgstr ""
 
@@ -2473,6 +2477,16 @@ msgstr ""
 msgid "Power-up your website with advanced and powerful blocks that help you build websites in no time!"
 msgstr ""
 
+#: src/extensions/editor/title.js:171
+#: src/extensions/editor/title.js:183
+msgid "Enable Title"
+msgstr ""
+
+#: src/extensions/editor/title.js:172
+#: src/extensions/editor/title.js:184
+msgid "Disable Title"
+msgstr ""
+
 #: src/extensions/panel/components.js:29
 msgid "Disable Elements"
 msgstr ""
@@ -2481,8 +2495,8 @@ msgstr ""
 msgid "Header Settings"
 msgstr ""
 
-#: src/extensions/panel/sidebar.js:19
-#: src/extensions/panel/sidebar.js:27
+#: src/extensions/panel/sidebar.js:25
+#: src/extensions/panel/sidebar.js:33
 msgid "Spectra Page Settings"
 msgstr ""
 

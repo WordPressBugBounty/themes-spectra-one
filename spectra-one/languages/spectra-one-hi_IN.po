@@ -139,11 +139,11 @@ msgstr "हेडर अक्षम करें"
 msgid "Disable Footer"
 msgstr "फुटर अक्षम करें"
 
-#: inc/scripts.php:291
+#: inc/scripts.php:287
 msgid "Pages"
 msgstr "पृष्ठ"
 
-#: inc/scripts.php:296
+#: inc/scripts.php:292
 #: patterns/footer-2.php:27
 #: patterns/footer-3.php:26
 #: patterns/footer-5.php:27
@@ -156,7 +156,7 @@ msgstr "पृष्ठ"
 msgid "Contact"
 msgstr "संपर्क"
 
-#: inc/scripts.php:301
+#: inc/scripts.php:297
 #: patterns/pricing-2.php:20
 #: patterns/pricing-3.php:22
 #: patterns/pricing-4.php:20
@@ -1441,8 +1441,8 @@ msgstr "तत्व अक्षम करें"
 msgid "Header Settings"
 msgstr "हेडर सेटिंग्स"
 
-#: src/extensions/panel/sidebar.js:19
-#: src/extensions/panel/sidebar.js:27
+#: src/extensions/panel/sidebar.js:25
+#: src/extensions/panel/sidebar.js:33
 msgid "Spectra Page Settings"
 msgstr "स्पेक्ट्रा पृष्ठ सेटिंग्स"
 
@@ -1470,7 +1470,7 @@ msgstr "ऊपर स्क्रॉल अपडेट किया गया"
 msgid "Scroll To Top"
 msgstr "ऊपर स्क्रॉल करें"
 
-#: src/admin/settings.js:15
+#: src/admin/settings.js:17
 msgid "Spectra One Editor Settings"
 msgstr "स्पेक्ट्रा वन संपादक सेटिंग्स"
 
@@ -1486,7 +1486,7 @@ msgstr "एक अप्रत्याशित त्रुटि हुई: %
 msgid "A system error occurred: %s"
 msgstr "एक सिस्टम त्रुटि हुई: %s"
 
-#: inc/abilities/ability.php:384
+#: inc/abilities/ability.php:414
 msgid "An unexpected error occurred."
 msgstr "एक अप्रत्याशित त्रुटि हुई।"
 
@@ -1972,11 +1972,11 @@ msgstr "नियंत्रण करता है कि मोबाइल �
 msgid "Filters the default block spacing value (in pixels) used in the Spectra plugin editor."
 msgstr "स्पेक्ट्रा प्लगइन संपादक में उपयोग किए गए डिफ़ॉल्ट ब्लॉक स्पेसिंग मान (पिक्सल में) को फ़िल्टर करता है।"
 
-#: inc/abilities/theme/list-hooks.php:211
+#: inc/abilities/theme/list-hooks.php:219
 msgid "Controls whether a specific Spectra One ability is visible in the REST API. Receives the ability ID and instance as additional parameters."
 msgstr "यह नियंत्रित करता है कि क्या एक विशिष्ट स्पेक्ट्रा वन क्षमता REST API में दिखाई देती है। अतिरिक्त पैरामीटर के रूप में क्षमता आईडी और उदाहरण प्राप्त करता है।"
 
-#: inc/abilities/theme/list-hooks.php:219
+#: inc/abilities/theme/list-hooks.php:227
 msgid "Controls whether a specific Spectra One ability is publicly exposed via MCP (Model Context Protocol). Receives the ability ID and instance as additional parameters."
 msgstr "यह नियंत्रित करता है कि क्या एक विशिष्ट स्पेक्ट्रा वन क्षमता को एमसीपी (मॉडल संदर्भ प्रोटोकॉल) के माध्यम से सार्वजनिक रूप से उजागर किया गया है। अतिरिक्त पैरामीटर के रूप में क्षमता आईडी और उदाहरण प्राप्त करता है।"
 
@@ -2866,3 +2866,17 @@ msgstr "फुटर"
 msgctxt "Template part name"
 msgid "Sidebar"
 msgstr "साइडबार"
+
+#: inc/abilities/theme/list-hooks.php:211
+msgid "Controls whether a specific Spectra One ability is publicly exposed to clients. Seeds the defaults of the REST and MCP exposure filters, so returning false hides the ability everywhere unless a per-channel filter overrides it. Receives the ability ID and instance as additional parameters."
+msgstr ""
+
+#: src/extensions/editor/title.js:171
+#: src/extensions/editor/title.js:183
+msgid "Enable Title"
+msgstr ""
+
+#: src/extensions/editor/title.js:172
+#: src/extensions/editor/title.js:184
+msgid "Disable Title"
+msgstr ""

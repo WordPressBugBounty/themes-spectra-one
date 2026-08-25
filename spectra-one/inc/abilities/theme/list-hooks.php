@@ -203,6 +203,14 @@ final class List_Hooks extends Ability {
 				'description'   => __( 'Filters the default block spacing value (in pixels) used in the Spectra plugin editor.', 'spectra-one' ),
 			),
 			array(
+				'name'          => 'swt_ability_public',
+				'type'          => 'filter',
+				'parameters'    => array( 'is_public', 'ability_id', 'ability_instance' ),
+				'default_value' => 'true',
+				'file'          => 'inc/abilities/ability.php',
+				'description'   => __( 'Controls whether a specific Spectra One ability is publicly exposed to clients. Seeds the defaults of the REST and MCP exposure filters, so returning false hides the ability everywhere unless a per-channel filter overrides it. Receives the ability ID and instance as additional parameters.', 'spectra-one' ),
+			),
+			array(
 				'name'          => 'swt_ability_show_in_rest',
 				'type'          => 'filter',
 				'parameters'    => array( 'show_in_rest', 'ability_id', 'ability_instance' ),
